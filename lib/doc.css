@@ -5,7 +5,10 @@
 }
 
 body {
-   font-family: sans-serif;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 14px;
+   line-height: 1.42857143;
+   color: #333;
 }
 
 div.footer {
@@ -34,16 +37,21 @@ blockquote p {
   font-size: small;
 }
 
-a.navlink.active {
-  color: black; 
-}
-
 div.menu {
   border-right: 1px solid #eee; 
 }
 
+div.menu a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+div.menu a:focus, div.menu a:hover {
+  text-decoration: underline;
+}
+
 /* external links hack */
-a[href*="//"]:not([href*="uniformal.github.io"]) {
+div.content a[href*="//"]:not([href*="uniformal.github.io"]) {
   color: green;
 }
 

@@ -3,3 +3,8 @@
    width: 15vw;
    overflow: auto;
 }
+
+/* make all the links blue */
+a, a:visited {
+   color: blue;
+}

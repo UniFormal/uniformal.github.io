@@ -4,6 +4,10 @@
    overflow: auto;
 }
 
+body {
+   font-family: sans-serif;
+}
+
 div.footer {
   text-align: center; 
   font-size: small; 
@@ -50,6 +54,7 @@ table, th, td {
 
 code {
   padding: 2px 4px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;

@@ -1,5 +1,94 @@
-.menu {
-   height: 85vh;
-   width: 15vw;
-   overflow: auto;
+body {
+   font-family: sans-serif;
+}
+
+.menubar {
+   text-align: center;
+   background-color: white;
+   height: 5vh;
+}
+
+.menubar a {
+   background-color: beige;
+   color: black;
+   text-decoration: none;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 5px;
+   border-width: 1px;
+   border-style: solid;
+}
+   
+.header {
+   font-size: xx-large;
+   text-align: center;
+   background-color: beige;
+   height: 10vh;
+}
+   
+.diagram {
+   padding-left: 15vw;
+   padding-right: 15vw;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+   background-color: azure;
+}
+
+.diagram td {
+   width: 20vw;
+   padding: 2vw;
+   vertical-align: top;
+}
+
+.diagram .area {
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 50px;
+   background-color: lightblue;
+}
+
+.found-ind {
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 50px;
+   background-color: lightgreen;
+}
+
+.diagram .title, .found-ind-title {
+   font-weight: bold;
+   font-size: large;
+}
+
+.found-ind-title {
+   text-align: center;
+}
+
+.found-ind-expl {
+   text-align: justify;
+}
+
+.diagram li {
+}
+
+.diagram li.selected-feature {
+   background-color: green;
+   border-radius: 5px;
+}
+
+.diagram .features {
+}
+
+.details-container {
+   height: 30vh;
+   background-color: lightgray;
+}
+
+.details {
+   display: none;
+   text-align: center;
+   padding: 10px;
 }

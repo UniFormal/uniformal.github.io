@@ -4,6 +4,10 @@
    overflow: auto;
 }
 
+.footer, .header {
+   text-align: center;
+}
+
 /* make all the links blue */
 a, a:visited {
    color: blue;

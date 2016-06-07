@@ -4,11 +4,46 @@
    overflow: auto;
 }
 
-.footer, .header {
-   text-align: center;
+div.footer {
+  text-align: center; 
+  font-size: small; 
 }
 
-/* make all the links blue */
-a, a:visited {
-   color: blue;
+div.header {
+  text-align: center; 
+}
+
+div.content {
+  text-align: justify;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  display: inline;
+  font-size: small;
+}
+
+a.navlink.active {
+  color: black; 
+}
+
+div.menu {
+  border-right: 1px solid #eee; 
+}
+
+/* external links hack */
+a[href*="//"]:not([href*="uniformal.github.io"]) {
+  color: green;
+}
+
+table, th, td {
+  padding: 5px;
+  text-align: left; 
+  /* border: 1px solid black; */
 }

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+   <!-- This is the layout used for all pages in the wiki-style documentation.
+        The wiki files must have "layout: doc" in their front matter.
+        This file can use {{page.NAME}} to refer to variables declared in the front matter
+        and {{content}} to refer to the body of the md file.
+   -->
 	<head>
 		<title>MMT - {{page.title}}</title>
 		<meta charset="UTF-8" />
@@ -12,19 +17,19 @@
 					<h1>The MMT Language and System</h1>
 			</div>
 			
-			<div>
+			<table><tr>
 				
 				<!-- Navigation -->
-				<div>
+				<td style="width:15vw">
 					{% include_relative /doc/menu.html %}
-				</div>
+				</td>
 				
 				<!-- Content -->
-				<div>
+				<td>
 					{{content}}
-				</div>
+				</td>
 				
-			</div>
+			</tr></table>
 			
 			<!-- Footer -->
 			<div>

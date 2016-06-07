@@ -1,0 +1,18 @@
+{% assign navurl = page.url | remove: 'index.html' %}
+{% if site.github.url %}{% capture baseurl %}{{ site.github.url}}/{% endcapture %}{% else %}{% assign baseurl = "/" %}{% endif %}
+
+<ul class="navul">
+{% for item in include.nav %}
+	{% assign start = item.url | slice: 0 %}
+	{% if start == "/" %}
+	{% capture iurl %}{{ baseurl }}{{ item.url | slice:1,10000 }}{% endcapture %}
+	{% else %}
+	{% assign iurl = item.url %}
+	{% endif %}
+
+	<li><a href="{{ iurl }}" class="{% if item.url == navurl %}active{% else %}passive{% endif %} navlink">{{ item.text }}</a></li>
+	{% if item.subitems and navurl contains item.url %}
+		{% include nav.html nav=item.subitems %}
+	{% endif %}
+{% endfor %}
+</ul>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>MMT - {{page.title}}</title>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<div>
+			
+			<!-- Header -->
+			<div>
+					<h1>The MMT Language and System</h1>
+			</div>
+			
+			<div>
+				
+				<!-- Navigation -->
+				<div>
+					{% include nav.html nav=site.includes.nav %}
+				</div>
+				
+				<!-- Content -->
+				<div>
+					{{content}}
+				</div>
+				
+			</div>
+			
+			<div>
+				<div>
+					
+					MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. </br>
+					This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/doc/{{page.path}}" target="_blank">directly in the browser</a>. <br/>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -34,4 +34,4 @@ The abstract syntax of MMT is:
 
 The following (simplified) inheritance graph gives an overview of the most relevant data structures in the [MMT API](../):
 
-![data structures](/MMT/img/datastructures.png)
+![data structures](/doc/img/datastructures.png)

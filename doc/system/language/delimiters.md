@@ -13,9 +13,9 @@ Every delimiter marks the end of a declaration or a component of a declaration.
 
 Symbol in [jEdit](../applications/jedit.html) | Delimiter	| Name in ASCII | Marks end of | Comment
 ---- | ---- | ---- | ---- | ----
-![GS](/MMT/img/GS.png) | ASCII 29	| Module Delimiter	| Modules | any declaration that has nested declarations, i.e., theory, view, structure etc.
-![RS](/MMT/img/RS.png) | ASCII 30 | Declaration Delimiter | Declarations |	in particular includes and constants. Redundant if end of module follows
-![US](/MMT/img/US.png) | ASCII 31 | Object Delimiter | Components of declarations |	in particular type, definiens, notation of a constant. Redundant if end of declaration follows.
+![GS](/doc/img/GS.png) | ASCII 29	| Module Delimiter	| Modules | any declaration that has nested declarations, i.e., theory, view, structure etc.
+![RS](/doc/img/RS.png) | ASCII 30 | Declaration Delimiter | Declarations |	in particular includes and constants. Redundant if end of module follows
+![US](/doc/img/US.png) | ASCII 31 | Object Delimiter | Components of declarations |	in particular type, definiens, notation of a constant. Redundant if end of declaration follows.
 
 Note that these form a hierarchy of nested levels and that we can add SPACE as 5th level delimiter, which marks the end of a keyword.
 
@@ -24,7 +24,7 @@ The [jEdit plugin](../applications/jedit.html) offers three ways to insert these
 
 * MMT adds buttons for all three delimiters to the toolbar of jEdit:
 
-  ![menu](/MMT/img/menu.png)
+  ![menu](/doc/img/menu.png)
   
   * **O** inserts the object delimiter,
   * **D** inserts the declaration delimiter,

@@ -24,7 +24,7 @@ MMT is a formal language and software system for the foundation-independent repr
 <div class="diagram">
 <table>
  <tr>
-   <td class="area">
+   <td class="aspect">
      <div class="title">Representation Language</div>
      <ul class="features">
         <li data-id="modsys">Module system</li>
@@ -35,9 +35,17 @@ MMT is a formal language and software system for the foundation-independent repr
      </ul>
    </td>
    
-   <td></td>
-   
    <td class="area">
+     <div class="title">Narration</div>
+     <ul class="features">
+        <li data-id="edit">IDE</li>
+        <li data-id="build">Build Manager</li>
+        <li data-id="browse">Content Browser</li>
+        <li data-id="integrate">Middleware</li>
+     </ul>
+   </td>
+
+   <td class="aspect">
      <div class="title">Applications</div>
      <ul class="features">
         <li data-id="edit">IDE</li>
@@ -46,50 +54,29 @@ MMT is a formal language and software system for the foundation-independent repr
         <li data-id="integrate">Middleware</li>
      </ul>
    </td>
+   
  </tr>
  
  <tr>
-   <td></td>
-   
-   <td class="found-ind">
-     <div class="found-ind-title">Foundation-Independence</div>
-     <div class="found-ind-expl">design, analyze, and implement formal systems generically</div>
-   </td>
-   
-   <td></td>
- </tr>
-
- <tr>
    <td class="area">
-     <div class="title">Logical Services</div>
+     <div class="title">Deduction</div>
      <ul class="features">
-        <li data-id="check">Type Checking</li>
-        <li data-id="simplify">Simplification</li>
-        <li data-id="compute">Computation</li>
-        <li data-id="prove">Theorem Proving</li>
+        <li data-id="edit">IDE</li>
+        <li data-id="build">Build Manager</li>
+        <li data-id="browse">Content Browser</li>
+        <li data-id="integrate">Middleware</li>
      </ul>
    </td>
    
-   <td></td>
-   
-   <td class="area">
-     <div class="title">Management Services</div>
-     <ul class="features">
-        <li data-id="search">Search and Querying</li>
-        <li data-id="change">Change Management</li>
-        <li data-id="project">Project Management</li>
-        <li data-id="distribute">Hosting and Distribution</li>
-     </ul>
-   </td>
- </tr>
-</table>
-</div>
-
+   <td class="">
 <div class="details-container">
   <!-- Details for the features from above. Only one of these is visible at a given time. -->
   <div class="details" style="display:block">
     hover over a feature to see details
+    <div class="found-ind-title">Foundation-Independence</div>
+    <div class="found-ind-expl">design, analyze, and implement formal systems generically</div>  
   </div>
+
   <!-- Language -->
   <div class="details" data-id="modsys">
     theories and theory morphisms, inheritance
@@ -159,6 +146,53 @@ MMT is a formal language and software system for the foundation-independent repr
   </div>
 
 </div>
+   </td>
+     
+   <td class="area">
+     <div class="title">Computation</div>
+     <ul class="features">
+        <li data-id="edit">IDE</li>
+        <li data-id="build">Build Manager</li>
+        <li data-id="browse">Content Browser</li>
+        <li data-id="integrate">Middleware</li>
+     </ul>
+   </td>
+ </tr>
+
+ <tr>
+   <td class="aspect">
+     <div class="title">Logical Services</div>
+     <ul class="features">
+        <li data-id="check">Type Checking</li>
+        <li data-id="simplify">Simplification</li>
+        <li data-id="compute">Computation</li>
+        <li data-id="prove">Theorem Proving</li>
+     </ul>
+   </td>
+   
+   <td class="area">
+     <div class="title">Data</div>
+     <ul class="features">
+        <li data-id="edit">IDE</li>
+        <li data-id="build">Build Manager</li>
+        <li data-id="browse">Content Browser</li>
+        <li data-id="integrate">Middleware</li>
+     </ul>
+   </td>
+   
+   <td class="aspect">
+     <div class="title">Management Services</div>
+     <ul class="features">
+        <li data-id="search">Search and Querying</li>
+        <li data-id="change">Change Management</li>
+        <li data-id="project">Project Management</li>
+        <li data-id="distribute">Hosting and Distribution</li>
+     </ul>
+   </td>
+ </tr>
+</table>
+</div>
+
 
 </body>
 

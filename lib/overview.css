@@ -43,11 +43,18 @@ body {
    vertical-align: top;
 }
 
-.diagram .area {
+.diagram .area, .diagram .aspect {
    width: 20vw;
    border-style: solid;
    border-width: 2px;
    border-radius: 50px;
+}
+
+.diagram .aspect {
+   background-color: red;
+}
+
+.diagram .area {
    background-color: lightblue;
 }
 

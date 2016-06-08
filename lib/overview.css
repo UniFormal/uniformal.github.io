@@ -2,6 +2,7 @@ body {
    font-family: sans-serif;
 }
 
+/** Menu **/
 .menubar {
    text-align: center;
    background-color: white;
@@ -22,14 +23,24 @@ body {
    border-width: 1px;
    border-style: solid;
 }
-   
+
+/** Header **/ 
 .header {
    font-size: xx-large;
    text-align: center;
    background-color: beige;
    height: 10vh;
 }
-   
+
+.found-ind-title {
+   text-align: center;
+}
+
+.found-ind-expl {
+   text-align: justify;
+}
+
+/** Diagram **/
 .diagram {
    padding-left: 15vw;
    padding-right: 15vw;
@@ -58,25 +69,22 @@ body {
    background-color: lightblue;
 }
 
+.diagram .passive {
+  opacity: 0.5;
+  
+  -webkit-filter: grayscale(95%);
+  filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='gray95'><feColorMatrix in='SourceGraphic' type='saturate' values='0.95' /></filter></svg>#gray95");
+  filter:grayscale(95%);
+}
+
+.diagram .active, .diagram .passive {
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+}
+
 .diagram .title, .found-ind-title {
    font-weight: bold;
    font-size: large;
-}
-
-.found-ind {
-   width: 30vw;
-   border-style: solid;
-   border-width: 2px;
-   border-radius: 50px;
-   background-color: lightgreen;
-}
-
-.found-ind-title {
-   text-align: center;
-}
-
-.found-ind-expl {
-   text-align: justify;
 }
 
 .diagram li {

@@ -112,11 +112,28 @@ body {
    border-radius: 50px;
 }
 
-.diagram .aspect {
+.diagram-title-container {
+   text-align: center;
+}
+.diagram-title {
+   padding: 3px;
+   border-radius: 5px;
+   font-size: larger;
+}
+
+.diagram-title.active {
+   display: inline;
+}
+
+.diagram-title.passive {
+   display: none;
+}
+
+.aspect {
    background-color: darkorange;
 }
 
-.diagram .area {
+.area {
    background-color: cornflowerblue;
 }
 

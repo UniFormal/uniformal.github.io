@@ -3,7 +3,6 @@ layout: doc
 title: Publications
 ---
 
-## Publications
 
 * F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - this is the main paper on MMT (published in the journal Information &amp; Computation)
 * F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the main system description for MMT (published at CICM 2013, LNCS)

@@ -3,12 +3,11 @@ layout: doc
 title: Setting up jEdit
 ---
 
-The functionality of the jEdit plugin is described [here](../system/applications/jedit.html)
-
-## Setting up jEdit
-
 The jEdit plugin based on MMT yields an IDE for MMT content.
-While using jEdit, the current files are constantly checked and maintained in memory. To create hard drive images of the build results, use the [build tool](../system/applications/building.html).
+While using jEdit, the current files are constantly checked and maintained in memory. To create hard drive images of the build results, use the [build tool](../applications/building.html).
+
+This section is about the setup of the jEdit plugin.
+The functionality is described [here](../applications/jedit.html)
 
 ### Installation
 
@@ -29,7 +28,7 @@ To load the plugin run jEdit, open the plugin manager dialog, and select the MMT
 
 To update the plugin, just replace the changed jar(s) in jEdit's settings folder (`~/.jedit/jars` on linux, `<USER>AppData\Roaming\jEdit` on windows) and restart jEdit or reload the changed jars via jEdit's plugin manager dialog.
 
-The MMT code also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder. (Calling `MMT/system/deploy/jedit-setup/setup.sh" will additionally copy/uninstall configuration files.)
+The MMT code also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder. (Calling `mmt :jeditsetup" will additionally copy/uninstall configuration files.)
 
 ### Configuration
 

@@ -3,7 +3,6 @@ layout: doc
 title: Queries
 ---
 
-## Queries
 
 **QMT** is an MMT-based query language.
 It was first described in the [corresponding paper](http://kwarc.info/frabe/Research/rabe_querying_12.pdf).

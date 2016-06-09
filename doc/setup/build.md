@@ -3,7 +3,6 @@ layout: doc
 title: Building MMT
 ---
 
-## Building MMT
 
 Building is only needed if you want develop MMT or want to build from sources.
 

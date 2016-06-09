@@ -3,7 +3,6 @@ layout: doc
 title: Logging
 ---
 
-## Logging
 MMT provides a generic logging infrastructure that all MMT components use and that is available to all [extensions](extensions/).
 
 A **logging producer** is any object that inherits from [`frontend.Logger`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.frontend.Logger).

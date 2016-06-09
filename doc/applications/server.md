@@ -3,7 +3,6 @@ layout: doc
 title: The MMT Server
 ---
 
-## The MMT Server
 
 The MMT HTTP server is started using the command `server on PORT` in the shell. `server off` switches it off.
 Individual services are available as `localhost:PORT/:SERVICE`. These may take arguments via a `?QUERY` or via the HTTP BODY.

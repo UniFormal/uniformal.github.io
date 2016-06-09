@@ -3,7 +3,6 @@ layout: doc
 title: Setting up MMT
 ---
 
-## Setting up MMT
 
 ### Download
 
@@ -23,6 +22,6 @@ For writing and editing documents in MMTs native syntax we recommend [jEdit](jed
 3. guesses the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
 (You will still have to manually perform Steps 2+3 in the [jEdit plugin configuration](jedit.html).)
 
-[MMT archives](../system/applications/archives.html) can be found at [MathHub](../system/applications/oaf.html). If step 2. above fails for some reason, you should get at least the essential archive [`MMT/urtheories`](https://gl.mathhub.info/MMT/urtheories) there. Further recommended archives are [`MMT/examples`](https://gl.mathhub.info/MMT/examples) and [`MMT/LATIN`](https://gl.mathhub.info/MMT/LATIN).
+[MMT archives](../applications/archives.html) can be found at [MathHub](../applications/oaf.html). If step 2. above fails for some reason, you should get at least the essential archive [`MMT/urtheories`](https://gl.mathhub.info/MMT/urtheories) there. Further recommended archives are [`MMT/examples`](https://gl.mathhub.info/MMT/examples) and [`MMT/LATIN`](https://gl.mathhub.info/MMT/LATIN).
 
-You can now either use [jEdit](jedit.html) to work with .mmt files or [run](running.html) MMT for various other [applications](../system/applications/).
+You can now either use [jEdit](jedit.html) to work with .mmt files or [run](running.html) MMT for various other [applications](../applications/).

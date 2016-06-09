@@ -5,7 +5,6 @@ title: 2 - A First Theory
 [< 1 - Creating Archives](1archives.html)
 
 ---------------------
-
 ### 2 - A First Theory
 
 We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/jedit.html). If you haven't done so already, I recommend you read the sections on [delimiters](../../language/delimiters.html), [theories](../../language/modules.html#theories) and [constants](../../language/declarations.html#constants) now, so you know how to produce our following basic theory:
@@ -14,7 +13,7 @@ We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/j
 
 (if abbreviations are activated in jEdit, the `→` symbol can be produced with the abbreviation `jra` and the `⊦` symbol with `jvdash`)
 
-This code first introduces a new theory named `Logic` - delimited by ![`\RS`](/doc/img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../system/uris.html) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF.html).
+This code first introduces a new theory named `Logic` - delimited by ![`\RS`](/doc/img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../uris.html) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF.html).
 
 The full URI of our new theory is made up of its name (`Logic`) and the namespace declared in the `MANIFEST.MF` file, i.e. `http://kwarc.github.io/MMT?Logic`.
 

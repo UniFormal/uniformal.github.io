@@ -2,7 +2,6 @@
 layout: doc
 title: Overloading
 ---
-
 ### Overview
 We have to distinguish several kinds of overloading. Only some of them are supported by MMT.
 

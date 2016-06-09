@@ -3,7 +3,6 @@ layout: doc
 title: The Controller
 ---
 
-## The MMT Controller
 
 The MMT code is distributed over multiple components. The [`frontend.Controller`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.frontend.Controller) class creates one instance of each component.
 These components include the following:

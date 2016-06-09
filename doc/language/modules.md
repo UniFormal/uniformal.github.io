@@ -3,7 +3,6 @@ layout: doc
 title: Modules
 ---
 
-## Modules
 
 Modules occur in [documents](namespaces.html) level, contain [declarations](declarations.html) and have an associated [MMT URI](../api/uris.html) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters.html) with the symbol ![`\GS`](/doc/img/GS.png)
 

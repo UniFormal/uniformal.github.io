@@ -2,9 +2,6 @@
 layout: doc
 title: Starting point
 ---
-
-## The MMT System
-
 This is the main entry point to the MMT documentation. It contains:
 
 * instructions for how to [download](setup/index#download), [install](setup/index#installation), [build](setup/build/), [run](setup/running), and [configure](setup/jedit#configuration) MMT

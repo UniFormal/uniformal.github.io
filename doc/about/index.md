@@ -2,7 +2,6 @@
 layout: doc
 title: About
 ---
-
 This is essentially a WiKi except for
 
 * it is maintained on github via the gh-pages branch

@@ -2,7 +2,6 @@
 layout: doc
 title: Building Documents
 ---
-## Building Documents
 
 ### Calling Build Targets
 MMT can be used as a build tool using a special [shell command](shell.html).

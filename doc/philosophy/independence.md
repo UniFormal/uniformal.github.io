@@ -2,7 +2,6 @@
 layout: doc
 title: Independence
 ---
-
 MMT goes out of its way to be be **generic** and **reusable**. It does not commit to a particular that is implemented, and it does not commit to a particular application that this implementation is used for.
 
 **Foundation independence** is discussed in more detail in [this paper](https://kwarc.info/people/frabe/Research/rabe_future_15.pdf).

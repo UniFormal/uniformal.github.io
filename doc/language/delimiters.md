@@ -3,7 +3,6 @@ layout: doc
 title: Structural Delimiters
 ---
 
-## Structural Delimiters
 
 The only unusual aspect of the surface syntax is the use of the characters ASCII 28-31 as structural delimiters. These are usually considered whitespace, and most fonts do not have glyphs for them. Therefore, typing and displaying them depends on the editor and font used.
 

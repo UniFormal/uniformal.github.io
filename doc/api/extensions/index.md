@@ -3,7 +3,6 @@ layout: doc
 title: Extensions
 ---
 
-## MMT Extensions
 
 The MMT API provides a number of extension interfaces that permit injecting code for customizing the behavior of MMT algorithms.
 All extensions are persistent and have full access to the MMT [controller](../controller.html).

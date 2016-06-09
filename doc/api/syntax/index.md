@@ -2,10 +2,9 @@
 layout: doc
 title: Abstract Syntax
 ---
-
 This section gives an overview of MMT's **abstract syntax** and the corresponding classes in the [MMT API](../). MMT's surface syntax is described in detail [here](../../language/).
 
-## Abstract Grammar
+### Abstract Grammar
 
 The abstract syntax of MMT is:
 
@@ -25,7 +24,7 @@ The abstract syntax of MMT is:
 . | `c`   |   | [URI](../uris.html)
 . | `x`   |   | [Variable](objects.html)
 
-## Data Structures
+### Data Structures
 
 **[`api.Content`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.Content)** is the top level datastructure for all of the classes representing the MMT language. For our purposes, it branches into 
 

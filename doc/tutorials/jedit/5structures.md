@@ -5,7 +5,6 @@ title: 5 - Structures, Lambda, Pi and Implicit Arguments
 [< 4 - Natural Deduction for Intuitionistic Propositional Logic](4natded.html)
 
 ------------------------------
-
 ### 5 - Structures, Lambda, Pi and Implicit Arguments
 
 We want to specify the proof rules of the *natural deduction* calculus for (intuitionistic) propositional logic. The first thing to note here, is that our `PLSyntax` theory declares all the constants/operators of propositional logic, but doesn't provide any definitions for them - `equiv` could have easily been defined as `(A ⇒ B) ∧ (B ⇒ A)`, and of course `False` is by definition `¬ ⊤`.
@@ -47,7 +46,6 @@ we get an error. That's because structures change the names of the objects - wha
 ![`test = syn/imp (syn/and A B) (syn/or (syn/not C) (syn/and A B)) \RS`](/doc/img/tut01/testconstant3.png)
 
 -------------------------------
-
 We are now ready to formalize the [natural deduction rules](4natded.html#the-proof-rules). For that we need dependent functions, which in LF are denoted by curly braces enclosing the bound variables - so the inference rule
 
 ![`\dfrac{\vdash A\quad \vdash B}{\vdash A \wedge B}`](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdfrac%7B%5Cvdash%20A%5Cquad%20%5Cvdash%20B%7D%7B%5Cvdash%20A%20%5Cwedge%20B%7D)
@@ -69,7 +67,6 @@ Note:
 * Analogously in the other constants - we define our notations such that we can omit the arguments we don't want to have to "deal with", i.e. the ones that can be inferred from other arguments.
 
 -------------
-
 Finally, we can extend this theory to classical logic. Just for fun, we will use another structure for that, since that allows us to now define the other logical connectives as well: In classical logic, `A∨B = ¬(¬A ∧ ¬B)` and `A ⇒ B = ¬(A ∧ ¬B)`.
 So first, we declare a structure from `PLSyntax` to add all the definitions, then we need another structure for `PLIntNatDed` in which we *define* the structure `PLIntNatDed?syn` as this *new* structure `PLNatDed?syn`. The we can add tertium non datur:
 

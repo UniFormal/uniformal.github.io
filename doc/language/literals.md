@@ -3,7 +3,6 @@ layout: doc
 title: Generic Literals
 ---
 
-## Generic Literals
 MMT uses generic literals. That means that the MMT syntax does not commit to a particular set of literals.
 This is a deviation from [OpenMath](http://www.openmath.org) (which fixes - somewhat arbitrarily - integers, floating point numbers, strings, and byte arrays).
 MMT literals are

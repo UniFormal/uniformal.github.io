@@ -3,7 +3,6 @@ layout: doc
 title: Setting up jEdit
 ---
 
-## The jEdit IDE
 
 Installation instructions for the jEdit plugin can be found [here](../../setup/jedit.html)
 

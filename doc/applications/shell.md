@@ -2,7 +2,7 @@
 layout: doc
 title: The MMT Shell
 ---
-## The MMT Shell
+
 The MMT shell is invoked by [running](../../setup/running.html) mmt.
 
 ### Shell Commands

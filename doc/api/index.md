@@ -3,7 +3,6 @@ layout: doc
 title: The MMT API
 ---
 
-## The MMT API
 
 ### Overview
 

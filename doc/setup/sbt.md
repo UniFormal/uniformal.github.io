@@ -2,7 +2,6 @@
 layout: doc
 title: sbt
 ---
-
 ### TARGET definitions
 
 TARGETs are declared as values of type TaskKey, and defined via

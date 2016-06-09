@@ -3,7 +3,6 @@ layout: doc
 title: Processors
 ---
 
-## Processors
 
 MMT uses several abstractions for processing content.
 Implementations can be provided as [extensions](index.html) and are chosen based on appropriate identifiers (e.g., the format to which a parser is applicable).

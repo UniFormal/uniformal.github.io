@@ -1,10 +1,7 @@
 ---
 layout: doc
-title: Abstract Syntax
+title: MMT Objects
 ---
-
-## Objects ([`objects.Obj`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.Obj))
-
 [`objects.Obj`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.Obj) is the top level datastructure for all objects.
 These are terms, variable declarations and contexts.
 

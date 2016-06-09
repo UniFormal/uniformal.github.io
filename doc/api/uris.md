@@ -3,7 +3,6 @@ layout: doc
 title: MMT URIs
 ---
 
-## MMT URIs
 
 ### Motivation
 

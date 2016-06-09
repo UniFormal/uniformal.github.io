@@ -2,10 +2,8 @@
 layout: doc
 title: Structural Elements
 ---
-
-## Structural Elements ([`api.StructuralElement`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.StructuralElement))
-
-Structural Elements can be separated into two categories - **declarations** (constants and structures - includes are a special case of structures) and **modules** (theories and views). They can be **links** between two theories (structures and views) and can have a **body** containing declarations (declared theories, structures and views).
+([`api.StructuralElement`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.StructuralElement))
+ can be separated into two categories - **declarations** (constants and structures - includes are a special case of structures) and **modules** (theories and views). They can be **links** between two theories (structures and views) and can have a **body** containing declarations (declared theories, structures and views).
 
 [`api.StructuralElement`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.StructuralElement) is the top level data structure for declarations and modules. It provides the methods `path`, `parent` and `getDeclarations` and inherits `name`.
 

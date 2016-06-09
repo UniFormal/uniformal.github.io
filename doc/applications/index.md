@@ -3,7 +3,6 @@ layout: doc
 title: Features and Applications
 ---
 
-## Features and Applications
 MMT is an API and thus [application-independent](../philosophy/independence.html).
 Individual applications are either part of the mmt-api project or implemented in separate projects.
 In particular, these include

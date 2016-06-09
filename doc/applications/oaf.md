@@ -1,10 +1,7 @@
 ---
 layout: doc
-title: OAF
+title: The Open Archive of Formalizations (OAF)
 ---
-
-## Open Archive of Formalizations (OAF)
-
 The OAF is a repository backend for mathematical content hosted at [`gl.mathhub.info`](http://gl.mathhub.info).
 It is the main place to develop and publish [MMT archives](archives.html).
 

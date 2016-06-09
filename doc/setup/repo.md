@@ -3,7 +3,6 @@ layout: doc
 title: The MMT Repository
 ---
 
-## The MMT Repository
 
 The MMT source, binary releases, and documentation are maintained in an SVN repository.
 The base URL of the repository is `https://svn.kwarc.info/repos/MMT`.
@@ -25,7 +24,7 @@ MMT is divided into various sub-projects. Each project name occurs as the name o
 
 The projects that comprise MMT are
 
-* `mmt-api`: the [main project](../../system/api/) (depends on `tiscaf`)
+* `mmt-api`: the [main project](../api/) (depends on `tiscaf`)
 * `mmt-X`: plugins for MMT (depends at least on `mmt-api`), specifically `X` can be:
     * `lf`: [**LF**](http://en.wikipedia.org/wiki/Logical_Framework#LF) type checking and importer for [Twelf](http://twelf.org/wiki/Main_Page) (depends additionally on `lfcatalog` if the Twelf importer is used)
     * `mizar`: importer for Mizar
@@ -36,7 +35,7 @@ The projects that comprise MMT are
     * `jEdit`: MMT editing support in [jEdit](../jedit.html) (depends additionally on `mmt-lf`)
     * `hets`: MMT logic compilation for Hets
     * `lfcatalog`: a non-MMT-related project for the Twelf catalog, which is used by Twelf (depends on tiscaf)
-    * `tiscaf`: a copy of the [HTTP server](../../system/applications/server.html) tiscaf, which MMT uses, with a couple of fixes and improvements
+    * `tiscaf`: a copy of the [HTTP server](../../applications/server.html) tiscaf, which MMT uses, with a couple of fixes and improvements
 
 All projects are written in Scala and depend on the scala library. The appropriate library is provided as well. Later versions of Scala may or may not work.
 

@@ -2,10 +2,8 @@
 layout: doc
 title: The MMT Language
 ---
-
-This sections gives an overview of MMT's **surface syntax** that can be used to write content. A description of MMT's **abstract syntax** and the corrseponding internal data structures can be found [here](../api/syntax)
-
-## The MMT Language
+This sections gives an overview of a particular **concrete syntax** for MMT that can be used to write content.
+A description of MMT's **abstract syntax** and the corrseponding internal data structures can be found [here](../api/syntax)
 
 MMT is a language for formal mathematics that pays special attention to [*foundation-independence*](../philosophy/independence.html), scalability, and modularity.
 MMT follows the [OMDoc](http://www.omdoc.org/) philosophy and will be integrated into the upcoming OMDoc 2 format.

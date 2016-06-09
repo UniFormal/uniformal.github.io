@@ -3,7 +3,6 @@ layout: doc
 title: Symbol Declarations
 ---
 
-## Symbol Declarations
 
 Symbol declarations occur in [modules](modules.html) and are [delimited](delimiters.html) by the symbol ![`\RS`](/doc/img/RS.png). The most important symbols are **constants** and **theory inclusions** (which are special cases of **structures**).
 
@@ -70,7 +69,7 @@ The syntax for general structures is
 * Simple includes are still delimited with ![`\RS`](/MMT/doc/RS.png).
 * The name of each declaration in a structure has to correspond to the name of a declaration in the `<domain>`. 
 * Components (aliases, types, definitions etc.) explicitely given in a structure *override* the corresponding component of the declaration in the `<domain>`, all other components are inherited from the latter. In particular, structures can introduce definitions for (not necessarily) previously undefined constants, in which case the (new) definition has to have the (induced/old) type of the constant. It is recommended to *never override the type* of a symbol in a structure.
-* The full [URI](../system/uris.html) of an induced declaration `<declname>` in a structure `<struct>` in a module `<mod>` is `<mod> ? <struct> / <declname>`. It is this declaration, that is visible from the outside and can be used in subsequent (to the structure) declarations. In contrast, the URI `<mod> / <struct> ? <declname>` refers to the plain declaration as declared *directly in the structure*, i.e. without inheritance. The latter should never be used outside of the [API](../api/) and is invisible to declarations outside of the structure.
+* The full [URI](../api/uris.html) of an induced declaration `<declname>` in a structure `<struct>` in a module `<mod>` is `<mod> ? <struct> / <declname>`. It is this declaration, that is visible from the outside and can be used in subsequent (to the structure) declarations. In contrast, the URI `<mod> / <struct> ? <declname>` refers to the plain declaration as declared *directly in the structure*, i.e. without inheritance. The latter should never be used outside of the [API](../api/) and is invisible to declarations outside of the structure.
 * A theory inclusion is actually a structure with empty body and the induced name `[<domain>]`.
 * Unlike simple includes, multiple *named structures* with the same `<domain>` are **not** redundant. Each structure introduces fresh (possibly modified) copies of the declarations in the domain.
 * The limit of the previous point is the [*meta theory*](modules.html#theories) of the domain. If two structures `s1`,`s2` have corresponding domains `dom1`,`dom2` with the same meta theory `meta`, then *everything in the dependency closure of `meta`* will be included exactly once.

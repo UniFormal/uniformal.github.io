@@ -1,9 +1,8 @@
 ---
 layout: doc
-title: Namespaces
+title: Documents and Namespaces
 ---
 
-## Documents and Namespaces
 
 ### Logical and Physical Namespaces
 In module systems, there are two philosophies regarding the relation between logical and physical names of modules.

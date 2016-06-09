@@ -3,7 +3,6 @@ layout: doc
 title: MMT Archives
 ---
 
-## MMT Archives
 
 MMT archives correspond to software projects and provide project-oriented work flow for any language defined in MMT.
 They are the primary means to maintain and distribute MMT content.

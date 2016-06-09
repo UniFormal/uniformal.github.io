@@ -36,6 +36,17 @@ div.menu a:focus, div.menu a:hover {
   text-decoration: underline;
 }
 
+.menu li {
+   list-style: none;
+   padding: 0px;
+}
+
+.menu li:before {
+   content: 'o';
+   margin: 0 1em;
+   color: blue;
+}
+
 /****** central content ******/
 
 div.content {

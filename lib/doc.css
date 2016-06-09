@@ -45,8 +45,7 @@ div.menu a:focus, div.menu a:hover {
    padding: 0px;
 }
 
-.menu li:before {
-   content: 'o';
+.menu .bullet {
    margin: 0 1em;
    color: blue;
 }

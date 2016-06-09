@@ -1,36 +1,95 @@
 body {
-   font-family: sans-serif;
+    /* For the layout */
+    height: 100%;
+    margin: 0px;
+    
+    
+    /* Font family and size */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
 }
 
-/** Menu **/
-.menubar {
-   text-align: center;
-   background-color: white;
-   height: 3vh;
+.wrapper {
+  min-height: 100%; 
+  margin-bottom: -30px; 
 }
 
-.menubar a {
-   background-color: beige;
-   color: black;
-   text-decoration: none;
-   margin-left: 20px;
-   margin-right: 20px;
-   padding-top: 3px;
-   padding-bottom: 3px;
-   padding-left: 10px;
-   padding-right: 10px;
-   border-radius: 5px;
-   border-width: 1px;
-   border-style: solid;
-}
+/**
+  ==================
+  Header and Buttons
+  ==================
+**/
 
-/** Header **/ 
 .header {
-   font-size: xx-large;
-   text-align: center;
-   background-color: beige;
-   height: 10vh;
+    /* white and centered */
+    text-align: center;
+    height: 100px;
 }
+
+.header h1 {
+    /* font size */
+    font-size: 36px;
+    
+    /* weight and line height */
+    font-weight: 500;
+    line-height: 1.1;
+    
+    /* margins */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons a {
+    /* no underline, normal font weight */
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    
+    /* margin and padding */
+    margin-bottom: 0;
+    padding: 6px 12px;
+    
+    /* Transparent border */
+    border: 1px solid transparent;
+    border-color: #ccc;
+    border-radius: 4px;
+    
+    /* Almost-black on white */
+    color: #333;
+    background-color: #fff;
+}
+.buttons a:hover {
+    /* Almost-black on gray */
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.buttons a:focus {
+    /* Almost-black on gray */
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+
+/*
+  ============
+  content
+  ============
+*/
+
+.diagram {
+    /* Position */
+    position: absolute;
+    top: 150px; 
+    bottom: 0;
+    
+    /* Width and Height */
+    height: auto;
+    width: 100%;
+}
+
+
 
 .found-ind-title {
    text-align: center;
@@ -40,13 +99,8 @@ body {
    text-align: justify;
 }
 
-/** Diagram **/
-.diagram {
-   padding-left: 15vw;
-   padding-right: 15vw;
-   padding-top: 3vh;
-   padding-bottom: 3vh;
-   background-color: azure;
+.diagram table {
+  width: 80vw; 
 }
 
 .diagram td {
@@ -78,7 +132,7 @@ body {
 }
 
 .diagram .active, .diagram .passive {
-  -webkit-transition: 1s; /* Safari */
+  -webkit-transition: 1s;
   transition: 1s;
 }
 

@@ -9,190 +9,191 @@
 </head>
 
 <body>
-
-<div class="menubar">
-  <a href="/doc/download.html">Download</a>
-  <a href="/doc/index.html">Documentation</a>
-  <a href="">Uses</a>
-  <a href="/doc/contribute.html">Contribute</a>
-</div>
-
-<div class="header">
-MMT is a formal language and software system for the foundation-independent representation and management of formal knowledge.
-</div>
-
-<div class="diagram">
-<table>
- <tr>
-   
-   <td class="aspect passive">
-     <div class="title">Representation Language</div>
-     <ul class="features">
-        <li data-id="modsys">Module system</li>
-        <li data-id="modsys">Declarations</li>
-        <li data-id="binding">Objects with arbitrary binding</li>
-        <li data-id="literals">Extensible literals</li>
-        <li data-id="structural">Arbitrary structural features</li>
-     </ul>
-   </td>
-   
-   <td class="area active">
-     <div class="title">Narration</div>
-     <ul class="features">
-        <li data-id="edit">IDE</li>
-        <li data-id="build">Build Manager</li>
-        <li data-id="browse">Content Browser</li>
-        <li data-id="integrate">Middleware</li>
-     </ul>
-   </td>
-
-   <td class="aspect passive">
-     <div class="title">Applications</div>
-     <ul class="features">
-        <li data-id="edit">IDE</li>
-        <li data-id="build">Build Manager</li>
-        <li data-id="browse">Content Browser</li>
-        <li data-id="integrate">Middleware</li>
-     </ul>
-   </td>
-   
- </tr>
- 
- <tr>
-   <td class="area active">
-     <div class="title">Deduction</div>
-     <ul class="features">
-        <li data-id="edit">IDE</li>
-        <li data-id="build">Build Manager</li>
-        <li data-id="browse">Content Browser</li>
-        <li data-id="integrate">Middleware</li>
-     </ul>
-   </td>
-   
-   <td class="">
-<div class="details-container">
-  <!-- Details for the features from above. Only one of these is visible at a given time. -->
-  <div class="details" style="display:block">
-    hover over a feature to see details
-    <div class="found-ind-title">Foundation-Independence</div>
-    <div class="found-ind-expl">design, analyze, and implement formal systems generically</div>  
-  </div>
-
-  <!-- Language -->
-  <div class="details" data-id="modsys">
-    theories and theory morphisms, inheritance
-  </div>
-
-  <div class="details" data-id="binding">
-   binding
-  </div>
-
-  <div class="details" data-id="literals">
-   literals
-  </div>
-  
-  <div class="details" data-id="structural">
-   structural
-  </div>
-
-  <!-- Applications -->
-  <div class="details" data-id="edit">
-    edit
-  </div>
-
-  <div class="details" data-id="browse">
-   browse
-  </div>
-
-  <div class="details" data-id="build">
-   build
-  </div>
-  
-  <div class="details" data-id="integrate">
-   integrate
-  </div>
-
-  <!-- Logical -->
-  <div class="details" data-id="check">
-    check
-  </div>
-
-  <div class="details" data-id="simplify">
-   simplify
-  </div>
-
-  <div class="details" data-id="compute">
-   compute
-  </div>
-  
-  <div class="details" data-id="prove">
-   prove
-  </div>
-
-  <!-- Management -->
-  <div class="details" data-id="change">
-    change
-  </div>
-
-  <div class="details" data-id="search">
-   search
-  </div>
-
-  <div class="details" data-id="project">
-   project
-  </div>
-  
-  <div class="details" data-id="distribute">
-   distribute
-  </div>
-
-</div>
-   </td>
+  <div class="wrapper">
+    
+    <div class="header">
+      <h1>MMT - The Uniformal Tool</h1>
+      <span class="buttons">
+        <a href="/doc/download.html">Download</a>
+        <a href="/doc/index.html">Documentation</a>
+        <a href="">Uses</a>
+        <a href="/doc/contribute.html">Contribute</a>
+      </span>
+    </div>
+    
+    <div class="diagram">
+    <table>
+     <tr>
+       
+       <td class="aspect passive">
+         <div class="title">Representation Language</div>
+         <ul class="features">
+            <li data-id="modsys">Module system</li>
+            <li data-id="modsys">Declarations</li>
+            <li data-id="binding">Objects with arbitrary binding</li>
+            <li data-id="literals">Extensible literals</li>
+            <li data-id="structural">Arbitrary structural features</li>
+         </ul>
+       </td>
+       
+       <td class="area active">
+         <div class="title">Narration</div>
+         <ul class="features">
+            <li data-id="edit">IDE</li>
+            <li data-id="build">Build Manager</li>
+            <li data-id="browse">Content Browser</li>
+            <li data-id="integrate">Middleware</li>
+         </ul>
+       </td>
+    
+       <td class="aspect passive">
+         <div class="title">Applications</div>
+         <ul class="features">
+            <li data-id="edit">IDE</li>
+            <li data-id="build">Build Manager</li>
+            <li data-id="browse">Content Browser</li>
+            <li data-id="integrate">Middleware</li>
+         </ul>
+       </td>
+       
+     </tr>
      
-   <td class="area active">
-     <div class="title">Computation</div>
-     <ul class="features">
-        <li data-id="edit">IDE</li>
-        <li data-id="build">Build Manager</li>
-        <li data-id="browse">Content Browser</li>
-        <li data-id="integrate">Middleware</li>
-     </ul>
-   </td>
- </tr>
-
- <tr>
-   <td class="aspect passive">
-     <div class="title">Logical Services</div>
-     <ul class="features">
-        <li data-id="check">Type Checking</li>
-        <li data-id="simplify">Simplification</li>
-        <li data-id="compute">Computation</li>
-        <li data-id="prove">Theorem Proving</li>
-     </ul>
-   </td>
-   
-   <td class="area active">
-     <div class="title">Data</div>
-     <ul class="features">
-        <li data-id="edit">IDE</li>
-        <li data-id="build">Build Manager</li>
-        <li data-id="browse">Content Browser</li>
-        <li data-id="integrate">Middleware</li>
-     </ul>
-   </td>
-   
-   <td class="aspect passive">
-     <div class="title">Management Services</div>
-     <ul class="features">
-        <li data-id="search">Search and Querying</li>
-        <li data-id="change">Change Management</li>
-        <li data-id="project">Project Management</li>
-        <li data-id="distribute">Hosting and Distribution</li>
-     </ul>
-   </td>
- </tr>
-</table>
-</div>
+     <tr>
+       <td class="area active">
+         <div class="title">Deduction</div>
+         <ul class="features">
+            <li data-id="edit">IDE</li>
+            <li data-id="build">Build Manager</li>
+            <li data-id="browse">Content Browser</li>
+            <li data-id="integrate">Middleware</li>
+         </ul>
+       </td>
+       
+       <td class="">
+    <div class="details-container">
+      <!-- Details for the features from above. Only one of these is visible at a given time. -->
+      <div class="details" style="display:block">
+        hover over a feature to see details
+        <div class="found-ind-title">Foundation-Independence</div>
+        <div class="found-ind-expl">design, analyze, and implement formal systems generically</div>  
+      </div>
+    
+      <!-- Language -->
+      <div class="details" data-id="modsys">
+        theories and theory morphisms, inheritance
+      </div>
+    
+      <div class="details" data-id="binding">
+       binding
+      </div>
+    
+      <div class="details" data-id="literals">
+       literals
+      </div>
+      
+      <div class="details" data-id="structural">
+       structural
+      </div>
+    
+      <!-- Applications -->
+      <div class="details" data-id="edit">
+        edit
+      </div>
+    
+      <div class="details" data-id="browse">
+       browse
+      </div>
+    
+      <div class="details" data-id="build">
+       build
+      </div>
+      
+      <div class="details" data-id="integrate">
+       integrate
+      </div>
+    
+      <!-- Logical -->
+      <div class="details" data-id="check">
+        check
+      </div>
+    
+      <div class="details" data-id="simplify">
+       simplify
+      </div>
+    
+      <div class="details" data-id="compute">
+       compute
+      </div>
+      
+      <div class="details" data-id="prove">
+       prove
+      </div>
+    
+      <!-- Management -->
+      <div class="details" data-id="change">
+        change
+      </div>
+    
+      <div class="details" data-id="search">
+       search
+      </div>
+    
+      <div class="details" data-id="project">
+       project
+      </div>
+      
+      <div class="details" data-id="distribute">
+       distribute
+      </div>
+    
+    </div>
+       </td>
+         
+       <td class="area active">
+         <div class="title">Computation</div>
+         <ul class="features">
+            <li data-id="edit">IDE</li>
+            <li data-id="build">Build Manager</li>
+            <li data-id="browse">Content Browser</li>
+            <li data-id="integrate">Middleware</li>
+         </ul>
+       </td>
+     </tr>
+    
+     <tr>
+       <td class="aspect passive">
+         <div class="title">Logical Services</div>
+         <ul class="features">
+            <li data-id="check">Type Checking</li>
+            <li data-id="simplify">Simplification</li>
+            <li data-id="compute">Computation</li>
+            <li data-id="prove">Theorem Proving</li>
+         </ul>
+       </td>
+       
+       <td class="area active">
+         <div class="title">Data</div>
+         <ul class="features">
+            <li data-id="edit">IDE</li>
+            <li data-id="build">Build Manager</li>
+            <li data-id="browse">Content Browser</li>
+            <li data-id="integrate">Middleware</li>
+         </ul>
+       </td>
+       
+       <td class="aspect passive">
+         <div class="title">Management Services</div>
+         <ul class="features">
+            <li data-id="search">Search and Querying</li>
+            <li data-id="change">Change Management</li>
+            <li data-id="project">Project Management</li>
+            <li data-id="distribute">Hosting and Distribution</li>
+         </ul>
+       </td>
+     </tr>
+    </table>
+    </div>
+  </div>
 
 
 </body>

@@ -47,6 +47,10 @@ div.menu a:focus, div.menu a:hover {
    color: blue;
 }
 
+.menu li.current-section {
+   color: black;
+}
+
 /****** central content ******/
 
 div.content {

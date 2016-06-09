@@ -32,7 +32,7 @@ div.menu a {
   text-decoration: none;
 }
 
-div.menu a.current-section {
+div.menu li.current-section a {
    color: black;
 }
 

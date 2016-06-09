@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>The MMT Homepage</title>
+  <title>The MMT Language and System</title>
   <script type="text/javascript" src="lib/jquery.js"></script>
   <script type="text/javascript" src="lib/overview.js"></script>
   <meta charset="UTF-8"/>
@@ -13,7 +13,7 @@
   <div class="wrapper">
     
     <div class="header">
-      <h1>MMT - The Uniformal Tool</h1>
+      <h1>MMT: A Language and System for the uniform representation of knowledge</h1>
       <span class="buttons">
         <a href="/doc/download.html">Download</a>
         <a href="/doc/index.html">Documentation</a>
@@ -27,33 +27,36 @@
      <tr>
        
        <td class="aspect passive">
-         <div class="title">Representation Language</div>
+         <div class="title">Representation Languages</div>
+         <div class="tagline">MMT represents all knowledge in one simple framework</div>
          <ul class="features">
-            <li data-id="modsys">Module system</li>
-            <li data-id="modsys">Declarations</li>
-            <li data-id="binding">Objects with arbitrary binding</li>
-            <li data-id="literals">Extensible literals</li>
-            <li data-id="structural">Arbitrary structural features</li>
+            <li data-id="decl">Subsumes virtually any declarative language</li>
+            <li data-id="objects">Uniform treatment of virtually any formal object</li>
+            <li data-id="modsys">Powerful module system</li>
+            <li data-id="extend">Highly extensible at all levels</li>
          </ul>
        </td>
        
        <td class="area active">
          <div class="title">Narration</div>
+         <div class="tagline">MMT subsumes natural languages</div>
          <ul class="features">
-            <li data-id="edit">IDE</li>
-            <li data-id="build">Build Manager</li>
-            <li data-id="browse">Content Browser</li>
-            <li data-id="integrate">Middleware</li>
+            <li data-id="mix">Seamless mixing of formal/informal content</li>
+            <li data-id="format">Arbitrary concrete syntax: presentation MathML, LaTeX, ...</li>
+            <li data-id="degrade">Graceful degradation of formal algorithms to narrative content</li>
+            <li data-id="latex">Deep integration with LaTeX authoring workflow</li>
          </ul>
        </td>
     
        <td class="aspect passive">
          <div class="title">Applications</div>
+         <div class="tagline">MMT enables generic large-scale implementations</div>
          <ul class="features">
-            <li data-id="edit">IDE</li>
-            <li data-id="build">Build Manager</li>
-            <li data-id="browse">Content Browser</li>
-            <li data-id="integrate">Middleware</li>
+            <li data-id="edit">IDE for semantics editing support</li>
+            <li data-id="build">Build Manager for incremental, parallel compilation</li>
+            <li data-id="browse">Semantics-aware content browser</li>
+            <li data-id="mathhub">Project hosting platform</li>
+            <li data-id="integrate">Interoperability layer for semantics-preserving knowledge exchange</li>
          </ul>
        </td>
        
@@ -62,133 +65,270 @@
      <tr>
        <td class="area active">
          <div class="title">Deduction</div>
+         <div class="tagline">MMT subsumes logical languages</div>
          <ul class="features">
-            <li data-id="edit">IDE</li>
-            <li data-id="build">Build Manager</li>
-            <li data-id="browse">Content Browser</li>
-            <li data-id="integrate">Middleware</li>
+            <li data-id="logic">Declarative definitions of logics including syntax, proof theory, model theory</li>
+            <li data-id="modlog">Modular composition of logics from library of language features</li>
+            <li data-id="lfx">Rapid prototyping of logical systems</li>
+            <li data-id="foundind">No foundational commitment to a formal system or semantics</li>
          </ul>
        </td>
        
-       <td class="">
-    <div class="details-container">
-      <!-- Details for the features from above. Only one of these is visible at a given time. -->
-      <div class="details" style="display:block">
-        hover over a feature to see details
-        <div class="found-ind-title">Foundation-Independence</div>
-        <div class="found-ind-expl">design, analyze, and implement formal systems generically</div>  
-      </div>
-    
-      <!-- Language -->
-      <div class="details" data-id="modsys">
-        theories and theory morphisms, inheritance
-      </div>
-    
-      <div class="details" data-id="binding">
-       binding
-      </div>
-    
-      <div class="details" data-id="literals">
-       literals
-      </div>
-      
-      <div class="details" data-id="structural">
-       structural
-      </div>
-    
-      <!-- Applications -->
-      <div class="details" data-id="edit">
-        edit
-      </div>
-    
-      <div class="details" data-id="browse">
-       browse
-      </div>
-    
-      <div class="details" data-id="build">
-       build
-      </div>
-      
-      <div class="details" data-id="integrate">
-       integrate
-      </div>
-    
-      <!-- Logical -->
-      <div class="details" data-id="check">
-        check
-      </div>
-    
-      <div class="details" data-id="simplify">
-       simplify
-      </div>
-    
-      <div class="details" data-id="compute">
-       compute
-      </div>
-      
-      <div class="details" data-id="prove">
-       prove
-      </div>
-    
-      <!-- Management -->
-      <div class="details" data-id="change">
-        change
-      </div>
-    
-      <div class="details" data-id="search">
-       search
-      </div>
-    
-      <div class="details" data-id="project">
-       project
-      </div>
-      
-      <div class="details" data-id="distribute">
-       distribute
-      </div>
-    
-    </div>
+       <td class="center">
+       <div class="details-container">
+       <!-- Details for each features. Only one of these is visible at a given time. -->
+          <div class="details" data-id="default">
+            <div class="hoverhint">hover over a feature to see details</div>
+            <div>designing, analyze, and implement languages <br/> without commitment to<br/> semantic foundation, representational paradigm, or ultimate application.</div>
+          </div>
+          
+          <!-- Language -->
+          <div class="details" data-id="modsys">
+          Theory morphisms uniformly represent
+           <ul>
+            <li>abstraction and refinement,</li>
+            <li>inclusion and inheritance,</li>
+            <li>functors and parametrization,</li>
+            <li>translations and interpretations.</li>
+           </ul>
+          </div>
+          
+          <div class="details" data-id="decl">
+          MMT declarations uniformly represent
+           <ul>
+            <li>sort, type, universe symbols,</li>
+            <li>constant, function, predicate symbols,</li>
+            <li>connectives, binders, operators,</li>
+            <li>axioms, theorem, inference rules.</li>
+           </ul>
+          </div>
+          
+          <div class="details" data-id="objects">
+          MMT declarations uniformly represent
+           <ul>
+            <li>types, kinds,</li>
+            <li>terms, function, formulas,</li>
+            <li>literals of any kind,</li>
+            <li>proofs, derivations.</li>
+           </ul>
+          </div>
+          
+          <div class="details" data-id="extend">
+          MMT theories can introduce not only new symbols but also notations, implementation rules, and high-level language features.
+          </div>
+          
+          <!-- Applications -->
+          <div class="details" data-id="edit">
+            MMT acts as a <a href="http://www.jedit.org">jEdit</a> plugin to provide IDE functionality.
+            <!-- add screen shot of context-sensitive auto-completion -->
+          </div>
+          
+          <div class="details" data-id="browse">
+            The MMT web browser provides numerous advanced features including interactive type inference or definition lookup.
+            <!-- add screen shot of type inference -->
+          </div>
+          
+          <div class="details" data-id="build">
+            The MMT build manager is designed for fast rebuilding of large projects including arbitrary importers and exporter for external formats.
+            <!-- add screen shot of queue browser -->
+          </div>
+          
+          <div class="details" data-id="mathhub">
+            <a href="http://mathhub.info">MathHub</a> builds on MMT and <a href="https://gitlab.com">GitLab</a> to provide a GitHub-style platform for mathematics.
+            <!-- add mathhub screen shot -->
+          </div>
+
+          <div class="details" data-id="integrate">
+          MMT uses theories as interfaces to bridge between different languages.
+          <!-- add triangle picture for interface theories --> 
+          </div>
+          
+          <!-- Logical -->
+          <div class="details" data-id="parse">
+            MMT notations support mixfix syntax, precedences, implicit arguments, binding, sequence arguments/variables.
+            <!-- add jedit screen shot of complex math object -->
+          </div>
+
+          <div class="details" data-id="check">
+            Reconstruction of omitted types and implicit arguments in the presence of dependent types, polymorphism, rewriting, ...
+            <!-- add jedit screen shot of type-checked proof -->
+          </div>
+          
+          <div class="details" data-id="simplify">
+            Arbitrary computation and rewrite rules.
+            <!-- add jedit screen shot or rewrite rule -->
+          </div>
+          
+          <div class="details" data-id="compute">
+            MMT will allow interpretation of stateful programs.
+          </div>
+          
+          <div class="details" data-id="prove">
+            Only 3 rules yield a basic theorem prover for forward- and backward chaining.
+            No limitation with respect to advanced prover infrastructures.
+          </div>
+          
+          <!-- Management -->
+          <div class="details" data-id="present">
+            Generation of arbitrary formats such as high-quality presentation MathML using only notations.
+            <!-- add web screen shot of proof tree rendering -->
+          </div>
+          
+          <div class="details" data-id="change">
+            Differencing of concrete and abstract syntax for fast rechecking.
+          </div>
+          
+          <div class="details" data-id="search">
+            General query language and <a href="http://search.mathweb.org/">MathWebSearch</a> allow fast search in large libraries.
+            <!-- add mathwebsearch screen shot -->
+          </div>
+          
+          <div class="details" data-id="project">
+            MMT archives allow for collaboration, hosting, and distribution of projects. 
+            <!-- add mathhub screen shot -->
+          </div>
+          
+          <!-- Narration -->
+          <div class="details" data-id="mix">
+            Formal objects inside rigorous but informal documents.<br/>
+            Informal comments inside formal representations.<br/>
+            <!-- add stex screen shot -->
+          </div>
+
+          <div class="details" data-id="format">
+            Escape back and forth between MMT and e.g., HTML and LaTeX.
+            <!-- add jedit screen shot of MMT-in-text-in-MMT -->
+          </div>
+
+          <div class="details" data-id="degrade">
+            Algorithms like type-checking of formulas perform as good as they can in the presence of narrative subformulas.
+            <!--  -->
+          </div>
+
+          <div class="details" data-id="latex">
+            sTeX package for LaTeX allows semantic markup of narrative LaTeX documents.<br/>
+            mmt package for LaTeX allows type-checking and type-setting MMT formulas. 
+            <!--  -->
+          </div>
+
+          <!-- Deduction -->
+          <div class="details" data-id="logic">
+            Logics are defined as theories in the logical framework.
+            <!-- screen shot of conjunction in jedit -->
+          </div>
+
+          <div class="details" data-id="modlog">
+            The <a href="https://latin.omdoc.org/">LATIN</a> project has built a library of logic features, e.g.,
+            <ul>
+              <li>conjunction</li>
+              <li>lambda-abstraction</li>
+              <li>excluded middle</li>
+              <li>set theoretical models</li>
+            <!-- screen shot of latin atlas -->
+          </div>
+
+          <div class="details" data-id="foundind">
+            MMT systematically avoids any commitment. All logical features are represented in the framework.
+            <!-- screen shot of FOL = IFOL+tnd in jedit -->
+          </div>
+
+          <div class="details" data-id="lfx">
+            The logical framework is itself flexible, and different frameworks can be composed modularly. 
+            <!-- meta-theory graph -->
+          </div>
+
+          <!-- Computation -->
+          <div class="details" data-id="progfound">
+            Current work transfers the framework built for logics languages to programming languages. 
+            <!-- -->
+          </div>
+
+          <div class="details" data-id="proglang">
+            Features of programming languages and their semantics and interrelations will be represented declaratively in MMT.
+            <!--  -->
+          </div>
+
+          <div class="details" data-id="modprog">
+            Type systems, computation features, and interpretation rules will be declared modularly and composed to form individual programming languages.
+            <!--  -->
+          </div>
+
+          <div class="details" data-id="logcomp">
+            MMT will allow representing proofs and programs in the same formalism.<br/>
+            This avoids an ontological distinction between tactics (programs about proofs) and software verification (proofs about programs). 
+            <!--  -->
+          </div>
+
+          <!--Tabulation -->
+          <div class="details" data-id="data">
+            MMT supports finitary representations of complex mathematical objects that can be stored in standard databases and easily interchanged and queried.
+            <!-- add jedit screen shot of elliptic curve -->
+          </div>
+
+          <div class="details" data-id="codec">
+            Type-driven codecs are used to convert automatically between high-level mathematical representations and standard database languages for efficient low-level representation.
+            <!-- add jedit screen shot of codec use -->
+          </div>
+
+          <div class="details" data-id="query">
+            MMT allows using high-level languages to query the low-level representations.
+            <!--  -->
+          </div>
+
+          <div class="details" data-id="odk">
+            Used in <a href="http://opendreamkit.org/">OpenDreamKit</a> for LMFDB, OEIS, findstat.
+            <!--  -->
+          </div>
+
+       </div>
        </td>
          
        <td class="area active">
          <div class="title">Computation</div>
+         <div class="tagline">MMT will subsume programming languages</div>
          <ul class="features">
-            <li data-id="edit">IDE</li>
-            <li data-id="build">Build Manager</li>
-            <li data-id="browse">Content Browser</li>
-            <li data-id="integrate">Middleware</li>
+            <li data-id="progfound">Object-oriented, functional, and imperative features</li>
+            <li data-id="proglang">Declarative definitions of programming languages</li>
+            <li data-id="modprog">Modular composition of programming languages and their semantics</li>
+            <li data-id="logcomp">Seamlessly program about logics, reason about programs</li>
          </ul>
        </td>
      </tr>
     
      <tr>
        <td class="aspect passive">
-         <div class="title">Logical Services</div>
+         <div class="title">Soundness-Critical Services</div>
+         <div class="tagline">MMT allows generic solutions to deep problems</div>
          <ul class="features">
+            <li data-id="parse">Parsing</li>
             <li data-id="check">Type Checking</li>
             <li data-id="simplify">Simplification</li>
-            <li data-id="compute">Computation</li>
-            <li data-id="prove">Theorem Proving</li>
+            <li data-id="compute">Computation (ongoing)</li>
+            <li data-id="prove">Theorem Proving (ongoing)</li>
          </ul>
+         All algorithms are rule-based and rules can be combined modularly.<br/>
+         Thus, languages can be modified at minimal cost.
        </td>
        
        <td class="area active">
-         <div class="title">Data</div>
+         <div class="title">Tabulation</div>
+         <div class="tagline">MMT subsumes data description languages</div>
          <ul class="features">
-            <li data-id="edit">IDE</li>
-            <li data-id="build">Build Manager</li>
-            <li data-id="browse">Content Browser</li>
-            <li data-id="integrate">Middleware</li>
+            <li data-id="data">Concrete representation of abstract mathematical objects</li>
+            <li data-id="codec">Standardized codec language for interchanging data</li>
+            <li data-id="query">Uniform query language across databases (ongoing)</li>
+            <li data-id="odk">Integrated with major databases of computational mathematics</li>
          </ul>
        </td>
        
        <td class="aspect passive">
          <div class="title">Management Services</div>
+         <div class="tagline">MMT allows generic knowledge management solutions</div>
          <ul class="features">
+            <li data-id="present">Rendering using MathML</li>
             <li data-id="search">Search and Querying</li>
             <li data-id="change">Change Management</li>
             <li data-id="project">Project Management</li>
-            <li data-id="distribute">Hosting and Distribution</li>
          </ul>
        </td>
      </tr>

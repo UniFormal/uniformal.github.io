@@ -1,75 +1,147 @@
 body {
     /* For the layout */
     height: 100%;
-    margin: 0px;
-    
-    
+    margin: 0;
+    overflow: hidden;
+
+
     /* Font family and size */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
+    font-size: 2vh;
 }
 
 .wrapper {
-  min-height: 100%; 
-  margin-bottom: -30px; 
+  min-height: 100%;
+  margin-bottom: -25vh;
 }
 
 /**
   ==================
-  Header and Buttons
+  Header : 25vh
   ==================
 **/
 
 .header {
     /* white and centered */
     text-align: center;
-    height: 100px;
+    max-height: 25vh;
 }
 
+/**
+  TITLE: 15vh
+**/
 .header h1 {
-    /* font size */
-    font-size: 36px;
-    
-    /* weight and line height */
+    /* a box of at most two lines */
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 14vh;
+
+    /* don't mess with the sizes */
+    font-size: 4vh;
+    line-height: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
     font-weight: 500;
-    line-height: 1.1;
-    
-    /* margins */
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
-.buttons a {
-    /* no underline, normal font weight */
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 400;
-    
-    /* margin and padding */
-    margin-bottom: 0;
-    padding: 6px 12px;
-    
-    /* Transparent border */
-    border: 1px solid transparent;
-    border-color: #ccc;
-    border-radius: 4px;
-    
-    /* Almost-black on white */
-    color: #333;
-    background-color: #fff;
+/**
+  BUTTONS: 7vh
+**/
+
+.header .buttons {
+
+  /* a box of at most two lines */
+  box-sizing: border-box;
+  display: block;
+
+  max-height: 7vh;
+  margin-bottom: 1vh;
+
+  /* font-size */
+  font-size: 2vh;
+  line-height: 3vh;
 }
-.buttons a:hover {
+
+.header .buttons a {
+  /* Border + Padding */
+  box-sizing: border-box;
+  padding: .4vh;
+
+  border: 1px solid;
+  border-color: #ccc;
+  border-radius: 4px;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+
+  /* color and text-style */
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.header .buttons a:hover {
     /* Almost-black on gray */
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
 }
-.buttons a:focus {
+
+.header .buttons a:focus {
     /* Almost-black on gray */
     color: #333;
     background-color: #e6e6e6;
     border-color: #8c8c8c;
+}
+
+/**
+  SUBTITLE: 8vh
+**/
+.header .subtitle-wrapper {
+  /* to serve as alignment for the children */
+  position: relative;
+
+  /* Don't mess with the sizes */
+  box-sizing: border-box;
+  overflow: hidden;
+  display: block;
+
+  /* don't mess with the sizes */
+  height: 8vh;
+  font-size: 2vh;
+}
+
+.header .subtitle {
+  /** position at the parent */
+  position: absolute;
+  top: 0;
+
+  /* Display as a block */
+  display: block;
+
+  /* Margin left and right: 2 */
+  width: 96vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+
+  /* A border */
+  border-radius: 2vw;
+
+  /* padding for the text */
+  padding-top: .5vh;
+  padding-bottom: .5vh;
+
+ -webkit-transition: opacity 2000ms;
+  transition: opacity 2000ms;
+}
+
+.header .subtitle.active {
+   opacity: 1;
+}
+
+.header .subtitle.passive {
+   opacity: 0;
 }
 
 /*
@@ -81,24 +153,51 @@ body {
 .diagram {
     /* Position */
     position: absolute;
-    top: 150px; 
+    top: 150px;
     bottom: 0;
-    
+
     /* Width and Height */
-    height: auto;
-    width: 100%;
+    width: 100vw;
+    height: 75vh;
 }
 
-
 .diagram table {
-  width: 80vw; 
+  /* Position */
+  width: 100vw;
+  height: 75vh;
+
+  /* for the overflow, show nothing */
+  overflow: hidden;
   border-spacing: 1vw;
 }
 
+.diagram tr {
+  /* each row is 25% */
+  height: 25vh;
+}
+
 .diagram td {
-   padding: 2vw;
-   vertical-align: top;
-   width: 20vw;
+  /* each column is 30% */
+  width: 30vw;
+
+  padding: 2vh;
+  vertical-align: top;
+}
+
+.diagram .active, .diagram .passive {
+  /* fade in-and-out */
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+
+.diagram .passive {
+  /* Hidden elements are black-and-white */
+  opacity: 0.5;
+
+  -webkit-filter: grayscale(95%);
+  filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='gray95'><feColorMatrix in='SourceGraphic' type='saturate' values='0.95' /></filter></svg>#gray95");
+  filter:grayscale(95%);
 }
 
 .diagram td.center {
@@ -112,42 +211,12 @@ body {
    border-radius: 50px;
 }
 
-.diagram-title-container {
-   text-align: center;
-}
-.diagram-title {
-   padding: 3px;
-   border-radius: 5px;
-   font-size: larger;
-}
-
-.diagram-title.active {
-   display: inline;
-}
-
-.diagram-title.passive {
-   display: none;
-}
-
 .aspect {
    background-color: darkorange;
 }
 
 .area {
    background-color: cornflowerblue;
-}
-
-.diagram .passive {
-  opacity: 0.5;
-  
-  -webkit-filter: grayscale(95%);
-  filter:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter id='gray95'><feColorMatrix in='SourceGraphic' type='saturate' values='0.95' /></filter></svg>#gray95");
-  filter:grayscale(95%);
-}
-
-.diagram .active, .diagram .passive {
-  -webkit-transition: 500ms;
-  transition: 500ms;
 }
 
 .diagram .title {
@@ -168,11 +237,7 @@ body {
    border-radius: 5px;
 }
 
-.diagram .features {
-}
-
 .diagram .details-container {
-   height: 30vh;
    background-color: lightgreen;
    border-style: solid;
    border-width: 1px;
@@ -188,4 +253,3 @@ body {
    text-align: left;
    padding: 10px;
 }
-

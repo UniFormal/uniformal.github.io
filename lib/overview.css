@@ -1,3 +1,38 @@
+/**
+  ==================
+  COLOR SCHEME
+  ==================
+**/
+
+.aspect {
+   background-color: #f0ad4e;
+   border-color: #eb961e;
+}
+
+.aspect li.selected {
+  background-color: #efc74d;
+}
+
+.area {
+   background-color: #428bca;
+   border-color: #3072ab;
+}
+
+.area li.selected {
+  background-color: #44b8ca;
+}
+
+.diagram .details-container {
+   background-color: #5cb85c;
+   border-color: #449c44;
+}
+
+/**
+  ==================
+  MAIN
+  ==================
+**/
+
 body {
     /* For the layout */
     height: 100%;
@@ -9,6 +44,7 @@ body {
 
     /* looks better */
     cursor: default !important;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -184,7 +220,7 @@ body {
 .diagram td {
   /* each column is 30% */
   width: 30vw;
-  padding-left: 1vw;
+  padding: 1vw;
 
   vertical-align: center;
   text-align: justify;
@@ -217,12 +253,19 @@ body {
    border-radius: 50px;
 }
 
-.aspect {
-   background-color: darkorange;
+.aspect li, .area li {
+  display: block;
+
+  font-size: 1.5vh;
+  padding-top: .25vh;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  padding-bottom: .25vh;
+  line-height: 2vh;
 }
 
-.area {
-   background-color: cornflowerblue;
+.area ul, .aspect ul {
+  padding-left:0;
 }
 
 .diagram .title {
@@ -235,13 +278,7 @@ body {
    font-size: larger;
 }
 
-.diagram li.selected-feature {
-   background-color: lightgreen;
-   border-radius: 5px;
-}
-
 .diagram .details-container {
-   background-color: lightgreen;
    border-style: solid;
    border-width: 1px;
    border-radius: 10px;
@@ -254,5 +291,5 @@ body {
 .details {
    display: none;
    text-align: left;
-   padding: 10px;
+   padding: 1vw;
 }

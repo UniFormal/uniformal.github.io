@@ -2,16 +2,18 @@ body {
     /* For the layout */
     height: 100%;
     margin: 0;
-    overflow: hidden;
-
 
     /* Font family and size */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2vh;
+
+    /* looks better */
+    cursor: default !important;
 }
 
 .wrapper {
   min-height: 100%;
+  margin-top: 0;
   margin-bottom: -25vh;
 }
 
@@ -98,6 +100,7 @@ body {
 /**
   SUBTITLE: 8vh
 **/
+
 .header .subtitle-wrapper {
   /* to serve as alignment for the children */
   position: relative;
@@ -144,31 +147,33 @@ body {
    opacity: 0;
 }
 
-/*
-  ============
-  content
-  ============
-*/
+/**
+  ==================
+  CONTENT : 75vh
+  ==================
+**/
 
 .diagram {
     /* Position */
     position: absolute;
-    top: 150px;
+    top: 22vh;
     bottom: 0;
 
     /* Width and Height */
     width: 100vw;
     height: 75vh;
+
+    font-size: 1.5vh;
 }
 
 .diagram table {
-  /* Position */
+  /* Height and position */
   width: 100vw;
   height: 75vh;
 
   /* for the overflow, show nothing */
   overflow: hidden;
-  border-spacing: 1vw;
+  border-spacing: 0.5vw;
 }
 
 .diagram tr {
@@ -179,9 +184,10 @@ body {
 .diagram td {
   /* each column is 30% */
   width: 30vw;
+  padding-left: 1vw;
 
-  padding: 2vh;
-  vertical-align: top;
+  vertical-align: center;
+  text-align: justify;
 }
 
 .diagram .active, .diagram .passive {
@@ -227,9 +233,6 @@ body {
 .diagram .tagline {
    font-style: italic;
    font-size: larger;
-}
-
-.diagram li {
 }
 
 .diagram li.selected-feature {

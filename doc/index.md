@@ -22,8 +22,8 @@ A more detailed overview can be found in [this paper](https://svn.kwarc.info/rep
 The abbreviation means *m*eta-*m*eta-*t*heory or *m*eta-*m*eta-*t*ool, depending on whether you want to emphasize the theoretical or the practical aspects.
 
 Here meta refers to using formal systems in which we represent, reason about, and implement languages.
-meta-meta means that abstract from the concrete formal system used to do that.
-This double meta level is a unique characteristic of MMT and, maybe surprisingly, makes it easier to build generic solutions that a single meta-level.
+meta-meta means that we abstract even from the concrete formal system used to do that.
+This double meta level is a unique characteristic of MMT and, maybe surprisingly, makes it easier to build generic solutions than a single meta-level.
 
 ### Structure of this Documentation
 
@@ -43,4 +43,4 @@ Therefore, this documentation is occasionally incomplete or outdated.
 We are committed to maintaining robust work flows for releasing, documenting, and bug-tracking to support large-scale applications.
 But that takes effort, and we prioritize according to the concrete research projects we are involved in.
 
-If you have any questions or feedback -- for example, if you want your particular use case to better documented -- don't hesitate to contact me [directly](http://kwarc.info/frabe/contact.html). 
+If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](http://kwarc.info/frabe/contact.html). 

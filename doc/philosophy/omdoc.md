@@ -3,7 +3,7 @@ layout: doc
 title: The OMDoc Format
 ---
 
-[https://trac.omdoc.org/OMDoc](OMDoc) was developed by Michael Kohlhase.
+[OMDoc](https://trac.omdoc.org/OMDoc) was developed by Michael Kohlhase.
 
 It can be seen as two things:
 * a philosophy of how a uniform language for knowledge should be designed

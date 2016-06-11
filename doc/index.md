@@ -11,7 +11,7 @@ It achieves a high level of generality by systematically avoiding a commitment t
 Instead, individual features of the abstract syntax (e.g., lambda-abstraction, conjunction), the concrete syntax (e.g. keywords, notations), or the semantics (e.g., excluded middle, set theoretical interpretation) are defined as separate, reusable modules, from which individual languages are assembled.
 
 Despite this high degree of abstraction, it is possible to implement advanced algorithms generically at the MMT level.
-The MMT system include powerful generic solutions for knowledge management (e.g, IDE, change management) and verification (e.g., type reconstruction, module system).
+The MMT system includes powerful generic solutions for knowledge management (e.g, IDE, change management) and verification (e.g., type reconstruction, module system).
 
 By designing knowledge representation languages inside MMT, we can obtain strong implementations at extremely low cost.
 

@@ -171,8 +171,8 @@ body {
   padding-top: .5vh;
   padding-bottom: .5vh;
 
- -webkit-transition: opacity 2000ms;
-  transition: opacity 2000ms;
+ -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .header .subtitle.active {

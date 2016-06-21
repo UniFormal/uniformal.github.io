@@ -40,6 +40,7 @@ At Jacobs University, also involved are [Christoph Lange](http://kwarc.info/clan
 ### Main systems used in LATIN
 
 The following systems and technologies are employed, designed, and/or developed within LATIN:
+
  * the [HETS](http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/hets/index_e.htm) system (Heterogeneous Tool Set): a logical framework based on model theory and institutions that uses logic translations to mediate between languages and systems (developed at DFKI Bremen),
  * the [Twelf](http://twelf.plparty.org/wiki/Main_Page) system: a logical framework based on proof theory and dependent type theory (developed at Carnegie Mellon University), which we equipped with an MMT-based module system,
  * the [OMDoc](https://trac.omdoc.org/OMDoc/) format: an XML-based document format for mathematical content developed at Jacobs University (developed at Jacobs University),
@@ -93,16 +94,22 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](lat
 
  * M. Codescu, [Lambda Expressions in CASL Architectural Specifications](docs/lambda-wadt2010.pdf), WADT 2010, to appear in LNCS.
 
- * M. Iancu and F. Rabe, [Formalizing Foundations of Mathematics](docs/foundations_mscs10.pdf), Mathematical Structures in Computer Science, 2011 (to appear).
-   The Twelf encodings mentioned in this paper can be found [FormalizingFoundations here].
+ * M. Iancu and F. Rabe, [Formalizing Foundations of Mathematics](docs/foundations_mscs10.pdf), Mathematical Structures in Computer Science, 2011.
+ Over the recent decades there has been a trend towards formalized mathematics, and a number of sophisticated systems have been developed to support the formalization process and mechanically verify its result. However, each tool is based on a specific foundation of mathematics, and formalizations in different systems are not necessarily compatible. Therefore, the integration of these foundations has received growing interest. We contribute to this goal by using LF as a foundational framework in which the mathematical foundations themselves can be formalized and therefore also the relations between them. We represent three of the most important foundations -- Isabelle/HOL, Mizar, and ZFC set theory -- as well as relations between them. The relations are formalized in such a way that the framework permits the extraction of translation functions, which are guaranteed to be well-defined and sound. Our work provides the starting point of a systematic study of formalized foundations in order to compare, relate, and integrate them.
+ 
+  * [ZFC](https://svn.kwarc.info/repos/twelf/set_theories/zfc)
+ 
+  * [Isabelle/HOL](https://svn.kwarc.info/repos/twelf/type_theories/isabelle) 
+ 
+  * [Mizar](https://svn.kwarc.info/repos/twelf/set_theories/mizar) 
 
  * Mihai Codescu, Till Mossakowski, Adrían Riesco, Christian Maeder, [Integrating Maude into Hets](docs/maude-hets_amast10.pdf), AMAST 2010, LNCS.
 
- * K. Sojakova, [http://kwarc.info/frabe/Research/Soj_thesis_10.pdf Mechanically Verifying Logic Translations], Master's Thesis, Jacobs University, 2010.
+ * K. Sojakova, [Mechanically Verifying Logic Translations](http://kwarc.info/frabe/Research/Soj_thesis_10.pdf), Master's Thesis, Jacobs University, 2010.
 
- * F. Horozal, M. Kohlhase, F. Rabe, K. Sojakova, [http://kwarc.info/frabe/Research/HKRS_latinlf_10.pdf Towards an Atlas of Logics], the first paper about LATIN as a whole.
+ * F. Horozal, M. Kohlhase, F. Rabe, K. Sojakova, [Towards an Atlas of Logics](http://kwarc.info/frabe/Research/HKRS_latinlf_10.pdf), the first paper about LATIN as a whole.
 
- * F. Rabe, [http://kwarc.info/frabe/Research/rabe_isalf_10.pdf Representing Isabelle in LF], LFMTP 2010.
+ * F. Rabe, [Representing Isabelle in LF](http://kwarc.info/frabe/Research/rabe_isalf_10.pdf), LFMTP 2010.
 
  * F. Horozal and F. Rabe, [Representing Model Theory in a Type-Theoretical Logical Framework](http://kwarc.info/frabe/Research/HR_folsound_10), Special issue on "Logical and Semantic Frameworks with Applications 8+9", Journal of Theoretical Computer Science, 2011.
 

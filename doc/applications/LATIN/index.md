@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: The LATIN Project: Logic Atlas and Integrator
+title: "The LATIN Project: Logic Atlas and Integrator"
 ---
 
 LATIN aims at developing methods, techniques, and tools for interfacing logics and proof

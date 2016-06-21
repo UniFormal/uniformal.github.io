@@ -98,9 +98,10 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](lat
  
  Over the recent decades there has been a trend towards formalized mathematics, and a number of sophisticated systems have been developed to support the formalization process and mechanically verify its result. However, each tool is based on a specific foundation of mathematics, and formalizations in different systems are not necessarily compatible. Therefore, the integration of these foundations has received growing interest. We contribute to this goal by using LF as a foundational framework in which the mathematical foundations themselves can be formalized and therefore also the relations between them. We represent three of the most important foundations -- Isabelle/HOL, Mizar, and ZFC set theory -- as well as relations between them. The relations are formalized in such a way that the framework permits the extraction of translation functions, which are guaranteed to be well-defined and sound. Our work provides the starting point of a systematic study of formalized foundations in order to compare, relate, and integrate them.
 
-  * [ZFC](https://svn.kwarc.info/repos/twelf/set_theories/zfc)
-  * [Isabelle/HOL](https://svn.kwarc.info/repos/twelf/type_theories/isabelle) 
-  * [Mizar](https://svn.kwarc.info/repos/twelf/set_theories/mizar) 
+ <ul><li><a href="https://svn.kwarc.info/repos/twelf/set_theories/zfc">ZFC</a></li>
+  <li><a href="https://svn.kwarc.info/repos/twelf/type_theories/isabelle">Isabelle/HOL</a></li>
+  <li><a href="https://svn.kwarc.info/repos/twelf/set_theories/mizar">Mizar</a></li>
+ </ul>
 
  * Mihai Codescu, Till Mossakowski, Adrían Riesco, Christian Maeder, [Integrating Maude into Hets](docs/maude-hets_amast10.pdf), AMAST 2010, LNCS.
 

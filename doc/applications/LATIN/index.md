@@ -33,7 +33,7 @@ interoperability-inducing logic morphisms.
 
 LATIN is a joint research project between the [KWARC](http://kwarc.info/]) research group at Jacobs University Bremen and the research department [Safe and Secure Cognitive Systems](http://www.dfki.de/sks ) at the German Research Center for Artificial Intelligence Bremen (DFKI-Bremen). It is funded 2010-2011 by the [German Research Council (DFG)](http://www.dfg.de) under grant KO-2428/9-1.
 
-Members of LATIN are [Michael Kohlhase](http://kwarc.info/kohlhase), [http://www.informatik.uni-bremen.de/~till/](Till Mossakowski), [Florian Rabe](http://kwarc.info/frabe/), [Mihai Codescu](http://www.dfki.de/web/forschung/sks/mitarbeiter/base_view?uid=mico01) and [Fulya Horozal](http://kwarc.info/fhorozal/).
+Members of LATIN are [Michael Kohlhase](http://kwarc.info/kohlhase), [Till Mossakowski](http://www.informatik.uni-bremen.de/~till/), [Florian Rabe](http://kwarc.info/frabe/), [Mihai Codescu](http://www.dfki.de/web/forschung/sks/mitarbeiter/base_view?uid=mico01) and [Fulya Horozal](http://kwarc.info/fhorozal/).
 
 At Jacobs University, also involved are [Christoph Lange](http://kwarc.info/clange/) and [Vyacheslav Zholudev](http://kwarc.info/vzholudev/). Students involved in LATIN are Kristina Sojakova, Stefania Dumbrava, Catalin David, Alin Iacob, Mihnea Iancu, Iulia Ignatov, Corneliu-Claudiu Prodescu, Jonathan von Schroeder and Martha Rohte.
 
@@ -98,11 +98,9 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](lat
  
  Over the recent decades there has been a trend towards formalized mathematics, and a number of sophisticated systems have been developed to support the formalization process and mechanically verify its result. However, each tool is based on a specific foundation of mathematics, and formalizations in different systems are not necessarily compatible. Therefore, the integration of these foundations has received growing interest. We contribute to this goal by using LF as a foundational framework in which the mathematical foundations themselves can be formalized and therefore also the relations between them. We represent three of the most important foundations -- Isabelle/HOL, Mizar, and ZFC set theory -- as well as relations between them. The relations are formalized in such a way that the framework permits the extraction of translation functions, which are guaranteed to be well-defined and sound. Our work provides the starting point of a systematic study of formalized foundations in order to compare, relate, and integrate them.
  
-    * [ZFC](https://svn.kwarc.info/repos/twelf/set_theories/zfc)
- 
-    * [Isabelle/HOL](https://svn.kwarc.info/repos/twelf/type_theories/isabelle) 
- 
-    * [Mizar](https://svn.kwarc.info/repos/twelf/set_theories/mizar) 
+ * [ZFC](https://svn.kwarc.info/repos/twelf/set_theories/zfc)
+ * [Isabelle/HOL](https://svn.kwarc.info/repos/twelf/type_theories/isabelle) 
+ * [Mizar](https://svn.kwarc.info/repos/twelf/set_theories/mizar) 
 
  * Mihai Codescu, Till Mossakowski, Adrían Riesco, Christian Maeder, [Integrating Maude into Hets](docs/maude-hets_amast10.pdf), AMAST 2010, LNCS.
 

@@ -8,8 +8,8 @@ title: Setting up MMT
 
 There are multiple ways to download MMT:
 
-* The full repository including jars and sources as [zip](https://github.com/KWARC/MMT/archive/master-binaries.zip), on [github](https://github.com/KWARC/MMT) or via subversion at `https://svn.kwarc.info/repos/MMT`,
-* The most recent [standalone jar](https://github.com/KWARC/MMT/raw/master-binaries/deploy/mmt.jar).
+* The full repository including jars and sources as [zip](https://github.com/KWARC/MMT/archive/master-binaries.zip), on [github](https://github.com/KWARC/MMT), 
+* The most recent standalone jar is attached to the [latest release](https://github.com/UniFormal/MMT/releases/latest) on github.
 
 We recommend you save the contents of the zip/repository in a folder `<path>/MMT/system` and any MMT archives in `<path>/MMT/content`, since MMT by default assumes this directory structure.
 

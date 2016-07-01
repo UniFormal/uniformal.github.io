@@ -3,7 +3,7 @@ layout: doc
 title: The MMT Shell
 ---
 
-The MMT shell is invoked by [running](../../setup/running.html) mmt.
+The MMT shell is invoked by [running](../setup/running.html) mmt.
 
 ### Shell Commands
 The language of shell commands is implemented by the [`info.kwarc.mmt.api.frontend.Action`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.frontend.Action) class.

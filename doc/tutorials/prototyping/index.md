@@ -6,6 +6,7 @@ title: Defining a Formal System in MMT
 In this tutorial, we build an implementation of first-order logic (FOL) in MMT.
 
 It assumes that
+
 * MMT has been [installed](../../setup),
 * archives are placed in some folder, which is refered to as CONTENT,
 * [jEdit](../../applications/jedit) is used for editing mmt files.
@@ -21,8 +22,8 @@ http://cds.omdoc.org/urtheories?LF.
 This theory is defined in the archive MMT/urtheories, which is automatically cloned into the folder CONTENT when setting up MMT.
 <div class="detail">
 Other important meta-logics defined in this archive include
-* http://cds.omdoc.org/urtheories?PLF, which extends LF with shallow polymorphism
-* http://cds.omdoc.org/urtheories?LFModulo, which extends LF with a rewrite system
+ * http://cds.omdoc.org/urtheories?PLF, which extends LF with shallow polymorphism
+ * http://cds.omdoc.org/urtheories?LFModulo, which extends LF with a rewrite system
 These can also be combined.
 </div>
 
@@ -34,7 +35,8 @@ We create a new file fol.mmt, in which we will define FOL.
 
 It does not matter where this file is located.
 But to allow for running MMT build targets over it, it is convenient to place it in a new MMT archive:
- * create a folder CONTENT/MYARCHIVE
- * and create a file source/fol.mmt in it
+
+* create a folder CONTENT/MYARCHIVE
+* and create a file source/fol.mmt in it
 
  

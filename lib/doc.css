@@ -81,6 +81,7 @@ blockquote p {
   font-size: small;
 }
 
+/* inline `back-ticked` fragments */
 code {
   padding: 2px 4px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
@@ -88,6 +89,11 @@ code {
   color: #c7254e;
   background-color: #f9f2f4;
   border-radius: 4px;
+}
+
+/* blocks that are ```triple back-ticked``` */
+pre.highlight code {
+  background-color: none;
 }
 
 /* details that pop up when hovered on */

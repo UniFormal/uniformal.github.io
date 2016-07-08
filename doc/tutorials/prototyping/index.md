@@ -22,8 +22,10 @@ http://cds.omdoc.org/urtheories?LF.
 This theory is defined in the archive MMT/urtheories, which is automatically cloned into the folder CONTENT when setting up MMT.
 <div class="detail">
 Other important meta-logics defined in this archive include
- * http://cds.omdoc.org/urtheories?PLF, which extends LF with shallow polymorphism
- * http://cds.omdoc.org/urtheories?LFModulo, which extends LF with a rewrite system
+<ul>
+<li>http://cds.omdoc.org/urtheories?PLF, which extends LF with shallow polymorphism</li>
+<li>http://cds.omdoc.org/urtheories?LFModulo, which extends LF with a rewrite system</li>
+</ul>
 These can also be combined.
 </div>
 

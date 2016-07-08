@@ -9,7 +9,7 @@ It assumes that
 
 * MMT has been [installed](../../setup),
 * archives are placed in some folder, which is refered to as `CONTENT`,
-* [jEdit](../../applications/jedit) is used for editing mmt files<span class="detail">Other editors will work but might make editing awkward</span>.
+* [jEdit](../../applications/jedit) is used for editing mmt files.<span class="detail">Other editors will work but might make editing awkward.</span>
 
 ### Define a Meta-Logic
 
@@ -41,9 +41,17 @@ It does not matter where this file is located.
 But to allow for running MMT build targets over it later, it is convenient to place it in a new MMT archive:
 
 * create a folder `CONTENT/MYARCHIVE`
-* create a file `MANIFEST.MF` in it containing the line `id: MYARCHIVE`,
+* create a file `MANIFEST.MF` in it containing (at least) the line `id: MYARCHIVE`,
 * and create a file `source/fol.mmt` in it
 
 #### Create a Theory for FOL
 
-Open the file in jEdit and
+Open the file in jEdit and create an empty theory:
+
+```
+namespace http://mydomain.org/mmt-example GS
+
+theory FOL : http://cds.omdoc.org/urtheories?LF =
+
+GS
+```

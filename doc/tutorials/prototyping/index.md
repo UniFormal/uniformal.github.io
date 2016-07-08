@@ -74,3 +74,25 @@ However, the file `tutorial.mmt` in the archive `CONTENT/MMT/examples` is a self
 This archive is automatically cloned when setting up MMT.
 
 It is good practice to copy over this example step by step.
+
+#### View the Logic in the Browser
+
+We can start the MMT web server from within jEdit to view our definition in the browser:
+
+* go to the jEdit plugin called console
+* choose mmt as the console language
+* type `server on 8080` (or some other port number)
+* point the browser to [http://localhost:8080?]
+
+#### Build and Serve the Archive
+
+
+### Implement a FOL Plugin
+
+MMT can provide many important algorithms generically.
+But occasionally, we want to provide language-specific functionality explicitly.
+
+MMT goes out of its way to open up as many internal details to plugin interfaces as possible.
+
+
+

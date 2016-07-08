@@ -18,3 +18,11 @@ Anybody is allowed and encouraged to add and change the content and the css styl
 To add a page, simply add the necessary folders under the doc folder. You can 
 use the existing files as a template if needed. Then add the page to the menu
 in [\_includes/menu.html](https://github.com/uniformal/uniformal.github.io/edit/master/_includes/menu.html). 
+
+### Formating Conventions
+
+The top level sectioning level of every page is ###.
+
+Source code, file names, etc. are type-set in `back ticks`.
+
+Additional details (footnotes, popups, etc.) that should not be visible initially are type set as HTML with css class detail. <span class="detail">For example, as `<span class="detail">extra text</span>`.</span>

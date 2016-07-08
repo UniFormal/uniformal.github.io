@@ -21,14 +21,14 @@ The most important example is the logical framework LF, whose MMT URI is
 
 This theory is defined in the archive MMT/urtheories, which is automatically cloned into the folder CONTENT when setting up MMT.
 
-<span class="detail">
+<div class="detail" markdown="1">
 Other important meta-logics defined in this archive include
-<ul>
-<li>`http://cds.omdoc.org/urtheories?PLFextends` LF with shallow polymorphism</li>
-<li>`http://cds.omdoc.org/urtheories?LFModulo`, which extends LF with a rewrite system</li>
-</ul>
+
+* `http://cds.omdoc.org/urtheories?PLFextends` LF with shallow polymorphism
+* `http://cds.omdoc.org/urtheories?LFModulo`, which extends LF with a rewrite system
+
 These can also be combined.
-</span>
+</div>
 
 For FOL, LF is sufficient as a meta-logic.
 
@@ -61,6 +61,6 @@ Here
 
 * The `namespace` declaration defines a unique namespace (a URI) for our example.<span class="detail">The URI does not have to be a URL, i.e., it does not have to point to a physical location. It only acts as a unique identifier.</span> 
 * The `theory` introduces an MMT theory called `FOL` with meta-theory `http://cds.omdoc.org/urtheories?LF`.<span class="detail">Alternatively, we can write `ur:?LF` because the namespace prefix definition `import ur http://cds.omdoc.org/urtheories [GS]` is implicitly present.</span>
-* `[GS]` refers to ASCII 28, the toplevel [delimiter](../../language/delimiters.html) used by MMT.
+* `[GS]` refers to ASCII 29, the toplevel [delimiter](../../language/delimiters.html) used by MMT.
   In jEdit, it can be inserted via the symbol button for it or by typing `jGS `.
 

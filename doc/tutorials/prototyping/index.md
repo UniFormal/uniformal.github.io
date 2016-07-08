@@ -20,14 +20,15 @@ The most important example is the logical framework LF, whose MMT URI is
 `http://cds.omdoc.org/urtheories?LF`.
 
 This theory is defined in the archive MMT/urtheories, which is automatically cloned into the folder CONTENT when setting up MMT.
-<div class="detail">
+
+<span class="detail">
 Other important meta-logics defined in this archive include
 <ul>
 <li>`http://cds.omdoc.org/urtheories?PLFextends` LF with shallow polymorphism</li>
 <li>`http://cds.omdoc.org/urtheories?LFModulo`, which extends LF with a rewrite system</li>
 </ul>
 These can also be combined.
-</div>
+</span>
 
 For FOL, LF is sufficient as a meta-logic.
 
@@ -48,7 +49,7 @@ But to allow for running MMT build targets over it later, it is convenient to pl
 
 Open the file in jEdit and create an empty theory:
 
-```
+```mmt
 namespace http://mydomain.org/mmt-example GS
 
 theory FOL : http://cds.omdoc.org/urtheories?LF =

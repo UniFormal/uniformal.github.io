@@ -64,3 +64,13 @@ Here
 * `[GS]` refers to ASCII 29, the toplevel [delimiter](../../language/delimiters.html) used by MMT.
   In jEdit, it can be inserted via the symbol button for it or by typing `jGS `.
 
+
+#### Define the Syntax and Semantics of FOL
+
+From this point on forwards, defining a language proceeds according to LF.
+
+The details of doing so are not part of this tutorial.
+However, the file `tutorial.mmt` in the archive `CONTENT/MMT/examples` is a self-documented example of how to do it.
+This archive is automatically cloned when setting up MMT.
+
+It is good practice to copy over this example step by step.

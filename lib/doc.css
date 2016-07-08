@@ -93,7 +93,11 @@ code {
 
 /* blocks that are ```triple back-ticked``` */
 pre.highlight code {
-  background-color: none;
+  background-color: initial;
+}
+
+pre.highlight {
+    border: solid 1px black;
 }
 
 /* details that pop up when hovered on */

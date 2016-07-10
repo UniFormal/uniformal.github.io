@@ -3,25 +3,74 @@ layout: doc
 title: Setting up MMT
 ---
 
+### Obtain MMT
 
-### Download
+There are 2 ways to use MMT:
 
-There are multiple ways to download MMT:
+* download the binary distribution
+  * recommended for casual users
+  * self-contained except for needing the usual Java run time environment
+* clone the source distribution and build MMT yourself
+  * recommended for advanced users or developers
+  * additionally needs sbt (the Scala build tool) for building
 
-* The full repository including jars and sources as [zip](https://github.com/KWARC/MMT/archive/master-binaries.zip), on [github](https://github.com/KWARC/MMT), 
-* The most recent standalone jar is attached to the [latest release](https://github.com/UniFormal/MMT/releases/latest) on github.
+Before installing MMT, you can optionally install [jEdit](http://jedit.org/).
+If jEdit is installed, MMT will automatically configure it to serve as an MMT IDE.
+  
+#### Binary Disribution
 
-We recommend you save the contents of the zip/repository in a folder `<path>/MMT/system` and any MMT archives in `<path>/MMT/content`, since MMT by default assumes this directory structure.
+Download the self-contained binary from [https://github.com/UniFormal/MMT/releases/latest] on github.
 
-### Installation
+Run the jar file.
+The canonical way for this is run `java -jar mmt.jar`.
+But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.
 
-For writing and editing documents in MMTs native syntax we recommend [jEdit](jedit.html). If jEdit is installed, you can run `system/deploy/mmt :setup <path>/mmt/system` or (on Windows) `system\deploy\mmt.bat :setup <path>\mmt\system` to create a basic configuration, especially if you want to see some examples or use MMT with jEdit. This command 
+This responds with a simple setup dialog.
 
-1. sets `<path>/MMT/content` as the default directory for content repositories,
+To update MMT in the future, simply repeat these steps.
+
+#### Source Distribution
+
+Clone the [MMT repository](https://github.com/UniFormal/MMT) from github:
+```git clone git@github.com:UniFormal/MMT.git```
+or
+```svn checkout https://github.com/UniFormal/MMT.git/trunk```
+A detailed explanation of the contents of the repository is available [here](repo.html).
+
+
+If you do not have sbt, get it [here](http://www.scala-sbt.org/).
+
+Then build MMT using sbt:
+```
+cd MMT/src
+sbt deploy
+```
+
+Finally, run the main jar file:
+```
+cd ../deploy
+java -jar mmt.jar
+```
+
+This responds with a simple setup dialog.
+
+To update MMT in the future, simply pull/update your working copy and rebuild.
+
+Detailed instructions for building can be found [here](build.html).
+
+### Setup MMT
+
+The setup dialog triggered above does the following:
+
+1. asks for directories into which MMT and MMT content should be placed.
 2. checks out some example content repositories into that directory (This requires git and internet access.),
 3. guesses the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
-(You will still have to manually perform Steps 2+3 in the [jEdit plugin configuration](jedit.html).)
 
-[MMT archives](../applications/archives.html) can be found at [MathHub](../applications/oaf.html). If step 2. above fails for some reason, you should get at least the essential archive [`MMT/urtheories`](https://gl.mathhub.info/MMT/urtheories) there. Further recommended archives are [`MMT/examples`](https://gl.mathhub.info/MMT/examples) and [`MMT/LATIN`](https://gl.mathhub.info/MMT/LATIN).
+Further instructions for setting up jEdit are available [here](jedit.html).
+In particular, the MMT plugin depends on some other standard plugins that you have to install.
 
-You can now either use [jEdit](jedit.html) to work with .mmt files or [run](running.html) MMT for various other [applications](../applications/).
+### Run MMT
+
+You can now either use [jEdit](jedit.html) to work with .mmt files or run MMT natively for various other [applications](../applications/).
+
+Instructions for running MMT are available [here](running.html).

@@ -3,9 +3,8 @@ layout: doc
 title: The MMT Repository
 ---
 
-
 The MMT source, binary releases, and documentation are maintained in an SVN repository.
-The base URL of the repository is `https://svn.kwarc.info/repos/MMT`.
+The base URL of the repository is `https://github.com/UniFormal/MMT`.
 The content of the subdirectories is as follows:
 
 * `deploy/`: The jar files ready to be used without building. This directory is self-contained, i.e., includes all its dependencies (except for the Java runtime of course).
@@ -15,7 +14,6 @@ The content of the subdirectories is as follows:
   * `lib`: all jar files that MMT depends on, including the Scala library The only extenal dependency is the JVM itself. For most parts, Java 6 is fine; occassionally Java 7 is needed. The run scripts automatically put all necessary jars on the Java classpath.
   * `lfcatalog`: the jar files of the LF catalog, to be used with Twelf
   * `jedit-plugin`: all jar and other files needed for the plugin for jEdit
-* `doc/`: All documentation including this site and the API documentation.
 * `src/`: All sources.
 
 MMT is divided into various sub-projects. Each project name occurs as the name of a subfolder in `src/` and of a jar file in `deploy/`. 

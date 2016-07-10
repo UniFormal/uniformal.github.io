@@ -43,14 +43,12 @@ If you do not have sbt, get it [here](http://www.scala-sbt.org/).
 Then build MMT using sbt:
 ```
 cd MMT/src
-
 sbt deploy
 ```
 
 Finally, run the main jar file:
 ```
 cd ../deploy
-
 java -jar mmt.jar
 ```
 

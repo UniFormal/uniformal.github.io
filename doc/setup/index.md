@@ -27,16 +27,17 @@ But depending on your OS and configuration, double-clicking or executing `mmt.ja
 
 This responds with a simple setup dialog.
 
-To update MMT in the future, simply repeat these steps.
-
 #### Source Distribution
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from github:
-```git clone git@github.com:UniFormal/MMT.git```
+```
+git clone git@github.com:UniFormal/MMT.git
+```
 or
-```svn checkout https://github.com/UniFormal/MMT.git/trunk```
+```
+svn checkout https://github.com/UniFormal/MMT.git/trunk
+```
 A detailed explanation of the contents of the repository is available [here](repo.html).
-
 
 If you do not have sbt, get it [here](http://www.scala-sbt.org/).
 
@@ -56,8 +57,6 @@ java -jar mmt.jar
 
 This responds with a simple setup dialog.
 
-To update MMT in the future, simply pull/update your working copy and rebuild.
-
 Detailed instructions for building can be found [here](build.html).
 
 ### Setup MMT
@@ -76,3 +75,19 @@ In particular, the MMT plugin depends on some other standard plugins that you ha
 You can now either use [jEdit](jedit.html) to work with .mmt files or run MMT natively for various other [applications](../applications/).
 
 Instructions for running MMT are available [here](running.html).
+
+### Update MMT
+
+To update MMT, replace the file `mmt.jar`, i.e.,
+
+* source distribution: download the new file and save it over `deploy/mmt.jar`
+* binary distribution: update your working copy and rebuild.
+
+To rerun setup, execute
+
+```
+java -jar mmt.jar :setup
+```
+
+However, rerunning setup is usually not necessary.
+

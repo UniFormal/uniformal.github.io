@@ -53,13 +53,13 @@ Several such functions expose basic algorithms (parsing, type checking, presenta
 The MMT [HTTP interface](../applications/server.html) opens a QMT query server that accepts a QMT query in XML encoding as the body of an HTTP POST request.
 Some example queries are:
 
-```
+```xml
 <uris concept="C"/>
 ```
 
 retrieves all known MMT URIs of concept C.
 
-```
+```xml
 <related>
   <literal uri="T"/>
   <toobject relation="Declares"/>
@@ -68,7 +68,7 @@ retrieves all known MMT URIs of concept C.
 
 retrieves all declarations of theory T.
 
-```
+```xml
 <related>
   <literal uri="T"/>
   <sequence>

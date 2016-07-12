@@ -4,10 +4,11 @@ title: Setting up jEdit
 ---
 
 The jEdit plugin based on MMT yields an IDE for MMT content.
-While using jEdit, the current files are constantly checked and maintained in memory. To create hard drive images of the build results, use the [build tool](../applications/building.html).
+While using jEdit, the current files are constantly checked and maintained in memory.
+To create hard drive images of the build results, use the [build tool](../applications/building.html).
 
-This section is about the setup of the jEdit plugin.
-The functionality is described [here](../applications/jedit.html)
+This section is about the 'setup' of the jEdit plugin.
+The 'functionality' is described [here](../applications/jedit.html)
 
 ### Installation
 
@@ -19,26 +20,26 @@ The functionality is described [here](../applications/jedit.html)
   * Hyperlinks
 3. Font and encoding issues for working with files in native MMT syntax (.mmt files):
   * Install a font on your system that includes a good amount of unicode characters, such as GNU unifont, and set this font as the font for jEdit text areas.
-  * Make sure jEdit's default encoding is set to UTF-8. 
-  * [Install MMT](index.html) (the quick checkout is enough)
+  * You should also set jEdit's default encoding to UTF-8 because many example files use Unicode. 
+4. After setting up MMT, open the plugin manager dialog, and select the MMT plugin.
+   After doing that once, the plugin will be loaded automatically when jEdit is started.
 
-To load the plugin run jEdit, open the plugin manager dialog, and select the MMT plugin. After doing that once, the plugin will be loaded automatically when jEdit is started.
-
+<!--
 ### Updating
 
 To update the plugin, just replace the changed jar(s) in jEdit's settings folder (`~/.jedit/jars` on linux, `<USER>AppData\Roaming\jEdit` on windows) and restart jEdit or reload the changed jars via jEdit's plugin manager dialog.
 
 The MMT code also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder. (Calling `mmt :jeditsetup" will additionally copy/uninstall configuration files.)
+--->
 
-### Configuration
+### Options of the MMT Plugin
 
-Configuration is optional. But some steps may be useful.
+Configuration the MMT plugin is optional. But some steps may be useful.
 
 * Go to the MMT pane of the jEdit plugin options dialog.
 * The startup file is an MMT script that is run when the MMT plugin is loaded (usually when jEdit is started).
-    If this is empty, it defaults to `<jedit>/plugins/info.kwarc.mmt.jedit.MMTPlugin/startup.msl` (which is created by the install step above).
-* The archives folder is a folder containing MMT archives that are added to the math path when the MMT plugin is loaded (usually when jEdit is started).
-    If you are working with the OAF, you want to set this to the `content` folder into which you cloned the archives.
+  If this is empty, it defaults to `JEDIT/plugins/info.kwarc.mmt.jedit.MMTPlugin/startup.msl`.
+* The archives folder is a folder containing MMT archives that the plugin will load.
 * MMT provides some macros. You can bind them to specific combinations using the jEdit options dialog. 
 * Pin the SideKick, Console and ErrorList windows to the sides of the main text area.
 

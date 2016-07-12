@@ -3,7 +3,6 @@ layout: doc
 title: Building MMT
 ---
 
-
 Building is only needed if you want develop MMT or want to build from sources.
 
 ### Building using SBT
@@ -37,5 +36,6 @@ IntelliJ settings are not supposed to be comitted. Any changes should be made wi
 
 `sbt apidoc` (based on [sbt-unidoc](https://github.com/sbt/sbt-unidoc)) creates the API documentation into the folder `doc/api`.
 When rebuilding, you should delete this folder first.
-<!-- TODO adapt to git -->
-The `svn:auto-props` svn property of the toplevel folder ensures that new files (e.g., html, css, and js) get proper MIME types when added to the repository. (Files with wrong mime types will not be properly served by the SVN webserver.) 
+
+<!-- TODO adapt to git
+The `svn:auto-props` svn property of the toplevel folder ensures that new files (e.g., html, css, and js) get proper MIME types when added to the repository. (Files with wrong mime types will not be properly served by the SVN webserver.) --> 

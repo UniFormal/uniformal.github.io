@@ -80,8 +80,8 @@ Instructions for running MMT are available [here](running.html).
 
 To update MMT, replace the file `mmt.jar`, i.e.,
 
-* source distribution: download the new file and save it over `deploy/mmt.jar`
-* binary distribution: update your working copy and rebuild.
+* binary distribution: download the new file and save it over `deploy/mmt.jar`
+* source distribution: update your working copy and rebuild.
 
 To rerun setup, execute
 

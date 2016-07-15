@@ -20,6 +20,12 @@ The file `abbrevs` (in jEdit's config folder) contains a number of useful abbrev
 For the most common Unicode characters, the abbreviation `jCOMMAND` produces the same character as `\COMMAND` in LaTeX.
 The details can be configured in jEdit's `Extras > Global Options > Abbreviations` menu or by editing the `<jedit>/abbrevs` file.
 
+**Interpreter**
+
+An interpreter is also provided. The input is by default type-checked, and written into the scratchpad by assigning the expression to a constant. The command `!help` displays the help.
+To set the name of the scratch buffer, the command `!setname (name)` is used, and for setting the theory name inside the scratch buffer, the command `!theory (name)` is used.
+Type checking can be turned on and off by using `!check true` and `!check false`. In a similar manner, output to the scratchpad can be turned on and off by using `!output (true|false)`.
+
 ### Interaction with Other Components
 
 The MMT plugin integrates with jEdit core components and a number of other plugins. Many of these provide "dockable windows". These are subwindows of the jEdit window, which you open separately via the respective plugin.
@@ -36,7 +42,7 @@ The plugin provides a Hyperlink source (called "mmt"). This displays the MMT URI
 Jumping only works if the destination is known to MMT. This is the case if the file has been build by MMT earlier or is currently open in jEdit.
 
 **Console:**
-The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell.html) in the dockable Console window.
+The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell.html) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
 
 **Hiding:**
 All text enclosed in `%{SHOW ... }%` is hidable and shown. All text enclosed in `%{HIDE ... }%` is hidable and hidden. The delimiters themselves are always hidden. Hiding is achieved by reducing the font size to 0, i.e., the hidden parts are still in the buffer and treated as usual in all situations except for displaying.

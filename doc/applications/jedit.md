@@ -34,8 +34,12 @@ The MMT plugin integrates with jEdit core components and a number of other plugi
 
 **Sidekick:** The plugin provides a Sidekick parser (called "mmt"). Thus, the dockable window of the sidekick plugin provides an outline view and autocompletion for MMT files, both of which are synchronized with the current caret position. Parsing errors appear in the dockable window of the ErrorList plugin.
 
+![`Sidekick example`](/doc/img/screenshots/sidekick.png)
+
 **ErrorList:**
 The plugin provides an ErrorList error source (called "mmt"), which maintains compilation errors. These errors appear in the dockable window of the ErrorList plugin.
+
+![`Error list`](/doc/img/screenshots/errorlist.png)
 
 **Hyperlinks:**
 The plugin provides a Hyperlink source (called "mmt"). This displays the MMT URI of the identifier under the cursor as a tooltip and permits jumping to its declaration using Control-Click.
@@ -43,6 +47,10 @@ Jumping only works if the destination is known to MMT. This is the case if the f
 
 **Console:**
 The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell.html) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
+
+![`MMT console`](/doc/img/screenshots/console.png)
+
+![`MMT interpreter`](/doc/img/screenshots/interpreter.png)
 
 **Hiding:**
 All text enclosed in `%{SHOW ... }%` is hidable and shown. All text enclosed in `%{HIDE ... }%` is hidable and hidden. The delimiters themselves are always hidden. Hiding is achieved by reducing the font size to 0, i.e., the hidden parts are still in the buffer and treated as usual in all situations except for displaying.

@@ -5,21 +5,27 @@ title: About this documentation
 
 ### Infrastructure
 
-This is essentially a WiKi except for
+This repository ([uniformal/uniformal.github.io]((https://github.com/uniformal/uniformal.github.io)) contains:
 
-* it is maintained on github via the gh-pages repository [uniformal/uniformal.github.io]((https://github.com/uniformal/uniformal.github.io)
-* jekyll is used to generate a static output page instead of a database
-* editing files using text editors, repository commits or the github online editor
+* The MMT homepage in the root directory's `index.html` file, which serves as the main landing page.
+  It is plain HTML and can be edited directly.
+* A WiKi-style documentation for MMT including tutorials in the folder `doc`.
+  This is written in markdown (.md files), and GitHub automatically builds (using jekyll) a set of static HTML pages after every commit.
+ 
+### Editing Wiki Pages
+  
+Every Wiki page contains a link for editing, which opens GitHub's in-browser editor, which includes a previewer for the markdown syntax.
 
-Anybody is allowed and encouraged to add and change the content and the css styles as they see fit. 
+Anybody is allowed and encouraged to add and change the content and the css styles as they see fit.
+If you lack access rights, contact us.
 
-### Adding a Page
+### Adding Wiki Pages
 
 To add a page, simply add the necessary folders under the doc folder. You can 
 use the existing files as a template if needed. Then add the page to the menu
 in [\_includes/menu.html](https://github.com/uniformal/uniformal.github.io/edit/master/_includes/menu.html). 
 
-### Formatting Conventions
+### Formatting Conventions for the Wiki
 
 The title of each page is automatically type-set at level ##.
 Sections inside the page start at level ###.

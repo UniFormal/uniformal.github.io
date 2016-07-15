@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Setting up jEdit
+title: the jEdit IDE
 ---
 
 

@@ -6,10 +6,10 @@ Terms occur on the object level; specifically as components of [declarations](de
 
 Terms are defined recursively:
 
-* Symbol references are terms ([OMID](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.OMID))
-* Variable references are terms ([OMV](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.OMV))
-* Applications of a term to a list of *arguments* (terms) are terms ([OMA](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.OMA))
-* Binding applications of a term - *binding* (optionally typed) variables - to a list of arguments are terms ([OMBIND](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.OMBINDC))
+* Symbol references are terms ([OMID](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMID))
+* Variable references are terms ([OMV](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMV))
+* Applications of a term to a list of *arguments* (terms) are terms ([OMA](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMA))
+* Binding applications of a term - *binding* (optionally typed) variables - to a list of arguments are terms ([OMBIND](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMBINDC))
 
 The precise abstract syntax is explained in more detail [here](../api/syntax).
 

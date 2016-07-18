@@ -26,10 +26,10 @@ The abstract syntax of MMT is:
 
 ### Data Structures
 
-**[`api.Content`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.Content)** is the top level datastructure for all of the classes representing the MMT language. For our purposes, it branches into 
+**[`api.Content`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.Content)** is the top level datastructure for all of the classes representing the MMT language. For our purposes, it branches into 
 
-* [`api.StructuralElement`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.StructuralElement) (described [here](structural.html)), e.g. modules, declarations and 
-* [`objects.Obj`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.objects.Obj) (described [here](objects.html)), e.g. terms and contexts.
+* [`api.StructuralElement`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.StructuralElement) (described [here](structural.html)), e.g. modules, declarations and 
+* [`objects.Obj`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.Obj) (described [here](objects.html)), e.g. terms and contexts.
 
 The following (simplified) inheritance graph gives an overview of the most relevant data structures in the [MMT API](../):
 

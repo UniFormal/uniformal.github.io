@@ -18,7 +18,7 @@ Every source file corresponds to a **document**, whose logical identifier is for
 
 ![`namespace http://some.example.uri.org/ \GS`](/doc/img/namespace.png) (delimited by the module [delimiter](delimiters.html))
 
-A namespace-URI is an instance of the class [`api.DPath`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.DPath)
+A namespace-URI is an instance of the class [`api.DPath`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.DPath)
 
 The given namespace may be an [absolute or a relative URI](../api/uris.html), and the latter are interpreted relative to the current namespace. At the beginning of a file, the current namespace is the corresponding document identifier.
 

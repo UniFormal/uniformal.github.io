@@ -9,7 +9,7 @@ Individual services are available as `localhost:PORT/:SERVICE`. These may take a
 Each *SERVICE* is defined by a [Server extension](../api/extensions.html).
 
 #### Services
-Some services are available by default, which can be browsed in the [API documentation](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.web.ServerExtension).
+Some services are available by default, which can be browsed in the [API documentation](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.web.ServerExtension).
 
 * `mmt`: retrieves the knowledge item whose [MMT URI](../api/uris.html) is QUERY. The URI may be followed with `present STYLE` to choose a presentation style. The default is OMDoc XML.
 * `query`: interprets the BODY as a [QMT query](../api/queries.html) and returns the results.

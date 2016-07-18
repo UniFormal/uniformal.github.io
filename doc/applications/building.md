@@ -11,7 +11,7 @@ MMT can be used as a build tool using a special [shell command](shell.html).
 
 ### Defining Build Targets
 
-The collection of build targets is maintained by the [extension manager](../api/extensions/). New build targets are defined by implementing the [`archives.BuildTarget`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.archives.BuildTarget) class.
+The collection of build targets is maintained by the [extension manager](../api/extensions/). New build targets are defined by implementing the [`archives.BuildTarget`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.archives.BuildTarget) class.
 Build target modfiers and change management are supported for automatically for every build target.
 
 ### Build Target Modifiers

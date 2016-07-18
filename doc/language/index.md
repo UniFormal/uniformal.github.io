@@ -47,6 +47,8 @@ All 4 levels are interconnected through the use of identifiers: the [MMT URI](..
   * [*literals*](literals.html) such as integers, floats, etc.
   MMT follows the [OpenMath](http://www.openmath.org) data model for objects.
   However, contrary to OpenMath, MMT uses formal theories and type systems that determine the well-typed objects.
+
+  At all levels, knowledge may be [informal].
   
 ### Structural Levels vs. Objects
   

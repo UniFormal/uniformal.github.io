@@ -4,11 +4,13 @@ title: Building Documents
 ---
 
 ### Calling Build Targets
+
 MMT can be used as a build tool using a special [shell command](shell.html).
 
 `build ARCHIVE TARGET [P/A/T/H]` runs the build target `TARGET` on the [archive](archives.html) with id `ARCHIVE`. Optionally, the operation can be restricted to the subfolder `P/A/T/H`.
 
 ### Defining Build Targets
+
 The collection of build targets is maintained by the [extension manager](../api/extensions/). New build targets are defined by implementing the [`archives.BuildTarget`](http://kwarc.github.io/MMT/api/index.html#info.kwarc.mmt.api.archives.BuildTarget) class.
 Build target modfiers and change management are supported for automatically for every build target.
 
@@ -59,3 +61,11 @@ The most important build targets (which are available by default) include:
     <td>creates a math archive, a zipped collection of the archive</td>
 </tr>
 </table>
+
+### Build Queue Interface
+
+See [Build Queue](buildqueue.html) for detailed information on multi-threaded building.
+
+### Error Viewer Interface
+
+See [Error Viewer](errorviewer.html) for detailed information on seeing the results of building many files.

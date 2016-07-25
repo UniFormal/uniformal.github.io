@@ -1,0 +1,94 @@
+\documentclass{beamer}
+\usepackage{graphicx,url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xkeyval}
+
+\usepackage{mytikz}
+
+\usepackage{basics}
+\usepackage{basics-slides}
+
+\newcommand{\lf}{\mathit{LF}}
+\newcommand{\kity}{\mathit{type}}
+
+\renewcommand{\emph}[1]{\alert{#1}}
+
+\hypersetup{colorlinks}
+
+% building, browsing
+% Mihnea can set up server for examples, tutorial as part of examples
+% TODO: clean up urtheories, examples: only 2 prover examples fail (successful version is pushed)
+
+\begin{document}
+
+\title{MMT Tutorial, Part 2: \\ Application Development with MMT}
+\author{Florian Rabe, Mihnea Iancu, Dennis M\"uller}
+\institute{Jacobs University Bremen}
+\date{CICM 2016}
+\begin{frame}
+    \titlepage 
+\begin{center}
+Bringing your notebook is recommended but not required.\\
+Attending \hyperref{http://www.cicm-conference.org/2016/slides/MMTLanguages.pdf}{}{}{Part 1} is helpful but not required to follow Part 2.
+\end{center}
+\end{frame}
+
+
+\section{Developing based on MMT}
+
+\begin{myframe}{Users vs. Developers}
+MMT blurs distinction between users and developers
+\begin{itemize}
+ \item Intended users: developers of math applications
+ \item MMT is not an application itself
+ \item It is an
+  \begin{itemize}
+    \item API for the MMT language
+     \lec{close relative of OMDoc}
+    \item suite of reusable components for math applications
+      \lec{e.g., MKM services}
+    \item set of few example applications
+       \lec{e.g., the IDE used in Part 1}
+   \end{itemize}
+\end{itemize}
+\end{myframe}
+
+\begin{myframe}{Extension Interfaces}
+MMT is highly extensible through systematically exposed extension interfaces
+  \lec{essentially everything can be replaced or customized}
+\begin{itemize}
+ \item Interfaces for lexer, parser, checker, simplifier, prover, presenter
+   \begin{itemize}
+    \item extensible by adding new rules
+    \item independently replacable with custom implementations
+   \end{itemize}
+ \item Adding new language features
+ \item Import/export interfaces for integrating other formats and build targets
+ \item Exposing functionality to outside
+  \begin{itemize}
+    \item adding new command line syntax
+    \item web framework for adding new HTTP interfaces
+  \end{itemize}
+ \item Change listening infrastructure for content events
+\end{itemize}
+\end{myframe}
+
+
+\section{Structure of the Tutorial}
+
+\begin{myframe}{Overview}
+\begin{enumerate}
+ \item Brief introduction to MMT-based Applications
+ \item 3 mini-demos of prototypical MMT-based applications 
+  \lec{easy for attendants to understand, reprocude, modify}
+   \begin{enumerate}
+    \item Changing equality by adding arbitrary rewrite or computation rules
+    \item Using the MMT query interfaces to build a browser-based editor
+    \item Using MMT's export infrastructure to build an OpenMath Content Dictionary editor
+   \end{enumerate}
+ \end{enumerate}
+\end{myframe}
+
+\end{document}
+

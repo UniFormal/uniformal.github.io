@@ -15,6 +15,9 @@ All applications focus on simplicity in order to show the general principles.
 
 ### An OpenMath Content Dictionary Editor
 
+This tutorial uses the Exporter extension to tranform MMT content into other formats.
+Concretely, we export MMT theories as OpenMath content dictionaries.
+
 ### A Web-Based Editor
 
 ### Using a Rewrite  

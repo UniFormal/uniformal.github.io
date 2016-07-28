@@ -42,8 +42,15 @@ It does not matter where this file is located.
 But to allow for running MMT build targets over it later, it is convenient to place it in a new MMT archive:
 
 * create a folder `CONTENT/MYARCHIVE`
-* create a file `MANIFEST.MF` in it containing (at least) the line `id: MYARCHIVE`,
+* create a file `MANIFEST.MF` in it containing (at least) the lines
+ 
+  ```
+  id: MYARCHIVE
+  narration-base: http://MYDOMAIN.ORG/MYARCHIVE
+  ```
 * and create a file `source/fol.mmt` in it
+
+<span class="detail">The id is some string that is used to refer to the archive. The narration base is some URI that is used as the default namespace for forming unique identifiers for the content of the archive.</span> 
 
 #### Create a Theory for FOL
 

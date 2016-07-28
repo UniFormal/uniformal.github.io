@@ -18,6 +18,8 @@ The following assumes that
 This tutorial uses the Exporter extension to tranform MMT content into other formats.
 Concretely, we export MMT theories as OpenMath content dictionaries.
 
+<hr/>
+
 ### A Web-Based Editor
 
 This mini-demo shows how to integrate MMT with HTML pages.
@@ -52,5 +54,7 @@ Best results of MathML display are obtained in Firefox.
 The html file is self-documenting. Open it in a text editor to see how it works.
 
 You can also use your browser's inspector to see the Ajax request and response that the submit button generates.
+
+<hr/>
 
 ### Using a Rewrite

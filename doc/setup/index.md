@@ -19,13 +19,8 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
   
 #### Binary Disribution
 
-Download the self-contained binary from (https://github.com/UniFormal/MMT/releases/latest) on github.
+Download the self-contained binary from [GitHub](https://github.com/UniFormal/MMT/releases/latest).
 
-Run the jar file.
-The canonical way for this is run `java -jar mmt.jar`.
-But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.
-
-This responds with a simple setup dialog.
 
 #### Source Distribution
 
@@ -48,15 +43,6 @@ cd MMT/src
 sbt deploy
 ```
 
-Finally, run the main jar file:
-
-```
-cd ../deploy
-java -jar mmt.jar
-```
-
-This responds with a simple setup dialog.
-
 Detailed instructions for building can be found [here](build.html).
 
 ### Setup MMT
@@ -75,9 +61,21 @@ In particular, the MMT plugin depends on some other standard plugins that you ha
 
 ### Run MMT
 
+To run MMT it is sufficient to run the jar file obtained as described above.
+The canonical way for this is run `java -jar mmt.jar`.
+But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.
+
+This responds with a simple setup dialog if MMT not installed, and drops to a shell otherwise.
+
+If you have obtained MMT by building from sources make sure to go to the deploy folder first.
+
+```
+cd ../deploy
+java -jar mmt.jar
+```
 You can now either use [jEdit](jedit.html) to work with .mmt files or run MMT natively for various other [applications](../applications/).
 
-Instructions for running MMT are available [here](running.html).
+Additional instructions for running MMT are available [here](running.html).
 
 ### Update MMT
 

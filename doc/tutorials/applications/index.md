@@ -80,11 +80,14 @@ In it, consider the files in the folder `source/tutorial`.
     
     ```
     extension info.kwarc.mmt.openmath.Exporter
-    build MMT/examples openmath tutorial
+    build MMT/examples openmath http..cds.omdoc.org/examples/tutorial
     ```
 
-The first command registers the exporter with MMT. <span class="detail" markdown="1">There are several ways to automate this registration. For example, you can script MMT by putting the commands in an `msl` or permanently add the exporter by adding an entry to your `mmtrc` file.</span>
-The second one runs the build targatproduces OpenMath content dictionaries in the folder `export/openmath` of the archive.
+The first command registers the exporter with MMT. <span class="detail" markdown="1">There are several ways to automate this registration. For example, you can script MMT by putting the commands in an `msl` file or permanently add the exporter by adding an entry to your `mmtrc` file.</span>
+The second one runs the build target all theories:
+
+ * The exporter traverses all theories in the `content` folder, which are organized by their URI. Therefore, we restrict it to the folder `http..cds.omdoc.org/examples/tutorial` to export all theories of the tutorial.
+ * It produces one ocd file per theory in the folder `export/openmath/content` of the archive.
 
 The types and definitions are used to generate FMPs. The meta-data key `@_description` is used to give descriptions.
 

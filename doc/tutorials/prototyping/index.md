@@ -89,7 +89,7 @@ We can start the MMT web server from within jEdit to view our definition in the 
 * go to the jEdit plugin called `console`
 * choose `mmt` as the console language
 * type `server on 8080` in the console (or some other port number)
-* point your browser to [](http://localhost:8080?http://mydomain.org/mmt-example?FOL)
+* point your browser to [http://localhost:8080?http://mydomain.org/mmt-example?FOL](http://localhost:8080?http://mydomain.org/mmt-example?FOL)
 
 #### Build and Serve the Archive
 

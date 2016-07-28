@@ -41,12 +41,12 @@ We create a new file `fol.mmt`, in which we will define FOL.
 It does not matter where this file is located.
 But to allow for running MMT build targets over it later, it is convenient to place it in a new MMT archive:
 
-* create a folder `CONTENT/MYARCHIVE`
+* create a folder `CONTENT/myarchive`
 * create a file `MANIFEST.MF` in it containing (at least) the lines
  
   ```
-  id: MYARCHIVE
-  narration-base: http://MYDOMAIN.ORG/MYARCHIVE
+  id: myarchive
+  narration-base: http://mydomain.org/myarchive
   ```
 * and create a file `source/fol.mmt` in it
 
@@ -89,11 +89,11 @@ We can start the MMT web server from within jEdit to view our definition in the 
 * go to the jEdit plugin called `console`
 * choose `mmt` as the console language
 * type `server on 8080` in the console (or some other port number)
-* point your browser to [http://localhost:8080?http://mydomain.org/mmt-example?FOL]
+* point your browser to [](http://localhost:8080?http://mydomain.org/mmt-example?FOL)
 
 #### Build and Serve the Archive
 
-To build your archive, use the command `build MYARCHIVE mmt-omdoc fol.mmt`. This will build all `mmt` files in your archive and convert them into `omdoc` (which is the XML format that MMT uses internally, corresponding to the binary files produced by a compiler).
+To build your archive, use the command `build myarchive mmt-omdoc fol.mmt`. This will build all `mmt` files in your archive and convert them into `omdoc` (which is the XML format that MMT uses internally, corresponding to the binary files produced by a compiler).
 The `omdoc` files are put into the folders `narration` (one `omdoc` file per source file) and `content` (one `omdoc` file per module in those source files).
 Additionally, index files for fast querying are placed in the folder `relational`.
 
@@ -104,7 +104,7 @@ Start the shell by running `mmt.jar`.
 Then type
 
 ```
-build MYARCHIVE mmt-omdoc fol.mmt
+build myarchive mmt-omdoc fol.mmt
 server on 8081
 ```
 
@@ -139,5 +139,5 @@ Instead, we refer to the self-documenting file `tutorial/2-algebra.mmt` in the a
 
 Like before, you can now
 
-* build the library using `build MYARCHIVE mmt-omdoc algebra.mmt`
+* build the library using `build myarchive mmt-omdoc algebra.mmt`
 * serve it using `server on 8081`.

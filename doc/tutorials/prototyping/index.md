@@ -8,12 +8,12 @@ In this tutorial, we build an implementation of first-order logic (FOL) in MMT.
 It assumes that
 
 * MMT has been [installed](../../setup),
-* archives are placed in some folder, which is refered to as `CONTENT`,
+* archives are placed in some folder, which is refered to as `CONTENT`,<span class="detail">The MMT installer should take care of this </span>
 * [jEdit](../../applications/jedit) is used for editing mmt files.<span class="detail">Other editors will work but might make editing awkward.</span>
 
 ### Define a Meta-Logic
 
-Actually, we will skip this step because only advanced need to define their own meta-logic.
+Actually, we will skip this step because only advanced users need to define their own meta-logic.
 
 Instead, we can choose one of the meta-logics already defined in MMT.
 The most important example is the logical framework LF, whose MMT URI is

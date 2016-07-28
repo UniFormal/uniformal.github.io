@@ -13,16 +13,17 @@ The following assumes that
 * archives are placed in some folder, which is refered to as `CONTENT`,
 * [jEdit](../../applications/jedit) is used for editing mmt files. <span class="detail">Other editors will work but might make editing awkward.</span>
 
-### An OpenMath Content Dictionary Editor
-
-This tutorial uses the Exporter extension to tranform MMT content into other formats.
-Concretely, we export MMT theories as OpenMath content dictionaries.
-
 <hr/>
 
 ### A Web-Based Editor
 
-This mini-demo shows how to integrate MMT with HTML pages.
+This mini-application shows how to easily integrate MMT with HTML pages.
+It uses
+
+* the core algorithms of MMT,
+* the MMT HTTP server,
+* the MMT query language,
+* and the Javascript interface to MMT.
 
 #### Behavior
 
@@ -54,6 +55,34 @@ Best results of MathML display are obtained in Firefox.
 The html file is self-documenting. Open it in a text editor to see how it works.
 
 You can also use your browser's inspector to see the Ajax request and response that the submit button generates.
+
+<hr/>
+
+### An OpenMath Content Dictionary Editor
+
+This mini-application shows how to use MMT as an editor for OpenMath content dictionaries.
+It uses
+
+* the MMT build system,
+* the [Exporter extension](../api/extensions/) for defining new build targets,
+* the meta-data annotations to MMT content,
+* the extensible MMT parser.
+
+Concretely, it exports MMT theories as content dictionaries.
+
+#### Behavior
+
+Consider the archive `MMT/examples`, which was cloned automatically during setup.
+In it, consider the files in the folder `source/tutorial`.
+
+Run `mmt.jar build MMT/examples openmath`.
+This produces OpenMath content dictionaries in the folder `export/openmath` of the archive.
+
+The types and definitions are used to generate FMPs. The meta-data key `@_description` is used to give descriptions.
+
+#### Implementation
+
+The implemenation is part of the MMT sources in the project `mmt-openmath`.
 
 <hr/>
 

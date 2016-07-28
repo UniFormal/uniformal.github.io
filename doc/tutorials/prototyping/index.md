@@ -13,7 +13,7 @@ It assumes that
 
 ### Define a Meta-Logic
 
-Actually, we will skip this step because only advanced users need to define their own meta-logic.
+Actually, we will skip this step for now because only advanced users need to define their own meta-logic.
 
 Instead, we can choose one of the meta-logics already defined in MMT.
 The most important example is the logical framework LF, whose MMT URI is
@@ -80,7 +80,11 @@ The details of doing so are given in the self-documenting mmt files in the archi
 
 It contains the full definition of `FOL` in the file `tutorial/1-sfol.mmt`.
 To complete this step of the tutorial, copy over the declarations in this file step by step.
-(Note that this tutorial makes you use a different namespace than the that file. That's important to make sure all declarations have unique URIs.) 
+(Note that this tutorial makes you use a different namespace than the that file. That's important to make sure all declarations have unique URIs.)
+
+To insert Unicode symbols, you can use LaTeX commands with j instead of \.
+For example, `jrightarrow` inserts `\rightarrow`. <span class="detail">And because that one is so important, `jra` is a shortcut for it.</span>
+The complete list of preconfigured abbreviations can be found in the section `Abbreviations` of the jEdit settings.
 
 #### View the Logic in the Browser
 

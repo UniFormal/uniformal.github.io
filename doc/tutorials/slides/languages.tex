@@ -144,6 +144,56 @@ Mathematics      & Formalization            & Logical Framework    & Language-In
 \end{blockitems}
 \end{myframe}
 
+\begin{myframe}{The Meta-Hierarchy of Languages}
+\begin{itemize}
+ \item Languages at all meta-level uniformly represented as MMT theories
+ \item Same module system at all levels
+\end{itemize}
+
+ \begin{center}
+ \framebox{
+ \begin{tikzpicture}
+ \node (MMT) at (3,1.5) {MMT};
+ \node (L) at (2,0.5) {LF};
+ \node (Lx) at (4,0.5) {LF+X};
+ \draw[arrow](MMT) -- (L);
+ \draw[arrow](MMT) -- (Lx);
+
+ \draw[fill=red!60] (2,-.5) ellipse (3.2cm and .6cm);
+ \node[color=red] at (-3.3,-.5) {LATIN logic library};
+ \node at (2,-.7) {\ldots};
+
+ \draw[fill=blue!60] (0,-2.25) ellipse (1.9cm and .8cm);
+
+ \node (H) at (0,-.5) {HOL Light};
+ \node[color=blue!80] at (-3.5,-2) {HOL Light library};
+ \node (B) at (-1,-2) {Bool};
+ \node (A) at (1,-2) {Arith};
+ \node (E) at (0,-2.5) {\ldots};
+ \draw[arrow](L) -- (H);
+ \draw[arrow](H) -- (B);
+ \draw[arrow](H) -- (A);
+ \draw[arrow](B) -- (A);
+
+ \draw[fill=olive] (4,-2.25) ellipse (1.9cm and .8cm);
+
+ \node (M) at (4,-.5) {Mizar};
+ \node[color=olive] at (-3.3,-2.5) {Mizar library};
+ \node (B') at (3,-2) {XBoole};
+ \node (A') at (5,-2) {XReal};
+ \node (E') at (4,-2.5) {\ldots};
+
+ \node (A) at (1,-2) {Arith};
+ \node (E) at (0,-2.5) {\ldots};
+ \draw[arrow](L) -- (M);
+ \draw[arrow](M) -- (B');
+ \draw[arrow](M) -- (A');
+ \draw[arrow](B') -- (A');
+ \end{tikzpicture}
+ }
+ \end{center}
+\end{myframe}
+
 %\begin{myframe}{Some Principles}
 %	\begin{itemize}
 %		\item judgments as types, proofs as terms
@@ -203,51 +253,32 @@ Mathematics      & Formalization            & Logical Framework    & Language-In
 \end{blockitems}
 \end{myframe}
 
-\begin{myframe}{Meta-Hierarchy}
- \begin{center}
- \framebox{
- \begin{tikzpicture}
- \node (MMT) at (3,1.5) {MMT};
- \node (L) at (2,0.5) {LF};
- \node (Lx) at (4,0.5) {LF+X};
- \draw[arrow](MMT) -- (L);
- \draw[arrow](MMT) -- (Lx);
-
- \draw[fill=red!60] (2,-.5) ellipse (3.2cm and .6cm);
- \node[color=red] at (-3.3,-.5) {LATIN logic library};
- \node at (2,-.7) {\ldots};
-
- \draw[fill=blue!60] (0,-2.25) ellipse (1.9cm and .8cm);
-
- \node (H) at (0,-.5) {HOL Light};
- \node[color=blue!80] at (-3.5,-2) {HOL Light library};
- \node (B) at (-1,-2) {Bool};
- \node (A) at (1,-2) {Arith};
- \node (E) at (0,-2.5) {\ldots};
- \draw[arrow](L) -- (H);
- \draw[arrow](H) -- (B);
- \draw[arrow](H) -- (A);
- \draw[arrow](B) -- (A);
-
- \draw[fill=olive] (4,-2.25) ellipse (1.9cm and .8cm);
-
- \node (M) at (4,-.5) {Mizar};
- \node[color=olive] at (-3.3,-2.5) {Mizar library};
- \node (B') at (3,-2) {XBoole};
- \node (A') at (5,-2) {XReal};
- \node (E') at (4,-2.5) {\ldots};
-
- \node (A) at (1,-2) {Arith};
- \node (E) at (0,-2.5) {\ldots};
- \draw[arrow](L) -- (M);
- \draw[arrow](M) -- (B');
- \draw[arrow](M) -- (A');
- \draw[arrow](B') -- (A');
- \end{tikzpicture}
- }
- \end{center}
+\begin{myframe}{MMT is Not a Stand-alone System}
+\begin{itemize}
+ \item MMT and all the above results implemented as a Scala library
+   \lec{mmt.jar}
+ \item Execution of raw MMT possible as
+  \begin{itemize}
+    \item an interactive shell
+    \item an script interpreter
+    \item an HTTP server
+  \end{itemize}
+ \item But main use as \emph{component in other applications}
+  \lec{See Part 2 of the tutorial}
+ \item One particular application: MMT IDE based on jEdit
+  \lec{We'll use that one in Part 1}
+\end{itemize}
 \end{myframe}
 
+\begin{myframe}{Let's Start}
+\begin{itemize}
+ \item I will work through the tutorial on the screen
+ \item You should follow on your computers
+ \item Main link: \url{http://uniformal.github.io/doc/tutorials/prototyping/}
+  \lec{no need to type this ---}
+  \lec{these slides are linked from the CICM program}
+\end{itemize}
+\end{myframe}
 
 \end{document}
 

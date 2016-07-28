@@ -9,7 +9,7 @@ There are 2 ways to use MMT:
 
 * download the binary distribution
   * recommended for casual users
-  * self-contained except for needing the usual Java run time environment
+  * self-contained except for needing the usual Java run time environment (Java 7 works fine, Java 8 has not been tested extensively, open-jdk has occasionally caused minor problems)
 * clone the source distribution and build MMT yourself
   * recommended for advanced users or developers
   * additionally needs sbt (the Scala build tool) for building

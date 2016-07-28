@@ -19,7 +19,7 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
   
 #### Binary Disribution
 
-Download the self-contained binary from [https://github.com/UniFormal/MMT/releases/latest] on github.
+Download the self-contained binary from (https://github.com/UniFormal/MMT/releases/latest) on github.
 
 Run the jar file.
 The canonical way for this is run `java -jar mmt.jar`.
@@ -60,8 +60,11 @@ This responds with a simple setup dialog.
 Detailed instructions for building can be found [here](build.html).
 
 ### Setup MMT
+This assumes jEdit is installed and the MMT jar is obtained as described above.
+It is sometimes required to start jEdit once before running MMT setup as it creates some folders on first run that MMT installer uses.
 
-The setup dialog triggered above does the following:
+To start setup run `java -jar mmt.jar`.
+This triggers the setup dialog which does the following:
 
 1. asks for directories into which MMT and MMT content should be placed.
 2. checks out some example content repositories into that directory (This requires git and internet access.),

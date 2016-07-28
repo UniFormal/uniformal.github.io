@@ -75,15 +75,23 @@ Concretely, it exports MMT theories as content dictionaries.
 Consider the archive `MMT/examples`, which was cloned automatically during setup.
 In it, consider the files in the folder `source/tutorial`.
 
-Run `mmt.jar build MMT/examples openmath`.
-This produces OpenMath content dictionaries in the folder `export/openmath` of the archive.
+ 1. Run `mmt.jar`
+ 1. Enter the commands
+    
+    ```
+    extension info.kwarc.mmt.openmath.Exporter
+    build MMT/examples openmath tutorial
+    ```
+
+The first command registers the exporter with MMT. <span class="detail" markdown="1">There are several ways to automate this registration. For example, you can script MMT by putting the commands in an `msl` or permanently add the exporter by adding an entry to your `mmtrc` file.</span>
+The second one runs the build targatproduces OpenMath content dictionaries in the folder `export/openmath` of the archive.
 
 The types and definitions are used to generate FMPs. The meta-data key `@_description` is used to give descriptions.
 
 #### Implementation
 
 The implemenation is part of the MMT sources in the project `mmt-openmath`.
-The only file of this project is [src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala](https://github.com/UniFormal/MMT/blob/master/src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala)
+The only file of this project is [src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala](https://github.com/UniFormal/MMT/blob/master/src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala).
 It is self-documenting.
 
 <hr/>

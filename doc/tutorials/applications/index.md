@@ -83,6 +83,8 @@ The types and definitions are used to generate FMPs. The meta-data key `@_descri
 #### Implementation
 
 The implemenation is part of the MMT sources in the project `mmt-openmath`.
+The only file of this project is [src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala](https://github.com/UniFormal/MMT/blob/master/src/mmt-openmath/src/info/kwarc/mmt/openmath/Exporter.scala)
+It is self-documenting.
 
 <hr/>
 

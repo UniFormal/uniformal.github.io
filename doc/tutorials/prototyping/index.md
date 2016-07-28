@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Defining a Formal System in MMT
+title: Language Design in MMT
 ---
 
 In this tutorial, we build an implementation of first-order logic (FOL) in MMT.
@@ -24,7 +24,7 @@ This theory is defined in the archive MMT/urtheories, which is automatically clo
 <div class="detail" markdown="1">
 Other important meta-logics defined in this archive include
 
-* `http://cds.omdoc.org/urtheories?PLFextends` LF with shallow polymorphism
+* `http://cds.omdoc.org/urtheories?PLF` extends LF with shallow polymorphism
 * `http://cds.omdoc.org/urtheories?LFModulo`, which extends LF with a rewrite system
 
 These can also be combined.
@@ -69,30 +69,68 @@ Here
 
 From this point on forwards, defining a language proceeds according to LF.
 
-The details of doing so are not part of this tutorial.
-However, the file `tutorial.mmt` in the archive `CONTENT/MMT/examples` is a self-documented example of how to do it.
-This archive is automatically cloned when setting up MMT.
+The details of doing so are given in the self-documenting mmt files in the archive `CONTENT/MMT/examples`, which has been cloned automatically when setting up MMT.
 
-It is good practice to copy over this example step by step.
+It contains the full definition of `FOL` in the file `tutorial/1-sfol.mmt`.
+To complete this step of the tutorial, copy over the declarations in this file step by step.
+(Note that this tutorial makes you use a different namespace than the that file. That's important to make sure all declarations have unique URIs.) 
 
 #### View the Logic in the Browser
 
 We can start the MMT web server from within jEdit to view our definition in the browser:
 
-* go to the jEdit plugin called console
-* choose mmt as the console language
-* type `server on 8080` (or some other port number)
-* point the browser to [http://localhost:8080?]
+* go to the jEdit plugin called `console`
+* choose `mmt` as the console language
+* type `server on 8080` in the console (or some other port number)
+* point your browser to [http://localhost:8080?http://mydomain.org/mmt-example?FOL]
 
 #### Build and Serve the Archive
 
+To build your archive, use the command `build MYARCHIVE mmt-omdoc fol.mmt`. This will build all `mmt` files in your archive and convert them into `omdoc` (which is the XML format that MMT uses internally, corresponding to the binary files produced by a compiler).
+The `omdoc` files are put into the folders `narration` (one `omdoc` file per source file) and `content` (one `omdoc` file per module in those source files).
+Additionally, index files for fast querying are placed in the folder `relational`.
 
-### Implement a FOL Plugin
+You can build the archive from within jEdit (by using the jEdit console as above).
 
-MMT can provide many important algorithms generically.
-But occasionally, we want to provide language-specific functionality explicitly.
+Alternatively, you can build it directly from the MMT shell without involving jEdit.
+Start the shell by running `mmt.jar`.
+Then type
 
-MMT goes out of its way to open up as many internal details to plugin interfaces as possible.
+```
+build MYARCHIVE mmt-omdoc fol.mmt
+server on 8081
+```
 
+<span class="detail">The shell is completely independent from jEdit (but works with the same archives). Therefore, we use a different port number above.</span>
 
+Eventually, you can leave the shell by typing `exit`.
 
+### Use FOL to Build a Small Algebra Library
+
+We can now apply our defined system to formalize some knowledge.
+We pick algebra as an example.
+
+#### Formalize the Library
+
+Create a file `algebra.mmt` in your archive and put
+
+```
+namespace http://mydomain.org/mmt-example [GS]
+
+theory Semigroup : ?FOL =
+
+[GS]
+```
+
+This creates a new theory for semigroups, this time using our new theory `FOL` as the meta-theory.
+<spn class="detail">Because both theories are in the same namespace, we can use a relative URI to refer to `http://mydomain.org/mmt-example`.</span>
+
+As for `FOL`, we do not give the details of the formalization here.
+Instead, we refer to the self-documenting file `tutorial/2-algebra.mmt` in the archive `CONTENT/MMT/examples`.
+
+#### Build and Serve the Library
+
+Like before, you can now
+
+* build the library using `build MYARCHIVE mmt-omdoc algebra.mmt`
+* serve it using `server on 8081`.

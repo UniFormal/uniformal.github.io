@@ -30,7 +30,7 @@ First we start an MMT server:
  1. enter `server on 8080`
 
 Now download the file
-[https://github.com/UniFormal/MMT/blob/master/src/mmt-api/resources/mmt-web/editing-example.html](src/mmt-api/resources/mmt-web/editing-example.html)
+[src/mmt-api/resources/mmt-web/editing-example.html](https://github.com/UniFormal/MMT/blob/master/src/mmt-api/resources/mmt-web/editing-example.html)
 which is provided as part of the MMT sources.
 
 Opening the file in a browser shows two input fields for

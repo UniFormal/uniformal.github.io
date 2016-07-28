@@ -123,7 +123,7 @@ theory Semigroup : ?FOL =
 ```
 
 This creates a new theory for semigroups, this time using our new theory `FOL` as the meta-theory.
-<spn class="detail">Because both theories are in the same namespace, we can use a relative URI to refer to `http://mydomain.org/mmt-example`.</span>
+<span class="detail">Because both theories are in the same namespace, we can use a relative URI to refer to `http://mydomain.org/mmt-example`.</span>
 
 As for `FOL`, we do not give the details of the formalization here.
 Instead, we refer to the self-documenting file `tutorial/2-algebra.mmt` in the archive `CONTENT/MMT/examples`.

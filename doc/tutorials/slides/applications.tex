@@ -34,40 +34,172 @@ Attending \hyperref{http://www.cicm-conference.org/2016/slides/MMTLanguages.pdf}
 \section{Developing based on MMT}
 
 \begin{myframe}{Users vs. Developers}
-MMT blurs distinction between users and developers
+MMT blurs the distinction between users and developers
 \begin{itemize}
- \item Intended users: developers of math applications
  \item MMT is not an application itself
- \item It is an
+ \item It is a
   \begin{itemize}
     \item API for the MMT language
      \lec{close relative of OMDoc}
-    \item suite of reusable components for math applications
+    \item suite of reusable algorithms/services
       \lec{e.g., MKM services}
     \item set of few example applications
        \lec{e.g., the IDE used in Part 1}
+   \end{itemize}
+ \item Primary users: developers of math applications
+ \item Secondary users: users of those applications
+\end{itemize}
+\end{myframe}
+
+\begin{myframe}{Basic Design of MMT Implementation}
+\begin{itemize}
+ \item Data structures for MMT language
+  \lec{documents, modules, declarations, objects}
+  \lec{get, add, update, delete}
+ \item Core algorithms
+    \lec{parse, check, simplify, present, \ldots}
+    \lec{index, query, diff, build, \ldots}
+ \item Backend
+  \begin{itemize}
+    \item catalog for mapping MMT URIs to physical locations
+      \lec{in git repositories, databases, etc.}
+    \item transparent loading/unloading into memory
+  \end{itemize}
+ \item Frontend
+  \begin{itemize}
+    \item API calls from Scala, Java
+      \lec{programmatic or interactive}
+    \item shell, scripting language
+    \item HTTP server
+      \lec{core algorithms exposed}
    \end{itemize}
 \end{itemize}
 \end{myframe}
 
 \begin{myframe}{Extension Interfaces}
-MMT is highly extensible through systematically exposed extension interfaces
-  \lec{essentially everything can be replaced or customized}
+MMT systematically exposes extension interfaces
+  \lec{essentially everything can be extended or replaced}
 \begin{itemize}
- \item Interfaces for lexer, parser, checker, simplifier, prover, presenter
+ \item Customize core algorithms
    \begin{itemize}
-    \item extensible by adding new rules
-    \item independently replacable with custom implementations
+    \item add rules
+      \lec{declared in MMT theories}
+    \item replace with custom implementations
+    \item combine algorithms for structural and object level
    \end{itemize}
- \item Adding new language features
+ \item Adding language features
+   \begin{itemize}
+     \item literals with external data/computation
+     \item pragmatic features with elaboration semantics
+   \end{itemize} 
  \item Import/export interfaces for integrating other formats and build targets
- \item Exposing functionality to outside
+ \item Outside interface
   \begin{itemize}
     \item adding new command line syntax
     \item web framework for adding new HTTP interfaces
   \end{itemize}
  \item Change listening infrastructure for content events
 \end{itemize}
+\end{myframe}
+
+\section{Breadth of Possible Applications}
+
+% logic compiler for hets
+
+\begin{myframe}{Example: jEdit IDE}
+Application: IDE for MMT theories 
+\begin{itemize}
+  \item based on jEdit text editor
+  \item induces IDE for any
+    \begin{itemize}
+    \item language defined in MMT
+    \item language exported to OMDoc
+    \end{itemize}
+\end{itemize}
+
+Design: MMT as p MMT and jEdit
+\begin{itemize}
+ \item Plugin for jEdit that wraps arond MMT
+ \item MMT and jEdit large projects
+ \item But only little glue code needed
+   \lec{mostly forwarding to MMT API functions}
+\end{itemize}
+\end{myframe}
+
+\begin{myframe}{Example: HOL Light library browser}
+Based on
+\begin{itemize}
+ \item definition of HOL Light in MMT/LF
+ \item export of HOL Light library in OMDoc format
+\end{itemize}
+
+MMT provides out of the box
+  \begin{itemize}
+    \item HTML+MathML rendering of library
+      \lec{including 2-dimensional notations}
+    \item as interactive documents
+      \lec{definition lookup, type inference}
+    \item dependency graph of theorems
+   \end{itemize}
+\end{myframe}
+
+\begin{myframe}{Example: Generation of GAP Inheritance Graphs}
+Based on GAP export to OMDoc
+
+Only a few lines of code to
+\begin{itemize}
+ \item generate additional predicates for MMT's relational index
+ \item register a new graph built from this predicate
+\end{itemize}
+yield
+\begin{itemize}
+ \item generation of inheritance graph between GAP filters
+ \item interactive, integrated with web browser
+\end{itemize}
+\end{myframe}
+
+\begin{myframe}{Example: Codec-Based Knowledge Exchange}
+Problem:
+\begin{itemize}
+  \item mathematical data distributed over multiple databases
+   \lec{LMFDb, OEIS, findStat.org, \ldots}
+  \item in incompatible, unspecified low level encodings
+\end{itemize}
+
+Solution: Codec infrastructure of MMT
+\begin{itemize}
+ \item MMT theory for codecs and codec operators
+ \item Describe database schemas 
+   \begin{itemize}
+    \item using mathematics-near types
+    \item annotate codec expressions to define concrete encoding
+   \end{itemize}
+ \item Treat databases as MMT backends
+\end{itemize}
+Effect: MMT provides uniform high-level interface to low-level databases
+\end{myframe}
+
+\begin{myframe}{Example: MathHub}
+Application:
+\begin{itemize}
+  \item Project hosting platform for mathematical library
+    \lec{based on gitlab}
+  \item Web interface for browsing, interacting with libraries
+    \lec{based on Drupal}
+  \item MMT used to process, interpret the content
+\end{itemize}
+
+Implementation: suite of MathHub-specific MMT extensions
+\begin{itemize}
+ \item new sTeX importer for interpreting sources
+   \lec{uses MMT's build syste}
+ \item HTML presenter for producing web pages
+   \lec{uses MMT's MathML presenter for objects}
+ \item HTTP server plugin for high-level MathHub specific queries
+   \lec{uses MMT web framework, API functions}
+ \item HTTP server plugin for browser-based editing
+   \lec{uses same functions as jEdit IDE}
+ \end{itemize}
 \end{myframe}
 
 
@@ -84,6 +216,18 @@ MMT is highly extensible through systematically exposed extension interfaces
     \item Using MMT's export infrastructure to build an OpenMath Content Dictionary editor
    \end{enumerate}
  \end{enumerate}
+\end{myframe}
+
+
+\begin{myframe}{Let's Start}
+\begin{itemize}
+ \item I will show mini-demos on the screen
+ \item The tutorial points to the self-documenting source files
+ \item Some demos can be run/changed by you as well
+ \item Main link: \url{http://uniformal.github.io/doc/tutorials/applications/}
+  \lec{no need to type this ---}
+  \lec{these slides are linked from the CICM program}
+\end{itemize}
 \end{myframe}
 
 \end{document}

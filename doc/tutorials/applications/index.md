@@ -115,8 +115,8 @@ Consider the file `tutorial/3-literalsrules.mmt` in the archive `MMT/examples`.
 
 It defines the natural numbers and then adds two kinds of rules:
 
- * Computation rules are implemented in the file `scala_realizations/info/kwarc/mmt/examples/tutorial` of the archive and added to the theory using the `rule` keyword.
- * Rewrite rules are declared using the annotation `role Simplify`.
+ 1. Computation rules are implemented in the file `scala_realizations/info/kwarc/mmt/examples/tutorial` of the archive and added to the theory using the `rule` keyword.
+ 1. Rewrite rules are declared using the annotation `role Simplify`.
 
 #### Implementation
 

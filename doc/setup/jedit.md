@@ -12,7 +12,7 @@ The 'functionality' is described [here](../applications/jedit.html)
 
 ### Installation
 
-1. Install jEdit, for example from [http://www.jedit.org/](http://www.jedit.org/) and run it at least once, so its config folder will be created.
+1. Install jEdit, for example from [http://www.jedit.org/](http://www.jedit.org/) and run it at least once, so its config folder will be created (for setting up MMT).
 2. Using the jEdit plugin manager, install (at least) the following plugins
   * ErrorList
   * Console

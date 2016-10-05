@@ -40,7 +40,7 @@ Since the structure imports all the operators, we can again define a testing con
 
 and it type checks as before. However, if we try to use the symbol names instead:
 
-![`test = imp (and A B) (or (not C) (and A B)) \RS`](/doc/img/tot01/testconstant2.png)
+![`test = imp (and A B) (or (not C) (and A B)) \RS`](/doc/img/tut01/testconstant2.png)
 
 we get an error. That's because structures change the names of the objects - what used to be `imp` (and was declared in `PLSyntax`) is now `syn/imp` (and is declared in `PLIntNatDed`). If we adapt the constant accordingly, it type checks again:
 

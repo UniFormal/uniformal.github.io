@@ -10,9 +10,11 @@ title: Contributing
 This document explains the general development model of MMT. Before contributing to MMT, you should read this document to understand what is going on.
 
 ### Introduction
+
 #### Main Branches
 
 There are three central branches:
+
 * ```master```: main development line, used by developers, stable and including latest features
 * ```release```: used by external users, very stable, occasionally merged into from master
 * ```devel```: a branch of master that is periodically merged into master; this branch is under constant development by Florian
@@ -39,6 +41,7 @@ Pushes to ```master``` should pass the corresponding test(s). (This 'should' wil
 All three main branches are protected from force-pushes.
 
 The sbt build file contains the following tests:
+
 * release/build and release/test: build certain projects and certain archives that must work in releases
 * master/build and master/test: build certain projects and certain archives that should work on the master branch
 

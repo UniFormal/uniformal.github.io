@@ -27,14 +27,14 @@ The [jEdit plugin](../applications/jedit.html) offers three ways to insert these
 * MMT adds buttons for all three delimiters to the toolbar of jEdit:
 
   ![menu](/doc/img/menu.png)
-  
+
   * **O** inserts the object delimiter,
   * **D** inserts the declaration delimiter,
   * **M** inserts the module delimiter.
 * via the menu option `Plugins > MMTPlugin > Insert <DELIMITER>`
 * via the predefined [abbreviations](../applications/jedit.html#abbreviations):
-  * `jUS` for the object delimiter,
-  * `jRS` for the declaration delimiter,
-  * `jGS` for the module delimiter.
+  * `jOD` (formerly `jUS`) for the object delimiter,
+  * `jDD` (formerly `jRS`) for the declaration delimiter,
+  * `jMD` (formerly `jGS`) for the module delimiter.
 
 You can modify (or add new) abbreviations in `Extras > Global Options > Abbreviations`.

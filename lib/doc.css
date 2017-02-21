@@ -10,21 +10,21 @@ body {
 /* header and footer */
 
 div.header {
-  text-align: center; 
+  text-align: center;
 }
 
 div.footer {
-  text-align: center; 
-  font-size: small; 
+  text-align: center;
+  font-size: small;
 }
 
 /****** menu sidebar ******/
 
 div.menu {
-  height: 85vh;
+  height: 100%;
   width: 25vw;
   overflow: auto;
-  border-right: 1px solid #eee; 
+  border-right: 1px solid #eee;
 }
 
 div.menu a {
@@ -52,6 +52,10 @@ div.menu a:focus, div.menu a:hover {
 
 /****** central content ******/
 
+tr.content {
+  vertical-align: top;
+}
+
 div.content {
   width: 50vw;
   text-align: justify;
@@ -64,7 +68,7 @@ div.content a[href*="//"]:not([href*="uniformal.github.io"]) {
 
 table, th, td {
   padding: 5px;
-  text-align: left; 
+  text-align: left;
   /* border: 1px solid black; */
 }
 
@@ -116,4 +120,3 @@ pre.highlight {
    font-size: initial;
    color: blue;
 }
-

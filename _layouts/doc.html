@@ -18,14 +18,18 @@
 			<div class="header">
 					<h1>The MMT Language and System</h1>
 			</div>
-			
-			<div><table><tr style="vertical-align:top">
-				
+
+			<div><table><tr class="content">
+
 				<!-- Navigation -->
 				<td>
-					<div class="menu">{% include menu.html %}</div>
+					<div class="menu">
+						<ul>
+							{% include menu.html %}
+						</ul>
+					</div>
 				</td>
-				
+
 				<!-- Content -->
 				<td>
 				   <div class="content">
@@ -33,15 +37,15 @@
 					  {{content}}
 				   </div>
 				</td>
-				
+
 			</tr></table></div>
-			
+
 			<!-- Footer -->
 			<div class="footer">
 					MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. </br>
 					This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/{{page.path}}" target="_blank">directly in the browser</a>. <br/>
 			</div>
-			
+
 		</div>
 	</body>
 </html>

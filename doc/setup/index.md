@@ -36,14 +36,17 @@ A detailed explanation of the contents of the repository is available [here](rep
 
 If you do not have sbt, get it [here](http://www.scala-sbt.org/).
 
-Then build MMT using sbt:
+Then build MMT using sbt (detailed instructions for building can be found [here](build.html)):
 
 ```
 cd MMT/src
 sbt deploy
 ```
 
-Detailed instructions for building can be found [here](build.html).
+This should create many files, of course, in particular the file `mmt.jar` in the folder `../deploy/`. Change to that directory:
+```
+cd ../deploy/
+```
 
 ### Setup MMT
 This assumes jEdit is installed and the MMT jar is obtained as described above.

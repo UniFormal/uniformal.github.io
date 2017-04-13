@@ -63,12 +63,31 @@ Instead, they should ask for a branch to be created for them.
 
 #### Updating the release branch
 
-To mark a version of MMT as a release, we again use pull requests. This time we merge from ```master``` onto ```release```. Again go to the main repository page and select [New pull request](https://github.com/UniFormal/MMT/compare/release...master). Choose ```release``` as the base and ```master``` as the head. Now write a title as well as a description of the changes that have been made since the last merge to the ```release``` branch. Then create the pull request by clicking the "Create pull request" button.
+To mark a version of MMT as a release, we again use pull requests. 
+This time we merge from ```master``` onto ```release```. 
+Again go to the main repository page and select [New pull request](https://github.com/UniFormal/MMT/compare/release...master). 
+Choose ```release``` as the base and ```master``` as the head. 
+Now write a title as well as a description of the changes that have been made since the last merge to the ```release``` branch. 
+Then create the pull request by clicking the "Create pull request" button.
 
 Only repository owners and administrators can merge this pull request.
 <!-- In order to ensure stability, this additionally requires a [review](https://help.github.com/articles/about-pull-request-reviews/) from a maintainer. To create a review, select the "view changes" button inside the newly created pull request. After looking at the changes made, you can create a review by clicking the "Review changes" button. You can then write a comment as well as either "approve" or "request changes" to the pull request. -->
 
 Once <!-- someone has submitted an approving review and --> the travis tests have passed, the pull request can be merged by any core developer.
+
+#### Making a binary release
+
+After the release branch has been updated, a binary release should be made. 
+For this we use GitHubs release system - all releases can be found on the [MMT release page](https://github.com/UniFormal/MMT/releases). 
+Making a release involves two steps, making a tag and uploading a jar that can be distributed to users. 
+
+To create a new release, visit the [draft a new release](https://github.com/UniFormal/MMT/releases/new) page. 
+In the tag version, make sure that the target is the ``release`` branch . 
+By convention, the name of the new tag is the current day, ``DD-MMM-YYYY``. 
+The name should be ``nth Git Release`` (where n is increasing). 
+Optionally, a human readable description can be written for the release. 
+Finally, generate a fat jar locally and attach it to the release by dragging it into the attachment area below the description. 
+Then publish the release by clicking the ``Publish release`` button. 
 
 #### Sources and Useful reading
 
@@ -77,5 +96,6 @@ In general GitHub documentation is very helpful for any general questions:
 * [GitHub - Checking Out a Pull Request](https://help.github.com/articles/checking-out-pull-requests-locally)
 * [GitHub - About protected branches](https://help.github.com/articles/about-protected-branches/)
 * [GitHub - About pull request reviews](https://help.github.com/articles/about-pull-request-reviews/)
+* [GitHub - Creating Releases](https://help.github.com/articles/creating-releases/)
 
 Furthermore parts of this README have been adapted from [https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md](https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md)

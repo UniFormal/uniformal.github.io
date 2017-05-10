@@ -19,8 +19,10 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
   
 #### Binary Disribution
 
-Download the self-contained binary from [GitHub](https://github.com/UniFormal/MMT/releases/latest).
+A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
+The newest release is at the top of the list. 
 
+To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Uniformal/MMT/releases.atom). 
 
 #### Source Distribution
 

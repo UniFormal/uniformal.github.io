@@ -98,6 +98,13 @@ The path is searched recursively and registers all found archive folders and mar
 * `oaf clone GROUP/REPOS`: git-clones the archive `URI/GROUP/REPOS` into `FOLDER/GROUP/REPOS` and recursively clones its dependencies.
 * `oaf pull`: git-pulls (git pull origin master) all repositories in `FOLDER`.
 * `oaf pushes`: git-pushes all repositories in `FOLDER`.
+* `oaf setremote`: configures the remote URI of all repositories in `FOLDER` (useful to switch from https to ssh or when the location of the server has changed).
+
+#### Remote Administration
+
+* `remote ID COMMAND`: executes a command on a remote MMT client that connected via the remote admin extension
+
+See [`web.RemoteActionServer`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.web.RemoteActionServer) for details.
 
 #### Applications
 Note that [GUI](gui.html) and [HTTP server](server.html) run in separate threads. MMT will not terminate if these threads are still active.

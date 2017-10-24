@@ -12,9 +12,9 @@ title: Publications
 ### Other papers
 
 This list is always outdated.
-Most relevant papers can be found in Florian Rabe's publication list at [https://kwarc.info/people/frabe/Research/pubscv.html].
+Most relevant papers can be found in Florian Rabe's [publication list](https://kwarc.info/people/frabe/Research/pubscv.html).
 
-The swMath catalog of mathematical software has an entry for MMT at [http://swmath.org/software/7136].
+There is also an [entry](http://swmath.org/software/7136]) for MMT in the swMath catalog of mathematical software.
 
 * M. Kohlhase, F. Mance, F. Rabe, [A Universal Machine for Biform Theory Graphs](http://kwarc.info/frabe/Research/KMR_uom_13.pdf) - biform theories (deduction and computatiton) in MMT with a practical integration of MMT and Scala (published at CICM 2013)
 * D. Ginev, M. Iancu, F. Rabe, [Integrating Content and Narration-Oriented Document Formats](http://kwarc.info/frabe/Research/GIR_mmtlatex_13.pdf) - an integration between MMT and LaTeX

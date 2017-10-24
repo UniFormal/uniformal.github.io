@@ -3,9 +3,19 @@ layout: doc
 title: Publications
 ---
 
+### Main papers
 
-* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - this is the main paper on MMT (published in the journal Information &amp; Computation)
+* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - this is the original paper on MMT (published in the journal Information &amp; Computation)
+* F. Rabe, [How to Identify, Translate, and Combine Logics?](https://kwarc.info/people/frabe/Research/rabe_howto_14.pdf) - a more modern and more formal but less complete definition of MMT
 * F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the main system description for MMT (published at CICM 2013, LNCS)
+
+### Other papers
+
+This list is always outdated.
+Most relevant papers can be found in Florian Rabe's publication list at [https://kwarc.info/people/frabe/Research/pubscv.html].
+
+The swMath catalog of mathematical software has an entry for MMT at [http://swmath.org/software/7136].
+
 * M. Kohlhase, F. Mance, F. Rabe, [A Universal Machine for Biform Theory Graphs](http://kwarc.info/frabe/Research/KMR_uom_13.pdf) - biform theories (deduction and computatiton) in MMT with a practical integration of MMT and Scala (published at CICM 2013)
 * D. Ginev, M. Iancu, F. Rabe, [Integrating Content and Narration-Oriented Document Formats](http://kwarc.info/frabe/Research/GIR_mmtlatex_13.pdf) - an integration between MMT and LaTeX
 * M. Iancu, M. Kohlhase, [Searching the Space of Mathematical Knowledge](http://www.cicm-conference.org/2012/mir/mir2012_submission_5.pdf) - this application uses MMT to generate smart search indices that include inherited and computed knowledge (published at MIR 2012)
@@ -22,3 +32,4 @@ title: Publications
 * F. Rabe and C. Schürmann, [A Practical Module System for LF](http://kwarc.info/frabe/Research/RS_lf_09.pdf) - the Twelf instantiation of the MMT module system (published at LFMTP 2009)
 * M. Kohlhase, C. Müller, F. Rabe, [Notations for Living Mathematical Documents](http://kwarc.info/frabe/Research/KMR_presentation_08.pdf) - introduces a precursor to the MMT notation language and rendering engine
 * F. Rabe and M. Kohlhase, [An Exchange Format for Modular Knowledge](http://kwarc.info/frabe/Research/rabe_keappa_08.pdf) - an early workshop paper on MMT (published at KEAPPA 2008)
+

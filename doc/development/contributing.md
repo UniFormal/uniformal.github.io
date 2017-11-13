@@ -62,7 +62,7 @@ Students in the MMT research group(s) should never work on a fork.
 Exceptions are only allowed with their advisor's permission.
 Instead, they should ask for a branch to be created for them.
 
-### Pushing and Code Review
+#### Pushing and Code Review
 
 All code contributions to the MMT repository should be reviewed by one of the principal developers.
 For core MMT functionality, this is essentially Florian at the moment.

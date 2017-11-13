@@ -33,15 +33,6 @@ MMT developers merge their features into ```devel``` or ```master``` according t
 Usually this involves an informal discussion with core developers or a pull request.
 If they merge into master, they must also merge the resulting master into ```devel```.
 
-### Pushing and Code Review
-
-All code contributions to the MMT repository should be reviewed by one of the principal developers.
-For core MMT functionality, this is essentially Florian at the moment.
-There are two essential workflows:
-
-* **small commits**: commits that repair bugs or mildly generalize functionality must pass through the `devel` branch, so that Florian can see, test, and review them. Commits should be accompanied by a meaningful message that explains what this commit tries to do and what it does to achieve that.
-* **large commits**: introduce significant new functionality, generalize, or refactor existing functionality, and/or change APIs. Such commits *must* be accompanied with a MEP (MMT Extension proposal) that motivates the extended/changed functionality, details the (proposed) API changes and implementation, and discusses any invariants that are violated/required by the functionality at a level that is sufficient for MEP review by the MMT community. MEPs are usually prototyped in a feature branch. The specification can come before the implementation, or can be a result of the prototyping process. In the latter case, the MEP specification is part of the pull request that proposes to merge the functionality. In any case, the specification should be sufficient to serve as initial documentation if the MEP is accepted. 
-
 #### Protections and Tests
 
 Pushes to ```release``` must pass the corresponding test(s).
@@ -70,6 +61,15 @@ Therefore, forks are only useful if they are temporary. All changes in a fork sh
 Students in the MMT research group(s) should never work on a fork.
 Exceptions are only allowed with their advisor's permission.
 Instead, they should ask for a branch to be created for them.
+
+### Pushing and Code Review
+
+All code contributions to the MMT repository should be reviewed by one of the principal developers.
+For core MMT functionality, this is essentially Florian at the moment.
+There are two essential workflows:
+
+* **small commits**: commits that repair bugs or mildly generalize functionality must pass through the `devel` branch, so that Florian can see, test, and review them. Commits should be accompanied by a meaningful message that explains what this commit tries to do and what it does to achieve that.
+* **large commits**: introduce significant new functionality, generalize, or refactor existing functionality, and/or change APIs. Such commits *must* be accompanied with a MEP (MMT Extension proposal) that motivates the extended/changed functionality, details the (proposed) API changes and implementation, and discusses any invariants that are violated/required by the functionality at a level that is sufficient for MEP review by the MMT community. MEPs are usually prototyped in a feature branch. The specification can come before the implementation, or can be a result of the prototyping process. In the latter case, the MEP specification is part of the pull request that proposes to merge the functionality. In any case, the specification should be sufficient to serve as initial documentation if the MEP is accepted. 
 
 #### Updating the release branch
 

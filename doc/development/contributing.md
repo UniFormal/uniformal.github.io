@@ -20,7 +20,8 @@ There are three central branches:
 * ```devel```: a branch of master that is periodically merged into master; this branch is under constant development by Florian
 
 Every MMT archive on MathHub has two corresponding branches master and release.
-For testing purposes, release branches of archives are tested against the release branch of MMT, and accordingly for master branches.
+For testing purposes, release branches of archives are tested against the release branch
+of MMT, and accordingly for master branches.
 
 #### Feature Branches
 
@@ -32,6 +33,15 @@ MMT developers merge their features into ```devel``` or ```master``` according t
 Usually this involves an informal discussion with core developers or a pull request.
 If they merge into master, they must also merge the resulting master into ```devel```.
 
+### Pushing and Code Review
+
+All code contributions to the MMT repository should be reviewed by one of the principal developers.
+For core MMT functionality, this is essentially Florian at the moment.
+There are two essential workflows:
+
+* **small commits**: commits that repair bugs or mildly generalize functionality must pass through the `devel` branch, so that Florian can see, test, and review them. Commits should be accompanied by a meaningful message that explains what this commit tries to do and what it does to achieve that.
+* **large commits**: introduce significant new functionality, generalize, or refactor existing functionality, and/or change APIs. Such commits *must* be accompanied with a MEP (MMT Extension proposal) that motivates the extended/changed functionality, details the (proposed) API changes and implementation, and discusses any invariants that are violated/required by the functionality at a level that is sufficient for MEP review by the MMT community. MEPs are usually prototyped in a feature branch. The specification can come before the implementation, or can be a result of the prototyping process. In the latter case, the MEP specification is part of the pull request that proposes to merge the functionality. In any case, the specification should be sufficient to serve as initial documentation if the MEP is accepted. 
+
 #### Protections and Tests
 
 Pushes to ```release``` must pass the corresponding test(s).
@@ -40,7 +50,7 @@ Pushes to ```master``` should pass the corresponding test(s). (This 'should' wil
 
 All three main branches are protected from force-pushes.
 
-The sbt build file contains the following tests:
+The `sbt` build file contains the following tests:
 
 * release/build and release/test: build certain projects and certain archives that must work in releases
 * master/build and master/test: build certain projects and certain archives that should work on the master branch
@@ -99,3 +109,6 @@ In general GitHub documentation is very helpful for any general questions:
 * [GitHub - Creating Releases](https://help.github.com/articles/creating-releases/)
 
 Furthermore parts of this README have been adapted from [https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md](https://github.com/OpenJUB/contribution-guidelines/blob/master/github_usage.md)
+
+<!--  LocalWords:  devel sbt
+ -->

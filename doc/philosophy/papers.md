@@ -5,10 +5,11 @@ title: Publications
 
 ### Main papers
 
-* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - the original paper on MMT (Journal Information &amp; Computation)
-* F. Rabe, [How to Identify, Translate, and Combine Logics?](https://kwarc.info/people/frabe/Research/rabe_howto_14.pdf) - a more modern and more formal definition of MMT with special emphasis on logic (Journal of Logic and Computation)
-* F. Rabe, [The Future of Logic: Foundation-Independence](https://kwarc.info/people/frabe/Research/rabe_future_15.pdf) - a high-level summary of the MMT approach (Journal Logica Universalis, Winner of the Contest "The Future of Logic" at the World Congress on Universal Logic)
-* F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the (by now somewhat outdated) main system description for MMT (conference CICM 2013, LNCS)
+* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - the original paper on MMT (Journal Information &amp; Computation, 2013)
+* F. Rabe, [How to Identify, Translate, and Combine Logics?](https://kwarc.info/people/frabe/Research/rabe_howto_14.pdf) - a more modern and more formal definition of MMT with special emphasis on logic (Journal of Logic and Computation, 2017)
+* F. Rabe, [The Future of Logic: Foundation-Independence](https://kwarc.info/people/frabe/Research/rabe_future_15.pdf) - a high-level summary of the MMT approach (Journal Logica Universalis, Winner of the Contest "The Future of Logic" at the World Congress on Universal Logic, 2015)
+* M. Kohlhase, F. Rabe, [QED Reloaded: Towards a Pluralistic Formal Library of Mathematical Knowledge] - our vision of the QED approach based on MMT (Journal of Formalized Reasoning, 2016)
+* F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the (by now somewhat outdated) main system description for MMT (CICM conference, LNCS 2013)
 
 ### Other papers
 

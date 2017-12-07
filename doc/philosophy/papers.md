@@ -5,9 +5,10 @@ title: Publications
 
 ### Main papers
 
-* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - this is the original paper on MMT (published in the journal Information &amp; Computation)
-* F. Rabe, [How to Identify, Translate, and Combine Logics?](https://kwarc.info/people/frabe/Research/rabe_howto_14.pdf) - a more modern and more formal but less complete definition of MMT
-* F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the main system description for MMT (published at CICM 2013, LNCS)
+* F. Rabe, M. Kohlhase, [A Web-Scalable Module System for Mathematical Theories](http://kwarc.info/frabe/Research/mmt.pdf) - the original paper on MMT (Journal Information &amp; Computation)
+* F. Rabe, [How to Identify, Translate, and Combine Logics?](https://kwarc.info/people/frabe/Research/rabe_howto_14.pdf) - a more modern and more formal definition of MMT with special emphasis on logic (Journal of Logic and Computation)
+* F. Rabe, [The Future of Logic: Foundation-Independence](https://kwarc.info/people/frabe/Research/rabe_future_15.pdf) - a high-level summary of the MMT approach (Journal Logica Universalis, Winner of the Contest "The Future of Logic" at the World Congress on Universal Logic)
+* F. Rabe, [The MMT System](http://kwarc.info/frabe/Research/rabe_mmtabs_13.pdf) - the (by now somewhat outdated) main system description for MMT (conference CICM 2013, LNCS)
 
 ### Other papers
 

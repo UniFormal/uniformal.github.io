@@ -3,7 +3,7 @@ layout: doc
 title: The MMT Repository
 ---
 
-The MMT source, binary releases, and documentation are maintained in an SVN repository.
+The MMT source, binary releases, and documentation are maintained in an GitHub repository.
 The base URL of the repository is `https://github.com/UniFormal/MMT`.
 The content of the subdirectories is as follows:
 

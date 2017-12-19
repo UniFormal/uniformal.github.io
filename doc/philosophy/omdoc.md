@@ -12,6 +12,6 @@ It can be seen as two things:
 
 MMT fully subscribes to the OMDoc philosophy and can thus be seen as a concrete
 incarnation of OMDoc. Currently, MMT covers and heavily redesigns the formal subset of OMDoc
-(though work on the informal subset is [currently under way](doc/language/informal)).
+(though work on the informal subset is [currently under way](https://uniformal.github.io/doc/language/informal.html)).
 
 Moreover, MMT has become a major driver of changes to the XML format or its specification.

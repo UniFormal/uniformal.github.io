@@ -15,7 +15,7 @@ The MMT system includes powerful generic solutions for knowledge management (e.g
 
 By designing knowledge representation languages inside MMT, we can obtain strong implementations at extremely low cost.
 
-A more detailed overview can be found in [this paper](https://svn.kwarc.info/repos/MMT/doc/introduction/mmt.pdf).
+A more detailed overview can be found in [this paper](philosophy/articles/mmt.pdf).
 
 ### What does MMT stand for?
 

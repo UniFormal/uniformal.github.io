@@ -1,8 +1,6 @@
 ---
 layout: doc
-title: Informal Knowledge
+title: Flexiformal Knowledge
 ---
-
-Mihnea Iancu's PhD thesis is currently extending the MMT language with concepts for informal knowledge.
-
-The implementation is already very mature (and heavily used in our production workflows), but documentation has not been written yet.
+Currently, MMT concentrates on the formal subset of the [OMDoc](https://uniformal.github.io/doc/philosophy/omdoc.html), which postulates that mathematatical knowledge should be represented [flexiformally](http://kwarc.info/kohlhase/papers/synasc13.pdf), i.e. with flexible formality. Foundational steps towards extending the structural core of MMT were taken in [Mihnea Iancu's PhD thesis](https://opus.jacobs-university.de/frontdoor/index/index/docId/721). The implementation is already very mature (and heavily used in our production workflows), but documentation has not been written yet. 
+The bulk of flexiformalizations in the MMT world are [generated from](https://uniformal.github.io/doc/applications/stex.html) [sTeX](http://github.com/KWARC/sTeX), a semantics-enhanced version of LaTeX which can be converted to flexiformal MMT. 

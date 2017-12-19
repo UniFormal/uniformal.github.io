@@ -21,6 +21,9 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
   
 #### Binary Disribution
 
+Since Fall 2017, a new binary version of MMT is released every six weeks. 
+See the [development roadmap on GitHub](https://github.com/UniFormal/MMT/milestones) for scheduled improvements.
+
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
 The newest binary can be downloaded by clicking the top most item on the list. 
 

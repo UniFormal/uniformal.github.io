@@ -9,10 +9,12 @@ There are 2 ways to use MMT:
 
 * download the binary distribution
   * recommended for casual users
-  * self-contained except for needing the usual Java run time environment (Java 7 works fine, Java 8 has not been tested extensively, open-jdk has occasionally caused minor problems)
+  * self-contained except for needing the usual Java runtime environment
 * clone the source distribution and build MMT yourself
   * recommended for advanced users or developers
   * additionally needs sbt (the Scala build tool) for building
+
+MMT is currently built for `Scala 2.11.12`. MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
 
 Before installing MMT, you can optionally install [jEdit](http://jedit.org/).
 If jEdit is installed, MMT will automatically configure it to serve as an MMT IDE.

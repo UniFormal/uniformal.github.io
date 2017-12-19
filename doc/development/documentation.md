@@ -5,7 +5,7 @@ title: About this documentation
 
 ### Infrastructure
 
-This repository ([uniformal/uniformal.github.io]((https://github.com/uniformal/uniformal.github.io)) contains:
+This repository ([uniformal/uniformal.github.io](https://github.com/uniformal/uniformal.github.io)) contains:
 
 * The MMT homepage in the root directory's `index.html` file, which serves as the main landing page.
   It is plain HTML and can be edited directly.

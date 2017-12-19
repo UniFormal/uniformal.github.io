@@ -85,7 +85,7 @@ Several commands exist to add entries to the math path.
 The path is searched recursively and registers all found archive folders and mar files.
 * `mathpath local`: adds the local file system, i.e., file:// URIs are mapped to themselves.
 * `mathpath fs FILE U`: adds a catalog entry that maps every URI of the form `U/REST` to the physical location `FILE/REST` on the local file system.
-* `mathpath svn U`: adds a catalog entry for a remote SVN repository at URI `U`. Every URI `U/REST` is mapped to itself.
+* `mathpath java FILE`: adds a catalog entry for modules written directly in Scala/Java. URIs are interpreted as fully qualified Java class names.
 
 #### Archives and Building
 

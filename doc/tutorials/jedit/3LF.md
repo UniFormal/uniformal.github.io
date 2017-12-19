@@ -10,7 +10,7 @@ title: 3 - LF and Judgments-as-Types
 
 LF is a logical framework based on the dependently typed lambda calculus with two universes, `type` and `kind`. If you know what this means, you can safely skip this section.
 
-A thorough description of both LF's abstract formalization as well as how to use it in practice can be found in [Part V here](https://svn.kwarc.info/repos/frabe/Teaching/integrated_notes/notes_logic.pdf).
+A thorough description of both LF's abstract formalization as well as how to use it in practice can be found in [Part V here](https://github.com/florian-rabe/Teaching/blob/master/logic/notes_logic.pdf).
 
 #### LF's lambda calculus
 

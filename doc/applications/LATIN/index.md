@@ -43,9 +43,8 @@ The following systems and technologies are employed, designed, and/or developed 
 
  * the [HETS](http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/hets/index_e.htm) system (Heterogeneous Tool Set): a logical framework based on model theory and institutions that uses logic translations to mediate between languages and systems (developed at DFKI Bremen),
  * the [Twelf](http://twelf.plparty.org/wiki/Main_Page) system: a logical framework based on proof theory and dependent type theory (developed at Carnegie Mellon University), which we equipped with an MMT-based module system,
- * the [OMDoc](https://trac.omdoc.org/OMDoc/) format: an XML-based document format for mathematical content developed at Jacobs University (developed at Jacobs University),
+ * the [OMDoc](https://omdoc.org) format: an XML-based document format for mathematical content developed at Jacobs University (developed at Jacobs University),
  * the [MMT](https://uniformal.github.io) language and system: a fragment of OMDoc designed as a scalable, foundation-independent module system for mathematical theories (developed at Jacobs University),
- * the [TNTBase](https://trac.mathweb.org/tntbase/) system: a database combining SVN and XML functionalities (developed at Jacobs University with support from DFKI Bremen),
  * the [JOBAD](https://jomdoc.omdoc.org/wiki/JOBAD) framework: a !JavaScript library for interactive mathematical documents (developed at Jacobs University).
 
 ### LATIN Atlas
@@ -98,11 +97,9 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](lat
  
    Over the recent decades there has been a trend towards formalized mathematics, and a number of sophisticated systems have been developed to support the formalization process and mechanically verify its result. However, each tool is based on a specific foundation of mathematics, and formalizations in different systems are not necessarily compatible. Therefore, the integration of these foundations has received growing interest. We contribute to this goal by using LF as a foundational framework in which the mathematical foundations themselves can be formalized and therefore also the relations between them. We represent three of the most important foundations -- Isabelle/HOL, Mizar, and ZFC set theory -- as well as relations between them. The relations are formalized in such a way that the framework permits the extraction of translation functions, which are guaranteed to be well-defined and sound. Our work provides the starting point of a systematic study of formalized foundations in order to compare, relate, and integrate them.
 
-   <ul>
-    <li><a href="https://svn.kwarc.info/repos/twelf/set_theories/zfc">ZFC</a></li>
-    <li><a href="https://svn.kwarc.info/repos/twelf/type_theories/isabelle">Isabelle/HOL</a></li>
-    <li><a href="https://svn.kwarc.info/repos/twelf/set_theories/mizar">Mizar</a></li>
-   </ul>
+  * [ZFC](http://gl.mathhub.info/MMT/foundations/zfc) 
+  * [Mizar](http://gl.mathhub.info/MMT/foundations/zfc) 
+  * [Isabelle](http://gl.mathhub.info/MMT/foundations/isabelle) 
 
  * Mihai Codescu, Till Mossakowski, Adrían Riesco, Christian Maeder, [Integrating Maude into Hets](docs/maude-hets_amast10.pdf), AMAST 2010, LNCS.
 

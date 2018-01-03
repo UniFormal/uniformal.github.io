@@ -91,3 +91,17 @@ Thus, the correct theory `Ring` could look like this:
 ![`theory Rings = R : type \RS // domain of the ring \RS structure addition : ?AbelianGroup = G = R \RS op @ plus \US # 1 + 2 prec 10 \RS unit @ zero \RS \GS structure multiplication: ?Monoid = G = R \RS op @ times \US # 1 \cdot 2 prec 10 \RS unit @ one \RS \GS \GS`](/doc/img/ringright.png)
 
 All the monoid/group axioms are imported via the structures and are thus available for the respective new symbols. If `Monoid` and `AbelianGroup` have the same meta theory (e.g. `first_order_logic`), then all symbols imported via that (e.g. quantifiers, logical connectives etc.) are identified across the two structures.
+
+### Rules
+
+Rules are special Scala objects that can be declared in an MMT theory Thy to change the semantics of Thy-terms.
+For example,
+
+* all typing rules for the toplevel meta-theory
+* lexing rules for user-defined [literals](literals.html)
+
+are provided as rules.
+
+Users typically do not need to use rules except when designing their own type systems outside logical frameworks.
+
+To declare a rule, just write `rule PATH` inside Thy, where `PATH` is the MMT URI of a Scala object on the current class path - MMT will dynamically load the Scala object and use it in all Thy-algorithms.

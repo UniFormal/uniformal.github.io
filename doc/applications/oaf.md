@@ -19,35 +19,5 @@ Mizar/mml	| the Mizar Mathematical Library	| MMT/LATIN
 TPTP/Distribution	| the TPTP problem library	| MMT/LATIN
 HOLLight/basic	| the standard library of HOL Light	| MMT/LATIN
 
-### Setup
-To work with the archives in the OAF, you usually want to clone the relevant git repositories and then add your local working copies to the math path.
-To clone the repositories, you typically proceed along the following lines:
 
-``` 
-mkdir content
-cd content
-
-mkdir MMT
-cd MMT
-git clone http://gl.mathhub.info/MMT/urtheories.git
-git clone http://gl.mathhub.info/MMT/examples.git
-git clone http://gl.mathhub.info/MMT/LATIN.git
-cd ..
-
-mkdir HOLLight
-cd HOLLight
-git clone http://gl.mathhub.info/HOLLight/basic.git
-cd ..
-
-mkdir Mizar
-cd Mizar
-git clone http://gl.mathhub.info/Mizar/MML.git
-cd ..
-
-mkdir TPTP
-cd TPTP
-git clone http://gl.mathhub.info/TPTP/Distribution.git
-cd .. 
-```
-
-You can also issue the clone command via MMT using the clone command of the [shell](shell.html). In that case, MMT automatically checks out all dependencies.
+These archives can be installed and managed using [lmh](doc/applications/lmh/) functionality provided by MMT. 

@@ -18,6 +18,8 @@ We test with SBT 1.1.0 or higher. (Due to a bug in sbt 1.1.0, you should use sbt
 
 sbt must be called from within the `src` folder of the MMT repository, which contains the `build.sbt` file.
 
+If sbt runs out of memory, give it about 2G of JVM heap space. There are various ways to configure that, e.g., with an environment variable SBT_OPTS="-Xmx2G".
+
 #### Short explanation
 
 Within sbt, run `mmt/deploy`. That compiles the sources, packages them into a jar file, and produces the self-contained file `deploy/mmt.jar` that can be run with plain Java.

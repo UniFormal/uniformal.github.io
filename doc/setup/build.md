@@ -5,21 +5,38 @@ title: Building MMT
 
 Building is only needed if you want develop MMT or want to build from sources.
 
+Everything below requires a Java Runtime Environment.
+MMT is developed on, tested on, and released for JRE 8.
+JRE 7 may still work but is not officially supported anymore.
+JRE 9 support of Scala is still somewhat experimental and building or running MMT on JRE 9 may not work correctly yet.
+
 ### Building using SBT
 
 The primary way to build MMT is via the [Scala Build Tool (SBT)](http://www.scala-sbt.org/).
-SBT has to be installed separately but that is straightforward. (SBT version 0.13.5 or higher is required for some build targets).
+SBT has to be installed separately but that is straightforward.
+We test with SBT 1.1.0 or higher. (Due to a bug in sbt 1.1.0, you should use sbt 1.0.4 on Windows.)
 
 sbt must be called from within the `src` folder of the MMT repository, which contains the `build.sbt` file.
-SBT commands are of the form `sbt PROJECT/TARGET`, where
 
-* `PROJECT` is the MMT subproject corresponding to the subfolders, e.g., `api`, `lf`, `jedit`, etc.
-* `TARGET` is the operation to perform, most importantly `deploy`, which compiles the sources, packages them into a jar file, and deposits the jar into the deploy folder. 
+#### Short explanation
 
-For convenience, there is a special wrapper project that depends on most other projects so that `sbt mmt/deploy` builds all projects.
-Moreover, it assembles all jars into a single self-contained package in `deploy/mmt.jar`.
+Within sbt, run `mmt/deploy`. That compiles the sources, packages them into a jar file, and produces the self-contained file `deploy/mmt.jar` that can be run with plain Java.
+
+The first time MMT is run, it prompts for setup instructions.
+
+#### Detailed explanation
+
+sbt commands are of the form `sbt PROJECT/TARGET`:
+
+* `PROJECT` is the MMT subproject corresponding to the subfolders, MMT consists of multiple independently maintained subprojects that are defined in the `build.sbt` file and correspond to subfolders of the `src` folder. Example subprojects are `api`, `lf`, `jedit`, etc.
+* `TARGET` is the operation to perform, most importantly `deploy`.
+
+For convenience, there is a special wrapper project `mmt` that depends on the most important subprojectsso that `sbt mmt/deploy` builds all projects and bundles them into a self-contained jar.
+All jar files are stored in the `deploy` folder.
+That folder also contains all dependencies, but these are bundled automatically in the big jar file.
 
 There is a special build target for the jEdit plugin: `sbt jedit/install` copies MMT's jars to jEdit's settings folder.
+
 See [sbt](sbt.html) for details on how to edit/configure the sbt file.
 
 ### Developing and building using IntelliJ

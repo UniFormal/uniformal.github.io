@@ -3,7 +3,7 @@ layout: doc
 title: Building MMT
 ---
 
-Building is only needed if you want develop MMT or want to build from sources.
+Building is only needed if you want to develop MMT or want to build from sources.
 
 Everything below requires a Java Runtime Environment.
 MMT is developed on, tested on, and released for JRE 8.

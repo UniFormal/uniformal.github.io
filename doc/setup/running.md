@@ -8,26 +8,32 @@ The canonical way to do that is to run
 ```
 java -jar MMT/deploy/mmt.jar
 ```
-Depending on your OS, that jar file may also be directly executable.
+
+For convenience, the folder `MMT/deploy` contains shell scripts for Windows and Unix that are directly executable.
+
+However, to casually sample MMT, you should not execute MMT directly at all.
+Instead, you should setup [jedit](jedit.html) and play with MMT example files.
 
 ### Run Modes
 
-MMT can be run in 3 different modes
+MMT can be used in 3 different modes
 
-* *batch:* MMT executes its command-line arguments (if any)
-    This is the initial mode. When execution has finished, MMT transitions into interactive or server mode.
-* *interactive:* MMT displays a shell and responds to commands interactively
-    The end-of-input character transitions into server mode; the command exit terminates MMT as a whole.
-* *server:* MMT waits for auxiliary threads (if any) to terminate and then terminates.
+* *batch:* MMT executes its command-line arguments (if any).
+    This is the initial mode. When the command-line arguments have been executing, MMT transitions into interactive or server mode.
+* *interactive:* MMT displays a shell and responds to commands interactively.
+    The end-of-input character transitions into server mode; the command exit terminates MMT completely.
+* *server:* MMT waits for auxiliary threads (if any) to terminate and then terminates. This is typically run as a background thread.
     Auxiliary threads may include in particular the MMT [web server](../applications/server.html).
 
-In most cases, MMT makes reasonable choices which mode to use.
-But there are optional command line options to force a certain mode.
+Depending on the command line arguments, MMT chooses whether it switches to interactive or server mode.
+In particular, without any arguments, it switches to interactive mode.
 
 ### Startup Code
 
 Whenever MMT is run, it looks for a startup script in the location `deploy/startup.msl`.
 MMT also tries to load a configuration from `deploy/mmtrc` or from your OS-specific home directory.
+The latter is created during setup.
+
 This is particularly useful for registering extensions and archives that depend on machine-specific external paths.
 An example startup is provided in the file `deploy/startup.msl.example`.
 

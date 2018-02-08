@@ -22,7 +22,7 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
 This is recommended if you want to write or view MMT files.
 If you just want to sample MMT, you should definitely do it with jEdit.
   
-#### Binary Disribution
+#### Option 1: Via the Binary Disribution
 
 Since Fall 2017, a new binary version of MMT is released roughly every six weeks. 
 See the [development roadmap on GitHub](https://github.com/UniFormal/MMT/milestones) for scheduled improvements.
@@ -32,7 +32,7 @@ The newest binary can be downloaded by clicking the top most item on the list.
 
 To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Uniformal/MMT/releases.atom). 
 
-#### Source Distribution
+#### Option 2: Via the Source Distribution
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from github:
 ```
@@ -49,7 +49,7 @@ cd MMT/src
 sbt mmt/deploy
 ```
 
-This should create many files, in particular the file `mmt.jar` in the folder `../deploy/`. Change to that directory:
+This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`. Change to that directory:
 ```
 cd ../deploy/
 ```
@@ -72,10 +72,10 @@ Further instructions for setting up jEdit are available [here](jedit.html).
 
 ### Run MMT
 
-If you want to use jEdit, you do not have to run MMT itself.
+If you want to use MMT via jEdit, you do not have to run MMT itself.
 It will act as a plugin within jEdit.
 
-Advanced users may want to run MMT directly for various other [applications](../applications/)..
+Developers or advanced users may want to run MMT directly for various other [applications](../applications/).
 The canonical way for this is to run `java -jar mmt.jar`.
 (This responds with a simple setup dialog if MMT not installed, and drops to a shell otherwise.)
 But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.

@@ -38,6 +38,7 @@ Clone the [MMT repository](https://github.com/UniFormal/MMT) from github:
 ```
 git clone git@github.com:UniFormal/MMT.git
 ```
+(Alternatively, if you do not have ssh keys set up, use `git clone https://github.com/UniFormal/MMT.git`)
 A detailed explanation of the contents of the repository is available [here](repo.html).
 
 If you do not have sbt, get it [here](http://www.scala-sbt.org/).

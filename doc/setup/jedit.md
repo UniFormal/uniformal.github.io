@@ -15,11 +15,13 @@ To do that, you have to install jEdit *before* you run MMT.
 Use the following instructions:
 
 1. Install jEdit, for example from [http://www.jedit.org/](http://www.jedit.org/) and run it at least once, so its config folder will be created (for setting up MMT).
-2. Font and encoding issues for working with files in native MMT syntax (.mmt files):
-  * Install a font on your system that includes a good amount of unicode characters, such as GNU unifont, and set this font as the font for jEdit text areas. To set a font click on the ```Utilities``` menu, then ```Global Options```, then ```Text Area``` on the left and change the ```Text font``` on the right. 
-  * You should also set jEdit's default encoding to UTF-8 because many example files use Unicode. To change the default encoding click on the ```Utilities``` menu, then ```Global Options```, then ```Encodings``` on the left and change the ```Default Character encoding``` on the right.
-3. Run MMT and follow the instructions to configure jEdit.
-4. Run jEdit, open the plugin manager dialog, and activate the MMT plugin.
+2. If you have just installed jEdit to use it with MMT, MMT will automatically set some useful configurations in jEdit. However, if you already use jEdit for other reasons, MMT will not touch your jEdit configuration. In that case, you may want to set a few settings manually:
+  * Set jEdit's default encoding to UTF-8. (Many MMT example files use UTF-8.)
+  * Set Sidekick to automatically parse a buffer on save. (Parsing on keystroke can occasionally be too much for MMT.)
+  * Set abbreviations to expand on space. (MMT brings in a lot of abbreviations for for Unicode characters. Just write `j` instead of `\`, e.g., `jwedge`.
+3. It is not so easy for MMT to automatically set the font in jEdit because it depends on what fonts are installed on your system. Install a font that includes a good amount of unicode characters, such as GNU unifont, and set this font as the font for jEdit text areas. To set a font click on the ```Utilities``` menu, then ```Global Options```, then ```Text Area``` on the left and change the ```Text font``` on the right.
+4. Run MMT and follow the instructions to configure jEdit.
+5. Run jEdit, open the plugin manager dialog, and activate the MMT plugin.
    After doing that once, the plugin will be loaded automatically when jEdit is started.
 
 ### Dependencies of the MMT Plugin

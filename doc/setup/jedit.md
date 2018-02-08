@@ -22,7 +22,7 @@ Use the following instructions:
 3. It is not so easy for MMT to automatically set the font in jEdit because it depends on what fonts are installed on your system. Install a font that includes a good amount of unicode characters, such as GNU unifont, and set this font as the font for jEdit text areas. To set a font click on the ```Utilities``` menu, then ```Global Options```, then ```Text Area``` on the left and change the ```Text font``` on the right.
 4. Run MMT and follow the instructions to configure jEdit.
 5. When running jEdit, if jEdit does not activate the MMT plugin automatically, activate it in the plugin manager dialog.
-6. You can now use jEdit to open `.mmt`, e.g., the ons in the `examples/source` folder produced during MMT setup.
+6. You can now use jEdit to open `.mmt`, e.g., the ons in the `MathHub/MMT/examples/source` folder produced during MMT setup.
 
 ### Dependencies of the MMT Plugin
 

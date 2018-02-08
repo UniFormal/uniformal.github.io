@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Running MMT
+title: Details on Running MMT
 ---
 
 After [setting up](index.html) MMT, the jars in the `deploy` folder can be run normally via Java.

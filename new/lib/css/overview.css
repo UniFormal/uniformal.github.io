@@ -6,7 +6,7 @@
   Background Images */
 
 #header {
-  background: url('img/dummy.svg');
+  background: url('img/graph.png');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -30,6 +30,12 @@
 /*
   Colors
 */
+
+.headerbox {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+}
+
 
 .repknowledge.active {
   background-color: #007bff !important;

@@ -30,13 +30,16 @@ It also shows the version numbers of locally installed archives.
 To see which archives are available, use the `lmh search` command.
 It functions exactly like the `lmh ls`, however it searches remotely instead of locally.
 
+<!--
 ### Archive versions
 The MMT System may depend on a specific version of some of the archives and vice-versa.
 Therefore, the MMT system stores versions of selected archives which are used by default.
 For example, running `lmh install MMT/examples`, will install the version of `MMT/examples` that is stored in [archive_versions.txt](https://github.com/UniFormal/MMT/blob/devel/src/mmt-api/resources/archives/archive_versions.txt).
 This ensures that older versions of MMT still work properly, even if the archives have since been changed in a backwards-incompatible fashion.   
-
+-->
+<!--
 The archive versions stored in MMT are usually only updated once with every release.
 To see the versions currently stored in MMT, use the `show lmh` command.
 The versions are respected by `lmh install` only, not by `lmh update`. Furthermore they are disabled for tests running on the `devel` branch of MMT.
 Versioning can also be turned off manually by typing `lmh versioning disable` on the shell.
+-->

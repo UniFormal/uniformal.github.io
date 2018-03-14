@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: About this documentation
+title: Overview
 ---
 
 ### What is MMT?
@@ -30,17 +30,19 @@ This double meta level is a unique characteristic of MMT and, maybe surprisingly
 This is the main entry point to the MMT documentation.
 It contains:
 
-* practical instructions for [getting started](setup/index) as a user as well [tutorials](tutorials/index) for typical tasks
-* a theoretical overview of the general [philosophy](philosophy/index) behind MMT and the concrete [language](language/index)
-* documentation for individual [applications](applications/index) built on top of the MMT API
-* information for developers about the structure of the [MMT API](api/index)
+* practical instructions for [getting started](setup/) as a user as well [tutorials](tutorials/) for typical tasks
+* a theoretical overview of the general [philosophy](philosophy/) behind MMT and the concrete [language](language/)
+* documentation for individual [applications](applications/) built on top of the MMT API
+* information for developers about the structure of the [MMT API](api/)
 
 
-**Disclaimer**: MMT has been developed since 2005 and its theoretical foundation and practical implementation has become very mature.
+### Disclaimer
+
+MMT has been developed since 2005 and its theoretical foundation and practical implementation has become very mature.
 But it continues to be developed in parallel with the research that informs its design.
 Therefore, this documentation is occasionally incomplete or outdated.
 
 We are committed to maintaining robust work flows for releasing, documenting, and bug-tracking to support large-scale applications.
 But that takes effort, and we prioritize according to the concrete research projects we are involved in.
 
-If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](http://kwarc.info/frabe/contact.html). 
+If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](https://kwarc.info/frabe/contact.html). 

@@ -17,7 +17,7 @@ The motivation for that restriction is twofold
 If you believe that you need to modify MMT, please go through the following checklist:
 
 1. Check if your application use MMT as is? MMT goes to great lengths to expose its interfaces and allow customization without modifying MMT.
-   See [here](../api/extensions) for details on how to do make use of that.
+   See [here](../api/extensions/) for details on how to do make use of that.
    In almost all cases so far, modification requests happened because users were unaware of the appropriate customization mechanism.
 1. Ask the contributors to create an extension interface for your purposes.
    The current set of extension interfaces is not final and in fact intended to grow constantly.

@@ -3,7 +3,7 @@ layout: doc
 title: Details on Running MMT
 ---
 
-After [setting up](index.html) MMT, the jars in the `deploy` folder can be run normally via Java.
+After [setting up](./) MMT, the jars in the `deploy` folder can be run normally via Java.
 The canonical way to do that is to run
 ```
 java -jar MMT/deploy/mmt.jar

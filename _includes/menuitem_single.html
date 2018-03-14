@@ -1,0 +1,21 @@
+{% comment %}
+    This template generates a single menu item. 
+    It expects 'item' to be provided and be the item to render. 
+{% endcomment %}
+
+{% if include.item.url == page.url %}
+    {% assign active = true %}
+{% else %}
+    {% assign active = false %}
+{% endif %}
+
+
+<li>
+{% if include.item.external %}
+    <a {% if active %}class="active"{% endif %} href="{{ include.item.url }}" target="_blank">
+{% else %}
+    <a {% if active %}class="active"{% endif %} href="{{ site.baseurl }}{{ include.item.url }}">
+{% endif %}
+    {{ include.item.title }}
+</a>
+</li>

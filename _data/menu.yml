@@ -1,0 +1,139 @@
+### This yaml file contains the menu structure for the MMT documentation. 
+### It is used to automatically generate the menu html file. 
+
+### First-level submenus are always shown, other sub-level are hidden. 
+### 
+
+- title: 'Overview'
+  url: '/doc/'
+
+- title: 'Setting up MMT'
+  url: '/doc/setup/'
+  items:
+    - title: Details on Setting up jEdit
+      url: '/doc/setup/jedit.html'
+    - title: Details on Running MMT
+      url: '/doc/setup/running.html'
+    - title: 'Configuring MMT'
+      url: /doc/setup/configure.html
+    - title: 'The Structure of the MMT Repository'
+      url: '/doc/setup/repo.html'
+    - title: 'Details on Building with SBT'
+      url: '/doc/setup/sbt.html'
+    - title: 'Developing MMT'
+      url: '/doc/setup/build.html'
+    - title: 'License for Using MMT'
+      url: '/doc/setup/license.html'
+
+- title: 'The Philosophy behind MMT'
+  url: '/doc/philosophy/'
+  items:
+    - title: 'Introductory Articles'
+      url: '/doc/philosophy/intros.html'
+    - title: 'The OMDoc Format'
+      url: '/doc/philosophy/omdoc.html' 
+    - title: 'Foundation-Independence'
+      url: '/doc/philosophy/independence.html'
+    - title: 'Publications on MMT'
+      url: '/doc/philosophy/papers.html' 
+
+- title: 'Applications and Projects based on MMT'
+  url: '/doc/applications/'
+  items:
+    - title: 'jEdit IDE'
+      url: '/doc/applications/jedit.html' 
+    - title: 'The MMT Shell'
+      url: '/doc/applications/shell.html'
+    - title: 'The MMT Server'
+      url: '/doc/applications/server.html'
+    - title: 'The Build System'
+      url: '/doc/applications/building.html'
+    - title: 'MMT Archives'
+      url: '/doc/applications/archives.html'
+    - title: 'The OAF Project'
+      url: '/doc/applications/oaf.html'
+    - title: 'The LocalMathHub Tool'
+      url: '/doc/applications/lmh.html'
+    - title: 'MathHub.info'
+      url: '/doc/applications/mathhub.html'
+    - title: 'TGView'
+      url: '/doc/applications/tgview.html'
+    - title: 'LaTeX Processing'
+      url: '/doc/applications/latex.html'
+
+- title: 'The MMT Language'
+  url: '/doc/language/'
+  items:
+    - title: 'MMT URIs'
+      url: '/doc/language/uris.html'
+    - title: 'Documents and Namespaces'
+      url: '/doc/language/namespaces.html'
+    - title: 'Modules'
+      url: '/doc/language/modules.html'
+    - title: 'Symbol Declarations'
+      url: '/doc/language/declarations.html'
+    - title: 'Terms'
+      url: '/doc/language/objects.html'
+    - title: 'Structural Delimiters'
+      url: '/doc/language/delimiters.html'
+    - title: 'Flexiformal Representations'
+      url: '/doc/language/informal.html'
+    - title: 'Generic Literals'
+      url: '/doc/language/literals.html'
+    - title: 'Overloading'
+      url: '/doc/language/overloading.html'
+
+- title: 'Tutorials'
+  url: '/doc/tutorials/'
+  items:
+    - title: 'Language Design in MMT'
+      url:  '/doc/tutorials/prototyping/'
+    - title: 'Application Development with MMT'
+      url: '/doc/tutorials/applications/'
+    - title: 'Writing MMT documents with jEdit'
+      url: '/doc/tutorials/jedit/'
+      items:
+        - title: '1 - Creating Archives'
+          url: '/doc/tutorials/jedit/1archives.html'
+        - title: '2 - A First Theory'
+          url: '/doc/tutorials/jedit/2theories.html'
+        - title: '3 - LF and Judgments-as-Types'
+          url: '/doc/tutorials/jedit/3LF.html'
+        - title: '4 - Natural Deduction for Intuitionistic Propositional Logic'
+          url: '/doc/tutorials/jedit/4natded.html'
+        - title: '5 - Structures, Lambda, Pi and Implicit Arguments'
+          url: '/doc/tutorials/jedit/5structures.html'
+
+- title: 'The MMT API'
+  url: '/doc/api'
+  items:
+    - title: 'The Controller'
+      url: '/doc/api/controller.html'
+    - title: 'Data Structures for the MMT Language'
+      url: '/doc/api/syntax/'
+      items:
+        - title: 'MMT URIs'
+          url: '/doc/api/syntax/uris.html'
+        - title: 'Structural Elements'
+          url: '/doc/api/syntax/structural.html'
+        - title: 'Objects'
+          url: '/doc/api/syntax/objects.html'
+    - title: 'Queries'
+      url: '/doc/api/queries.html'
+    - title: 'Extensions'
+      url: '/doc/api/extensions/'
+      items:
+        - title: Processors
+          url: '/doc/api/extensions/processors.html'
+    - title: 'Logging'
+      url: '/doc/api/log.html'
+
+- title: 'Community and Support'
+  url: '/doc/development/'
+  items:
+    - title: 'Contributing to MMT'
+      url: '/doc/development/contributing.html'
+    - title: 'Improving this documentation'
+      url: '/doc/development/documentation.html'
+    - title: 'Contributors'
+      url: '/doc/development/contributors.html'

@@ -32,8 +32,12 @@ div.menu a {
   text-decoration: none;
 }
 
-div.menu li.current-section > a {
+div.menu li > a.active {
    color: black;
+}
+
+div.menu ul.hidden {
+  display: none;
 }
 
 div.menu a:focus, div.menu a:hover {

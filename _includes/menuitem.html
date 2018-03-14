@@ -1,0 +1,9 @@
+{% comment %}
+    This template generates a menu item, either a single one or a submenu. 
+{% endcomment %}
+
+{% if include.item.items %}
+    {% include menuitem_sub.html item=include.item force=include.force %}
+{% else %}
+    {% include menuitem_single.html item=include.item %}
+{% endif %}

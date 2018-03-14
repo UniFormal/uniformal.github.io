@@ -1,0 +1,32 @@
+{% comment %}
+    This template generates a single sub-menu. 
+    It expects 'item' to be provided and be the item of the submenu to render. 
+    If 'force' is given, it will always show the sub-menu, even if not to be expected in a regular mannor
+{% endcomment %}
+
+{% assign item=include.item %}
+
+{% capture item_url %}$$$$${{item.url}}{% endcapture %}
+{% capture page_url %}$$$$${{page.url}}{% endcapture %}
+
+{% if page_url contains item_url %}
+    {% assign active = true %}
+{% else %}
+    {% assign active = false %}
+{% endif %}
+
+<li>
+    <a {% if active %}class="active"{% endif %} {% if item.url %}href="{{item.url}}"{% endif %}>
+        {{ item.title }}
+    </a>
+
+    {% if include.force %}
+        {% assign active = true %}
+    {% endif %}
+    
+    <ul {% unless active %}class="hidden"{% endunless %}>
+        {% for item in item.items %}
+            {% include menuitem.html item=item %}
+        {% endfor %}
+    </ul>
+</li>

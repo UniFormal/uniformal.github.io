@@ -16,7 +16,7 @@
 {% endif %}
 
 <li>
-    <a {% if active %}class="active"{% endif %} {% if item.url %}href="{{item.url}}"{% endif %}>
+    <a class="expandable {% if active %}active{% endif %}" {% if item.url %}href="{{item.url}}"{% endif %}>
         {{ item.title }}
     </a>
 

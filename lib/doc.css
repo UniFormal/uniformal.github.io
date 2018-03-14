@@ -36,6 +36,13 @@ div.menu li > a.active {
    color: black;
 }
 
+div.menu li > a.expandable:after {
+  content: "◂"; 
+}
+div.menu li > a.expandable.active:after {
+  content: "▾"; 
+}
+
 div.menu ul.hidden {
   display: none;
 }

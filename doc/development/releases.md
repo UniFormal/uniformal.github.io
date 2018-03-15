@@ -11,18 +11,13 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
-
-<!--
 #### Release 11 (unreleased)
 
 This release has not yet been released and is scheduled for [17th April 2018](https://github.com/UniFormal/MMT/milestone/3). 
 
-- now improvements yet
--->
+#### Release 10
 
-#### Release 10 (unreleased)
-
-This release has not yet been released and is scheduled for [15th March 2018](https://github.com/UniFormal/MMT/milestone/2). 
+Released on [16th March 2018](https://github.com/UniFormal/MMT/releases/tag/16-Mar-2018). 
 
 This release is much more substantial than previous releases, including major new features, the promotion of several previously experimental features to official ones, and numerous fixes of minor issues that had accumulated over time.
 
@@ -60,11 +55,6 @@ This release is much more substantial than previous releases, including major ne
 - use the MMT logo within the webserver
 - re-styling and documentation cleanup
 - lots of bugfixes and cleanup
-
-<!--
-Released on [15th March 2018](https://github.com/UniFormal/MMT/releases/tag/v10.0.0). 
--->
-
 
 #### Release 9
 

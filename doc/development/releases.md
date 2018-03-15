@@ -24,28 +24,40 @@ This release has not yet been released and is scheduled for [17th April 2018](ht
 
 This release has not yet been released and is scheduled for [15th March 2018](https://github.com/UniFormal/MMT/milestone/2). 
 
-- new treatment of defined, untyped constants
-- Simplifier now supports deep simplification
-    - can be set via a boolean flag 
-- JEdit Sidekick improvements
-- Travis Test Improvements
+This release is much more substantial than previous releases, including major new features, the promotion of several previously experimental features to official ones, and numerous fixes of minor issues that had accumulated over time.
+
+- complete overhaul of
+   - strucuture level elaboration and type checking
+   - handling of structure declarations in theories and morphisms
+   - handling includes of parametric theories
+- support for theory expressions (see MMT/examples)
+- smarter type inference for defined, untyped constants
+- simplifier now supports definition expansion (optionally)
+- new lexing rule for flexible string interpolation (see MMT/examples for strings and quotation)
+- jEdit improvements
+    - display of elaborated declarations in sidekick
+    - display of rendered expressions as tooltips in sidekick
+    - more precise highlighting of errors
+    - jEdit action for normalization of the selected expression (bound to CS-N by default)
+- travis test improvements
     - addition of proper test structure
     - cleaned up tests for API and LF
     - added alignment tests
     - preliminary co-versioning of archives and MMT system
 - TGView Improvements
     - not documented
-- Cleanup of localmh functionality
+- cleanup of localmh functionality
     - replaces previous `oaf` shell action
     - now possible to install multiple archives at once
-- Dependency Updates
-    - Upgrade Scala to 2.12
-    - Upgrade Tiscaf
-    - remove non-funcational GuidedTours plugin
+- dependency Updates
+    - upgrade sbt to 1.1.1
+    - upgrade Scala to 2.12
+    - upgrade tiscaf
+    - remove non-funcational plugins: GuidedTours, leo
 - proper versioning of MMT within sbt
 - use the MMT logo within the webserver
 - re-styling and documentation cleanup
-- various bugfixes and cleanup
+- lots of bugfixes and cleanup
 
 <!--
 Released on [15th March 2018](https://github.com/UniFormal/MMT/releases/tag/v10.0.0). 

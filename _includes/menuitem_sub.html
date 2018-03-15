@@ -15,18 +15,18 @@
     {% assign active = false %}
 {% endif %}
 
-<li>
-    <a class="expandable {% if active %}active{% endif %}" {% if item.url %}href="{{item.url}}"{% endif %}>
-        {{ item.title }}
-    </a>
+<a class="list-group-item list-group-item-action expandable {% if active %}active{% endif %}" {% if item.url %}href="{{item.url}}"{% endif %}>
+    {{ item.title }}
+</a>
 
-    {% if include.force %}
-        {% assign active = true %}
-    {% endif %}
-    
-    <ul {% unless active %}class="hidden"{% endunless %}>
+{% if include.force %}
+    {% assign active = true %}
+{% endif %}
+
+{% if active %}
+    <div class="list-group">
         {% for item in item.items %}
             {% include menuitem.html item=item %}
         {% endfor %}
-    </ul>
-</li>
+    </div>
+{% endif %}

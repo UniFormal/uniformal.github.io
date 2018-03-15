@@ -4,10 +4,6 @@ title: 4 - Natural Deduction for Intuitionistic Propositional Logic
 ---
 [< 3 - LF and Judgments-as-Types](3LF.html)
 
----------------------------------
-
-### 4 - Natural Deduction for Intuitionistic Propositional Logic
-
 In this section, we will look at the natural deduction calculus for intuitionistic propositional logic. If you already know the calculus, you can safely skip this section.
 
 [Intuitionistic logic](https://en.wikipedia.org/wiki/Intuitionistic_logic) is a constructive fragment of classical logic - i.e. syntactically identical, but the law of the excluded middle `A ∨ ¬A` is omitted.

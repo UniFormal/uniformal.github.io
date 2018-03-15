@@ -1,50 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <!-- This is the layout used for all pages in the wiki-style documentation.
+	<!-- This is the layout used for all pages in the wiki-style documentation.
         The wiki files must have "layout: doc" in their front matter.
         This file can use page.NAME to refer to variables declared in the front matter
         and content to refer to the body of the md file.
    -->
-	<head>
-		<title>MMT - {{page.title}}</title>
-		<script type="text/javascript" src="/lib/jquery.js"></script>
-		<meta charset="UTF-8"/>
-		<link rel="stylesheet" href="/lib/doc.css"/>
-	</head>
-	<body>
-		<div>
-			<!-- Header -->
-			<div class="header">
-					<h1>The MMT Language and System</h1>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>{% unless page.nowrap %}MMT - {% endunless %}{{page.title}}</title>
+
+    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/lib/css/doc.css" rel="stylesheet" />
+	{% if page.css %}<link href="/lib/css/{{page.css}}" rel="stylesheet" />{% endif %}
+  </head>
+  <body>
+	{% include header.html %}
+
+	{% unless page.nowrap %}
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-12 col-md-3 col-xl-2">
+					<ul class="nav flex-column">
+						{% include menu.html %}
+					</ul>
+				</div>
+				<div class="col-12 col-md-9 col-xl-8 content">
+					<h2>{{page.title}}</h2>
+					<hr />
+	
+					{{content}}
+				</div>
 			</div>
-
-			<div><table><tr class="content">
-
-				<!-- Navigation -->
-				<td>
-					<div class="menu">
-						<ul>
-							{% include menu.html %}
-						</ul>
-					</div>
-				</td>
-
-				<!-- Content -->
-				<td>
-				   <div class="content">
-				     <h2>{{page.title}}</h2>
-					  {{content}}
-				   </div>
-				</td>
-
-			</tr></table></div>
-
-			<!-- Footer -->
-			<div class="footer">
-					MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. </br>
-					This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/{{page.path}}" target="_blank">directly in the browser</a>. <br/>
-			</div>
-
 		</div>
-	</body>
+	{% else %}
+		{{content}}
+	{% endunless %}
+
+
+	<div class="container">
+		{% include footer.html %}
+	</div>
+
+    <script src="/lib/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="/lib/js/bootstrap.min.js"></script>
+	<script src="/lib/js/doc.js"></script>
+	{% if page.js %}<script src="/lib/js/{{page.js}}"></script>{% endif %}
+  </body>
 </html>

@@ -4,15 +4,12 @@ title: 3 - LF and Judgments-as-Types
 ---
 [< 2 - A First Theory](2theories.html)
 
----------------------------
-
-### 3 - LF and Judgments-as-Types
 
 LF is a logical framework based on the dependently typed lambda calculus with two universes, `type` and `kind`. If you know what this means, you can safely skip this section.
 
 A thorough description of both LF's abstract formalization as well as how to use it in practice can be found in [Part V here](https://github.com/florian-rabe/Teaching/blob/master/logic/notes_logic.pdf).
 
-#### LF's lambda calculus
+### LF's lambda calculus
 
 As seen in the previous section, LF declares a symbol `type`, which is a *universe*. LF has a second universe `kind`. Their behaviour is governed by the following rules:
 
@@ -40,7 +37,7 @@ So `λ` allows us to construct functions out of terms. Of course, functions are 
 
 Additional *computation rules* make sure, that e.g. `λ x. (f x)` is the same as `λ y. (f y)`, which is the same as `f`, etc., but those rules are intuitive enough to not require much explanation.
 
-#### Judgments-as-Types
+### Judgments-as-Types
 
 LF is a *logical framework*, i.e., it is intended to allow for conveniently specifying the syntax and proof theories of various logics. This might be surprising, given that LF only provides dependent function types. This is where the *judgments-as-types*-paradigm comes into play. It is based on the observation, that there is a natural correspondence between the *judgments* of a logic (e.g. "`φ` holds", or in symbols : `⊦ φ`) and some associated type `A` being *inhabited* (i.e. there is some `a` with `a:A`):
 

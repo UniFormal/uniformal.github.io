@@ -21,7 +21,7 @@
     - title: 'Details on Building with SBT'
       url: '/doc/setup/sbt.html'
     - title: 'Developing MMT'
-      url: '/doc/setup/build.html'
+      url: '/doc/setup/devel.html'
     - title: 'License for Using MMT'
       url: '/doc/setup/license.html'
 
@@ -133,6 +133,8 @@
   items:
     - title: 'Contributing to MMT'
       url: '/doc/development/contributing.html'
+    - title: 'Releases & Changelog'
+      url: '/doc/development/releases.html'
     - title: 'Improving this documentation'
       url: '/doc/development/documentation.html'
     - title: 'Contributors'

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.09818pt" height="37.6282pt" viewBox="-0.4 -30.19524 32.09818 37.6282 ">
+
+    <defs>
+        <!-- the background of the letters should remain transparent -->
+        <clipPath id="letterbox">
+            <path d="M -100 100 L -100 -100 L 100 -100 L 100 100 Z M 9 -100 L 9 100 L  19.5 100 L 19.5 -100 Z" />
+        </clipPath>
+       
+       <!-- the head of the arrow -->
+        <g stroke-dasharray="none" stroke-dashoffset="0.0pt" id="arrowhead">
+            <g stroke-linecap="round">
+                <g stroke-linejoin="miter">
+                    <path d="M 26 2 L 30.25 0.0 L 26 -2" style="fill:none" />
+                </g>
+            </g>
+        </g>
+    </defs>
+
+    <g transform="translate(0, -22.762269999999997)">
+        <g clip-path="url(#letterbox)" stroke-width="0.8pt">
+            <!-- blue arrow -->
+            <g stroke="rgb(0.0%,0.0%,100.0%)">
+                <g stroke-dasharray="none" stroke-dashoffset="0.0pt" stroke-linecap="round">
+                    <path d="M  2.49992 0.0 L  2.0799399999999997 0.0 C  1.1475799999999998 0.0 0.39998999999999985 -0.93236 0.39998999999999985 -1.67995 C  0.39998999999999985 -2.6123 1.1475799999999998 -3.3599 2.0799399999999997 -3.3599" style="fill:none" />
+                </g>
+                <path d="M 2.49992 0.0 L 30.02419 0.0" />                    
+                <use xlink:href="#arrowhead"/>
+            </g>
+
+            <!-- green arrow -->
+            <g stroke="rgb(0.0%,100.0%,0.0%)" transform="translate(0.0, 11.38092)">
+                <path d=" M 0.0 0.0 L  30.02419 0.0" style="fill:none" />
+                <use xlink:href="#arrowhead"/>
+            </g>
+
+            <!-- red arrow -->
+            <g stroke="rgb(100.0%,0.0%,0.0%)" transform="translate(0.0, 22.76227)">
+                <path d=" M  0.0 -0.0 L  3.0 -0.0 C  3.49997 -0.5549900000000001 3.99994 -1.0 4.49991 -1.0 C  4.99988 -1.0 5.49985 -0.5549900000000001 5.99982 -0.0 C  6.49979 0.5549900000000001 6.99976 1.0 7.49973 1.0 C  7.9997 1.0 8.49966 0.5549900000000001 8.99963 -0.0 C  9.49997 -0.5549900000000001 9.99994 -1.0 10.49991 -1.0 C  10.99988 -1.0 11.49985 -0.5549900000000001 11.99982 -0.0 C  12.49979 0.5549900000000001 12.99976 1.0 13.49973 1.0 C  13.9997 1.0 14.49966 0.5549900000000001 14.99963 -0.0 C  15.49997 -0.5549900000000001 15.99994 -1.0 16.49991 -1.0 C  16.99988 -1.0 17.49985 -0.5549900000000001 17.99982 -0.0 C  18.49979 0.5549900000000001 18.99976 1.0 19.49973 1.0 C  19.9997 1.0 20.49966 0.5549900000000001 20.99963 -0.0 C  21.49997 -0.5549900000000001 21.99994 -1.0 22.49991 -1.0 C  22.99988 -1.0 23.49985 -0.5549900000000001 23.99982 -0.0 L  24.0 -0.0 L  30.02419 -0.0" style="fill:none" />
+                <use xlink:href="#arrowhead"/>
+            </g>
+        </g>
+
+        <!-- MMT letters -->
+        <g fill="rgb(100.0%,100.0%,100.0%)" transform="translate(14.22637)">
+            <g transform="translate(0,4.09999)">
+                <text style="stroke:none" text-anchor="middle" font-size="10">
+                    <tspan font-family="cmr" font-size="12">M</tspan>
+                </text>
+            </g>
+            
+            <g transform="translate(0,15.48091)">
+                <text style="stroke:none" text-anchor="middle" font-size="10">
+                    <tspan font-family="cmr" font-size="12">M</tspan>
+                </text>
+            </g>
+            
+            <g transform="translate(0,26.86226)">
+                <text style="stroke:none" text-anchor="middle" font-size="10">
+                    <tspan font-family="cmr" font-size="12">T</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

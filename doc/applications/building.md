@@ -3,8 +3,6 @@ layout: doc
 title: Building Documents
 ---
 
-### Calling Build Targets
-
 MMT can be used as a build tool using a special [shell command](shell.html).
 
 `build ARCHIVE TARGET [P/A/T/H]` runs the build target `TARGET` on the [archive](archives.html) with id `ARCHIVE`. Optionally, the operation can be restricted to the subfolder `P/A/T/H`.

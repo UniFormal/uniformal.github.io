@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Objects
+title: Terms
 ---
 Terms occur on the object level; specifically as components of [declarations](declarations.html), most notably as types and definitions of [constants](declarations.html#constants). They represent syntax trees with binding, e.g. first-order terms and formulas, types, lambda expressions etc.
 

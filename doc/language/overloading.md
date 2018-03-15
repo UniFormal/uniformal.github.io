@@ -2,10 +2,12 @@
 layout: doc
 title: Overloading
 ---
-### Overview
+
 We have to distinguish several kinds of overloading. Only some of them are supported by MMT.
 
-#### Semantic Overloading
+### Types of Overloading
+
+**Semantic Overloading** 
 
 Here the same [identifier](../api/uris.html) is used for unrelated constants.
 These usually have different arities or types so that uses of the shared identifiers can be disambiguated.
@@ -17,14 +19,14 @@ Instead, MMT is designed such that every declaration has a unique identifier.
 When representing languages with semantic overloading in MMT, qualified names such as `c/0`, `c/1`, ... should be used for declarations sharing the overloaded name `c`.
 In any case, it is still possible to use the same notation for all these declarations and use syntax overloading to emulate semantic overloading in user-facing formats.
 
-#### Syntax Overloading
+**Syntax Overloading** 
 
 Here the same notation is used for unrelated identifiers.
 
 The MMT parser/checker supports syntax overloading.
 The parser generates all possible syntax trees, and the checker will choose one of them if the type of exactly one of them can be inferred uniquely.
 
-#### Subtyping Overloading
+**Subtyping Overloading** 
 
 Here a single semantic operation is formalized as multiple constants of the same name.
 Contrary to semantic overloading, these constants are related: They have function types with overlapping domains and are implicitly specified to agree on the shared domain.
@@ -32,7 +34,7 @@ Contrary to semantic overloading, these constants are related: They have functio
 This is common in algebraic specification languages, e.g., CASL.
 It is most commonly used for arithmetic functions on the various number domains: For example, addition may be declared for natural numbers and integers.
 
-#### Type Class Overloading
+**Type Class Overloading** 
 
 A type class `C` is a set of operations on an abstract type. An instance of `C` is a concrete type with corresponding operations on it.
 Typical examples are the algebraic structures.

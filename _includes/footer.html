@@ -1,0 +1,9 @@
+<footer class="container">
+
+    <hr / >
+    <p>
+        MMT is developed and maintained mostly by <a href="http://kwarc.info/frabe/" target="_blank">Florian Rabe</a>. <br />
+        {% if include.path %}{% assign path = include.path %}{% else %}{% assign path = page.path %}{% endif %}
+        This page is hosted via github pages and can be edited <a href="https://github.com/UniFormal/uniformal.github.io/edit/master/{{path}}" target="_blank">directly in the browser</a>. <br/>
+    </p>
+</footer>

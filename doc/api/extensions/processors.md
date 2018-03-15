@@ -13,14 +13,13 @@ The type of rule depends on the processor (e.g., notations for a parser).
 
 All processors are divided into three kinds. One kind handles structure (e.g., declarations) and one objects. The third kind pairs up a structure and an object processor. 
 
-<table border="1">
-<tr>
-    <td/>
-    <td/>
-    <th colspan="4">abstract interface</th>
-    <th colspan="3">main implementation(s)<th/>
-    
-</tr>
+<table>
+    <tr>
+        <td/>
+        <td/>
+        <th colspan="4">abstract interface</th>
+        <th colspan="3">main implementation(s)</th>
+    </tr>
     <tr>
         <th>process</th>
         <th>level</th>

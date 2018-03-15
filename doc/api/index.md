@@ -3,9 +3,6 @@ layout: doc
 title: The MMT API
 ---
 
-
-### Overview
-
 The **MMT API** is the core of MMT. It provides Scala-based reference API for the MMT data structures with various frontend, backends, and MMT-based algorithms.
 The generated API documentation is available [here](https://uniformal.github.io/apidoc/index.html).
 The main package is documented at [`info.kwarc.mmt.api.package`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.package). The base name of all packages in the API is `info.kwarc.mmt.api`. Good starting points for browsing the API are the following classes

@@ -2,8 +2,9 @@
     This template generates the menu stored in the _data/menu.yml file. 
 {% endcomment %}
 
-<ul>
+
+<div class="list-group">
   {% for item in site.data.menu %}
     {% include menuitem.html item=item %}
   {% endfor %}
-</ul>
+</div>

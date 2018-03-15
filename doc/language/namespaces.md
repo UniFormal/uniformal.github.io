@@ -3,8 +3,6 @@ layout: doc
 title: Documents and Namespaces
 ---
 
-
-### Logical and Physical Namespaces
 In module systems, there are two philosophies regarding the relation between logical and physical names of modules.
 Some languages make the *physical location* independent of the *logical identifier*. For example, in ML dialects, the location of a file is irrelevant and only the names of the modules therein are logically meaningful.
 

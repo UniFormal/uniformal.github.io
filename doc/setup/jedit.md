@@ -5,8 +5,8 @@ title: Details on Setting up jEdit
 
 The jEdit plugin based on MMT yields an IDE for MMT content.
 
-This section is about the 'setup' of the jEdit plugin.
-The 'functionality' is described [here](../applications/jedit.html)
+This section is about the setup of the jEdit plugin.
+The functionality is described [here](../applications/jedit.html)
 
 ### Installation
 

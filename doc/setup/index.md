@@ -3,9 +3,7 @@ layout: doc
 title: Setting up MMT
 ---
 
-### Obtain MMT
-
-There are 2 ways to use MMT:
+There are 2 ways to obtain MMT:
 
 * download the binary distribution
   * recommended for casual users and for sampling MMT
@@ -22,29 +20,32 @@ If jEdit is installed, MMT will automatically configure it to serve as an MMT ID
 This is recommended if you want to write or view MMT files.
 If you just want to sample MMT, you should definitely do it with jEdit.
   
-#### Option 1: Via the Binary Disribution
+### Option 1: Via the Binary Disribution
 
 Since Fall 2017, a new binary version of MMT is released roughly every six weeks. 
-See the [development roadmap on GitHub](https://github.com/UniFormal/MMT/milestones) for scheduled improvements.
+See the [releases](../development/releases.html) page for more details. 
 
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
 The newest binary can be downloaded by clicking the top most item on the list. 
 
-To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Uniformal/MMT/releases.atom). 
+### Option 2: Via the Source Distribution
 
-#### Option 2: Via the Source Distribution
+Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 
-Clone the [MMT repository](https://github.com/UniFormal/MMT) from github:
 ```
 git clone git@github.com:UniFormal/MMT.git
 ```
-(Alternatively, if you do not have ssh keys set up, use `git clone https://github.com/UniFormal/MMT.git`)
+
+Alternatively, if you do not have ssh keys set up, use
+
+```
+git clone https://github.com/UniFormal/MMT.git`
+```
+
 A detailed explanation of the contents of the repository is available [here](repo.html).
 
-If you do not have sbt, get it [here](http://www.scala-sbt.org/).
-
-Then build MMT using sbt (detailed instructions for building can be found [here](build.html)):
-
+Then build MMT using sbt (detailed instructions for building can be found [here](build.html)). 
+If you do not have sbt, you can get it [here](http://www.scala-sbt.org/).
 ```
 cd MMT/src
 sbt mmt/deploy

@@ -9,13 +9,12 @@
     {% assign active = false %}
 {% endif %}
 
-
-<li>
-{% if include.item.external %}
-    <a {% if active %}class="active"{% endif %} href="{{ include.item.url }}" target="_blank">
-{% else %}
-    <a {% if active %}class="active"{% endif %} href="{{ site.baseurl }}{{ include.item.url }}">
-{% endif %}
+<a class="list-group-item list-group-item-action {% if active %}active{% endif %}"
+    {% if include.item.external %}
+        href="{{ include.item.url }}" target="_blank"
+    {% else %}
+        href="{{ site.baseurl }}{{ include.item.url }}"
+    {% endif %}
+>
     {{ include.item.title }}
 </a>
-</li>

@@ -2,11 +2,7 @@
 layout: doc
 title: 1 - Creating Archives
 ---
-[< Writing MMT Documents with jEdit](index.html)
 
----------------------------------------
-
-### 1 - Creating Archives
 
 Before we look at jEdit, we will create a new archive in the `MMT/content` folder named `tutorial`, containing the following folders/files:
 

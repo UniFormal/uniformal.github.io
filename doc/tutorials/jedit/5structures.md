@@ -4,10 +4,6 @@ title: 5 - Structures, Lambda, Pi and Implicit Arguments
 ---
 [< 4 - Natural Deduction for Intuitionistic Propositional Logic](4natded.html)
 
-------------------------------
-
-### 5 - Structures, Lambda, Pi and Implicit Arguments
-
 We want to specify the proof rules of the *natural deduction* calculus for (intuitionistic) propositional logic. The first thing to note here, is that our `PLSyntax` theory declares all the constants/operators of propositional logic, but doesn't provide any definitions for them - `equiv` could have easily been defined as `(A ⇒ B) ∧ (B ⇒ A)`, and of course `False` is by definition `¬ ⊤`.
 
 We *could* ameliorate that by just adding the definitions in the `PLSyntax` theory - instead, we're going to use [structures](../../language/declarations.html#structures). They behave similar to includes, but allow us to modify the included symbols within certain constraints. We're going to use them, to add new definitions to our constants.

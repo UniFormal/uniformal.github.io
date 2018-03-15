@@ -2,10 +2,8 @@
 layout: doc
 title: 2 - A First Theory
 ---
-[< 1 - Creating Archives](1archives.html)
 
----------------------
-### 2 - A First Theory
+[< 1 - Creating Archives](1archives.html)
 
 We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/jedit.html). If you haven't done so already, I recommend you read the sections on [delimiters](../../language/delimiters.html), [theories](../../language/modules.html#theories) and [constants](../../language/declarations.html#constants) now, so you know how to produce our following basic theory:
 

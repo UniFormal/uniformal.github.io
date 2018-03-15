@@ -34,6 +34,10 @@ This release is much more substantial than previous releases, including major ne
 - smarter type inference for defined, untyped constants
 - simplifier now supports definition expansion (optionally)
 - new lexing rule for flexible string interpolation (see MMT/examples for strings and quotation)
+- [TGView](https://github.com/UniFormal/TGView) improved
+    - allow sharing graphs via email, facebook, twitter, etc.
+    - allow downloading as json and embedding in HTML
+    - can upload custom graphs as json
 - jEdit improvements
     - display of elaborated declarations in sidekick
     - display of rendered expressions as tooltips in sidekick
@@ -44,8 +48,6 @@ This release is much more substantial than previous releases, including major ne
     - cleaned up tests for API and LF
     - added alignment tests
     - preliminary co-versioning of archives and MMT system
-- TGView Improvements
-    - not documented
 - cleanup of localmh functionality
     - replaces previous `oaf` shell action
     - now possible to install multiple archives at once

@@ -3,8 +3,10 @@ layout: doc
 title: The MMT Server
 ---
 
+The MMT HTTP server is started using the command `server on PORT [HOSTNAME]` in the shell. `server off` switches it off.
+When running this command, an HTTP Server will be started on `PORT`, by default this will only be reachable on `localhost`, but if desired a different `HOSTNAME` can be specified by giving the appropriate argument. 
+In the following, we assume that no such argument is given, however all URIs will still work exactly the same if this is not the case. 
 
-The MMT HTTP server is started using the command `server on PORT` in the shell. `server off` switches it off.
 Individual services are available as `localhost:PORT/:SERVICE`. These may take arguments via a `?QUERY` or via the HTTP BODY.
 Each *SERVICE* is defined by a [Server extension](../api/extensions.html).
 

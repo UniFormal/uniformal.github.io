@@ -27,6 +27,7 @@ The order of the object-level components is arbitrary. They are seperated by the
 * Constants without either a type or a definition (assuming no additional type checking rules) are basically semantically void and thus uninteresting.
 
 #### Notations
+
 A notation is an arbitrary sequence of *tokens*, optionally followed by `prec <precedence>`. 
 
 * Tokens are either a string, or a number representing an argument position of the constant.
@@ -51,15 +52,27 @@ Roles serve as metadata-like annotations to constants. In most situations they a
 * `role Judgment` indicates that the constant is a *Curry-Howard*-style operator mapping propositions to types - as such, occurences of the symbol indicate theorems or axioms.
 * `role Simplify` requires the type of the constant to be of the form `⊦ f(g(a)) ≐ b`, where `⊦` has role `Judgment` and `≐` has role `Eq`. This induces a rewrite rule, that simplifies instances of the left side of the equation to the right side during type checking.
 
-### Structures
+### Imports/Inheritance between Theories
 
-Structures are declarations, that make the contents of some module `<domain>` available to the current module, with certain modifications. In the simples case, it is a **theory inclusion** that modifies nothing. The syntax for includes is
+Large MMT theories are usually built modularly from smaller ones.
+The central declaration is that of an import between two theories.
+Similar to the ML module system, MMT supports unnamed imports, called **includes** and named imports, called **structures**.
+
+Both make the contents of some theory `<domain>` available to the current one.
+Structures may additionally modify the imported theory, most importantly by instantiating constants with concrete values in the importing theory.
+
+#### Includes
+
+The syntax for a **theory inclusion**  is
 
 ![`include <domain> \RS`](/doc/img/include.png)
 
-Including the same theory twice is redundant.
+The include-relation between theories generates a partial order.
+In particular, includes are composed transitively, and including the same theory twice is redundant.
 
-The syntax for general structures is
+#### Structures
+
+The syntax for structures is
 
 ![`structure <name> : <domain> = <declarations> \GS`](/MMT/doc/structure.png)
 
@@ -70,9 +83,10 @@ The syntax for general structures is
 * The name of each declaration in a structure has to correspond to the name of a declaration in the `<domain>`. 
 * Components (aliases, types, definitions etc.) explicitely given in a structure *override* the corresponding component of the declaration in the `<domain>`, all other components are inherited from the latter. In particular, structures can introduce definitions for (not necessarily) previously undefined constants, in which case the (new) definition has to have the (induced/old) type of the constant. It is recommended to *never override the type* of a symbol in a structure.
 * The full [URI](../api/uris.html) of an induced declaration `<declname>` in a structure `<struct>` in a module `<mod>` is `<mod> ? <struct> / <declname>`. It is this declaration, that is visible from the outside and can be used in subsequent (to the structure) declarations. In contrast, the URI `<mod> / <struct> ? <declname>` refers to the plain declaration as declared *directly in the structure*, i.e. without inheritance. The latter should never be used outside of the [API](../api/) and is invisible to declarations outside of the structure.
-* A theory inclusion is actually a structure with empty body and the induced name `[<domain>]`.
 * Unlike simple includes, multiple *named structures* with the same `<domain>` are **not** redundant. Each structure introduces fresh (possibly modified) copies of the declarations in the domain.
 * The limit of the previous point is the [*meta theory*](modules.html#theories) of the domain. If two structures `s1`,`s2` have corresponding domains `dom1`,`dom2` with the same meta theory `meta`, then *everything in the dependency closure of `meta`* will be included exactly once.
+
+Implementation note: Because includes and structures are often treated exactly the same way, the MMT system represents an include as a structure with empty body and the induced name `[<domain>]`.
 
 **Example**
 

@@ -8,7 +8,7 @@ Building using SBT is only needed if you want to develop MMT or want to build fr
 If you develop in an [IDE](develop.html), it will automatically for you. Then you only need to use SBT to test your changes before committing.
 
 SBT has to be installed separately but that is straightforward.
-We test with SBT 1.1.0 or higher.
+We test with SBT 1.1.1 or higher.
 
 SBT must be called from within the `src` folder of the MMT repository, which contains the `build.sbt` file.
 
@@ -30,9 +30,6 @@ That folder also contains all dependencies, but these are bundled automatically 
 ### Known Issues
 
 If sbt runs out of memory, give it about 2G of JVM heap space. There are various ways to configure that, e.g., with an environment variable SBT_OPTS="-Xmx2G".
-
-Due to a bug in SBT 1.1.0, you should use SBT 1.0.4 on Windows.
-Presumably this will be fixed in SBT 1.1.1.
 
 ### Editing the build.sbt File
 

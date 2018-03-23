@@ -12,7 +12,7 @@ Theories are simply named groups of [declarations](declarations.html). Examples 
 
 ![`theory <name> : <metatheory> = <body> \GS`](/doc/img/theory.png)
 
-, where `<body>` is a sequence of declarations. The context available to any specific declaration is everything provided by previous declarations, specifically [theory inclusions](declarations.html#structures) and everything provided by the meta theory.
+where `<body>` is a sequence of declarations. The context available to any specific declaration is everything provided by previous declarations, specifically [theory inclusions](declarations.html#structures) and everything provided by the meta theory.
 
 The **meta theory** statement is optional and behaves like a [theory inclusion](declarations.html#structures).
 
@@ -30,7 +30,7 @@ Their conrete syntax is
 
 ![`view <name> : <domain> -> <codomain> = <assignments> \GS`](/doc/img/view.png)
 
-, where `<assignments>` is a list of assignment declarations. Their syntax looks like this:
+where `<assignments>` is a list of assignment declarations. Their syntax looks like this:
 
 ![`<name> = <term> \RS`](/doc/img/assignment.png)
 
@@ -40,7 +40,7 @@ In assignments, `<name>` has to be a symbol declared in (the dependency closure 
 
 The semantics of the large scale structure of developments in MMT is computed in the category of theories and theory **morphisms**.
 
-Atomic morphisms can be declared in two ways: via views and [structures](declarations.html#Structures).
+Atomic morphisms can be declared in two ways: via [views](modules.html#Views) and [structures](declarations.html#Structures).
 Complex morphisms can be built in particular using composition.
 
 #### Implicit Morphisms

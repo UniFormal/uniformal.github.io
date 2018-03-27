@@ -17,7 +17,7 @@ The default method is https. To enable ssh, type `lmh root <path> ssh` on the sh
 
 
 ### Installing, Updating & Managing Archives
-Each archive may contain dependencies to other archives, therefore MMT provides the `lmh install` [shell command](/doc/applications/shell/) to allow the user to install one or multiple archives.
+Each archive may contain dependencies to other archives, therefore MMT provides the `lmh install` [shell command](/doc/applications/shell.html) to allow the user to install one or multiple archives.
 
 For example, `lmh install MMT/urtheories MMT/examples` install the archives `MMT/urtheories` and `MMT/examples` along with their dependencies.
 It is also possible to install all archives within one group, e.g. `lmh install MMT` will install all archives within the `MMT` group.

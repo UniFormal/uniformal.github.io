@@ -19,7 +19,7 @@ This release has not yet been released and is scheduled for [8th May 2018](https
 
 This release has not yet been released and is scheduled for [10th April 2018](https://github.com/UniFormal/MMT/milestone/10). 
 
-- added a new context menu to jEdit
+- added an MMT-specific context menu to jEdit
 - an MMT Docker Container is now available at [kwarc/MMT-docker](https://github.com/kwarc/MMT-docker)
 - numerous bugfixes and cleanup
 

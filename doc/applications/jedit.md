@@ -34,7 +34,7 @@ plain    | l  | r  | lr
 hooked   | hl | hr | hlr
 with bar | bl | br | blr
 
-where T in the first table determines the arrow tips and is given by an entry in the second table.
+where T in the first table determines the arrow tips and is given by an entry in the second table. Note that some combinations do not exist because they are not supported by Unicode.
 
 Every *user* can configure the details can be configured in jEdit's `Extras > Global Options > Abbreviations` menu or by editing the `<jedit>/abbrevs` file.
 Every *developer* can configure the abbreviations that are available to every user (specifically: every user who runs the MMT setup or who reruns the jedit setup routine) by editing the file `src/jEdit-mmt/src/resources/plugin/abbrevs`.
@@ -72,8 +72,8 @@ The plugin provides a Console (named "mmt") for the Console plugin. This permits
 
 ![`MMT interpreter`](/doc/img/screenshots/interpreter.png)
 
-**Hiding:**
-All text enclosed in `%{SHOW ... }%` is hidable and shown. All text enclosed in `%{HIDE ... }%` is hidable and hidden. The delimiters themselves are always hidden. Hiding is achieved by reducing the font size to 0, i.e., the hidden parts are still in the buffer and treated as usual in all situations except for displaying.
+**Context Menu:**
+The plugin provides a user-extensible mode-specific context menu that is initialized with a common commands in the MMT mode.
 
 **Actions:**
 The plugin provides a number of jEdit actions. These can be bound to any key, menu item, or toolbar button via the generic jEdit options dialog. By default, they are available in the MMT plugin menu. 

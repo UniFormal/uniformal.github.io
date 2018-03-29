@@ -3,7 +3,7 @@ layout: doc
 title: Structural Delimiters
 ---
 
-The only unusual aspect of MMT's default concrete syntax is the use of the characters ASCII 28-31 as structural delimiters.
+The only unusual aspect of MMT's default concrete syntax is the use of the characters Unicode U+2758-A as structural delimiters.
 These are usually considered whitespace, and most fonts do not even have glyphs for them.
 Therefore, typing and displaying them depends on the editor and font used.
 
@@ -12,11 +12,11 @@ Therefore, they permit near-perfect error recovery during parsing, orthogonality
 
 Every delimiter marks the end of a declaration or a component of a declaration.
 
-Symbol in [jEdit](../applications/jedit.html) | Delimiter	| Name in ASCII | Marks end of | Comment
+Symbol in [jEdit](../applications/jedit.html) | Delimiter	| Name in Unicode | Marks end of | Comment
 ---- | ---- | ---- | ---- | ----
-![GS](/doc/img/GS.png) | ASCII 29	| Module Delimiter	| Modules | any declaration that has nested declarations, i.e., theory, view, structure etc.
-![RS](/doc/img/RS.png) | ASCII 30 | Declaration Delimiter | Declarations |	in particular includes and constants. Redundant if end of module follows
-![US](/doc/img/US.png) | ASCII 31 | Object Delimiter | Components of declarations |	in particular type, definiens, notation of a constant. Redundant if end of declaration follows.
+![GS](/doc/img/GS.png) | U+275A	| Module Delimiter	| Modules | any declaration that has nested declarations, i.e., theory, view, structure etc.
+![RS](/doc/img/RS.png) | U+2759 | Declaration Delimiter | Declarations |	in particular includes and constants. Redundant if end of module follows
+![US](/doc/img/US.png) | U+2758 | Object Delimiter | Components of declarations |	in particular type, definiens, notation of a constant. Redundant if end of declaration follows.
 
 Note that these form a hierarchy of nested levels and that we can think of SPACE as the 5th level delimiter, which marks the end of a keyword.
 
@@ -33,8 +33,8 @@ The [jEdit plugin](../applications/jedit.html) offers three ways to insert these
   * **M** inserts the module delimiter.
 * via the menu option `Plugins > MMTPlugin > Insert <DELIMITER>`
 * via the predefined [abbreviations](../applications/jedit.html#abbreviations):
-  * `jOD` (formerly `jUS`) for the object delimiter,
-  * `jDD` (formerly `jRS`) for the declaration delimiter,
-  * `jMD` (formerly `jGS`) for the module delimiter.
+  * `jOD` for the object delimiter,
+  * `jDD` for the declaration delimiter,
+  * `jMD` for the module delimiter.
 
 You can modify (or add new) abbreviations in `Extras > Global Options > Abbreviations`.

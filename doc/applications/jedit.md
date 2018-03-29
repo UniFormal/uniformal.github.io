@@ -18,7 +18,27 @@ The token type COMMENT4 is reseved by MMT. It is assigned to all hidden, i.e., i
 
 The file `abbrevs` (in jEdit's config folder) contains a number of useful abbreviations to produce Unicode characters using Latex-like commands.
 For the most common Unicode characters, the abbreviation `jCOMMAND` produces the same character as `\COMMAND` in LaTeX.
-The details can be configured in jEdit's `Extras > Global Options > Abbreviations` menu or by editing the `<jedit>/abbrevs` file.
+
+Additionally, a few shorter abbreviations are defined for commands that are awkwardly long in LaTeX.
+These are in particular the various arrows:
+
+Arrows | short | long
+--- | --- | ---       
+**single**   | jTa | jTaa
+**double**   | jTA | jTAA
+**squiggly** | jTs | jTss
+
+Arrow tips T | left | right | left-right
+--- | --- | --- | ---
+plain    | l  | r  | lr
+hooked   | hl | hr | hlr
+with bar | bl | br | blr
+
+where T in the first table determines the arrow tips and is given by an entry in the second table.
+
+Every *user* can configure the details can be configured in jEdit's `Extras > Global Options > Abbreviations` menu or by editing the `<jedit>/abbrevs` file.
+Every *developer* can configure the abbreviations that are available to every user (specifically: every user who runs the MMT setup or who reruns the jedit setup routine) by editing the file `src/jEdit-mmt/src/resources/plugin/abbrevs`.
+Users are welcome to submit pull requests to define further abbreviations.
 
 **Interpreter**
 

@@ -11,9 +11,17 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+<!--
 #### Release 11 (unreleased)
-
 This release has not yet been released and is scheduled for [8th May 2018](https://github.com/UniFormal/MMT/milestone/3). 
+!-->
+#### Release 10.1 (unreleased)
+
+This release has not yet been released and is scheduled for [10th April 2018](https://github.com/UniFormal/MMT/milestone/10). 
+
+- added a new context menu to jEdit
+- an MMT Docker Container is now available at [kwarc/MMT-docker](https://github.com/kwarc/MMT-docker)
+- numerous bugfixes and cleanup
 
 #### Release 10
 

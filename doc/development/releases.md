@@ -25,7 +25,7 @@ This release has not yet been released and is scheduled for [10th April 2018](ht
 
 #### Release 10
 
-Released on [16th March 2018](https://github.com/UniFormal/MMT/releases/tag/16-Mar-2018). 
+Released on [16th March 2018](https://github.com/UniFormal/MMT/releases/tag/v10.0.0). 
 
 This release is much more substantial than previous releases, including major new features, the promotion of several previously experimental features to official ones, and numerous fixes of minor issues that had accumulated over time.
 
@@ -66,7 +66,7 @@ This release is much more substantial than previous releases, including major ne
 
 #### Release 9
 
-Released on [20th December 2017](https://github.com/UniFormal/MMT/releases/tag/20-Dec-2017). 
+Released on [20th December 2017](https://github.com/UniFormal/MMT/releases/tag/v9.0.0). 
 
 - Preliminary implementation of parametric theories (experimental!)
 - fixed lexing of float literals
@@ -78,7 +78,7 @@ Released on [20th December 2017](https://github.com/UniFormal/MMT/releases/tag/2
 
 #### Release 8
 
-Released on [6th Nov 2017](https://github.com/UniFormal/MMT/releases/tag/06-Nov-2017). 
+Released on [6th Nov 2017](https://github.com/UniFormal/MMT/releases/tag/v8.0.0). 
 
 - Views are now checked for totality
 - Improved Query error messages
@@ -93,7 +93,7 @@ Released on [6th Nov 2017](https://github.com/UniFormal/MMT/releases/tag/06-Nov-
 
 #### Release 7
 
-Released on [11th May 2017](https://github.com/UniFormal/MMT/releases/tag/11-May-2017). 
+Released on [11th May 2017](https://github.com/UniFormal/MMT/releases/tag/v7.0.0). 
 
 * New additions:
   * Views are allowed within Theories now
@@ -109,7 +109,7 @@ Released on [11th May 2017](https://github.com/UniFormal/MMT/releases/tag/11-May
 
 #### Release 6
 
-Released on [13th April 2017](https://github.com/UniFormal/MMT/releases/tag/13-Apr-2017). 
+Released on [13th April 2017](https://github.com/UniFormal/MMT/releases/tag/v6.0.0). 
 
 * New additions: 
   * Introduction of Theory Expressions
@@ -126,7 +126,7 @@ Released on [13th April 2017](https://github.com/UniFormal/MMT/releases/tag/13-A
 
 #### Release 5
 
-Released on [22nd February 2017](https://github.com/UniFormal/MMT/releases/tag/22-Feb-2017). 
+Released on [22nd February 2017](https://github.com/UniFormal/MMT/releases/tag/v5.0.0). 
 
 * New additions:
   * Initial version of Active Computation Extension
@@ -136,7 +136,7 @@ Released on [22nd February 2017](https://github.com/UniFormal/MMT/releases/tag/2
 
 #### Release 4
 
-Released on [8th February 2017](https://github.com/UniFormal/MMT/releases/tag/08-Feb-2017). 
+Released on [8th February 2017](https://github.com/UniFormal/MMT/releases/tag/v4.0.0). 
 
 * Improvements to IMPS Parser
 * Improvements to PVS Importer
@@ -145,7 +145,7 @@ Released on [8th February 2017](https://github.com/UniFormal/MMT/releases/tag/08
 
 #### Release 3
 
-Released on [26th January 2017](https://github.com/UniFormal/MMT/releases/tag/26-Jan-2017). 
+Released on [26th January 2017](https://github.com/UniFormal/MMT/releases/tag/v3.0.0). 
 
 * New additions:
   * Introduction of Alignments and Concept Server along with translation
@@ -159,7 +159,7 @@ Released on [26th January 2017](https://github.com/UniFormal/MMT/releases/tag/26
 
 #### Release 2
 
-Released on [30th August 2016](https://github.com/UniFormal/MMT/releases/tag/30-Aug-2016). 
+Released on [30th August 2016](https://github.com/UniFormal/MMT/releases/tag/v2.0.0). 
 
 
 * New additions:
@@ -172,6 +172,6 @@ Released on [30th August 2016](https://github.com/UniFormal/MMT/releases/tag/30-
 
 #### Release 1
 
-Released on [28th July 2016](https://github.com/UniFormal/MMT/releases/tag/28-Jul-2016). 
+Released on [28th July 2016](https://github.com/UniFormal/MMT/releases/tag/v1.0.0). 
 
 The first release of MMT on GitHub.

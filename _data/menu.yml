@@ -127,6 +127,8 @@
       url: '/doc/applications/tgview.html'
     - title: 'LaTeX Processing'
       url: '/doc/applications/latex.html'
+    - title: 'Docker Image'
+      url: '/doc/applications/docker.html'
 
 - title: 'Development'
   url: '/doc/development/'

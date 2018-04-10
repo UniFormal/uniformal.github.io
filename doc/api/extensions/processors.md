@@ -125,12 +125,13 @@ All processors are divided into three kinds. One kind handles structure (e.g., d
         <th>interpretation</th>
         <td></td>
         <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.checking.Interpreter">Interpreter</a> (<a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.archives.Importer">Importer</a>)</td>
-        <td>input format</td><td colspan="2">pair of parser and checker</td>
+        <td>input format</td><td colspan="2">triple of parser, checker, and simplifier</td>
         <td colspan="2">
 <pre>
 new TwoStepInterpreter(
   new KeywordBasedParser(new NotationBasedParser),
-  new MMTStructureChecker(new RuleBasedChecker)
+  new MMTStructureChecker(new RuleBasedChecker),
+  new ElaborationBasedSimplifier(new RuleBasedSimplifier)
 )</pre></td>
         <td>"mmt"</td>
     </tr>

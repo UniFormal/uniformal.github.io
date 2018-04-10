@@ -12,7 +12,7 @@ There are 2 ways to obtain MMT:
   * recommended for advanced users or developers
   * additionally needs sbt (the Scala build tool) for building
 
-MMT is currently built for `Scala 2.12.5`. MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
+MMT is currently built for `Scala 2.12.3`. MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
 
 Before installing MMT, you can optionally install [jEdit](http://jedit.org/).
 If jEdit is installed, MMT will automatically configure it to serve as an MMT IDE.

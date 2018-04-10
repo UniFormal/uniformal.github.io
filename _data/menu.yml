@@ -139,8 +139,6 @@
       url: '/doc/development/releases.html'
     - title: 'Improving this documentation'
       url: '/doc/development/documentation.html'
-    - title: 'Contributors'
-      url: '/doc/development/contributors.html'
 
 - title: 'Community & Communication'
   url: '/doc/community.html'

@@ -130,9 +130,11 @@
     - title: 'Docker Image'
       url: '/doc/applications/docker.html'
 
-- title: 'Development'
+- title: 'Support and Development'
   url: '/doc/development/'
   items:
+    - title: 'Communicating with developers'
+      url: '/doc/development/communication.html'
     - title: 'Contributing to MMT'
       url: '/doc/development/contributing.html'
     - title: 'Releases & Changelog'

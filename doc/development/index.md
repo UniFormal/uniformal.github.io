@@ -4,6 +4,9 @@ title: User and Developer Support
 ---
 
 MMT blends the distinction between users and developers.
+Some users use a ready-to-go version of MMT, while others customize MMT with extensions, e.g., for new language features or support for external formats.
+The following typical use/development modes can be distinguished. 
+
 
 ### Using MMT without writing any code
 
@@ -18,7 +21,7 @@ User-oriented documentation is growing, and good starting points are the [setup]
 
 The best to reach the main developers for support is via the [gitter chatroom](https://gitter.im/UniFormal/MMT).
 
-### Developing on top of MMT
+### Developing new applications on top of MMT
 
 The MMT code (written in Scala) is designed to be as [extensible](extend) and customizable as possible.
 Therefore, you can build your own applications on top of MMT (without recompiling MMT).
@@ -31,11 +34,11 @@ MMT-based applications can be written in two ways:
   
   * instantiating the abstract interfaces designed for [extending MMT](../api/extensions/index.html),
   * or even replacing any of MMT's core components with your own variant.
-
+                                        
 * Use any other programming language and communicate with MMT via the HTTP API.
   If you use Pythong, use the [MMTPy project](https://github.com/UniFormal/MMTPy), which builds Python wrappers for the HTTP API.
 
-### Developing MMT itself further
+### Developing MMT itself
 
 Ultimately, MMT is a comprehensive research project about how to organize knowledge.
 Therefore, it is never complete and can always be improved and extended.

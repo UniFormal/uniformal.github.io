@@ -130,11 +130,9 @@
     - title: 'Docker Image'
       url: '/doc/applications/docker.html'
 
-- title: 'Support and Development'
+- title: 'Development'
   url: '/doc/development/'
   items:
-    - title: 'Communicating with developers'
-      url: '/doc/development/communication.html'
     - title: 'Contributing to MMT'
       url: '/doc/development/contributing.html'
     - title: 'Releases & Changelog'
@@ -143,3 +141,6 @@
       url: '/doc/development/documentation.html'
     - title: 'Contributors'
       url: '/doc/development/contributors.html'
+
+- title: 'Community & Communication'
+  url: '/doc/community.html'

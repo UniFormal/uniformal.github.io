@@ -21,6 +21,8 @@ This release has not yet been released and is scheduled for [10th April 2018](ht
 
 - added an MMT-specific context menu to jEdit
 - an MMT Docker Container is now available at [kwarc/MMT-docker](https://github.com/kwarc/MMT-docker)
+- [TGView](https://github.com/UniFormal/TGView) improved
+   - undocumented
 - numerous bugfixes and cleanup
 
 #### Release 10

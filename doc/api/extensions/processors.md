@@ -92,6 +92,36 @@ All processors are divided into three kinds. One kind handles structure (e.g., d
         <td>"mmt"</td>
     </tr>
     <tr>
+        <th rowspan="3">simplification</th>
+        <td>objects</td>
+        <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.ObjectSimplifier">ObjectSimplifier</a></td>
+        <td></td>
+        <td>object</td>
+        <td>simplified object</td>
+        <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.RuleBasedSimplifier">RuleBasedSimplifier</a></td>
+        <td>simplification rules in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>structure</td>
+        <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.StructureSimplifier">StructureSimplifier</a></td>
+        <td></td>
+        <td>structural element</td>
+        <td>list of declarations</td>
+        <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.ElaborationBasedSimplifier">ElaborationBasedSimplifier</a></td>
+        <td>structural features in scope</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.checking.Checker">Simplifier</a></td>
+        <td>id</td>
+        <td></td>
+        <td></td>
+        <td colspan="2"><pre>new ElaborationBasedSimplifier(new RuleBasedSimplifier)</pre></td>
+        <td>"mmt"</td>
+    </tr>
+    <tr>
         <th>interpretation</th>
         <td></td>
         <td><a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.checking.Interpreter">Interpreter</a> (<a href="https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.archives.Importer">Importer</a>)</td>

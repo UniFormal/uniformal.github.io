@@ -11,16 +11,19 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
-<!--
 #### Release 11 (unreleased)
 This release has not yet been released and is scheduled for [8th May 2018](https://github.com/UniFormal/MMT/milestone/3). 
-!-->
-#### Release 10.1 (unreleased)
 
-This release has not yet been released and is scheduled for [10th April 2018](https://github.com/UniFormal/MMT/milestone/10). 
+#### Release 10.1
+
+Released on [11th April 2018](https://github.com/UniFormal/MMT/releases/tag/v10.1.0). 
+
+This release is smaller than previous releases and mainly contains various bugfixes for use throughout the semester. 
 
 - added an MMT-specific context menu to jEdit
 - an MMT Docker Container is now available at [kwarc/mmt](https://hub.docker.com/r/kwarc/mmt/) on DockerHub
+- Deprecation of old delimiters and LF Arrows
+    - systematic replacement across all existing archives
 - [TGView](https://github.com/UniFormal/TGView) minor improvements
 - numerous bugfixes and cleanup
 

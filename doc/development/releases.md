@@ -14,6 +14,16 @@ This document contains a changelog of existing as well as upcoming releases.
 #### Release 11 (unreleased)
 This release has not yet been released and is scheduled for [8th May 2018](https://github.com/UniFormal/MMT/milestone/3). 
 
+*TGView-Changelog:*
+- Added locking nodes together (--> "cage nodes")
+- Allow editing the graph in frontend using an UI
+- Added show/hide nodes manually
+- Added Show/Hide/Select nodes/edges by node-/edge-type
+- Save graph as JSON to local disk
+- Added Redo-Button
+- Added sharing through "Social-Buttons" (Twitter, Facebook, ...)
+- Bunch of BugFixes
+
 #### Release 10.1
 
 Released on [11th April 2018](https://github.com/UniFormal/MMT/releases/tag/v10.1.0). 

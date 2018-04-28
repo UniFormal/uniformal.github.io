@@ -14,6 +14,9 @@ This document contains a changelog of existing as well as upcoming releases.
 #### Release 11 (unreleased)
 This release has not yet been released and is scheduled for [8th May 2018](https://github.com/UniFormal/MMT/milestone/3). 
 
+- implemented a Jupyter Kernel based on MMT
+    - updated MMT REPL Extension
+
 #### Release 10.1
 
 Released on [11th April 2018](https://github.com/UniFormal/MMT/releases/tag/v10.1.0). 

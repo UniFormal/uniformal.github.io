@@ -16,7 +16,17 @@ This release has not yet been released and is scheduled for [8th May 2018](https
 
 - implemented a Jupyter Kernel based on MMT
     - updated MMT REPL Extension
-
+- allow setup in an automated fashion
+- move Dockerfile into main repository and enable automatic builds
+- [TGView](https://github.com/UniFormal/TGView) updates
+  - Added Redo-Button
+  - Allow locking of nodes together
+  - Added local graph editing
+  - Added show/hide nodes manually
+  - Added Show/Hide/Select nodes/edges by node-/edge-type
+  - Added Save graph as JSON
+- minor improvements and bug fixes
+  
 #### Release 10.1
 
 Released on [11th April 2018](https://github.com/UniFormal/MMT/releases/tag/v10.1.0). 

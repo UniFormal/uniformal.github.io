@@ -16,6 +16,7 @@ This release has not yet been released and is scheduled for [8th May 2018](https
 
 - implemented a Jupyter Kernel based on MMT
     - updated MMT REPL Extension
+- added Viewfinder
 - allow setup in an automated fashion
 - move Dockerfile into main repository and enable automatic builds
 - [TGView](https://github.com/UniFormal/TGView) updates

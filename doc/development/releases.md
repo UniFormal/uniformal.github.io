@@ -26,6 +26,7 @@ This release has not yet been released and is scheduled for [8th May 2018](https
   - Added show/hide nodes manually
   - Added Show/Hide/Select nodes/edges by node-/edge-type
   - Added Save graph as JSON
+- added importer for IMPS files
 - minor improvements and bug fixes
   
 #### Release 10.1

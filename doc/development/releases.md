@@ -13,7 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 11.1 (unreleased)
 
-This release has not yet been released and is scheduled for [8th May 2018](https://github.com/UniFormal/MMT/milestone/3). 
+This release has not yet been released and is scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3). 
 
 - Dockerfile improvements
 

@@ -15,6 +15,8 @@ This document contains a changelog of existing as well as upcoming releases.
 
 This release has not yet been released and is scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3). 
 
+- lmh can now handle non-archive repositories
+- new MathHub Extension
 - Dockerfile improvements
 - SBT dependency changes
 

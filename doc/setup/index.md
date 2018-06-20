@@ -5,11 +5,11 @@ title: Setting up MMT
 
 To obtain and set up MMT, perform the following steps:
 
-### Install Java (if you haven't already)
+### 1) Install Java (if you haven't already)
 
 MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
 
-### Install jEdit (if you haven't already)
+### 2) Install jEdit (if you haven't already)
 
 [jEdit](http://jedit.org/) is a Java-based text editor.
 MMT includes a jEdit plugin, which turns jEdit into an IDE for MMT.
@@ -22,11 +22,11 @@ Concretely:
 * Run jEdit once and close it again.
   (That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)
 
-### Install MMT
+### 3) Install MMT
 
 There are two options for this step:
 
-#### Casual Users: Download the Binary Distribution
+#### a) Casual Users: Download the Binary Distribution
 
 The file `mmt.jar` provides a self-contained executable file.
 
@@ -34,7 +34,7 @@ The file `mmt.jar` provides a self-contained executable file.
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
 The latest one can be downloaded by clicking the top most item on the list. 
 
-#### Option 2: Clone the Source Distribution and Build MMT Yourself
+#### b) Advanced Users: Clone the Source Distribution and Build MMT Yourself
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 
@@ -70,7 +70,7 @@ cd ../deploy/
 
 Besides `mmt.jar`, this directory contains executable scripts (for Windows and Unix) to for running MMT.
 
-### Set Up MMT
+### 4) Set Up MMT
 
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
@@ -83,7 +83,7 @@ This triggers the setup dialog which does the following:
 
 Further instructions for setting up jEdit are available [here](jedit.html).
 
-### Run MMT
+### 5) Run MMT
 
 If you want to use MMT via jEdit, you do not have to run MMT itself.
 It will act as a plugin within jEdit: just start jEdit and open `.mmt` files.
@@ -95,7 +95,7 @@ But depending on your OS and configuration, double-clicking or executing `mmt.ja
 
 Additional instructions for running MMT are available [here](running.html).
 
-### Update MMT
+### Later: Update MMT
 
 This step is not part of the initial setup.
 It is only needed later when updating your MMT installation to the latest release.

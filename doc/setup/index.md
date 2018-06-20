@@ -34,7 +34,7 @@ The file `mmt.jar` provides a self-contained executable file.
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
 The latest one can be downloaded by clicking the top most item on the list. 
 
-### Option 2: Clone the Source Distribution and Build MMT Yourself
+#### Option 2: Clone the Source Distribution and Build MMT Yourself
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 

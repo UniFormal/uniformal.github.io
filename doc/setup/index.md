@@ -3,32 +3,38 @@ layout: doc
 title: Setting up MMT
 ---
 
-There are 2 ways to obtain MMT:
+To obtain and set up MMT, perform the following steps:
 
-* download the binary distribution
-  * recommended for casual users and for sampling MMT
-  * self-contained except for needing the usual Java runtime environment
-* clone the source distribution and build MMT yourself
-  * recommended for advanced users or developers
-  * additionally needs sbt (the Scala build tool) for building
+### Install Java (if you haven't already)
 
-MMT is currently built for `Scala 2.12.3`. MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
+MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
 
-Before installing MMT, you can optionally install [jEdit](http://jedit.org/).
-If jEdit is installed, MMT will automatically configure it to serve as an MMT IDE.
+### Install jEdit (if you haven't already)
 
-This is recommended if you want to write or view MMT files.
+[jEdit](http://jedit.org/) is a Java-based text editor.
+MMT includes a jEdit plugin, which turns jEdit into an IDE for MMT.
+This step is optional but highly recommended if you want to write or view MMT files.
 If you just want to sample MMT, you should definitely do it with jEdit.
-  
-### Option 1: Via the Binary Disribution
 
-Since Fall 2017, a new binary version of MMT is released roughly every six weeks. 
-See the [releases](../development/releases.html) page for more details. 
+Concretely:
 
+* Download and install jEdit.
+* Run jEdit once and close it again.
+  (That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)
+
+### Install MMT
+
+There are two options for this step:
+
+#### Casual Users: Download the Binary Distribution
+
+The file `mmt.jar` provides a self-contained executable file.
+
+`mmt.jar` is released roughly every 2 months.
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
-The newest binary can be downloaded by clicking the top most item on the list. 
+The latest one can be downloaded by clicking the top most item on the list. 
 
-### Option 2: Via the Source Distribution
+### Option 2: Clone the Source Distribution and Build MMT Yourself
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 
@@ -44,55 +50,55 @@ git clone https://github.com/UniFormal/MMT.git`
 
 A detailed explanation of the contents of the repository is available [here](repo.html).
 
-Then build MMT using sbt (detailed instructions for building can be found [here](build.html)). 
+MMT is currently built for `Scala 2.12.3` (incuded in the repository) and building is done with sbt (the Scala build tool).
 If you do not have sbt, you can get it [here](http://www.scala-sbt.org/).
+
+To build, execute
+
 ```
 cd MMT/src
 sbt mmt/deploy
 ```
+ (Detailed instructions for building can be found [here](build.html)).
 
-This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`. Change to that directory:
+This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`.
+
+Change to that directory:
 ```
 cd ../deploy/
 ```
 
 Besides `mmt.jar`, this directory contains executable scripts (for Windows and Unix) to for running MMT.
 
-### Setup MMT
+### Set Up MMT
 
-This assumes jEdit is installed and the MMT jar is obtained as described above.
-If you have not already done so, start jEdit once so that it initializes its folders, which the MMT installer will look for.
+In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
-To start setup open a shell and run `java -jar mmt.jar` (or one of the convenience scripts).
+To start setup open a shell and run `java -jar mmt.jar`.
 This triggers the setup dialog which does the following:
 
-1. asks for directories into which MMT and MMT content should be placed.
+1. asks for a directory into which MMT should be installed
 2. checks out some example content repositories into that directory (This requires git and internet access.),
-3. guesses the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
+3. determines the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
 
 Further instructions for setting up jEdit are available [here](jedit.html).
 
 ### Run MMT
 
 If you want to use MMT via jEdit, you do not have to run MMT itself.
-It will act as a plugin within jEdit.
+It will act as a plugin within jEdit: just start jEdit and open `.mmt` files.
 
 Developers or advanced users may want to run MMT directly for various other [applications](../applications/).
 The canonical way for this is to run `java -jar mmt.jar`.
 (This responds with a simple setup dialog if MMT not installed, and drops to a shell otherwise.)
 But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.
 
-If you have obtained MMT by building from sources make sure to go to the deploy folder first.
-
-```
-cd ../deploy
-java -jar mmt.jar
-```
-You can now either use [jEdit](jedit.html) to work with .mmt files or run MMT natively
-
 Additional instructions for running MMT are available [here](running.html).
 
 ### Update MMT
+
+This step is not part of the initial setup.
+It is only needed later when updating your MMT installation to the latest release.
 
 To update MMT, replace the file `mmt.jar`, i.e.,
 

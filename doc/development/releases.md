@@ -15,11 +15,20 @@ This document contains a changelog of existing as well as upcoming releases.
 
 This release has not yet been released and is scheduled for [26th June 2018](https://github.com/UniFormal/MMT/milestone/4).
 
-- Switch the IMPS importer to parser combinators
+- Switched the IMPS importer to parser combinators
+
+- added a Python bridge to control MMT from Python (using Py4J), see python-mmt
+- started Isabelle importer (see mmt-isabelle)
+- MMT tasks now carry progress messages (currently sent by structure parser/checker/elaborator)
+- jEdit gutter contains marker indicating checking progress
+- stop button in jEdit toolbar to gracefully kill MMT processing of file
+- LaTeX-MMT integration works, see self-documenting example.pdf in latex-mmt
+- extensions can now add productions to the syntax of the MMT shell
+- various technical improvements and fixes
 
 ### Release 11.1 (unreleased)
 
-This release has not yet been released and is scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3). 
+This release was not scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3) but has been merged into the next release. 
 
 - lmh can now handle non-archive repositories
 - new MathHub Extension

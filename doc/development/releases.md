@@ -11,6 +11,12 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 12 (unreleased)
+
+This release has not yet been released and is scheduled for [26th June 2018](https://github.com/UniFormal/MMT/milestone/4).
+
+- Switch the IMPS importer to parser combinators
+
 ### Release 11.1 (unreleased)
 
 This release has not yet been released and is scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3). 

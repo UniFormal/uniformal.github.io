@@ -11,12 +11,17 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
-### Release 12 (unreleased)
+### Release 13 (unreleased)
 
-This release has not yet been released and is scheduled for [26th June 2018](https://github.com/UniFormal/MMT/milestone/4).
+This release has not yet been released and is scheduled for [31st July 2018](https://github.com/UniFormal/MMT/milestone/5).
+
+
+
+### Release 12
+
+Released on [26th June 2018](https://github.com/UniFormal/MMT/milestone/4).
 
 - Switched the IMPS importer to parser combinators
-
 - added a Python bridge to control MMT from Python (using Py4J), see python-mmt
 - started Isabelle importer (see mmt-isabelle)
 - MMT tasks now carry progress messages (currently sent by structure parser/checker/elaborator)
@@ -25,11 +30,6 @@ This release has not yet been released and is scheduled for [26th June 2018](htt
 - LaTeX-MMT integration works, see self-documenting example.pdf in latex-mmt
 - extensions can now add productions to the syntax of the MMT shell
 - various technical improvements and fixes
-
-### Release 11.1 (unreleased)
-
-This release was not scheduled for [22nd May 2018](https://github.com/UniFormal/MMT/milestone/3) but has been merged into the next release. 
-
 - lmh can now handle non-archive repositories
 - new MathHub Extension
 - Dockerfile improvements

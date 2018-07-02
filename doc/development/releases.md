@@ -19,7 +19,7 @@ This release has not yet been released and is scheduled for [31st July 2018](htt
 
 ### Release 12
 
-Released on [26th June 2018](https://github.com/UniFormal/MMT/milestone/4).
+Released on [26th June 2018](https://github.com/UniFormal/MMT/releases/tag/v12.0.0).
 
 - Switched the IMPS importer to parser combinators
 - added a Python bridge to control MMT from Python (using Py4J), see python-mmt

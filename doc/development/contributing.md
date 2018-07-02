@@ -73,7 +73,9 @@ There are two essential workflows:
 
 #### Updating the release branch
 
-To mark a version of MMT as a release, we again use pull requests. 
+Before a release is made the version string stored in [src/mmt-api/resources/versioning/system.txt](https://github.com/UniFormal/MMT/blob/master/src/mmt-api/resources/versioning/system.txt) should be increased appropriatly. 
+
+Once such a change has landed on master, when then again use pull requests to mark a version of MMT as a release. 
 This time we merge from ```master``` onto ```release```. 
 Again go to the main repository page and select [New pull request](https://github.com/UniFormal/MMT/compare/release...master). 
 Choose ```release``` as the base and ```master``` as the head. 
@@ -93,7 +95,7 @@ Making a release involves two steps, making a tag and uploading a jar that can b
 
 To create a new release, visit the [draft a new release](https://github.com/UniFormal/MMT/releases/new) page. 
 In the tag version, make sure that the target is the ``release`` branch . 
-By convention, the name of the new tag is the current day, ``DD-MMM-YYYY``. 
+By convention, the name of the new tag is the MMT Version, e.g. ``v12.0.0`` for release 12. 
 The name should be ``nth Git Release`` (where n is increasing). 
 Optionally, a human readable description can be written for the release. 
 Finally, generate a fat jar locally and attach it to the release by dragging it into the attachment area below the description. 

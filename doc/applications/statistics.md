@@ -14,7 +14,7 @@ The sorts of different counted objects are the following ones:
 - `any theory morphism`(transitive closure of any (explicit or implicit theory morphisms))
 - `constant` of different type declared (as above) in the archive or document:
   - `structure` and `pattern`
-  - `untyped constant` (can't be differentiated further) and `maltyped constants` (whoose type cannot be inferred succesfully)
+  - `untyped constant` (can't be differentiated further) and `maltyped constant` (whoose type cannot be inferred succesfully)
   - Term-level constants (which ultimately return a term)
     - `data constructor`
     - `rule`

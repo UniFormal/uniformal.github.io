@@ -10,6 +10,7 @@ In particular, these include
 * a [shell](shell.html)
 * an [IDE](jedit.html) based on the jEdit text editor
 * a [build tool](building.html) for [MMT archives](archives.html)
+* a [statistics exporter](statistics.html) generating statistical data for [MMT archives](archives.html) 
 * a [graphical interface](gui.html)
 * an [HTTP interface](server.html)
 * a [web site](server.html) for browsing MMT content

@@ -3,12 +3,12 @@ layout: doc
 title: MMT Statistics Exporter
 ---
 
-This adds the build target 'statistics' to MMT producing statistical information about an archive an mmt document and the contained theories. The statistics are generated from the relational data files in an archive and are written to JSON files in export/statistics, one file per MMT document. Each statistics file contains a list of key value pairs (formaly a JSON array of JSON objects), each pair consist of a string describing what is counted and the count itself. 
+This adds the build target 'statistics' to MMT producing statistical information about an archive, an mmt document or a theory. The statistics are generated from the relational data files in an archive and are written to JSON files in export/statistics, one file per MMT document. Each statistics file contains a list of tuples of a key and a list of key value pairs (formally a JSON array of JSON objects consisting of a JSONString and a JSON array of JSON objects), each pair consist of a key describing which relations are considered and a list of tuples, a key describing the type of objects counted and the count itself. 
 How exactly different declarations in the archive are counted is detailed below: 
 
 ### Types of counted objects
 
-The sorts of different counted objects are the following ones: 
+The sorts of different counted objects are the following ones (although in the JSON files only a short key is written): 
 - `document`, `theory` and `view` declared in the archive or document (transitive closure of the `declares` relation)
 - `explicit theory morphism` (transitive closure of views)
 - `any theory morphism`(transitive closure of any (explicit or implicit theory morphisms))
@@ -31,31 +31,60 @@ The sorts of different counted objects are the following ones:
 Since the statistics are based on the relational files, when an archive is updated, it needs to be rebuilt first, before the statistics can be updated. 
 
 ### Examples of one exported JSON file
-The following example can be found in MMT/examples/export/statistics/content/nat.json:
+The following example can be found in MMT/examples/export/statistics/narration/nat.json:
 
 [
   {
-    "theory": 4
+    "decl": [
+      {
+        "theo": 4
+      },
+      {
+        "type": 2
+      },
+      {
+        "ty_con": 8
+      },
+      {
+        "data": 39
+      }
+    ]
   },
   {
-    "datatype constructor": 2
+    "align": [
+      
+    ]
   },
   {
-    "typed constant": 8
+    "decl": [
+      {
+        "exp_mor": 0
+      }
+    ]
   },
   {
-    "data constructor": 39
+    "decl": [
+      {
+        "any_mor": 16
+      }
+    ]
   },
   {
-    "Any theory morphisms": 16
+    "exp_mor": [
+      
+    ]
   },
   {
-    "Induced declarations via any theory morphisms of datatype constructor": 2
-  },
-  {
-    "Induced declarations via any theory morphisms of typed constant": 73
-  },
-  {
-    "Induced declarations via any theory morphisms of data constructor": 33
+    "any_mor": [
+      {
+        "type": 2
+      },
+      {
+        "ty_con": 52
+      },
+      {
+        "data": 33
+      }
+    ]
   }
 ]

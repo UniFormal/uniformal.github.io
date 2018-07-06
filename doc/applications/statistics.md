@@ -37,9 +37,12 @@ Since the statistics are based on the relational files, when an archive is updat
 ### Examples of one exported JSON file
 The following example can be found in MMT/examples/export/statistics/narration/nat.json:
 
-[
+`[
   {
     "decl": [
+      {
+        "any_mor": 16
+      },
       {
         "theo": 4
       },
@@ -51,43 +54,6 @@ The following example can be found in MMT/examples/export/statistics/narration/n
       },
       {
         "data": 39
-      }
-    ]
-  },
-  {
-    "align": [
-      
-    ]
-  },
-  {
-    "decl": [
-      {
-        "exp_mor": 0
-      }
-    ]
-  },
-  {
-    "decl": [
-      {
-        "any_mor": 16
-      }
-    ]
-  },
-  {
-    "exp_mor": [
-      
-    ]
-  },
-  {
-    "any_mor": [
-      {
-        "type": 2
-      },
-      {
-        "ty_con": 52
-      },
-      {
-        "data": 33
       }
     ]
   }

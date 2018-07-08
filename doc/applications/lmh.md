@@ -6,7 +6,9 @@ title: The Local MathHub Tool (LMH)
 The Local MathHub (lmh) functionality in MMT provides local commands to install libraries
 and archives
 from and publish content to [MathHub.info](https://mathhub.info), a versioned hosting system and user
-portal for OMDoc/MMT content.  
+portal for OMDoc/MMT content. The
+[MathHub Wiki](https://github.com/MathHubInfo/Documentation/wiki) gives details about the
+system. 
 
 ### Configuring local folders
 Before using any lmh functionality, a local folder needs to be configured to store archives in.
@@ -22,12 +24,14 @@ The default method is https. To enable ssh, type `lmh root <path> ssh` on the sh
 ### Installing, Updating & Managing Archives
 Each archive may contain dependencies to other archives, therefore MMT provides the `lmh install` [shell command](/doc/applications/shell.html) to allow the user to install one or multiple archives.
 
-For example, `lmh install MMT/urtheories MMT/examples` install the archives `MMT/urtheories` and `MMT/examples` along with their dependencies.
-It is also possible to install all archives within one group, e.g. `lmh install MMT` will install all archives within the `MMT` group.
-Once an archive is installed, it can be updated using `lmh pull`, which has the same syntax as `lmh install`.
+For example, `lmh install MMT/urtheories MMT/examples` install the archives
+`MMT/urtheories` and `MMT/examples` along with their dependencies. 
+It is also possible to install all archives within one library, e.g. `lmh install MMT` will install all archives within the `MMT` group.
+Once an archive is installed, it can be updated using `lmh pull`, which has the same
+syntax as `lmh install`. `lmh pull` without an argument pulls all installed libraries and archives
 
 To see which archives are installed locally, use the `lmh ls` command.
-It optionally takes the name of an archive or group, and will restrict output to the matching archives.
+It optionally takes the name of an archive or library, and will restrict output to the matching archives.
 It also shows the version numbers of locally installed archives.
 
 To see which archives are available, use the `lmh search` command.

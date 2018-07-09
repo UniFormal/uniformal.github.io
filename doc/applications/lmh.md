@@ -20,7 +20,6 @@ Furthermore, MMT archives can be cloned using ssh or https.
 The difference is only relevant if you want to publish archives, or want to access non-public repositories.
 The default method is https. To enable ssh, type `lmh root <path> ssh` on the shell.
 
-
 ### Installing, Updating & Managing Archives
 Each archive may contain dependencies to other archives, therefore MMT provides the `lmh install` [shell command](/doc/applications/shell.html) to allow the user to install one or multiple archives.
 
@@ -28,14 +27,16 @@ For example, `lmh install MMT/urtheories MMT/examples` install the archives
 `MMT/urtheories` and `MMT/examples` along with their dependencies. 
 It is also possible to install all archives within one library, e.g. `lmh install MMT` will install all archives within the `MMT` group.
 Once an archive is installed, it can be updated using `lmh pull`, which has the same
-syntax as `lmh install`. `lmh pull` without an argument pulls all installed libraries and archives
+syntax as `lmh install`. `lmh pull` without an argument pulls all installed libraries and
+archives. `lmh push`, `lmh commit -m'<message>'`, and `lmh clean` are analogous. 
 
 To see which archives are installed locally, use the `lmh ls` command.
 It optionally takes the name of an archive or library, and will restrict output to the matching archives.
 It also shows the version numbers of locally installed archives.
 
 To see which archives are available, use the `lmh search` command.
-It functions exactly like the `lmh ls`, however it searches remotely instead of locally.
+It functions exactly like the `lmh ls`, however it searches remotely for archives on
+`http:.//gl.MathHub.info` instead of locally.
 
 <!--
 ### Archive versions

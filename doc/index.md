@@ -3,7 +3,7 @@ layout: doc
 title: Overview
 ---
 
-MMT is a framework for knowlwedge representation using formal languages such as logics, type theories, ontologies, set theories, etc..
+MMT is a framework for knowledge representation using formal languages such as logics, type theories, ontologies, set theories, etc..
 It achieves a high level of generality by systematically avoiding a commitment to a representational paradigm, a particular concrete or abstract syntax, or a particular semantics.
 
 Instead, individual features of the abstract syntax (e.g., lambda-abstraction, conjunction), the concrete syntax (e.g. keywords, notations), or the semantics (e.g., excluded middle, set theoretical interpretation) are defined as separate, reusable modules, from which individual languages are assembled.

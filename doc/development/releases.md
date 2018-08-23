@@ -20,6 +20,7 @@ This release has not yet been released and is scheduled for [31st July 2018](htt
 - first version of structural features for inductive types, record types
 - improved statistics generation
 - major progress on Isabelle importer
+- minor improvements of GAP/Sage-Imports and LMFDB-Plugin
 
 ### Release 12
 

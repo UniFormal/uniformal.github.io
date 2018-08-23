@@ -15,7 +15,11 @@ This document contains a changelog of existing as well as upcoming releases.
 
 This release has not yet been released and is scheduled for [31st July 2018](https://github.com/UniFormal/MMT/milestone/5).
 
-
+- new class AnnotationProvider for providing extra information on MMT declarations
+  these are shown in particular in the jEdit gutter
+- first version of structural features for inductive types, record types
+- improved statistics generation
+- major progress on Isabelle importer
 
 ### Release 12
 

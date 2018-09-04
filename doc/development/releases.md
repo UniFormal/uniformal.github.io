@@ -11,9 +11,9 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
-### Release 13 (unreleased)
+### Release 13
 
-This release has not yet been released and is scheduled for [31st July 2018](https://github.com/UniFormal/MMT/milestone/5).
+Released on [30th August 2018](https://github.com/UniFormal/MMT/releases/tag/v13.0.0). (This release was delayed until August 30 to avoid new releases during conference season.)
 
 - new class AnnotationProvider for providing extra information on MMT declarations
   these are shown in particular in the jEdit gutter

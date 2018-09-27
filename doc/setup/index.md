@@ -74,7 +74,9 @@ Besides `mmt.jar`, this directory contains executable scripts (for Windows and U
 
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
-To start setup open a shell and run `java -jar mmt.jar`.
+To start setup open a shell and run `java -jar mmt.jar`.<br>
+On Windows, be sure to have `sh` on your current PATH, inside which `git` is available. For instance, you could directly issue the `java -jar mmt.jar` command from within Git Bash from an existing [Git for Windows](https://gitforwindows.org/) installation.
+
 This triggers the setup dialog which does the following:
 
 1. asks for a directory into which MMT should be installed

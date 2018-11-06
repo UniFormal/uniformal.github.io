@@ -4,7 +4,7 @@ title: Language Design in MMT
 ---
 
 In this tutorial, we build an implementation of first-order logic (FOL) in MMT.
-The complete files built interactively in this tutorial can be found at [https://gl.mathhub.info/MMT/examples/tree/master/source/tutorial] (which is automatically cloned when installing MMT).
+The complete files built interactively in this tutorial can be found at https://gl.mathhub.info/MMT/examples/tree/master/source/tutorial (which is automatically cloned when installing MMT).
 
 It assumes that
 

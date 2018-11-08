@@ -20,6 +20,7 @@ Scheduled to be released soon.
 - lots of refactoring thanks to the OpenDreamKit project
 - rework of the MathHub API
 - rework of the mmt-python integration, better usage as a jupyter kernel
+- do not use `sbt test` for integration tests to make them more reproducible
 - minor lmh cleanup
 
 ### Release 13

@@ -11,6 +11,17 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 14
+
+Scheduled to be released soon.
+
+- major progress on the IMPS importer (thanks @jbetzend)
+- major progress on the Isabelle importer (thanks @Markarius)
+- lots of refactoring thanks to the OpenDreamKit project
+- rework of the MathHub API
+- rework of the mmt-python integration, better usage as a jupyter kernel
+- minor lmh cleanup
+
 ### Release 13
 
 Released on [30th August 2018](https://github.com/UniFormal/MMT/releases/tag/v13.0.0). (This release was delayed until August 30 to avoid new releases during conference season.)

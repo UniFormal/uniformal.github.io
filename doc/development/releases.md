@@ -17,6 +17,7 @@ Scheduled to be released soon.
 
 - major progress on the IMPS importer (thanks @jbetzend)
 - major progress on the Isabelle importer (thanks @Markarius)
+- compress omdoc using xz
 - lots of refactoring thanks to the OpenDreamKit project
 - rework of the MathHub API
 - rework of the mmt-python integration, better usage as a jupyter kernel

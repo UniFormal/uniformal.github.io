@@ -28,17 +28,4 @@ The `svn:auto-props` svn property of the toplevel folder ensures that new files 
 ### Running tests
 
 To make sure that MMT works properly, several unit and integration tests exist. 
-These can be run with:
-
-```
-    sbt test
-```
-
-These will automatically use all archives from the latest MMT release. 
-If testing against the development branch of archives is required, use:
-
-```
-    TEST_USE_DEVEL=1 sbt test
-```
-
-instead. 
+See [the page on testing](../development/testing.html) for more details. 

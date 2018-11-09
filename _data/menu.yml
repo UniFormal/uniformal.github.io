@@ -137,6 +137,8 @@
       url: '/doc/development/contributing.html'
     - title: 'Releases & Changelog'
       url: '/doc/development/releases.html'
+    - title: 'Testing'
+      url: '/doc/development/testing.html'
     - title: 'Improving this documentation'
       url: '/doc/development/documentation.html'
 

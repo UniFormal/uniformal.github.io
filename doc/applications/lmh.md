@@ -22,6 +22,7 @@ The difference is only relevant if you want to publish archives, or want to acce
 The default method to clone archives is https. 
 To enable ssh, type `lmh root <path> ssh` on the shell, to enable ssh for the current session. 
 To make this change permanent, change the appropriate line in the configuration file to say "ssh" instaed of "https" (if neither is present, append ` ssh` to the end of the line). 
+To view the current lmh configuration, type `show lmh`
 
 ### Installing an archive
 

@@ -90,11 +90,8 @@ To see which archives are available, use the `lmh search` command.
 It functions exactly like the `lmh ls`, however it searches remotely for archives on
 `http:.//gl.MathHub.info` instead of locally.
 
-### Proposal to improve LMH
 
-** Everything below is a proposal and not yet implemented **
-
-#### Switching branches (PROPOSAL)
+#### Switching branches
 
 To use a specific version of an archive the command
 
@@ -109,6 +106,10 @@ For example
     lmh use *@devel
 
 will switch all installed archives to the devel branch. 
+
+### Proposal to improve LMH
+
+** Everything below is a proposal and not yet implemented **
 
 #### Freezing dependencies (PROPOSAL)
 

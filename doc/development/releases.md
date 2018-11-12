@@ -23,6 +23,10 @@ Scheduled to be released soon.
 - rework of the mmt-python integration, better usage as a jupyter kernel
 - do not use `sbt test` for integration tests to make them more reproducible
 - minor lmh cleanup
+- Major improvements on the simplification/term rewriting algorithm
+- LFX Archive reimplemented
+- MitM/Foundation and MitM/smglom archives reimplemented and extended
+- Various bug fixes
 
 ### Release 13
 

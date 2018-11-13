@@ -15,18 +15,19 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Scheduled to be released soon.
 
-- major progress on the IMPS importer (thanks @jbetzend)
-- major progress on the Isabelle importer (thanks @Markarius)
-- compress omdoc using xz
-- lots of refactoring thanks to the OpenDreamKit project
+- MitM infrastructure for using MMT as system integration mediator (as used in the OpenDreamKit project)
+- major rewrite of the type checker to allow for head normalization with an arbitrary set of rules
+- MMT kernel for Jupyter; import/export of Jupyter notebooks
+- complete importer for Isabelle libraries by Makarius Wenzel (see Isabelle group on MathHub, integrated with Isabelle)
+- OMDoc files now stored in compressed form using xz (requires clean rebuild of archives to remove old OMDoc files)
+- major progress on the IMPS importer
 - rework of the MathHub API
-- rework of the mmt-python integration, better usage as a jupyter kernel
-- do not use `sbt test` for integration tests to make them more reproducible
 - minor lmh cleanup
-- Major improvements on the simplification/term rewriting algorithm
-- LFX Archive reimplemented
-- MitM/Foundation and MitM/smglom archives reimplemented and extended
-- Various bug fixes
+- stopped using `sbt test` for integration tests (makes them more reproducible)
+- compatible with major reimplementations of archives:
+  * LFX
+  * MitM/Foundation
+  * MitM/smglom
 
 ### Release 13
 

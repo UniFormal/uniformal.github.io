@@ -18,7 +18,7 @@ Scheduled to be released soon.
 - MitM infrastructure for using MMT as system integration mediator (as used in the OpenDreamKit project)
 - major rewrite of the type checker to allow for head normalization with an arbitrary set of rules
 - MMT kernel for Jupyter; import/export of Jupyter notebooks
-- complete importer for Isabelle libraries by Makarius Wenzel (see Isabelle group on MathHub, integrated with Isabelle)
+- complete importer for Isabelle libraries by Makarius Wenzel (see [his blog post](https://sketis.net/2018/isabelle-mmt-export-of-isabelle-theories-and-import-as-omdoc-content) for details)
 - OMDoc files now stored in compressed form using xz (requires clean rebuild of archives to remove old OMDoc files)
 - major progress on the IMPS importer
 - rework of the MathHub API

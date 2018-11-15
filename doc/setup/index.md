@@ -22,7 +22,11 @@ Concretely:
 * Run jEdit once and close it again.
   (That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)
 
-### 3) Install MMT
+### 3) Install Git
+
+MMT uses git internally, so make sure it is installed.
+
+### 4) Install MMT
 
 There are two options for this step:
 
@@ -70,7 +74,7 @@ cd ../deploy/
 
 Besides `mmt.jar`, this directory contains executable scripts (for Windows and Unix) to for running MMT.
 
-### 4) Set Up MMT
+### 5) Set Up MMT
 
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
@@ -85,7 +89,7 @@ This triggers the setup dialog which does the following:
 
 Further instructions for setting up jEdit are available [here](jedit.html).
 
-### 5) Run MMT
+### 6) Run MMT
 
 If you want to use MMT via jEdit, you do not have to run MMT itself.
 It will act as a plugin within jEdit: just start jEdit and open `.mmt` files.

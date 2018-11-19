@@ -14,7 +14,7 @@ Currently substantial contributions are being made by [Mihnea Iancu](https://git
 The MMT developers maintain the following mailing lists:
 
 * [mmt-users@kwarc.info](http://lists.informatik.uni-erlangen.de/mailman/listinfo/mmt-users)
-  Communication between developers and users as well as among unsers. Announcements about MMT (e.g., new releases) as well as any general requests or inquiries. Typically low traffic.
+  Communication between developers and users as well as among users. Announcements about MMT (e.g., new releases) as well as any general requests or inquiries. Typically low traffic.
 * [mmt-dev@kwarc.info](http://lists.informatik.uni-erlangen.de/mailman/listinfo/mmt-dev)
   Communication between developments. More traffic and more technical.
 

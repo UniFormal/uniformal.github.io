@@ -50,11 +50,11 @@ If the cursor is placed just before a hole-term, auto-completion runs the MMT th
 This includes forward-search (generate closed terms of the right type) and backward-search (find functions that when applied return the right type). Options of the latter kind will, when selected, introduce new hole-terms for the arguments.
 This turns the system into a (very simple) interactive theorem prover.
 
-**Theorem Proving**
-
-Any occurrence of _ in MMT terms is replaced with a fresh unknown that the type checker tries to infer.
+The type checker treats any occurrence of _ in MMT terms as a fresh unknown and tries to infer its value.
 This includes calling the (experimental and very weak) automated theorem prover of MMT.
-If the prove fails but the expected type of the subterm is solved, the internal syntax (as shown by Sidekick) replaces _ with the corresponding hole-term.
+If successful, the term is inserted into the internal syntax (as shown by Sidekick) but the _ remains in the soruce.
+If the prove fails but the expected type of the subterm is found, a hole-term is introduced.
+In the latter case, the command introduce-hole can be used to replace _ with the hole-term in the source (e.g., in order to use auto-completion).
 
 **Building**
 

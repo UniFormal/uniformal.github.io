@@ -19,7 +19,7 @@ The abstract syntax of MMT is:
 . | `Dec` | `:= c [:o] [=o] [#N]` | [Declarations](declarations.html)
 . | `Ass` | `:= c = o` | Symbol [Assignments](modules.html#views)
 *Object Level* | | |
-. | `o`   | `:= c | x | c( (x[: o])* ; o* ) | c(STRING)` | [Objects/Terms](objects.html)
+. | `o`   | `:= c | x | c( (x[: o])* ; o* ) | c(STRING) ` | [Objects/Terms](objects.html)
 . | `N`   |   | [Notations](declarations.html#constants)
 . | `c`   |   | [URI](../uris.html)
 . | `x`   |   | [Variable](objects.html)

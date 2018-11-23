@@ -3,16 +3,64 @@ layout: doc
 title: the jEdit IDE
 ---
 
+The jEdit IDE is the main MMT-based application and the primary to enter and edit MMT content manually.
 
-Installation instructions for the jEdit plugin can be found [here](../setup/jedit.html)
+Installation instructions can be found [here](../setup/jedit.html)
 
 ### Functionality
 
-**The MMT Mode**
+Unless otherwise mentioned, functionality that requires explicit human interaction can be triggered in several ways:
+* the `Plugin - MMT` menu of jEdit
+* the `MMT` group in the context menu when editing an MMT file
+* the group of MMT-related buttons in the toolbar
+* predefined keyboard shortcuts (see `Global Options - Shortcuts` and select the MMT Plugin)
 
-The mode `mmt` is added for .mmt files, which includes syntax highlighting. Mode-specific options including the appearance of the syntax highlighting can be configured via the generic jEdit options dialog.
+Most commands are internally realized as jEdit actions, and these actions can be called in a variety of user-customizable ways.
+See `Global Options - Shortcuts` for the list of actions (or https://github.com/UniFormal/MMT/blob/master/src/jEdit-mmt/src/resources/actions.xml if you want to see the internal names, which can be entered, e.g., in the jEdit Action bar).
+
+**Syntax Highlighting**
+
+The mode `mmt` is added for .mmt files, which provides syntax highlighting.
+Other mode-specific options including the appearance of the syntax highlighting can be configured via the generic jEdit options dialog.
 Most importantly, the mode assigns the token types OPERATOR and KEYWORDn. Additionally, the token types LITERAL1 to LITERAL4 are assigned to brackets at different levels.
 The token type COMMENT4 is reseved by MMT. It is assigned to all hidden, i.e., invisible, parts. Changes to its text style are ignored and overwritten.
+
+**Parsing and Type Checking**
+
+MMT files are automatically processed using the MMT parser and type-checker.
+This is called by Sidekick (see below), and the Sidekick options for the MMT mode allow configuring when type-checking occurs.
+
+If this gets stuck, MMT can be safely interrupted by pressing MMT's stop button.
+
+**Computation**
+
+The normalize command fully computes the selected expression and shows the result.
+
+**Auto-Completion and Hole-Terms**
+
+Auto-completion is provided and can be configured via the Sidekick plugin. By default it is triggered by CTRL-Space.
+
+Basic auto-completion shows a list of constants that are currently in scope.
+
+But in conjunction with hole-terms, MMT performs unification to provide typing-aware auto-completion.
+A hole-term is a term of the form ≪T≫ for a type T.
+Type-checking treats it like an unknown term of type T.
+
+If the cursor is placed just before a hole-term, auto-completion runs the MMT theorem prover for a small depth and suggests terms that have the right type.
+This includes forward-search (generate closed terms of the right type) and backward-search (find functions that when applied return the right type). Options of the latter kind will, when selected, introduce new hole-terms for the arguments.
+This turns the system into a (very simple) interactive theorem prover.
+
+**Theorem Proving**
+
+Any occurrence of _ in MMT terms is replaced with a fresh unknown that the type checker tries to infer.
+This includes calling the (experimental and very weak) automated theorem prover of MMT.
+If the prove fails but the expected type of the subterm is solved, the internal syntax (as shown by Sidekick) replaces _ with the corresponding hole-term.
+
+**Building**
+
+The checking of MMT files happens entirely in memory.
+The build buttons can be used to store the OMDoc of the current file in the file system.
+Building from within jEdit is equivalent to building via the MMT shell.
 
 **Abbreviations**
 

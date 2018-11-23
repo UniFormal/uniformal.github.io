@@ -10,6 +10,7 @@ Terms are defined recursively:
 * Variable references are terms ([OMV](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMV))
 * Applications of a term to a list of *arguments* (terms) are terms ([OMA](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMA))
 * Binding applications of a term - *binding* (optionally typed) variables - to a list of arguments are terms ([OMBIND](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMBINDC))
+* Literals are atomic terms ([OMLIT](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMLIT)) that embed arbitrary external values (e.g., the set of integers)
 
 The precise abstract syntax is explained in more detail [here](../api/syntax).
 

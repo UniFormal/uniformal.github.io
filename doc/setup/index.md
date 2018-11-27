@@ -7,7 +7,7 @@ To obtain and set up MMT, perform the following steps:
 
 ### 1) Install Java (if you haven't already)
 
-MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 7` is no longer officially supported. 
+MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 11` works as well. `Java 7` is no longer officially supported. 
 
 ### 2) Install jEdit (if you haven't already)
 
@@ -79,7 +79,7 @@ Besides `mmt.jar`, this directory contains executable scripts (for Windows and U
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
 To start setup open a shell and run `java -jar mmt.jar`.<br>
-On Windows, be sure to have `sh` on your current PATH, inside which `git` is available. For instance, you could directly issue the `java -jar mmt.jar` command from within Git Bash from an existing [Git for Windows](https://gitforwindows.org/) installation.
+On Windows, this assumes that `git` can be called from within `sh`, which means `sh` has to be in your PATH; depending on how you installed `git`, this may already be the case. If it is not in your PATH, you can also directly issue the `java -jar mmt.jar` command from within Git Bash from an existing [Git for Windows](https://gitforwindows.org/) installation.
 
 This triggers the setup dialog which does the following:
 

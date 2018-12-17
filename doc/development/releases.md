@@ -13,7 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 14
 
-Scheduled to be released soon.
+Released on [13th November 2018](https://github.com/UniFormal/MMT/releases/tag/v14.0.0).
 
 - MitM infrastructure for using MMT as system integration mediator (as used in the OpenDreamKit project)
 - major rewrite of the type checker to allow for head normalization with an arbitrary set of rules

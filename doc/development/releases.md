@@ -11,6 +11,18 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 15
+
+To be released.
+
+- Code Refactoring
+- Support for an MMT Plugin for the IntelliJ-IDE
+- First steps towards implicit coercions
+- compatible with major improvements of archives:
+  * LFX
+  * MitM/Foundation
+  * MitM/smglom
+
 ### Release 14
 
 Released on [13th November 2018](https://github.com/UniFormal/MMT/releases/tag/v14.0.0).

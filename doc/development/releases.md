@@ -13,11 +13,22 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 15
 
-To be released.
-
-- Code Refactoring
-- Support for an MMT Plugin for the IntelliJ-IDE
+- Regularization/clean reimplementation of various parts:
+  * applicability check of checking rules
+  * merged classes for declared and defined container elements, e.g., DeclaredTheory and DefinedTheory; all of these now inherit from ModuleOrLink, which provides both body and definiens
+  * elementEnd calls after processing container elements (documents, theories, views, structures, derived declarations) in all MMT components (all parsers, checker, elaborator, library, controller)
+- Concrete syntax for link includes that include a morphism expression as opposed to an MMT URI
+- Support for right-associative delimiters in mixfix notations (%Rd for delimiter d that associates to the right)
 - First steps towards implicit coercions
+- New class DocumentLevel (e.g., archive, folder, file, theory, etc.), every document carries it level
+- New Scala console in jEdit allows interacting with MMT's internal classes from within jEdit
+- Support for an MMT Plugin for the IntelliJ-IDE
+- New examples in MMT/examples
+  * clean up of resource semantics of linear logic (logic/linear.mmt)
+  * prototypical theorem prover (logic/prover.mmt)
+  * proof irrelevance as a logical feature (logic/pl.mmt)
+  * inductive functions on lists as special cases of rewrite rules (lists.mmt)
+  * case study on implicit morphisms (lattice of theories of regular bands)
 - compatible with major improvements of archives:
   * LFX
   * MitM/Foundation

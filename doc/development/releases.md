@@ -13,26 +13,31 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 15
 
-- Regularization/clean reimplementation of various parts:
-  * applicability check of checking rules
-  * merged classes for declared and defined container elements, e.g., DeclaredTheory and DefinedTheory; all of these now inherit from ModuleOrLink, which provides both body and definiens
-  * elementEnd calls after processing container elements (documents, theories, views, structures, derived declarations) in all MMT components (all parsers, checker, elaborator, library, controller)
-- Concrete syntax for link includes that include a morphism expression as opposed to an MMT URI
-- Support for right-associative delimiters in mixfix notations (%Rd for delimiter d that associates to the right)
-- First steps towards implicit coercions
-- New class DocumentLevel (e.g., archive, folder, file, theory, etc.), every document carries it level
-- New Scala console in jEdit allows interacting with MMT's internal classes from within jEdit
-- Support for an MMT Plugin for the IntelliJ-IDE
-- New examples in MMT/examples
-  * clean up of resource semantics of linear logic (logic/linear.mmt)
-  * prototypical theorem prover (logic/prover.mmt)
-  * proof irrelevance as a logical feature (logic/pl.mmt)
-  * inductive functions on lists as special cases of rewrite rules (lists.mmt)
-  * case study on implicit morphisms (lattice of theories of regular bands)
-- compatible with major improvements of archives:
-  * LFX
-  * MitM/Foundation
-  * MitM/smglom
+- IDE Improvements
+  - Support for the [MMT Plugin for the IntelliJ-IDE](https://github.com/UniFormal/IntelliJ-MMT)
+  - added a Scala console to JEdit to interact with MMT's internal classes from within jEdit
+
+- New examples in `MMT/examples`
+  - resource semantics of linear logic (`logic/linear.mmt`)
+  - prototypical theorem prover (`logic/prover.mmt`)
+  - proof irrelevance as a logical feature (`logic/pl.mmt`)
+  - inductive functions on lists as special cases of rewrite rules (`lists.mmt`)
+  - case study on implicit morphisms: lattice of theories of regular bands
+- New Concrete link syntax
+  - for includes that include a morphism expression as opposed to an MMT URI
+- Added support for right-associative delimiters in mixfix notations
+  - Use `%Rd` for delimiter `d` that associates to the right
+- Cleanups and additions to various internal components
+  - first steps towards implicit coercions
+  - new class `DocumentLevel` (e.g., archive, folder, file, theory, etc.); every document now carries it level
+  - new `elementEnd` calls after processing container elements in all MMT components
+  - dropped distinction between declared and defined elements, container elements now inherit from `ModuleOrLink` class
+  - re-implemented applicability check of checking rules
+  - various cleanups of the MathHub API
+- compatible with major reimplementations of archives:
+  - `LFX`
+  - `MitM/Foundation`
+  - `MitM/smglom`
 
 ### Release 14
 

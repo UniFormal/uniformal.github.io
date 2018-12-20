@@ -9,18 +9,26 @@ To obtain and set up MMT, perform the following steps:
 
 MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 11` works as well. `Java 7` is no longer officially supported. 
 
-### 2) Install jEdit (if you haven't already)
+### 2) Install an IDE (jEdit or IntelliJ IDEA, if you haven't already)
+
+
+This step is optional but highly recommended if you want to write or view MMT files.
+If you just want to sample MMT, you should definitely do it with an IDE.
+
+#### 1. jEdit
 
 [jEdit](http://jedit.org/) is a Java-based text editor.
 MMT includes a jEdit plugin, which turns jEdit into an IDE for MMT.
-This step is optional but highly recommended if you want to write or view MMT files.
-If you just want to sample MMT, you should definitely do it with jEdit.
 
 Concretely:
 
 * Download and install jEdit.
 * Run jEdit once and close it again.
   (That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)
+  
+#### 2. IntelliJ IDEA
+
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) is a Java-based multi-purpose IDE. The official IntelliJ Plugin repository (accessible from within the IDE under File -> Settings -> Plugins -> Marketplace) includes an MMT Plugin, which can be installed directly from within the Marketplace. The IntelliJ MMT-Plugin is documented [here](https://github.com/UniFormal/IntelliJ-MMT/blob/master/README.md).
 
 ### 3) Install Git
 
@@ -76,6 +84,8 @@ Besides `mmt.jar`, this directory contains executable scripts (for Windows and U
 
 ### 5) Set Up MMT
 
+If you only want to use MMT from within IntelliJ, you can skip this step.
+
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
 To start setup open a shell and run `java -jar mmt.jar`.<br>
@@ -117,4 +127,9 @@ To rerun setup, execute
 java -jar mmt.jar :setup
 ```
 
-However, rerunning setup is usually not necessary.
+However, rerunning the full setup is usually not necessary. 
+To update your jEdit instance, execute
+
+```
+java -jar mmt.jar :jeditsetup install
+```

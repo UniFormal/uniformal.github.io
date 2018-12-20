@@ -101,8 +101,8 @@ Further instructions for setting up jEdit are available [here](jedit.html).
 
 ### 6) Run MMT
 
-If you want to use MMT via jEdit, you do not have to run MMT itself.
-It will act as a plugin within jEdit: just start jEdit and open `.mmt` files.
+If you want to use MMT via an IDE, you do not have to run MMT itself.
+It will act as a plugin within jEdit or IntelliJ: just start jEdit and open `.mmt` files, or start a new *MathHub*-project within IntelliJ.
 
 Developers or advanced users may want to run MMT directly for various other [applications](../applications/).
 The canonical way for this is to run `java -jar mmt.jar`.

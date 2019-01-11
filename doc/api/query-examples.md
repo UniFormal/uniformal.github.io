@@ -25,7 +25,7 @@ boolTheory.getDeclarations foreach println
 ```
 
 First, we have to query our desired theory by its path. We got path used above from the console output of the last example.
-You can read more on paths at [TODO insert]
+The document [MMT URIs](../language/uris.html) features more information on these URIs/paths.
 
 ### II Getting a specific declaration of a theory
 

@@ -30,7 +30,7 @@ The MMT ontology is a fragment of the query language.
 ### Maintenance of the Relational Knowledge (A-Box)
 
 On disk, the dimension `relational` of an [MMT archive](../applications/archives.html) maintains the relational knowledge, i.e., the set of known URIs and the instances of the unary and binary predicates.
-In memory, this is done by the class [`ontology.RelStore`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.ontology.RelStore).
+In memory, this is done by the class [`ontology.RelStore`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.ontology.RelStore). Refer to [this list of query examples](query-examples.md) for basic usage.
 
 The relational dimension is written automatically when an import build target is used.
 To load an archive's relational knowledge into memory, the [shell](../applications/shell.html) command `relational` can be used.
@@ -83,4 +83,4 @@ retrieves all declarations of theory T.
 retrieves all declarations of any theory included into theory T.
 
 ### Querying from JavaScript
-The qmt object of the MMT JavaScript code provides bindings for building queries and an Ajax style interface for server side query evaluation. 
+The qmt object of the MMT JavaScript code provides bindings for building queries and an Ajax style interface for server side query evaluation.

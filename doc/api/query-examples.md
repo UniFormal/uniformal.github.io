@@ -127,7 +127,7 @@ B includes A, hence "B is a theory declared in the bool document importing a the
 
 Exercise III: How to get all indirect document dependencies as well?
 
-<span class="detail">ctrl.depstore.querySet(boolTheoryDocument, Transitive(documentDependencyRelation))</span>
+<span class="detail">`ctrl.depstore.querySet(boolTheoryDocument, Transitive(documentDependencyRelation))`</span>
 
 ### VI Get all documents relying on theory X
 

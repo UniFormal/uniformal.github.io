@@ -34,9 +34,7 @@ For simplicity we will stick to Scala in this tutorial.
    For formalizing things in MMT there is a plugin for that IDE => recommended
 
 3. Install the Scala plugin for IntelliJ IDEA.<br>
-   Probably you were prompted to do so during the installation in step 2. Otherwise, open IntelliJ IDEA and install the plugin there.
-
-TODO: which Scala version? 2.12.8
+   Probably you were prompted to do so during the installation in step 2. Otherwise, open IntelliJ IDEA and install the plugin there. It is advisable to choose a Scala version equal or greater to the one MMT is built with, e.g. the latest Scala version available as a plugin. The Scala version used for building and releasing MMT can be found in MMT's repo in [src/built.sbt](https://github.com/UniFormal/MMT/blob/master/src/build.sbt#L33) (search for "scalaVersion").
 
 ### II Project Setup
 
@@ -74,7 +72,7 @@ Recommended optional steps:
 
 Note that most archives on https://gl.mathhub.info/MMT have their build output committed. During the build of an archive, the so-called relational information is created, which is needed for querying all theories, for instance.\\
 
-TODO: If you would like to use an archive without pre-existing build output or re-build an archive, then you have to call X, Y, Z.
+TODO: Add note on how to re-build an archive using the API. It's possible to do so using [the command line of MMT](https://uniformal.github.io/doc/setup/running.html).
 
 #### II.3 Commit to version control
 

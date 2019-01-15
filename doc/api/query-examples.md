@@ -58,7 +58,7 @@ ctrl.depstore.querySet(boolTheoryPath, RelationExp.Imports)
 // Hint: RelationExp.Imports is defined as
 RelationExp.Imports = Choice(+Includes, RelationExp.HasStructureFrom)
 // Choice builds the union of both relations
-// TODO: Why the +?
+// TODO: Explain the relevance of +.
 ```
 
 Output of the import query above:

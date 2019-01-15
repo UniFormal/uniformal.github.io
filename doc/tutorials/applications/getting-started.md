@@ -6,7 +6,9 @@ title: Getting Started with the MMT API
 This document gets you quickly started with setting up a Scala project for using the MMT API and presents a simple example showing how to list all theories of an archive.
 
 - Audience: Users who want to use the MMT API to query or manipulate knowledge, and possibly have a basic understanding of concepts within MMT (documents, theories, declarations)
-- Non-audience: Users who want to do formalization. They will find a fitting getting started guide: [here](../setup/)
+- Non-audience: Users who want to do formalization. They will find a fitting getting started guide: [here](../../setup/)
+
+Table of Contents:
 
 <!-- TOC -->
 
@@ -24,11 +26,11 @@ Note: Some code snippets are presented without necessary error checking, e.g. fi
 ### I Installation of Java, Scala and your favorite IDE
 
 MMT is written in Scala, but can in principle be used from any other JVM-based language.
-In fact, there is even a wrapper for Python [outdated?]
+In fact, there was [a wrapper for Python](https://github.com/UniFormal/MMTPy), which is discontinued, though.
 For simplicity we will stick to Scala in this tutorial.
 
 1. Install a JDK (Java Development Kid) if not already done.<br>
-   E.g. OpenJDK: https://jdk.java.net/
+   E.g. OpenJDK: [https://jdk.java.net/](https://jdk.java.net/)
 
 2. Install a Java IDE, we recommend [IntelliJ IDEA](https://www.jetbrains.com/idea/) as the IDE.<br>
    For formalizing things in MMT there is a plugin for that IDE => recommended

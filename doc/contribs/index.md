@@ -9,4 +9,6 @@ This folder allows making these articles available while they await integration 
 To add an article, simply edit this file by inserting a link to a new file in the same folder.
 Then create and edit that file.
 
+Here is a link to a [template](template.md) that you can copy.
+
 If you do not have write access to the documentation, just request it from one of the developers (or make a pull request).

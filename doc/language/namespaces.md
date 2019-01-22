@@ -30,3 +30,14 @@ This is particularly useful in connection with the convention that every file co
 * If all files begin by declaring some absolute URI as the namespace, modules can be placed, all physical paths are ignored, and modules reside in purely logical namespaces that are not affected by moving the files.
 
 As a special case of the previous example, if all files begin by declaring the same absolute URI as the namespace, all modules reside in the same logical namespace. 
+
+### Interpretation Instructions
+
+Documents may contain various instructions that are not meaningful themselves but indicate how to interpret subsequent declarations.
+The most important ones are:
+
+* ![`namespace http://some.example.uri.org/`] set the default namespace of the document
+* ![`import prefix http://some.example.uri.org/`] define a CURIE prefix
+* ![`fixmeta http://some.example.uri.org/?SomeTheory`] set a default meta-theory for all theories in the document
+
+The full list is given in the API documentation of the class [`documents.InterpretationInstruction`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.documents.InterpretationInstruction)

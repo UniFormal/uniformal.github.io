@@ -36,8 +36,8 @@ As a special case of the previous example, if all files begin by declaring the s
 Documents may contain various instructions that are not meaningful themselves but indicate how to interpret subsequent declarations.
 The most important ones are:
 
-* ![`namespace http://some.example.uri.org/`] set the default namespace of the document
-* ![`import prefix http://some.example.uri.org/`] define a CURIE prefix
-* ![`fixmeta http://some.example.uri.org/?SomeTheory`] set a default meta-theory for all theories in the document
+* `namespace http://some.example.uri.org/` set the default namespace of the document
+* `import prefix http://some.example.uri.org/` define a CURIE prefix
+* `fixmeta http://some.example.uri.org/?SomeTheory` set a default meta-theory for all theories in the document
 
 The full list is given in the API documentation of the class [`documents.InterpretationInstruction`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.documents.InterpretationInstruction)

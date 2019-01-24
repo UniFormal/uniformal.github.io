@@ -74,7 +74,7 @@ In particular, includes are composed transitively, and including the same theory
 
 The syntax for structures is
 
-![`structure <name> : <domain> = <declarations> \GS`](/MMT/doc/structure.png)
+![`structure <name> : <domain> = <declarations> \GS`](/doc/img/structure.png)
 
 , where `<declarations>` is a sequence of declarations.
 

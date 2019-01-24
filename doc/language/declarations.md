@@ -86,7 +86,8 @@ The syntax for structures is
 * Unlike simple includes, multiple *named structures* with the same `<domain>` are **not** redundant. Each structure introduces fresh (possibly modified) copies of the declarations in the domain.
 * The limit of the previous point is the [*meta theory*](modules.html#theories) of the domain. If two structures `s1`,`s2` have corresponding domains `dom1`,`dom2` with the same meta theory `meta`, then *everything in the dependency closure of `meta`* will be included exactly once.
 
-Implementation note: Because includes and structures are often treated exactly the same way, the MMT system represents an include as a structure with empty body and the induced name `[<domain>]`.
+Implementation note: Because includes and structures are often treated exactly the same way, the MMT system represents an include as a structure with empty body and the induced name `[<domain>]`. API-wise this corresponds to having an [MPath](https://uniformal.github.io/apidoc/info/kwarc/mmt/api/MPath.html) referencing a module (e.g. a theory) and then taking a [ComplexStep](https://uniformal.github.io/apidoc/info/kwarc/mmt/api/ComplexStep.html) to refer to the inclusion: `MPath ? ComplexStep(MPath)`.
+
 
 **Example**
 

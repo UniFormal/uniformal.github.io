@@ -3,8 +3,6 @@ layout: doc
 title: Exporting the theory graph as SVG
 ---
 
-## Export the theory graph as SVG
-
 Building on top of the code presented in the [Getting Started with the MMT API guide](https://uniformal.github.io/doc/tutorials/applications/getting-started):
 
 ```scala

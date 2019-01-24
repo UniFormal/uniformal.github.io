@@ -106,6 +106,8 @@ Advanced users are potentially interested in using [gitignore/JetBrains.gitignor
        val mmtArchiveHome = ctrl.getHome / "archives" / "MathHub" / "MMT"
        ctrl.addArchive(mmtArchiveHome / "urtheories")
 
+       // The identifier "MMT/urtheories" is specified in "MMT/urtheories/META-INF/MANIFEST.MF"
+       // In general every archive specified its ID there.
        val urtheoriesArchive = ctrl.backend.getArchive("MMT/urtheories").get
        // The next two lines trigger processing of the whole archive and make the data
        // available in ctrl.depstore, the dependency store - among others.

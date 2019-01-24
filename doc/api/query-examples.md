@@ -58,7 +58,7 @@ ctrl.depstore.querySet(boolTheoryPath, RelationExp.Imports)
 // Hint: RelationExp.Imports is defined as
 RelationExp.Imports = Choice(+Includes, RelationExp.HasStructureFrom)
 // Choice builds the union of both relations
-// TODO: Why the +?
+// TODO: Explain the relevance of +.
 ```
 
 Output of the import query above:
@@ -127,7 +127,7 @@ B includes A, hence "B is a theory declared in the bool document importing a the
 
 Exercise III: How to get all indirect document dependencies as well?
 
-<span class="detail">ctrl.depstore.querySet(boolTheoryDocument, Transitive(documentDependencyRelation))</span>
+<span class="detail">`ctrl.depstore.querySet(boolTheoryDocument, Transitive(documentDependencyRelation))`</span>
 
 ### VI Get all documents relying on theory X
 

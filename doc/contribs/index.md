@@ -19,4 +19,4 @@ If you do not have write access to the documentation, just request it from one o
 | Name & Link  | Needs elaboration | Needs review  | Needs just integration somewhere
 |---|---|
 | [Exporting the theory graph as SVG](./export-theory-graph)  | no | no | yes |
-| [Concrete code examples to create URIs/refer to things](./uris-examples) | yes | yes | yes |
+| [Concrete code examples to create URIs/refer to things](./uri-examples) | yes | yes | yes |

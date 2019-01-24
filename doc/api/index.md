@@ -8,7 +8,7 @@ The generated API documentation is available [here](https://uniformal.github.io/
 The main package is documented at [`info.kwarc.mmt.api.package`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.package). The base name of all packages in the API is `info.kwarc.mmt.api`. Good starting points for browsing the API are the following classes
 
 * [`frontend.Controller`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.frontend.Controller) is the MMT kernel explained in detail [here](controller.html).
-* [`Path`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.Path) is the base class of [MMT URIs](uris.html).
+* [`Path`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.Path) is the base class of [MMT URIs](../language/uris).
 * [`documents.Document`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.documents.Document), [`modules.Module`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.modules.Module), [`symbols.Symbol`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.symbols.Symbol), and [`objects.Obj`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.Obj) are the base classes of the 4 levels of knowledge items of MMT's [abstract syntax](syntax/) described in more detail [here](syntax/).
 
 The tutorial section covers [a primer on how to best set up a local Scala project for use with the API](../tutorials/applications/getting-started).

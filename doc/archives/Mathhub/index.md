@@ -12,6 +12,9 @@ MathHub stores its contents in the GitLab repository http://gl.mathhub.info and 
 mathematical knowledge management services and presentations via
 [a dedicated MMT process](http://mmt.mathhub.info).
 
+The [MathHub Wiki](https://github.com/MathHubInfo/Documentation/wiki) gives details about the
+system. 
+
 Archives can be installed and updated from as well as published to Mathhub using 
 the [Local Mathhub Tool (LMH)](lmh.html). In addition Mathhub hosts an 
 [MMT-server](/doc/applications/server.html) and an instance of 

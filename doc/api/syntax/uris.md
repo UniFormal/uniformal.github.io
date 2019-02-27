@@ -2,7 +2,7 @@
 layout: doc
 title: MMT URIs
 ---
-
+The general structure of MMT URIs is described [here](../../language/uris.html).
 [`api.Path`](apidoc://info.kwarc.mmt.api.Path) is the base class of MMT URIs. The classes corresponding to MMT URIs are 
 
 * [`LocalName`](apidoc://info.kwarc.mmt.api.LocalName),

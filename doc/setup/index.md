@@ -28,7 +28,7 @@ Concretely:
   
 #### 2. IntelliJ IDEA
 
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) is a Java-based multi-purpose IDE. The official IntelliJ Plugin repository (accessible from within the IDE under File -> Settings -> Plugins -> Marketplace) includes an MMT Plugin, which can be installed directly from within the Marketplace. The IntelliJ MMT-Plugin is documented [here](https://github.com/UniFormal/IntelliJ-MMT/blob/master/README.md).
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) is a Java-based multi-purpose IDE. The official IntelliJ Plugin repository (accessible from within the IDE under File -> Settings -> Plugins -> Marketplace) (Note that to use Marketplace for the community version, you have to update your intellij to the latest version) includes an MMT Plugin, which can be installed directly from within the Marketplace. The IntelliJ MMT-Plugin is documented [here](https://github.com/UniFormal/IntelliJ-MMT/blob/master/README.md).
 
 The IntelliJ MMT-Plugin **does not work on Windows** due to an IntelliJ bug: https://youtrack.jetbrains.com/issue/IDEA-208063
 
@@ -73,7 +73,7 @@ To build, execute
 cd MMT/src
 sbt mmt/deploy
 ```
- (Detailed instructions for building can be found [here](build.html)).
+ (Detailed instructions for building can be found [here](https://uniformal.github.io/doc/setup/sbt.html), including a possible error you may encounter and its solution).
 
 This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`.
 
@@ -90,7 +90,7 @@ If you only want to use MMT from within IntelliJ, you can skip this step.
 
 In the previous, you obtained the file `mmt.jar` (by downloading or building).
 
-To start setup open a shell and run `java -jar mmt.jar`.<br>
+To start setup, open a shell, navigate to the folder MMT/deploy and run `java -jar mmt.jar`.<br>
 On Windows, this assumes that `git` can be called from within `sh`, which means `sh` has to be in your PATH; depending on how you installed `git`, this may already be the case. If it is not in your PATH, you can also directly issue the `java -jar mmt.jar` command from within Git Bash from an existing [Git for Windows](https://gitforwindows.org/) installation.
 
 This triggers the setup dialog which does the following:

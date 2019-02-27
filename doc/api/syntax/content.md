@@ -38,3 +38,6 @@ All final extensions of `ModuleOrLink` can be *declared* or *defined*. Declared 
 * **[`symbols.Structure`](apidoc://info.kwarc.mmt.api.symbols.Structure)** combines `Link` with `Declaration`. It has a `boolean` value `isInclude` signifying whether the structure is a simple theory include.
  
   The helper objects [`symbols.Structure`](apidoc://info.kwarc.mmt.api.symbols.Structure$) and [`symbols.SimpleStructure`](apidoc://info.kwarc.mmt.api.symbols.SimpleStructure$) add convenient apply/unapply methods, where `Simple` indicates the case where the domain is an `MPath` (as opposed to a complex [term](objects.html) representing a theory expression). The helper objects [`symbols.Include`](apidoc://info.kwarc.mmt.api.symbols.Include$) and [`symbols.PlainInclude`](apidoc://info.kwarc.mmt.api.symbols.PlainInclude$) offer apply/unapply methods for theory inclusions.
+
+### Derived Content Elements
+

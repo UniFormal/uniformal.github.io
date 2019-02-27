@@ -6,11 +6,11 @@ Terms occur on the object level; specifically as components of [declarations](de
 
 Terms are defined recursively:
 
-* Symbol references are terms ([OMID](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMID))
-* Variable references are terms ([OMV](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMV))
-* Applications of a term to a list of *arguments* (terms) are terms ([OMA](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMA))
-* Binding applications of a term - *binding* (optionally typed) variables - to a list of arguments are terms ([OMBIND](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMBINDC))
-* Literals are atomic terms ([OMLIT](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.objects.OMLIT)) that embed arbitrary external values (e.g., the set of integers)
+* Symbol references are terms ([OMID](apidoc://info.kwarc.mmt.api.objects.OMID))
+* Variable references are terms ([OMV](apidoc://info.kwarc.mmt.api.objects.OMV))
+* Applications of a term to a list of *arguments* (terms) are terms ([OMA](apidoc://info.kwarc.mmt.api.objects.OMA))
+* Binding applications of a term - *binding* (optionally typed) variables - to a list of arguments are terms ([OMBIND](apidoc://info.kwarc.mmt.api.objects.OMBINDC))
+* Literals are atomic terms ([OMLIT](apidoc://info.kwarc.mmt.api.objects.OMLIT)) that embed arbitrary external values (e.g., the set of integers)
 
 The precise abstract syntax is explained in more detail [here](../api/syntax).
 

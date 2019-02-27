@@ -15,22 +15,22 @@ MMT literals are
 
 ### Usage
 
-To use literals, first create a Scala instance of [`uom.SemanticType,`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.SemanticType), which captures the set of literals and optionally defines a lexing rule for them.
+To use literals, first create a Scala instance of [`uom.SemanticType,`](apidoc://info.kwarc.mmt.api.uom.SemanticType), which captures the set of literals and optionally defines a lexing rule for them.
 
 Various ready-to-use semantic types (e.g., for numbers, strings), operators on semantic types (e.g., for subtypes, quotients, and products (e.g., for defining rational number literals)), and lexing rules (e.g., for numbers, quoted strings) can be found by following the API documentation.
 
-Then create a Scala instance of [`uom.RealizedType`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.uom.RealizedType), which ties an MMT symbol Syn to a semantic type Sem. Declare that Scala object as a [rule](declarations.html#rules) in your MMT theory Thy to make the set of Sem-values legal Thy-terms of Thy-type Syn.
+Then create a Scala instance of [`uom.RealizedType`](apidoc://info.kwarc.mmt.api.uom.RealizedType), which ties an MMT symbol Syn to a semantic type Sem. Declare that Scala object as a [rule](declarations.html#rules) in your MMT theory Thy to make the set of Sem-values legal Thy-terms of Thy-type Syn.
 
 ### Particularly Interesting Examples
 
 #### String Interpolation
 
-The lexing rule [`StringInterpolationLexer`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.parsing.StringInterpolationLexer) allows for Scala-style string interpolation.
+The lexing rule [`StringInterpolationLexer`](apidoc://info.kwarc.mmt.api.parsing.StringInterpolationLexer) allows for Scala-style string interpolation.
 
 The result is usually not a literal, but an application of an MMT symbol to some literals and other terms.
 
 #### Notations
 
-MMT notations are available as literals via the rule [`notations.NotationRealizedType`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.notations.NotationRealizedType).
+MMT notations are available as literals via the rule [`notations.NotationRealizedType`](apidoc://info.kwarc.mmt.api.notations.NotationRealizedType).
 
 That allows using notations inside MMT terms (e.g., when writing record terms) or obtain notations that are the result of computations.

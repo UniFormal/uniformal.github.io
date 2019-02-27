@@ -82,6 +82,29 @@
     - title: 'Overloading'
       url: '/doc/language/overloading.html'
 
+- title: 'MMT-Archives'
+  url: '/doc/archives/'
+  items:
+    - title: 'The Local MathHub Tool (LMH)'
+      url: '/doc/archives/lmh.html'
+    - title: 'Mathhub.info'
+      url: '/doc/archives/mathhub.html'
+    - title: 'Manifests'
+      url: '/doc/archives/meta_inf.html'
+    - title: 'Content'
+      url: '/doc/archives/content.html'
+    - title: 'Narration'
+      url: '/doc/archives/narration.html'
+    - title: 'Relational'
+      url: '/doc/language/relational.html'
+    - title: 'Errors'
+      url: '/doc/language/errors.html'
+    - title: 'Export'
+      url: '/doc/language/export.html'
+    - title: 'Source'
+      url: '/doc/language/source.html'
+
+
 - title: 'The MMT API'
   url: '/doc/api/'
   items:

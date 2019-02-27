@@ -115,8 +115,8 @@
       items:
         - title: 'MMT URIs'
           url: '/doc/api/syntax/uris.html'
-	- title: 'Narrative Elements'
-	  url: '/doc/api/syntax/narrative.html'
+        - title: 'Narrative Elements'
+          url: '/doc/api/syntax/narrative.html'
         - title: 'Structural Elements'
           url: '/doc/api/syntax/structural.html'
         - title: 'Objects'

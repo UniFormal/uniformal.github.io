@@ -96,7 +96,7 @@
       url: '/doc/archives/Mathhub'
       items:
         - title: 'The Local MathHub Tool (LMH)'
-          url: '/doc/archives/lmh.html'  
+          url: '/doc/archives/Mathhub/lmh.html'  
 
 
 - title: 'The MMT API'

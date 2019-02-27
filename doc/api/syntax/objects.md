@@ -2,7 +2,7 @@
 layout: doc
 title: MMT Objects
 ---
-![data structures](/doc/img/Term.svg)
+![data structures](/doc/img/Term.jpg)
 [`objects.Obj`](apidoc://info.kwarc.mmt.api.objects.Obj) is the top level datastructure for all objects.
 These are terms, variable declarations and contexts.
 

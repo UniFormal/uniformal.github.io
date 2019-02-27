@@ -6,6 +6,7 @@ This section gives an overview of all relevant classes for extending MMT by addi
 
 | Judgment       | Description                                                             |
 | -------------- | ----------------------------------------------------------------------- |
+| `G ctx`        | `G` is a well-formed context
 | `Inh T`        | `T` is *inhabitable* (may occur on the right side of a typing judgment) |
 | `Univ T`       | `T`is a *universe* (inhabitable, and every `t:T` is also inhabitable)   |
 | -------------- | ----------------------------------------------------------------------- |
@@ -14,7 +15,9 @@ This section gives an overview of all relevant classes for extending MMT by addi
 | -------------- | ----------------------------------------------------------------------- |
 | `t :=> T`      | The principal type of `t` is `T`                                        |
 | `t :<= T`      | `t` checks against the given type `T`                                   |
+| `T1 <: T2`     | `T1` is a subtype of `T2`                                               |
 | `Prov T`       | `T` is inhabited                                                        |
 
-
-
+In general, whenever a constant `c : T [= d]` is parsed, the solver will check the following judgments:
+* `Inh T`
+* `d :<= T`

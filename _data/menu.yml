@@ -10,12 +10,12 @@
 - title: 'Setting up MMT'
   url: '/doc/setup/'
   items:
-    - title: Details on Setting up jEdit
+    - title: 'Details on Setting up jEdit'
       url: '/doc/setup/jedit.html'
-    - title: Details on Running MMT
+    - title: 'Details on Running MMT'
       url: '/doc/setup/running.html'
     - title: 'Configuring MMT'
-      url: /doc/setup/configure.html
+      url: '/doc/setup/configure.html'
     - title: 'The Structure of the MMT Repository'
       url: '/doc/setup/repo.html'
     - title: 'Details on Building with SBT'
@@ -24,6 +24,9 @@
       url: '/doc/setup/devel.html'
     - title: 'License for Using MMT'
       url: '/doc/setup/license.html'
+    - title: 'Docker Image'
+      url: '/doc/setup/docker.html'
+
 
 - title: 'Tutorials'
   url: '/doc/tutorials/'
@@ -84,25 +87,16 @@
 
 - title: 'MMT-Archives'
   url: '/doc/archives/'
-  items:
-    - title: 'The Local MathHub Tool (LMH)'
-      url: '/doc/archives/lmh.html'
-    - title: 'Mathhub.info'
-      url: '/doc/archives/mathhub.html'
-    - title: 'Manifests'
-      url: '/doc/archives/meta_inf.html'
-    - title: 'Content'
-      url: '/doc/archives/content.html'
-    - title: 'Narration'
-      url: '/doc/archives/narration.html'
-    - title: 'Relational'
-      url: '/doc/language/relational.html'
-    - title: 'Errors'
-      url: '/doc/language/errors.html'
-    - title: 'Export'
-      url: '/doc/language/export.html'
-    - title: 'Source'
-      url: '/doc/language/source.html'
+  items:    
+    - title: 'The Build System'
+      url: '/doc/archives/building.html'
+    - title: 'The OAF Project'
+      url: '/doc/archives/oaf.html'
+    - title: 'Installing and Publishing Archives using MathHub'
+      url: '/doc/archives/Mathhub'
+      items:
+        - title: 'The Local MathHub Tool (LMH)'
+          url: '/doc/archives/Mathhub/lmh.html'  
 
 
 - title: 'The MMT API'
@@ -117,8 +111,8 @@
           url: '/doc/api/syntax/uris.html'
         - title: 'Narrative Elements'
           url: '/doc/api/syntax/narrative.html'
-        - title: 'Structural Elements'
-          url: '/doc/api/syntax/structural.html'
+        - title: 'Content Elements'
+          url: '/doc/api/syntax/content.html'
         - title: 'Objects'
           url: '/doc/api/syntax/objects.html'
     - title: 'Queries'
@@ -129,37 +123,32 @@
     - title: 'Extensions'
       url: '/doc/api/extensions/'
       items:
-        - title: Processors
+        - title: 'Processors'
           url: '/doc/api/extensions/processors.html'
     - title: 'Logging'
       url: '/doc/api/log.html'
+    - title: 'Checking Judgments'
+      url: '/doc/api/checking/'
 
 - title: 'Applications and Projects based on MMT'
   url: '/doc/applications/'
   items:
-    - title: 'jEdit IDE'
-      url: '/doc/applications/jedit.html' 
+    - title: 'IDEs'
+      url: '/doc/applications/ides.html'
+      items:
+        - title: 'IntelliJ'
+          url: '/doc/applications/intellij.html' 
+        - title: 'jEdit'
+          url: '/doc/applications/jedit.html' 
     - title: 'The MMT Shell'
       url: '/doc/applications/shell.html'
     - title: 'The MMT Server'
       url: '/doc/applications/server.html'
-    - title: 'The Build System'
-      url: '/doc/applications/building.html'
-    - title: 'MMT Archives'
-      url: '/doc/applications/archives.html'
-    - title: 'The OAF Project'
-      url: '/doc/applications/oaf.html'
-    - title: 'The LocalMathHub Tool'
-      url: '/doc/applications/lmh.html'
-    - title: 'MathHub.info'
-      url: '/doc/applications/mathhub.html'
     - title: 'TGView'
       url: '/doc/applications/tgview.html'
     - title: 'LaTeX Processing'
       url: '/doc/applications/latex.html'
-    - title: 'Docker Image'
-      url: '/doc/applications/docker.html'
-
+      
 - title: 'Development'
   url: '/doc/development/'
   items:

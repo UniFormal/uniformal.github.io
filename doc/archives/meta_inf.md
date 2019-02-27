@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Manifests
+title: META_INF
 ---
 
 MMT uses a `META-INF` directory containing a `MANIFEST.MF` file.<span class="detail">MMT archives are inspired by Java jar archives (which are directory trees zipped into jar files), from where the file name and location is taken.</span>

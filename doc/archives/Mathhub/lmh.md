@@ -6,9 +6,7 @@ title: The Local MathHub Tool (LMH)
 The Local MathHub (lmh) functionality in MMT provides local commands to install libraries
 and archives
 from and publish content to [MathHub.info](https://mathhub.info), a versioned hosting system and user
-portal for OMDoc/MMT content. The
-[MathHub Wiki](https://github.com/MathHubInfo/Documentation/wiki) gives details about the
-system. 
+portal for OMDoc/MMT content.
 
 ### Configuring local folders
 Before using any lmh functionality, a local folder needs to be configured to store archives in.

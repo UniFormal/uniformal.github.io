@@ -145,7 +145,7 @@
   url: '/doc/applications/'
   items:
     - title: 'IDEs'
-      url: 'doc/applications/ides.html'
+      url: '/doc/applications/ides.html'
       items:
         - title: 'IntelliJ'
           url: '/doc/applications/intellij.html' 

@@ -10,12 +10,12 @@
 - title: 'Setting up MMT'
   url: '/doc/setup/'
   items:
-    - title: Details on Setting up jEdit
+    - title: 'Details on Setting up jEdit'
       url: '/doc/setup/jedit.html'
-    - title: Details on Running MMT
+    - title: 'Details on Running MMT'
       url: '/doc/setup/running.html'
     - title: 'Configuring MMT'
-      url: /doc/setup/configure.html
+      url: '/doc/setup/configure.html'
     - title: 'The Structure of the MMT Repository'
       url: '/doc/setup/repo.html'
     - title: 'Details on Building with SBT'
@@ -88,28 +88,15 @@
 - title: 'MMT-Archives'
   url: '/doc/archives/'
   items:
-    - title: 'The Local MathHub Tool (LMH)'
-      url: '/doc/archives/lmh.html'
-    - title: 'Mathhub.info'
-      url: '/doc/archives/mathhub.html'
-    - title: 'META_INF'
-      url: '/doc/archives/meta_inf.html'
-    - title: 'content'
-      url: '/doc/archives/content.html'
-    - title: 'narration'
-      url: '/doc/archives/narration.html'
-    - title: 'relational'
-      url: '/doc/archives/relational.html'
-    - title: 'errors'
-      url: '/doc/archives/errors.html'
-    - title: 'export'
-      url: '/doc/archives/export.html'
-    - title: 'source'
-      url: '/doc/language/source.html'
-    - title: 'The OAF Project'
-      url: '/doc/archives/oaf.html'
+    - title: 'Installing and Publishing Archives using MathHub'
+      url: '/doc/archives/Mathhub'
+      items:
+        - title: 'The Local MathHub Tool (LMH)'
+          url: '/doc/archives/lmh.html'      
     - title: 'The Build System'
       url: '/doc/archives/building.html'
+    - title: 'The OAF Project'
+      url: '/doc/archives/oaf.html'
 
 
 - title: 'The MMT API'
@@ -136,7 +123,7 @@
     - title: 'Extensions'
       url: '/doc/api/extensions/'
       items:
-        - title: Processors
+        - title: 'Processors'
           url: '/doc/api/extensions/processors.html'
     - title: 'Logging'
       url: '/doc/api/log.html'

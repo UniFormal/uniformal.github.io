@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: MathHub.info 
+title: Installing and Publishing Archives using MathHub.info 
 ---
 
 [MathHub.info](http://mathhub.info) is portal for active mathematical documents and

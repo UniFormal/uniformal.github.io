@@ -19,9 +19,17 @@ The following folders of an archive have a special meaning to MMT:
 
 Folder  |	Content
 ------ | -------
-source |	the primary content of the archive in some format that MMT understands natively
-content	| index of all modules (created by MMT when building the archive)
-narration	| index of all documents (created by MMT when building the archive)
-relational |	the relational index with respect to the MMT ontology (created by MMT when building the archive)
-export |	location for the results of exporters that produce auxiliary data from MMT content (created by MMT when running an exporter)
+source |	the primary content of the archive in some format that MMT understands natively.
+content	| index of all modules (created by MMT when building the archive).
+narration	| index of all documents (created by MMT when building the archive).
+relational |	the relational index with respect to the MMT ontology (created by MMT when building the archive).
+export |	location for the results of exporters that produce auxiliary data from MMT content (created by MMT when running an exporter).
 errors | holds error and log messages from running build targets (created by MMT when running any build targets).
+META_INF | holds the MANIFEST.MF file identifying the directory tree as an archive to MMT.
+
+Besides there are the following optional folders:
+
+Folder  |	Content
+------ | -------
+scala |	Contains content directly implemented in scala.
+bin	| Compilation target of the scala folder.

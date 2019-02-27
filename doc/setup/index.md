@@ -30,6 +30,8 @@ Concretely:
 
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) is a Java-based multi-purpose IDE. The official IntelliJ Plugin repository (accessible from within the IDE under File -> Settings -> Plugins -> Marketplace) includes an MMT Plugin, which can be installed directly from within the Marketplace. The IntelliJ MMT-Plugin is documented [here](https://github.com/UniFormal/IntelliJ-MMT/blob/master/README.md).
 
+The IntelliJ MMT-Plugin **does not work on Windows** due to an IntelliJ bug: https://youtrack.jetbrains.com/issue/IDEA-208063
+
 ### 3) Install Git
 
 MMT uses git internally, so make sure it is installed.

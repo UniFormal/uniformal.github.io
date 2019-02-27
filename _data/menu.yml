@@ -87,16 +87,16 @@
 
 - title: 'MMT-Archives'
   url: '/doc/archives/'
-  items:
-    - title: 'Installing and Publishing Archives using MathHub'
-      url: '/doc/archives/Mathhub'
-      items:
-        - title: 'The Local MathHub Tool (LMH)'
-          url: '/doc/archives/lmh.html'      
+  items:    
     - title: 'The Build System'
       url: '/doc/archives/building.html'
     - title: 'The OAF Project'
       url: '/doc/archives/oaf.html'
+    - title: 'Installing and Publishing Archives using MathHub'
+      url: '/doc/archives/Mathhub'
+      items:
+        - title: 'The Local MathHub Tool (LMH)'
+          url: '/doc/archives/lmh.html'  
 
 
 - title: 'The MMT API'

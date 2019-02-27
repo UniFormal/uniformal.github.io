@@ -8,7 +8,7 @@ Individual applications are either part of the mmt-api project or implemented in
 In particular, these include
 
 * a [shell](shell.html)
-* an [IDE](jedit.html) based on the jEdit text editor
+* an [IDE](jedit.html) based on the jEdit text editor as well as a plugin for the (IntelliJ-IDE)[intellij.html]
 * a [build tool](building.html) for [MMT archives](archives.html)
 * a [statistics exporter](statistics.html) generating statistical data for [MMT archives](archives.html) 
 * a [graphical interface](gui.html)

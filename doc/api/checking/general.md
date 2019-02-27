@@ -9,12 +9,12 @@ The following gives an overview for the most important objects passed to rules a
 
 Both the stack and the history are usually *implicit* arguments.
 
-It is strongly advised to always import [`objects.Conversions._`](apidoc://info.kwarc.mmt.api.objects.Conversions), which provides helpful syntactic sugar for handling common operations such as substituting variables.
-
 ### Generally useful methods:
 
-* [`Context.pickFresh(context,name)`](apidoc:///info.kwarc.mmt.api.objects.Context$) picks a fresh variable name `newname` (by default `name`) that is not already used in `context`, and returns it along with the [`objects.Substitution`](apidoc:///info.kwarc.mmt.api.objects.Substitution) `name/OMV(newname)`.
-* Given an [`api.LocalName`](apidoc://info.kwarc.mmt.api.LocalName) `ln` and a term `a`, then `ln % a` returns the [`objects.VarDecl`](apidoc://info.kwarc.mmt.api.objects.VarDecl) with name `ln` and type `a`.
-* Given a LocalName `ln` and a term `a`, then `ln / a` returns the [`objects.Substitution`](apidoc:///info.kwarc.mmt.api.objects.Substitution) `ln/a`.
-* Given a term `a` and a substitution `s`, then `a ^? s` returns the result ob applying `s` to `a`
+It is strongly advised to always import [`objects.Conversions._`](apidoc://info.kwarc.mmt.api.objects.Conversions), which provides helpful syntactic sugar for handling common operations such as substituting variables.
 
+* [`Context.pickFresh(context,name)`](apidoc:///info.kwarc.mmt.api.objects.Context$) picks a fresh variable name `newname` (by default `name`) that is not already used in `context`, and returns it along with the [`objects.Substitution`](apidoc:///info.kwarc.mmt.api.objects.Substitution) `name/OMV(newname)`.
+* Given an [`api.LocalName`](apidoc://info.kwarc.mmt.api.LocalName) `ln` and a term `a`, then `ln % a` returns the `VarDecl` with name `ln` and type `a`.
+* Given a LocalName `ln` and a term `a`, then `ln / a` returns the substitution `ln/a`.
+* Given a term `a` and a substitution `s`, then `a ^? s` returns the result of applying `s` to `a`
+* The last three often occur in combination, as in `stack ++ ln % (tp ^? (x / a))`

@@ -127,12 +127,19 @@
           url: '/doc/api/extensions/processors.html'
     - title: 'Logging'
       url: '/doc/api/log.html'
+    - title: 'Checking Judgments'
+      url: '/doc/api/checking/'
 
 - title: 'Applications and Projects based on MMT'
   url: '/doc/applications/'
   items:
-    - title: 'jEdit IDE'
-      url: '/doc/applications/jedit.html' 
+    - title: 'IDEs'
+      url: '/doc/applications/ides.html'
+      items:
+        - title: 'IntelliJ'
+          url: '/doc/applications/intellij.html' 
+        - title: 'jEdit'
+          url: '/doc/applications/jedit.html' 
     - title: 'The MMT Shell'
       url: '/doc/applications/shell.html'
     - title: 'The MMT Server'

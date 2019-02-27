@@ -1,9 +1,9 @@
 ---
 layout: doc
-title: the jEdit IDE
+title: The jEdit IDE
 ---
 
-The jEdit IDE is the main MMT-based application and the primary to enter and edit MMT content manually.
+The jEdit IDE allows to enter and edit MMT content manually.
 
 Installation instructions can be found [here](../setup/jedit.html)
 

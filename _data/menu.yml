@@ -129,6 +129,9 @@
       url: '/doc/api/log.html'
     - title: 'Checking Judgments'
       url: '/doc/api/checking/'
+      items:
+        - title: 'General Methods for Rules'
+          url: '/doc/api/checking/general.html'
 
 - title: 'Applications and Projects based on MMT'
   url: '/doc/applications/'

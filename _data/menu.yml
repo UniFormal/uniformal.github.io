@@ -123,8 +123,9 @@
           url: '/doc/api/syntax/objects.html'
     - title: 'Queries'
       url: '/doc/api/queries.html'
-    - title: 'Query Examples with the MMT API'
-      url: '/doc/api/query-examples.html'
+      items:
+        - title: 'Query Examples with the MMT API'
+          url: '/doc/api/query-examples.html'
     - title: 'Extensions'
       url: '/doc/api/extensions/'
       items:

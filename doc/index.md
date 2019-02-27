@@ -26,8 +26,7 @@ This double meta level is a unique characteristic of MMT and, maybe surprisingly
 ### Structure of this Documentation
 
 This is the main entry point to the MMT documentation.
-The documentation contains
-It contains:
+The documentation contains:
 
 * practical instructions for [getting started](setup/) as a user as well [tutorials](tutorials/) for typical tasks
 * a theoretical overview of the general [philosophy](philosophy/) behind MMT and the concrete [language](language/)

@@ -54,6 +54,9 @@ The following steps can be repeated whenever you would like to start a new proje
    scalaVersion := "2.12.8"
 
    libraryDependencies += "mmt" % "mmt" % "15.0.0" from "https://github.com/UniFormal/MMT/releases/download/v15.0.0/mmt.jar"
+   
+   // Not sure if needed if one depends on the MMT JAR, see https://github.com/UniFormal/MMT/issues/447
+   libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1"
    ```
     You should probably leave `scalaVersion` untouched if you have another one in your file. Also adapt "15.0.0.0" and `mmt.jar` URI to the latest release, see [list of all MMT releases](https://github.com/UniFormal/MMT/releases).
 

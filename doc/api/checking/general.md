@@ -22,10 +22,10 @@ It is strongly advised to always import [`objects.Conversions._`](apidoc://info.
 ### Solver Methods
 
 The [`checking.Solver`](apidoc://info.kwarc.mmt.api.checking.Solver) provides the following methods for rules:
-* `solver.check` is the main method for recursive checks of rule premises. Takes a judgement (see ???) as argument.
+* `solver.check` is the main method for recursive checks of rule premises. Takes a judgement (see [here](judgements.html)) as argument.
 * `solver.inferType(tm : Term, covered : Boolean)` attempts to infer the type of `tm`. The additional argument `covered` denotes whether the term is already known to be well-typed, in which case some well-formedness checks can be skipped.
 * `solver.inferTypeAndThen(tm : Term)(cont : Term => Boolean)` is useful for rules that return Booleans. If a type for `tm` can not be inferred yet due to unsolved variables, the current judgement will be delayed until the variables are solved during further checks. Afterwards, the continuation function will be called on the inferred type to check the current judgement.
-* `solver.simplify(o : Obj)` aggressively simplifies `o` until no computation rules are exhausted.
+* `solver.simplify(o : Obj)` aggressively simplifies `o` until all computation rules are exhausted.
 * `solver.safeSimplifyUntil(tm : Term)(simple : Term => Option[A])` safely iterates one-step-simplification until `simple` (usually an unapply-method) returns `Some` on the result. This is primarily used to enforce a specific syntactic pattern on a term, if a rule requires a term to be e.g. a lambda expression (`solver.safeSimplifyUntil(tm)(Lambda.unapply)`). Returns both the simplified term as well as the result of `simple` on the result.
 * `solver.getType` and `solver.getDef` take a `GlobalName` (see [here](../syntax/uris.html)) for a constant and attempt to return its type or definiens (relative to the current context), respectively.
 * `solver.error(s : String)` should always be used instead of returning `false`. This method a) returns `false` and b) registers `s` as the reason why the judgement failed, thus providing more detailed information to the user.

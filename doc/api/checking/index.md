@@ -22,4 +22,4 @@ In general, whenever a constant `c : T [= d]` is parsed, the solver will check t
 * `Inh T`
 * `d :<= T`
 
-The classes corresponding to these judgements and the tactics used to check them are describes [here](judgements.html).
+The classes corresponding to these judgements and the tactics used to check them are described [here](judgements.html).

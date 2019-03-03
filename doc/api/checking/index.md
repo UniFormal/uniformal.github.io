@@ -21,3 +21,5 @@ This section gives an overview of all relevant classes for extending MMT by addi
 In general, whenever a constant `c : T [= d]` is parsed, the solver will check the following judgments:
 * `Inh T`
 * `d :<= T`
+
+The classes corresponding to these judgements and the tactics used to check them are describes [here](judgements.html).

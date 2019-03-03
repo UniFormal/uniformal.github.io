@@ -22,7 +22,8 @@ It is strongly advised to always import [`objects.Conversions._`](apidoc://info.
 ### Solver Methods
 
 The [`checking.Solver`](apidoc://info.kwarc.mmt.api.checking.Solver) provides the following methods for rules:
-* `solver.check` is the main method for recursive checks of rule premises. Takes a judgement (see [here](judgements.html)) as argument.
+* `solver.check` is the main method for recursive checks of rule premises. Takes a judgement (see [here](judgements.html)) as argument. Note that a call to `solver.check(j)` implies that the judgement `j` is a *necessary* requirement for the current judgement. In particular, failure to prove *j* results in an error.
+* `solver.tryToCheckWithoutDelay(j : Judgement*)`: Like `solver.check`, but without side effects. In particular, no unsolved variables are solved unless the judgements `j` are provable.
 * `solver.inferType(tm : Term, covered : Boolean)` attempts to infer the type of `tm`. The additional argument `covered` denotes whether the term is already known to be well-typed, in which case some well-formedness checks can be skipped.
 * `solver.inferTypeAndThen(tm : Term)(cont : Term => Boolean)` is useful for rules that return Booleans. If a type for `tm` can not be inferred yet due to unsolved variables, the current judgement will be delayed until the variables are solved during further checks. Afterwards, the continuation function will be called on the inferred type to check the current judgement.
 * `solver.simplify(o : Obj)` aggressively simplifies `o` until all computation rules are exhausted.

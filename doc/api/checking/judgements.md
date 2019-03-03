@@ -27,4 +27,4 @@ The available rule classes are described [here](???). By *exhaustively applying 
   * Deferring to the equality judgement `T1 = T2`.
 * `Prov T`: [`objects.Inhabited`](apidoc://info.kwarc.mmt.api.objects.Inhabited)`(stack:Stack, T:Term)` - defers to a `Prover` extension to find a term `t` with `t:T`. A default implementation resorts to a simple lookup in the current context for named constants or variables of type `T` with limited search for LF functions (if included in the current context).
 
-The remaining judgements `t1 ~> t2` and `t :=> T` correspond to simplification and type inferrence and are used throughout the above alforithms.
+The remaining judgements `t1 ~> t2` and `t :=> T` correspond to simplification and type inferrence and are used throughout the above algorithms.

@@ -11,7 +11,17 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 16
+
+Scheduled to be released on [22nd March 2019](https://github.com/UniFormal/MMT/milestone/8). 
+
+- improvements to the Jupyter Kernel
+- minor MathHub improvements
+- lots of bugfixes and removal of deprecated code
+
 ### Release 15
+
+Released on [18th December 2018](https://github.com/UniFormal/MMT/releases/tag/v15.0.0). 
 
 - IDE Improvements
   - Support for the [MMT Plugin for the IntelliJ-IDE](https://github.com/UniFormal/IntelliJ-MMT)

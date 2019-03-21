@@ -36,7 +36,9 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 
 The "Generalizer" is a new component shipped with the release of MMT 16.0.0.
 
-**Example file for generalization:** <span class="detail">```namespace http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces❚
+**Example file for generalization:** <span class="detail">
+```
+namespace http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces❚
 import base http://mathhub.info/MitM/Foundation❚
 
 /T A theory extendinding MitM/Foundation's "Math" theory for some needed operators in the examples, namely < and ≥ on ℕ and ℝ.❚
@@ -84,7 +86,9 @@ theory NormedVectorspaceThms : ?OurMath =
 
   decl_mentinioning_prev_decl_in_rewrite_spot: ℝ ❘ = norm (my_y - my_y)❙
   rewrite_variable_name_clash_with_morphism: Y ⟶ Y ⟶ ℝ ❘ = [a, b] norm (a - b)❙
-❚```</span>
+❚
+```
+</span>
 
 1. Enter MPaths in the input boxes. E.g. for the example file, take:
   - `http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedVectorspaceThms` as the input theory

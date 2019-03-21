@@ -37,7 +37,7 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 The "Generalizer" is a new component shipped with the release of MMT 16.0.0.
 
 **Example file for generalization:** <span class="detail">
-```
+<code>
 namespace http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces❚
 import base http://mathhub.info/MitM/Foundation❚
 
@@ -87,8 +87,7 @@ theory NormedVectorspaceThms : ?OurMath =
   decl_mentinioning_prev_decl_in_rewrite_spot: ℝ ❘ = norm (my_y - my_y)❙
   rewrite_variable_name_clash_with_morphism: Y ⟶ Y ⟶ ℝ ❘ = [a, b] norm (a - b)❙
 ❚
-```
-</span>
+</code></span>
 
 1. Typecheck your files which contain the affected theories and views.
 2. Enter MPaths in the input boxes. E.g. for the example file, take:

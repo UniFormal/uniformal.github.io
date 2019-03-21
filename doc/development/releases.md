@@ -20,6 +20,8 @@ Scheduled to be released on [22nd March 2019](https://github.com/UniFormal/MMT/m
 - lots of bugfixes and removal of deprecated code
 - Importer for Coq (see [this paper](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf))
 - Improvements on MMT Syntax Presenter
+- TGView improved
+- New link inverter
 
 ### Release 15
 

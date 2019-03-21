@@ -1,12 +1,13 @@
 ---
 layout: doc
-title: Getting Started with the MMT API
+title: Getting Started as an MMT API User
 ---
 
-This document gets you quickly started with setting up a Scala project for using the MMT API and presents a simple example showing how to list all theories of an archive.
+This document gets you quickly started with setting up a Scala project using the MMT API as a dependency and presents a simple example showing how to list all theories of an archive.
 
-- Audience: Users who want to use the MMT API to query or manipulate knowledge, and possibly have a basic understanding of concepts within MMT (documents, theories, declarations)
-- Non-audience: Users who want to do formalization. They will find a fitting getting started guide: [here](../../setup/)
+- Audience: Users who want to use the MMT API to query or manipulate knowledge, and possibly have a basic understanding of concepts within MMT (documents, theories, declarations); Users who want to build *on top* of MMT using the MMT API as a dependency.
+
+- Non-audience: Users who want to do formalization. They will find a fitting getting started guide: [here](../../setup/); users who want to get started developing the MMT API *itself*. These should refer to [this page](../../setup/devel).
 
 Table of Contents:
 

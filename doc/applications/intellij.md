@@ -32,7 +32,7 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 - In the project-view on the left, select the *MathHub* view to get an overview over all available MMT archives on 
 [MathHub](http://gl.mathhub.info). You can *git clone* them via right-clicking an archive and choosing *Install archive*.
 
-### Using the Generalizer
+### Refactoring tool 'Generalizer'
 
 The "Generalizer" is a new component shipped with the release of MMT 16.0.0.
 
@@ -90,12 +90,13 @@ theory NormedVectorspaceThms : ?OurMath =
 ```
 </span>
 
-1. Enter MPaths in the input boxes. E.g. for the example file, take:
+1. Typecheck your files which contain the affected theories and views.
+2. Enter MPaths in the input boxes. E.g. for the example file, take:
   - `http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedVectorspaceThms` as the input theory
   - `http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedVectorspace` as the to-be-generalized part
   - `http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?MetricSpace` as the generalization of that part
   - `http://cds.omdoc.org/theorysplittest/generalization/metricAndNormedSpaces?NormedAsMetricSpaces` as the specialization morphism
-2. Click `Generalize`
+3. Click `Generalize`
 
 ### Notes on automatic type checking
 

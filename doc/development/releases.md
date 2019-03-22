@@ -16,7 +16,7 @@ This document contains a changelog of existing as well as upcoming releases.
 Scheduled to be released on [22nd March 2019](https://github.com/UniFormal/MMT/milestone/8). 
 
 - New primitive concept of derived modules (in analogy to derived declarations)
-- New declaration objects for diagrams and diagram operators ([paper](https://kwarc.info/people/mkohlhase/submit/cicm-19-.pdf)
+- New declaration objects for diagrams and diagram operators ([paper](https://kwarc.info/people/frabe/Research/RS_diagops_19.pdf))
 - New importer for Coq library, based Sacerdoti Coen's XML export [paper](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf)
 - Improvements to MMTTeX for putting MMT syntax into LaTeX files
 - First version of database generator for schemas written as MMT theories [MBGen](https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf)

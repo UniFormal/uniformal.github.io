@@ -15,14 +15,16 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Scheduled to be released on [22nd March 2019](https://github.com/UniFormal/MMT/milestone/8). 
 
-- improvements to the Jupyter Kernel
-- minor MathHub improvements
-- lots of bugfixes and removal of deprecated code
-- Importer for Coq (see [this paper](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf))
-- Improvements on MMT Syntax Presenter
-- TGView improved
+
+- Added a [Coq Importer](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf)
+- Added an alpha version of [MBGen](https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf)
+- Added package-level documentation inside the api package
+- Improvements for TGView, ported to TypeScript inside [an external repository](https://github.com/Uniformal/TGView)
+- Improvements to the [Jupyter Kernel](https://github.com/UniFormal/mmt_jupyter_kernel)
+- Improvements in the MMT Syntax Presenter
+- better MathHub API error handling
 - New link inverter (see [here](https://uniformal.github.io/doc/applications/intellij.html#using-the-generalizer))
-- Alpha version of MBGen (see [this paper](https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf))
+- lots of bugfixes and removal of deprecated code (we can now compile with < 100 warnings)
 
 ### Release 15
 

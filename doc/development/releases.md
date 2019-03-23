@@ -13,7 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 16
 
-Scheduled to be released on [22nd March 2019](https://github.com/UniFormal/MMT/milestone/8). 
+Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.0.0). 
 
 - New primitive concept of derived modules (in analogy to derived declarations)
 - New declaration objects for diagrams and diagram operators ([paper](https://kwarc.info/people/frabe/Research/RS_diagops_19.pdf))

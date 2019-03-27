@@ -19,6 +19,8 @@ Build target modfiers and change management are supported for automatically for 
 
 The file-properties of the operating system are used to detect changes. Timestamps for the previous build are stored in `META-INF/timestamps`.
 
+Any target may be followed by a modifier. Apart from `--force`, other supported modifiers are `--forceDeps` (which also forces building of dependencies), `--depsFirst`, `--onChange`, `--onError`, `--dry-run` and `--clean` (as well as `--test`,`--test-add` and `--test-update`). Omitting the modifier defaults to `--onChange`, i.e. files are only rebuild if they have changed on disk after an earlier build. (`--onError` rebuilds if the previous build failed with an error.)
+
 ### Individual Build Targets
 Many build targets work with input and/or output dimensions. Those are the top level folders within an archive.
 The most important build targets (which are available by default) include:

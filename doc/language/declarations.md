@@ -109,7 +109,7 @@ All the monoid/group axioms are imported via the structures and are thus availab
 
 #### Derived Declarations
 
-Derived declarations are declarations, which are not interpreted deirectly but elaborated into external declarations by a [structural feature](structuralfeatures.md). Their syntax and semantics is defined by the corresponding structural feature. 
+Derived declarations are declarations, which are not interpreted directly but elaborated into external declarations by a [structural feature](structuralfeatures.md). Their syntax and semantics is defined by the corresponding structural feature. 
 
 
 ### Rules

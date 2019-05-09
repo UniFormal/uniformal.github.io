@@ -36,7 +36,7 @@ MMT-based applications can be written in two ways:
   * or even replacing any of MMT's core components with your own variant.
                                         
 * Use any other programming language and communicate with MMT via the HTTP API.
-  If you use Pythong, use the [MMTPy project](https://github.com/UniFormal/MMTPy), which builds Python wrappers for the HTTP API.
+  If you use Python, use the [MMTPy project](https://github.com/UniFormal/MMTPy), which builds Python wrappers for the HTTP API.
 
 ### Developing MMT itself
 

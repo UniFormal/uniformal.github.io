@@ -11,11 +11,79 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
-### Release 13 (unreleased)
+### Release 16
 
-This release has not yet been released and is scheduled for [31st July 2018](https://github.com/UniFormal/MMT/milestone/5).
+Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.0.0). 
 
+- New primitive concept of derived modules (in analogy to derived declarations)
+- New declaration objects for diagrams and diagram operators ([paper](https://kwarc.info/people/frabe/Research/RS_diagops_19.pdf))
+- New importer for Coq library, based Sacerdoti Coen's XML export [paper](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf)
+- Improvements to MMTTeX for putting MMT syntax into LaTeX files
+- First version of database generator for schemas written as MMT theories [MBGen](https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf)
+- First version of theory generalization (see [here](https://uniformal.github.io/doc/applications/intellij.html#using-the-generalizer))
+- Improvements to the [Jupyter Kernel](https://github.com/UniFormal/mmt_jupyter_kernel)
+- Improvements for TGView, ported to TypeScript in [an external repository](https://github.com/Uniformal/TGView)
+- Much improved documentation of package objects in mmt-api (can serve as entry points for reading API doc)
+- Lots of minor improvements and bugfixes as well as cleanup of Scala warning including deprecation warnings (now < 100 warnings)
 
+### Release 15
+
+Released on [18th December 2018](https://github.com/UniFormal/MMT/releases/tag/v15.0.0). 
+
+- IDE Improvements
+  - Support for the [MMT Plugin for the IntelliJ-IDE](https://github.com/UniFormal/IntelliJ-MMT)
+  - added a Scala console to JEdit to interact with MMT's internal classes from within jEdit
+
+- New examples in `MMT/examples`
+  - resource semantics of linear logic (`logic/linear.mmt`)
+  - prototypical theorem prover (`logic/prover.mmt`)
+  - proof irrelevance as a logical feature (`logic/pl.mmt`)
+  - inductive functions on lists as special cases of rewrite rules (`lists.mmt`)
+  - case study on implicit morphisms: lattice of theories of regular bands
+- New Concrete link syntax
+  - for includes that include a morphism expression as opposed to an MMT URI
+- Added support for right-associative delimiters in mixfix notations
+  - Use `%Rd` for delimiter `d` that associates to the right
+- Cleanups and additions to various internal components
+  - first steps towards implicit coercions
+  - new class `DocumentLevel` (e.g., archive, folder, file, theory, etc.); every document now carries it level
+  - new `elementEnd` calls after processing container elements in all MMT components
+  - dropped distinction between declared and defined elements, container elements now inherit from `ModuleOrLink` class
+  - re-implemented applicability check of checking rules
+  - various cleanups of the MathHub API
+- compatible with major reimplementations of archives:
+  - `LFX`
+  - `MitM/Foundation`
+  - `MitM/smglom`
+
+### Release 14
+
+Released on [13th November 2018](https://github.com/UniFormal/MMT/releases/tag/v14.0.0).
+
+- MitM infrastructure for using MMT as system integration mediator (as used in the OpenDreamKit project)
+- major rewrite of the type checker to allow for head normalization with an arbitrary set of rules
+- MMT kernel for Jupyter; import/export of Jupyter notebooks
+- complete importer for Isabelle libraries by Makarius Wenzel (see [his blog post](https://sketis.net/2018/isabelle-mmt-export-of-isabelle-theories-and-import-as-omdoc-content) for details)
+- OMDoc files now stored in compressed form using xz (requires clean rebuild of archives to remove old OMDoc files)
+- major progress on the IMPS importer
+- rework of the MathHub API
+- minor lmh cleanup
+- stopped using `sbt test` for integration tests (makes them more reproducible)
+- compatible with major reimplementations of archives:
+  * LFX
+  * MitM/Foundation
+  * MitM/smglom
+
+### Release 13
+
+Released on [30th August 2018](https://github.com/UniFormal/MMT/releases/tag/v13.0.0). (This release was delayed until August 30 to avoid new releases during conference season.)
+
+- new class AnnotationProvider for providing extra information on MMT declarations
+  these are shown in particular in the jEdit gutter
+- first version of structural features for inductive types, record types
+- improved statistics generation
+- major progress on Isabelle importer
+- minor improvements of GAP/Sage-Imports and LMFDB-Plugin
 
 ### Release 12
 

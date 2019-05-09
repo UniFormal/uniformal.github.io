@@ -23,6 +23,6 @@ Each entry is a whitespace-separated list of strings.
 
 ### Configuration Entries
 
-The class for configuration entries [`frontend.ConfEntry`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.frontend.ConfEntry).
+The class for configuration entries [`frontend.ConfEntry`](apidoc://info.kwarc.mmt.api.frontend.ConfEntry).
 
 Its Scala doc is the primary place to document the individual entries.

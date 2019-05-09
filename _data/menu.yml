@@ -10,12 +10,12 @@
 - title: 'Setting up MMT'
   url: '/doc/setup/'
   items:
-    - title: Details on Setting up jEdit
+    - title: 'Details on Setting up jEdit'
       url: '/doc/setup/jedit.html'
-    - title: Details on Running MMT
+    - title: 'Details on Running MMT'
       url: '/doc/setup/running.html'
     - title: 'Configuring MMT'
-      url: /doc/setup/configure.html
+      url: '/doc/setup/configure.html'
     - title: 'The Structure of the MMT Repository'
       url: '/doc/setup/repo.html'
     - title: 'Details on Building with SBT'
@@ -24,14 +24,19 @@
       url: '/doc/setup/devel.html'
     - title: 'License for Using MMT'
       url: '/doc/setup/license.html'
+    - title: 'Docker Image'
+      url: '/doc/setup/docker.html'
+
 
 - title: 'Tutorials'
   url: '/doc/tutorials/'
   items:
     - title: 'Language Design in MMT'
       url:  '/doc/tutorials/prototyping/'
+    - title: 'Getting Started as an MMT API user'
+      url: '/doc/tutorials/applications/getting-started'
     - title: 'Application Development with MMT'
-      url: '/doc/tutorials/applications/'
+      url: '/doc/tutorials/applications/application-development'
     - title: 'Writing MMT documents with jEdit'
       url: '/doc/tutorials/jedit/'
       items:
@@ -80,6 +85,20 @@
     - title: 'Overloading'
       url: '/doc/language/overloading.html'
 
+- title: 'MMT-Archives'
+  url: '/doc/archives/'
+  items:    
+    - title: 'The Build System'
+      url: '/doc/archives/building.html'
+    - title: 'The OAF Project'
+      url: '/doc/archives/oaf.html'
+    - title: 'Installing and Publishing Archives using MathHub'
+      url: '/doc/archives/Mathhub'
+      items:
+        - title: 'The Local MathHub Tool (LMH)'
+          url: '/doc/archives/Mathhub/lmh.html'  
+
+
 - title: 'The MMT API'
   url: '/doc/api/'
   items:
@@ -90,46 +109,51 @@
       items:
         - title: 'MMT URIs'
           url: '/doc/api/syntax/uris.html'
-        - title: 'Structural Elements'
-          url: '/doc/api/syntax/structural.html'
+        - title: 'Narrative Elements'
+          url: '/doc/api/syntax/narrative.html'
+        - title: 'Content Elements'
+          url: '/doc/api/syntax/content.html'
         - title: 'Objects'
           url: '/doc/api/syntax/objects.html'
     - title: 'Queries'
       url: '/doc/api/queries.html'
+      items:
+        - title: 'Query Examples with the MMT API'
+          url: '/doc/api/query-examples.html'
     - title: 'Extensions'
       url: '/doc/api/extensions/'
       items:
-        - title: Processors
+        - title: 'Processors'
           url: '/doc/api/extensions/processors.html'
     - title: 'Logging'
       url: '/doc/api/log.html'
+    - title: 'Checking Judgements'
+      url: '/doc/api/checking/'
+      items:
+        - title: 'General Methods for Rules'
+          url: '/doc/api/checking/general.html'
+        - title: 'Available Judgements and their Invariants'
+          url: '/doc/api/checking/judgements.html'
 
 - title: 'Applications and Projects based on MMT'
   url: '/doc/applications/'
   items:
-    - title: 'jEdit IDE'
-      url: '/doc/applications/jedit.html' 
+    - title: 'IDEs'
+      url: '/doc/applications/ides.html'
+      items:
+        - title: 'IntelliJ'
+          url: '/doc/applications/intellij.html' 
+        - title: 'jEdit'
+          url: '/doc/applications/jedit.html' 
     - title: 'The MMT Shell'
       url: '/doc/applications/shell.html'
     - title: 'The MMT Server'
       url: '/doc/applications/server.html'
-    - title: 'The Build System'
-      url: '/doc/applications/building.html'
-    - title: 'MMT Archives'
-      url: '/doc/applications/archives.html'
-    - title: 'The OAF Project'
-      url: '/doc/applications/oaf.html'
-    - title: 'The LocalMathHub Tool'
-      url: '/doc/applications/lmh.html'
-    - title: 'MathHub.info'
-      url: '/doc/applications/mathhub.html'
     - title: 'TGView'
       url: '/doc/applications/tgview.html'
     - title: 'LaTeX Processing'
       url: '/doc/applications/latex.html'
-    - title: 'Docker Image'
-      url: '/doc/applications/docker.html'
-
+      
 - title: 'Development'
   url: '/doc/development/'
   items:
@@ -137,8 +161,13 @@
       url: '/doc/development/contributing.html'
     - title: 'Releases & Changelog'
       url: '/doc/development/releases.html'
+    - title: 'Testing'
+      url: '/doc/development/testing.html'
     - title: 'Improving this documentation'
       url: '/doc/development/documentation.html'
 
 - title: 'Community & Communication'
-  url: '/doc/community.html'
+  url: '/doc/community/'
+
+- title: 'Contributed Articles'
+  url: '/doc/contribs'

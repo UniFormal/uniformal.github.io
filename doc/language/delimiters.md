@@ -38,3 +38,11 @@ The [jEdit plugin](../applications/jedit.html) offers three ways to insert these
   * `jMD` for the module delimiter.
 
 You can modify (or add new) abbreviations in `Extras > Global Options > Abbreviations`.
+
+### In IntelliJ
+
+If you're using the [IntelliJ plugin](../applications/intellij.html) instead, you only have the auto-completed abbreviations at your disposal (besides copy-paste). The shortcuts are identical to the ones in jEdit.
+
+* `jOD` for the object delimiter,
+* `jDD` for the declaration delimiter,
+* `jMD` for the module delimiter.

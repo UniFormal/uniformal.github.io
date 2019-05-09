@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 638 252" style="enable-background:new 0 0 638 252;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{stroke:#000000;stroke-miterlimit:10;}
+	.st3{font-family:'Helvetica';}
+	.st4{font-size:12px;}
+	.st5{font-family:'Helvetica-Bold';}
+</style>
+<path class="st0" d="z"/>
+<path pointer-events="none" class="st1" d="M437.2,20.8v13.6"/>
+<path pointer-events="none" class="st2" d="M437.2,39.7l-3.5-7l3.5,1.8l3.5-1.8L437.2,39.7z"/>
+<path pointer-events="none" class="st1" d="M487.2,10.8h100v23.3"/>
+<path pointer-events="none" class="st2" d="M587.2,39.4l-3.5-7l3.5,1.8l3.5-1.8L587.2,39.4z"/>
+<path pointer-events="none" class="st1" d="M387.2,10.8H98.6v23.6"/>
+<path pointer-events="none" class="st2" d="M98.6,39.7l-3.5-7l3.5,1.8l3.5-1.8L98.6,39.7z"/>
+<g transform="translate(393.5,3.5)">
+	<text transform="matrix(1 0 0 1 0.4746 12.5)" class="st3 st4">ContentElement</text>
+</g>
+<g transform="translate(6.5,203.5)">
+	<text transform="matrix(1 0 0 1 0.9326 12.5)" class="st5 st4">View</text>
+</g>
+<g transform="translate(76.5,203.5)">
+	<text transform="matrix(1 0 0 1 1.4961 12.5)" class="st5 st4">Theory</text>
+</g>
+<g transform="translate(164.5,203.5)">
+	<text transform="matrix(1 0 0 1 0.8281 12.5)" class="st5 st4">Structure</text>
+</g>
+<path pointer-events="none" class="st1" d="M467.2,210.8h24.3v13.6"/>
+<path pointer-events="none" class="st2" d="M491.5,229.7l-3.5-7l3.5,1.8l3.5-1.8L491.5,229.7z"/>
+<path pointer-events="none" class="st1" d="M407.2,210.8h-18.6v13.6"/>
+<path pointer-events="none" class="st2" d="M388.6,229.7l-3.5-7l3.5,1.8l3.5-1.8L388.6,229.7z"/>
+<g transform="translate(410.5,203.5)">
+	<text transform="matrix(1 0 0 1 0.502 12.5)" class="st5 st4">Constant</text>
+</g>
+<g transform="translate(172.5,153.5)">
+	<text transform="matrix(1 0 0 1 0.1465 12.5)" class="st3 st4">DerivedModule</text>
+</g>
+<g transform="translate(277.5,153.5)">
+	<text transform="matrix(1 0 0 1 0.4766 12.5)" class="st3 st4">DerivedDeclaration</text>
+</g>
+<g transform="translate(457.5,153.5)">
+	<text transform="matrix(1 0 0 1 0.1455 12.5)" class="st3 st4">RuleConstant</text>
+</g>
+<g transform="translate(550.5,153.5)">
+	<text transform="matrix(1 0 0 1 0.8105 12.5)" class="st3 st4">NestedModule</text>
+</g>
+<path pointer-events="none" class="st1" d="M27.2,100.8v80h150v13.6"/>
+<path pointer-events="none" class="st2" d="M177.2,199.7l-3.5-7l3.5,1.8l3.5-1.8L177.2,199.7z"/>
+<path pointer-events="none" class="st1" d="M11.5,100.8v93.6"/>
+<path pointer-events="none" class="st2" d="M11.5,199.7l-3.5-7l3.5,1.8l3.5-1.8L11.5,199.7z"/>
+<g transform="translate(7.5,83.5)">
+	<text transform="matrix(1 0 0 1 0.4932 12.5)" class="st3 st4">Link</text>
+</g>
+<path pointer-events="none" class="st1" d="M72.9,90.8H54.4v120h-6.5"/>
+<path pointer-events="none" class="st2" d="M42.6,210.8l7-3.5l-1.8,3.5l1.8,3.5L42.6,210.8z"/>
+<path pointer-events="none" class="st1" d="M98.6,100.8v93.6"/>
+<path pointer-events="none" class="st2" d="M98.6,199.7l-3.5-7l3.5,1.8l3.5-1.8L98.6,199.7z"/>
+<path pointer-events="none" class="st1" d="M111.5,100.8v60h50.8"/>
+<path pointer-events="none" class="st2" d="M167.5,160.8l-7,3.5l1.8-3.5l-1.8-3.5L167.5,160.8z"/>
+<g transform="translate(77.5,83.5)">
+	<text transform="matrix(1 0 0 1 0.8213 12.5)" class="st3 st4">Module</text>
+</g>
+<path pointer-events="none" class="st1" d="M201.5,90.8h-67.1v120h-6.5"/>
+<path pointer-events="none" class="st2" d="M122.6,210.8l7-3.5l-1.7,3.5l1.7,3.5L122.6,210.8z"/>
+<path pointer-events="none" class="st1" d="M247.2,100.8v7.9"/>
+<path pointer-events="none" class="st2" d="M247.2,113.9l-3.5-7l3.5,1.8l3.5-1.8L247.2,113.9z"/>
+<g transform="translate(205.5,83.5)">
+	<text transform="matrix(1 0 0 1 0.8184 12.5)" class="st3 st4">AbstractTheory</text>
+</g>
+<path pointer-events="none" class="st1" d="M212.9,135.1v9.3"/>
+<path pointer-events="none" class="st2" d="M212.9,149.7l-3.5-7l3.5,1.8l3.5-1.8L212.9,149.7z"/>
+<path pointer-events="none" class="st1" d="M314.4,125.1h15.7v19.3"/>
+<path pointer-events="none" class="st2" d="M330.1,149.7l-3.5-7l3.5,1.8l3.5-1.8L330.1,149.7z"/>
+<g transform="translate(182.5,118.5)">
+	<text transform="matrix(1 0 0 1 0.7998 12.5)" class="st3 st4">DerivedContentElement</text>
+</g>
+<path pointer-events="none" class="st1" d="M420.1,60.8v120H207.2v13.6"/>
+<path pointer-events="none" class="st2" d="M207.2,199.7l-3.5-7l3.5,1.8l3.5-1.8L207.2,199.7z"/>
+<path pointer-events="none" class="st1" d="M437.2,60.8v70v63.3"/>
+<path pointer-events="none" class="st2" d="M437.2,199.4l-3.5-7l3.5,1.8l3.5-1.8L437.2,199.4z"/>
+<path pointer-events="none" class="st1" d="M401.5,50.8h-44.3v93.6"/>
+<path pointer-events="none" class="st2" d="M357.2,149.7l-3.5-7l3.5,1.8l3.5-1.8L357.2,149.7z"/>
+<path pointer-events="none" class="st1" d="M454.4,60.8v60h40v23.3"/>
+<path pointer-events="none" class="st2" d="M494.4,149.4l-3.5-7l3.5,1.8l3.5-1.8L494.4,149.4z"/>
+<path pointer-events="none" class="st1" d="M471.5,50.8h42.9v70h52.9v27"/>
+<path pointer-events="none" class="st2" d="M567.2,149.4l-3.5-7l3.5,1.8l3.5-1.8L567.2,149.4z"/>
+<g transform="translate(406.5,43.5)">
+	<text transform="matrix(1 0 0 1 0.1514 12.5)" class="st3 st4">Declaration</text>
+</g>
+<path pointer-events="none" class="st1" d="M98.6,60.8v13.6"/>
+<path pointer-events="none" class="st2" d="M98.6,79.7l-3.5-7l3.5,1.8l3.5-1.8L98.6,79.7z"/>
+<path pointer-events="none" class="st1" d="M54.4,50.8H18.6v23.6"/>
+<path pointer-events="none" class="st2" d="M18.6,79.7l-3.5-7l3.5,1.8l3.5-1.8L18.6,79.7z"/>
+<path pointer-events="none" class="st1" d="M144.4,50.8h102.9v23.3"/>
+<path pointer-events="none" class="st2" d="M247.2,79.4l-3.5-7l3.5,1.8l3.5-1.8L247.2,79.4z"/>
+<g transform="translate(61.5,43.5)">
+	<text transform="matrix(1 0 0 1 0.1494 12.5)" class="st3 st4">ModuleOrLink</text>
+</g>
+<g transform="translate(350.5,233.5)">
+	<text transform="matrix(1 0 0 1 0.8115 12.5)" class="st3 st4">LazyConstant</text>
+</g>
+<g transform="translate(454.5,233.5)">
+	<text transform="matrix(1 0 0 1 0.4805 12.5)" class="st3 st4">FinalConstant</text>
+</g>
+<path pointer-events="none" class="st1" d="M612.9,60.8v83.6"/>
+<path pointer-events="none" class="st2" d="M612.9,149.7l-3.5-7l3.5,1.8l3.5-1.8L612.9,149.7z"/>
+<g transform="translate(543.5,43.5)">
+	<text transform="matrix(1 0 0 1 0.9199 12.5)" class="st3 st4">ModuleWrapper</text>
+</g>
+<path class="st0" d="z"/>
+</svg>

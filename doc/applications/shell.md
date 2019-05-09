@@ -6,7 +6,7 @@ title: The MMT Shell
 The MMT shell is invoked by [running](../setup/running.html) mmt.
 
 ### Shell Commands
-The language of shell commands is implemented by the [`info.kwarc.mmt.api.frontend.Action`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.frontend.Action) class.
+The language of shell commands is implemented by the [`info.kwarc.mmt.api.frontend.Action`](apidoc://info.kwarc.mmt.api.frontend.Action) class.
 Each subclass comes with scaladoc and can be best understood by browsing the known subclasses in the API documentation.
 
 The up-to-date context-free grammar for shell commands is part of the constructor parser in the companion object `Action` and can be best understood by reading the source code.
@@ -104,7 +104,7 @@ The path is searched recursively and registers all found archive folders and mar
 
 * `remote ID COMMAND`: executes a command on a remote MMT client that connected via the remote admin extension
 
-See [`web.RemoteActionServer`](https://uniformal.github.io/apidoc/index.html#info.kwarc.mmt.api.web.RemoteActionServer) for details.
+See [`web.RemoteActionServer`](apidoc://info.kwarc.mmt.api.web.RemoteActionServer) for details.
 
 #### Applications
 Note that [GUI](gui.html) and [HTTP server](server.html) run in separate threads. MMT will not terminate if these threads are still active.

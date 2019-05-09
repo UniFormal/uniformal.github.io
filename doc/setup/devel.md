@@ -9,7 +9,7 @@ Furthermore, a working installation of `sbt` is required.
 ### Using IntelliJ
 
 For interactive development [IntelliJ (community edition)](https://www.jetbrains.com/idea/) with an installed Scala plugin allows to create a new SBT-based project from the src project location that contains the `build.sbt` file. 
-Currently, the sbt importer of IntelliJ is broken, but `sbt gen-idea` will generate an IntelliJ project that can be opened (error messages during opening can be disregarded).
+The sbt importer of IntelliJ should work out of the box.
 IntelliJ settings are not supposed to be comitted. Any changes should be made within build.sbt and IntelliJ SBT projects be refreshed.
 
 ### Using Eclipse
@@ -28,17 +28,4 @@ The `svn:auto-props` svn property of the toplevel folder ensures that new files 
 ### Running tests
 
 To make sure that MMT works properly, several unit and integration tests exist. 
-These can be run with:
-
-```
-    sbt test
-```
-
-These will automatically use all archives from the latest MMT release. 
-If testing against the development branch of archives is required, use:
-
-```
-    TEST_USE_DEVEL=1 sbt test
-```
-
-instead. 
+See [the page on testing](../development/testing.html) for more details. 

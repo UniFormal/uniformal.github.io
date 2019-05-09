@@ -3,7 +3,7 @@ layout: doc
 title: Overview
 ---
 
-MMT is a framework for knowlwedge representation using formal languages such as logics, type theories, ontologies, set theories, etc..
+MMT is a framework for knowledge representation using formal languages such as logics, type theories, ontologies, set theories, etc..
 It achieves a high level of generality by systematically avoiding a commitment to a representational paradigm, a particular concrete or abstract syntax, or a particular semantics.
 
 Instead, individual features of the abstract syntax (e.g., lambda-abstraction, conjunction), the concrete syntax (e.g. keywords, notations), or the semantics (e.g., excluded middle, set theoretical interpretation) are defined as separate, reusable modules, from which individual languages are assembled.
@@ -26,8 +26,7 @@ This double meta level is a unique characteristic of MMT and, maybe surprisingly
 ### Structure of this Documentation
 
 This is the main entry point to the MMT documentation.
-The documentation contains
-It contains:
+The documentation contains:
 
 * practical instructions for [getting started](setup/) as a user as well [tutorials](tutorials/) for typical tasks
 * a theoretical overview of the general [philosophy](philosophy/) behind MMT and the concrete [language](language/)

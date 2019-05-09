@@ -1,2 +1,33 @@
+# Standard
+auto
+*.tks
+*.cls
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.run.xml
+*-blx.bib
+*.pdf
+
 # for local building
 _site

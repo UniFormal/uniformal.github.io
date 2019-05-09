@@ -107,6 +107,11 @@ Thus, the correct theory `Ring` could look like this:
 
 All the monoid/group axioms are imported via the structures and are thus available for the respective new symbols. If `Monoid` and `AbelianGroup` have the same meta theory (e.g. `first_order_logic`), then all symbols imported via that (e.g. quantifiers, logical connectives etc.) are identified across the two structures.
 
+#### Derived Declarations
+
+Derived declarations are declarations, which are not interpreted deirectly but elaborated into external declarations by a [structural feature](structuralfeatures.md). Their syntax and semantics is defined by the corresponding structural feature. 
+
+
 ### Rules
 
 Rules are special Scala objects that can be declared in an MMT theory Thy to change the semantics of Thy-terms.

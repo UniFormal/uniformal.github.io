@@ -11,6 +11,13 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 17
+
+Scheduled for the 22nd of May 2019
+
+- Overhaul of much of the machinery in `mmt-stex`. Interface is stable, but a lot of bugs have been fixed and runtime has been improved.
+- ...
+
 ### Release 16
 
 Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.0.0). 

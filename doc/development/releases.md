@@ -18,6 +18,7 @@ Scheduled for the 22nd of May 2019
 - Overhaul of much of the machinery in `mmt-stex`. Interface is stable, but a lot of bugs have been fixed and runtime has been improved.
 - Some fixes in the REPL Server
 - Improved GAP import
+- Add basic support for datasets that build on other datasets to MBGen
 - ...
 
 ### Release 16

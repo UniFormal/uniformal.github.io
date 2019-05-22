@@ -13,7 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 17
 
-Scheduled to be released on [22nd May 2019](https://github.com/UniFormal/MMT/releases/tag/v17.0.0).
+Released on [22nd May 2019](https://github.com/UniFormal/MMT/releases/tag/v17.0.0).
 
 - Overhaul of `mmt-stex` machinery
   - Interface is stable

@@ -13,13 +13,19 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 17
 
-Scheduled for the 22nd of May 2019
+Scheduled to be released on [22nd May 2019](https://github.com/UniFormal/MMT/releases/tag/v17.0.0).
 
-- Overhaul of much of the machinery in `mmt-stex`. Interface is stable, but a lot of bugs have been fixed and runtime has been improved.
-- Some fixes in the REPL Server
-- Improved GAP import
-- Add basic support for datasets that build on other datasets to MBGen
-- ...
+- Overhaul of `mmt-stex` machinery
+  - Interface is stable
+  - Bug fixes & performance improvements
+- Minor REPL Server Improvements
+- Improvements to GAP support
+- mbgen improvements
+  - added basic support for datasets that build on other datasets
+  - metadata support for sql
+- Improvements to Isabelle
+- Jupyter Server Bugfixes
+ 
 
 ### Release 16
 

@@ -11,6 +11,22 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 17
+
+Released on [22nd May 2019](https://github.com/UniFormal/MMT/releases/tag/v17.0.0).
+
+- Overhaul of `mmt-stex` machinery
+  - Interface is stable
+  - Bug fixes & performance improvements
+- Minor REPL Server Improvements
+- Improvements to GAP support
+- mbgen improvements
+  - added basic support for datasets that build on other datasets
+  - metadata support for sql
+- Improvements to Isabelle
+- Jupyter Server Bugfixes
+ 
+
 ### Release 16
 
 Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.0.0). 

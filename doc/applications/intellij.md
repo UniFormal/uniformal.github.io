@@ -16,6 +16,7 @@ Alternatively, you can install the plugin by extracting [the latest version in U
 
 Since MMT files make heavy use of Unicode math charcters, be sure to have a font installed supporting it and IntelliJ using it. You can do so as follows:
 
+
 1. Download and install GNU Unifont: http://unifoundry.com/unifont/index.html
 2. In IntelliJ IDEA go to *File* -> *Settings* -> *Editor* -> *Font* and choose "Unifont" as the fallback font.
 3. For developers: if you print MMT surface syntax to the console (e.g. using the MMTSyntaxPresenter class), you might want to use the same font in the console: under *File* -> *Settings* -> *Editor* -> *Color Scheme* -> *Console Font* choose "Unifont" as the "Font" (not fallback font in this case!)
@@ -30,7 +31,7 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 ### Getting data to work with
 
 - In the project-view on the left, select the *MathHub* view to get an overview over all available MMT archives on 
-[MathHub](http://gl.mathhub.info). You can *git clone* them via right-clicking an archive and choosing *Install archive*. Note: on Windows, `lmh` (an tool to pull archives from MathHub) uses  the command `sh --login -c git ...`. Thus, you need to have `sh` as well as `git` on your PATH. This is easiest accomplished by having installed Git the usual way and adding `C:\Program Files\Git\bin` -- which contains `sh` to your PATH.
+[MathHub](http://gl.mathhub.info). You can *git clone* them via right-clicking an archive and choosing *Install archive*. Note: on Windows, `lmh` (a tool to pull archives from MathHub) uses  the command `sh --login -c git ...`. Thus, you need to have `sh` as well as `git` on your PATH. This is easiest accomplished by having installed Git the usual way and adding `C:\Program Files\Git\bin` -- which contains `sh` to your PATH.
 
 ### Notes on automatic type checking
 

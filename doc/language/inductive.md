@@ -22,16 +22,10 @@ There are three types of internal declarations:
 The syntax for a derived declaration `<name>` of the inductive feature looks as follows:
 
 `inductive <name>(<parameter list>)` ![`\US`](/doc/img/US.png) `= `
-<br>
-`<tpl>: <tp>` ![`\RS`](/doc/img/RS.png)
-<br>
-`<con>: <args> &rightarrow <tp>` ![`\RS`](/doc/img/RS.png)
-<br>
-`<out>: <args2> &rightarrow <tp2>`![`\RS`](/doc/img/RS.png)
-<br>
-...
-<br>
-![`\GS`](/doc/img/GS.png)
+<br>`<tpl>: <tp>` ![`\RS`](/doc/img/RS.png)
+<br>`<con>: <args> &rightarrow <tp>` ![`\RS`](/doc/img/RS.png)
+<br>`<out>: <args2> &rightarrow <tp2>`![`\RS`](/doc/img/RS.png)
+<br>...<br>![`\GS`](/doc/img/GS.png)
 
 Here we have a typelevel `<tpl>` (of type `<tp>`), a constructor `<con>` of `<tpl>` and an outgoing declaration `<out>`. The declarations in the inductive type `<name>` can additionally use the parameters given in `<parameter list>` (similar to theory parameters). 
 

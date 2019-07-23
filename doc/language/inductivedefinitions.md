@@ -16,6 +16,16 @@ The syntax for an inductive definition looks as follows:
 `<con>`: `<args>` &rightarrow `<tp>` ![`\US`](/doc/img/US.png) = `<def>`  `![`\RS`](/doc/img/RS.png)`<br>
 `<out>`: `<args2>` &rightarrow `<tp2>` ![`\US`](/doc/img/US.png) = `<def2>` `![`\RS`](/doc/img/RS.png)`<br>
 ...<br>
-![`\GS`](/doc/img/GS.png)`
+![`\GS`](/doc/img/GS.png)
 
-Here <indTp> is a reference to an inductive type initialised to its parameter list. The types of the internal declarations given here can also be automatically inferred from the inductive type and don't need to be given by the user. As with inductive types, the parameters in the <parameter list> can be used anywhere in the body of the derived declaration, additionally they can also be used in the definition of the parameters used to initialize the inductive type.
+Here `<indTp>` is a reference to an inductive type initialised to its parameter list. This reference list must provide a value for each parameter of the inductive type `<indTp>`.
+
+The types of the internal declarations given here can also be automatically inferred from the inductive type and don't need to be given by the user. As with inductive types, the parameters in the `<parameter list>` can be used anywhere in the body of the derived declaration, additionally they can also be used in the definition of the parameters used to initialize the inductive type.
+
+#### Elaboration of inductive definitions
+
+Inductive definitions are elaborated to the following delarations:
+
+* A declaration of the specified inductively-defined function for each type inductively-defined by `<indTp>`
+* A declaration axiomatizing the definition for each constructor case
+* An equivalent declaration axiomatizing the definition, but with the inductive morphism applied to all its arguments (provided by a lambda binder)

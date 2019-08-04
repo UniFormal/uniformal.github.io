@@ -1,13 +1,14 @@
 ---
 layout: doc
-title: ESSLLI 2019: Setting up MMT
+title: ESSLLI 2019: Formalizing the Zoo of Logical Systems - Setting up MMT
 ---
 
 We will use MMT for formalizing logics.
 
-To obtain and set up MMT, perform the following steps:
+To obtain and set up MMT, perform the following steps.
+Some dependencies you likely already have, e.g., Java and Git. You can skip those steps.
 
-### 1) Install or update Java (if you haven't already)
+### 1) Install or update Java
 
 MMT is written in the Scala programming language, which compiles to the JVM.
 So we need to install both a JVM and Scala build support (sbt).
@@ -32,7 +33,7 @@ Concretely:
 * Download and install jEdit.
 * Run jEdit once to make sure it initializes itself.
 
-### 4) Install Git (if you haven't already)
+### 4) Install Git
 
 We provide both MMT and our test archives as as git repositories for you to clone.
 So you need to have git installed.

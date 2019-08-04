@@ -44,14 +44,14 @@ We clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub.
 We will use the `esslli2019` branch in this course.
 
 ```
-git clone  --single-branch -b esslli2019 https://github.com/UniFormal/MMT.git
+git clone --single-branch -b esslli2019 https://github.com/UniFormal/MMT.git
 ```
 
 Now we use sbt to build MMT:
 
 ```
 cd MMT/src
-sbt mmt/deploy
+sbt deploy
 ```
 
 This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`.
@@ -67,9 +67,6 @@ Follow the steps of the setup installer dialog.
 Setup will in particular
 * configure jEdit for use with MMT
 * git clone the [LATIN2 archive](https://gl.mathhub.info/MMT/LATIN2/tree/esslli2019), which we will use in this course
-
-On Windows, this assumes that `git` can be called from within `sh`, which means `sh` has to be in your 
-PATH; depending on how you installed `git`, this may already be the case. If it is not in your PATH, you can also directly issue the `java -jar mmt.jar` command from within Git Bash from an existing [Git for Windows](https://gitforwindows.org/) installation.
 
 ### 6) Run MMT
 

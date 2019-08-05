@@ -5,7 +5,13 @@ title: ESSLLI 2019: Formalizing the Zoo of Logical Systems - Setting up MMT
 
 # ESSLLI 2019: Formalizing the Zoo of Logical Systems
 
-# Software installation instructions (https://tinyurl.com/esslli-zoo)
+## Logic Formalizations
+
+The example logics of this course are available in the [esslli2019 branch of the LATIN2 archive](https://gl.mathhub.info/MMT/LATIN2/tree/esslli2019).
+
+You should start with the files in the folder `introductory_example`, specifically the file `pl.mmt`.
+
+## Software installation instructions (https://tinyurl.com/esslli-zoo)
 
 We will use MMT for formalizing logics.
 
@@ -76,5 +82,3 @@ Setup will in particular
 ### 6) Run MMT
 
 Open jEdit and use it to view the files in the LATIN2 archive you just cloned.
-
-You should start with the files in the folder `introductory_example`, specifically the file `pl.mmt`.

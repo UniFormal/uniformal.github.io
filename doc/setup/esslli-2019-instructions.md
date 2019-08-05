@@ -3,6 +3,10 @@ layout: doc
 title: ESSLLI 2019: Formalizing the Zoo of Logical Systems - Setting up MMT
 ---
 
+# ESSLLI 2019: Formalizing the Zoo of Logical Systems
+
+# Software installation instructions (http://tinyurl.com/esslli2019)
+
 We will use MMT for formalizing logics.
 
 To obtain and set up MMT, perform the following steps.

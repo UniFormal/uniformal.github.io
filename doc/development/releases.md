@@ -36,6 +36,9 @@ Released planned for aobut [2nd September 2019](https://github.com/UniFormal/MMT
   - new reference project: [LATIN2](https://gl.mathhub.info/MMT/LATIN2/) is the most modern form the MMT logic library defined in (extensions of) LF
   - notations for proof rules that mimic declarative proof languages
   - new formalizations of various state-of-the-art logics including CTT_QE, MAM, Sedel
+  - basics of an LSP Language Server
+  - some improvements for MitM
+  - Coq import reimplemented
 
 ### Release 17
 

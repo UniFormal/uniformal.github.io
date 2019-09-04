@@ -17,7 +17,7 @@ system.
 
 Archives can be installed and updated from as well as published to Mathhub using 
 the [Local Mathhub Tool (LMH)](lmh.html). In addition Mathhub hosts an 
-[MMT-server](/doc/applications/server.html) and an instance of 
-[TGView](/doc/applications/tgview.html) to explore and visualize archives.
+[MMT-server](doc/applications/server.html) and an instance of 
+[TGView](doc/applications/tgview.html) to explore and visualize archives.
 
  

@@ -14,7 +14,7 @@ A kind of mixture is employed in Java, where files begin with a package declarat
 MMT adopts a flexible namespace mechanism that can be customized to obtain either behavior.
 Every source file corresponds to a **document**, whose logical identifier is formed from the `narration-base` of the [archive](../applications/archives.html) and the physical path of the file in the archive. .mmt-Files may have a *namespace declaration*, which defines the logical base [identifier](../api/uris.html) of the *modules* declared in the sequel. The surface syntax is
 
-![`namespace http://some.example.uri.org/ \GS`](/doc/img/namespace.png) (delimited by the module [delimiter](delimiters.html))
+![`namespace http://some.example.uri.org/ \GS`](doc/img/namespace.png) (delimited by the module [delimiter](delimiters.html))
 
 A namespace-URI is an instance of the class [`api.DPath`](apidoc://info.kwarc.mmt.api.DPath)
 

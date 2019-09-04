@@ -11,14 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+    <!--
+      Do not use base tag: <base href="{{ "/" | relative_url }}" />
+      Since otherwise we could not keep links in the documentation relative anymore -- without a hassle at least.
+      We would always have to prepend doc/ or something.
+
+      Hence, use e.g. `{{ "lib/css/bootstrap.min.css" | relative_url }}` to refer to assets in this file only.
+    -->
+    <link rel="icon" href="{{ "favicon.ico" | relative_url }}">
 
     <title>{% unless page.nowrap %}MMT - {% endunless %}{{page.title}}</title>
 
-    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" />
-	  <link href="/lib/css/doc.css" rel="stylesheet" />
-		<link href="/lib/css/pygments-default.css" rel="stylesheet" />
-	{% if page.css %}<link href="/lib/css/{{page.css}}" rel="stylesheet" />{% endif %}
+    <link href="{{ "lib/css/bootstrap.min.css" | relative_url }}" rel="stylesheet" />
+	  <link href="{{ "lib/css/doc.css" | relative_url }}" rel="stylesheet" />
+		<link href="{{ "lib/css/pygments-default.css" | relative_url }}" rel="stylesheet" />
+	{% if page.css %}<link href="{{ "lib/css" | relative_url }}/{{page.css}}" rel="stylesheet" />{% endif %}
   </head>
   <body>
 	{% include header.html %}
@@ -48,10 +55,10 @@
 		{% include footer.html %}
 	</div>
 
-    <script src="/lib/js/jquery-3.3.1.min.js"></script>
-    <script src="/lib/js/bootstrap.min.js"></script>
-		<script src="/lib/js/doc.js"></script>
-		<script src="/lib/js/api.js"></script>
-	{% if page.js %}<script src="/lib/js/{{page.js}}"></script>{% endif %}
+    <script src="{{ "lib/js/jquery-3.3.1.min.js" | relative_url }}"></script>
+    <script src="{{ "lib/js/bootstrap.min.js" | relative_url }}"></script>
+		<script src="{{ "lib/js/doc.js" | relative_url }}"></script>
+		<script src="{{ "lib/js/api.js" | relative_url }}"></script>
+	{% if page.js %}<script src="{{ "lib/js" | relative_url }}/{{page.js}}"></script>{% endif %}
   </body>
 </html>

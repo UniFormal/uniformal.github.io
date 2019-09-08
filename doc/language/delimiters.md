@@ -12,7 +12,7 @@ Therefore, they permit near-perfect error recovery during parsing, orthogonality
 
 Every delimiter marks the end of a declaration or a component of a declaration.
 
-Symbol in [jEdit](../applications/jedit.html) | Delimiter	| Name in Unicode | Marks end of | Comment
+Symbol in [jEdit](../applications/jedit) | Delimiter	| Name in Unicode | Marks end of | Comment
 ---- | ---- | ---- | ---- | ----
 ![GS](../img/GS.png) | U+275A	| Module Delimiter	| Modules | any declaration that has nested declarations, i.e., theory, view, structure etc.
 ![RS](../img/RS.png) | U+2759 | Declaration Delimiter | Declarations |	in particular includes and constants. Redundant if end of module follows
@@ -22,7 +22,7 @@ Note that these form a hierarchy of nested levels and that we can think of SPACE
 
 ### In jEdit
 
-The [jEdit plugin](../applications/jedit.html) offers three ways to insert these non-standard symbols.
+The [jEdit plugin](../applications/jedit) offers three ways to insert these non-standard symbols.
 
 * MMT adds buttons for all three delimiters to the toolbar of jEdit:
 
@@ -41,7 +41,7 @@ You can modify (or add new) abbreviations in `Extras > Global Options > Abbrevia
 
 ### In IntelliJ
 
-If you're using the [IntelliJ plugin](../applications/intellij.html) instead, you only have the auto-completed abbreviations at your disposal (besides copy-paste). The shortcuts are identical to the ones in jEdit.
+If you're using the [IntelliJ plugin](../applications/intellij) instead, you only have the auto-completed abbreviations at your disposal (besides copy-paste). The shortcuts are identical to the ones in jEdit.
 
 * `jOD` for the object delimiter,
 * `jDD` for the declaration delimiter,

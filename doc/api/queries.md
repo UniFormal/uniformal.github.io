@@ -15,7 +15,7 @@ QMT uses three basic concepts: *types*, *queries*, and *propositions*.
 * **Queries** inherit from [`ontology.Query`](apidoc://info.kwarc.mmt.api.ontology.Query). They are typed expressions.
 * **Propositions** inherit from [`ontology.Prop`](apidoc://info.kwarc.mmt.api.ontology.Prop). They are expressions that are used as side conditions within queries.
 
-The specific types, queries, and propositions can be best understood by browsing the [API documentation](https://uniformal.github.io/apidoc/index.html) and the known subclasses for the respective class.
+The specific types, queries, and propositions can be best understood by browsing the [API documentation](https://uniformal.github.io/apidoc/index) and the known subclasses for the respective class.
 
 At the moment the only concrete syntax for queries is an ad hoc XML format.
 The algorithms for parsing, type inference, and validity checking for queries are straightforward and defined in the respective companion objects [`ontology.Query`](apidoc://info.kwarc.mmt.api.ontology.Query$) and [`ontology.Prop`](apidoc://info.kwarc.mmt.api.ontology.Prop$).
@@ -33,7 +33,7 @@ On disk, the dimension `relational` of an [MMT archive](../archives) maintains t
 In memory, this is done by the class [`ontology.RelStore`](apidoc://info.kwarc.mmt.api.ontology.RelStore). Refer to [this list of query examples](query-examples.md) for basic usage.
 
 The relational dimension is written automatically when an import build target is used.
-To load an archive's relational knowledge into memory, the [shell](../applications/shell.html) command `relational` can be used.
+To load an archive's relational knowledge into memory, the [shell](../applications/shell) command `relational` can be used.
 
 ### Evaluation
 
@@ -50,7 +50,7 @@ Several such functions expose basic algorithms (parsing, type checking, presenta
 
 
 ### Querying via HTTP
-The MMT [HTTP interface](../applications/server.html) opens a QMT query server that accepts a QMT query in XML encoding as the body of an HTTP POST request.
+The MMT [HTTP interface](../applications/server) opens a QMT query server that accepts a QMT query in XML encoding as the body of an HTTP POST request.
 Some example queries are:
 
 ```xml

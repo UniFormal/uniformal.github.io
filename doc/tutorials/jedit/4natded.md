@@ -2,7 +2,7 @@
 layout: doc
 title: 4 - Natural Deduction for Intuitionistic Propositional Logic
 ---
-[< 3 - LF and Judgments-as-Types](3LF.html)
+[< 3 - LF and Judgments-as-Types](3LF)
 
 In this section, we will look at the natural deduction calculus for intuitionistic propositional logic. If you already know the calculus, you can safely skip this section.
 
@@ -60,4 +60,4 @@ Symbol | Introduction Rule(s) | Elimination Rule(s)
 
 -----------------------------------
 
-[> 5 - Structures, Lambda, Pi and Implicit Arguments](5structures.html)
+[> 5 - Structures, Lambda, Pi and Implicit Arguments](5structures)

@@ -43,4 +43,4 @@ Therefore, this documentation is occasionally incomplete or outdated.
 We are committed to maintaining robust work flows for releasing, documenting, and bug-tracking to support large-scale applications.
 But that takes effort, and we prioritize according to the concrete research projects we are involved in.
 
-If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](https://kwarc.info/frabe/contact.html). 
+If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](https://kwarc.info/frabe/contact). 

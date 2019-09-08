@@ -5,7 +5,7 @@ title: Details on Building using SBT
 
 The primary way to build MMT is via the [Scala Build Tool (SBT)](http://www.scala-sbt.org/).
 Building using SBT is only needed if you want to develop MMT or want to build from sources.
-If you develop in an [IDE](develop.html), it will automatically for you. Then you only need to use SBT to test your changes before committing.
+If you develop in an [IDE](develop), it will automatically for you. Then you only need to use SBT to test your changes before committing.
 
 SBT has to be installed separately but that is straightforward.
 We test with SBT 1.1.1 or higher.

@@ -11,25 +11,25 @@ The (simplified) abstract syntax of MMT is:
  Level | Symbol | Grammar | Description
 ---- |----: | :---- | ----
 *Document Level* | | |
-. | `Doc` | `:= (Thy | Mor)*` | [Documents](narrative.html)
+. | `Doc` | `:= (Thy | Mor)*` | [Documents](narrative)
 *Module Level* | | |
 . | `Thy` | `:= c [:o] = {Dec*}` | [Theories](structural.html#theories)
 . | `Mor` | `:= c : o -> o = {Ass*}` | [Views](structural.html#views)
 *Symbol Level* | | |
-. | `Dec` | `:= c [:o] [=o] [#N]` | [Declarations](structural.html)
+. | `Dec` | `:= c [:o] [=o] [#N]` | [Declarations](structural)
 . | `Ass` | `:= c = o` | Symbol [Assignments](structural.html#constants)
 *Object Level* | | |
-. | `o`   | `:= c | x | c( (x[: o])* ; o* ) | c(STRING)` | [Objects/Terms](objects.html)
+. | `o`   | `:= c | x | c( (x[: o])* ; o* ) | c(STRING)` | [Objects/Terms](objects)
 . | `N`   |   | [Notations](declarations.html#constants)
-. | `c`   |   | [URI](uris.html)
-. | `x`   |   | [Variable](objects.html)
+. | `c`   |   | [URI](uris)
+. | `x`   |   | [Variable](objects)
 
 ### Data Structures
 
 **[`api.Content`](apidoc://info.kwarc.mmt.api.Content)** is the top level datastructure for all of the classes representing the MMT language. For our purposes, it branches into 
-* [`api.NarrativeElement`](apidoc://info.kwarc.mmt.api.NarrativeElement) (described [here](narrative.html)), e.g. documents,
-* [`api.StructuralElement`](apidoc://info.kwarc.mmt.api.ContentElement) (described [here](content.html)), e.g. modules, declarations and 
-* [`objects.Obj`](apidoc://info.kwarc.mmt.api.objects.Obj) (described [here](objects.html)), e.g. terms and contexts.
+* [`api.NarrativeElement`](apidoc://info.kwarc.mmt.api.NarrativeElement) (described [here](narrative)), e.g. documents,
+* [`api.StructuralElement`](apidoc://info.kwarc.mmt.api.ContentElement) (described [here](content)), e.g. modules, declarations and 
+* [`objects.Obj`](apidoc://info.kwarc.mmt.api.objects.Obj) (described [here](objects)), e.g. terms and contexts.
 
 The following inheritance graph gives an overview of the most relevant data structures in the [MMT API](../):
 

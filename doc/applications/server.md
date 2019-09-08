@@ -8,15 +8,15 @@ When running this command, an HTTP Server will be started on `PORT`, by default 
 In the following, we assume that no such argument is given, however all URIs will still work exactly the same if this is not the case. 
 
 Individual services are available as `localhost:PORT/:SERVICE`. These may take arguments via a `?QUERY` or via the HTTP BODY.
-Each *SERVICE* is defined by a [Server extension](../api/extensions.html).
+Each *SERVICE* is defined by a [Server extension](../api/extensions).
 
 #### Services
 Some services are available by default, which can be browsed in the [API documentation](apidoc://info.kwarc.mmt.api.web.ServerExtension).
 
-* `mmt`: retrieves the knowledge item whose [MMT URI](../api/uris.html) is QUERY. The URI may be followed with `present STYLE` to choose a presentation style. The default is OMDoc XML.
-* `query`: interprets the BODY as a [QMT query](../api/queries.html) and returns the results.
+* `mmt`: retrieves the knowledge item whose [MMT URI](../api/uris) is QUERY. The URI may be followed with `present STYLE` to choose a presentation style. The default is OMDoc XML.
+* `query`: interprets the BODY as a [QMT query](../api/queries) and returns the results.
 * `svg`: serves the theory graph as an SVG element for the MMT document whose URI is `QUERY`.
-* `admin`: interprets the query as an [MMT shell command](shell.html) and executes it
+* `admin`: interprets the query as an [MMT shell command](shell) and executes it
 
 Note that logical algorithms like parsing, computation, etc. are exposed as special cases of QMT queries. 
 

@@ -73,7 +73,7 @@ Say you are editing `doc/language/implicit.md` and want to add a link to `doc/ap
 [my link text](../api/queries)
 
 <!-- Discouraged: optionally with .html suffix, but clutters URIs! -->
-[my link text](../api/queries.html)
+[my link text](../api/queries)
 ```
 
 Same for images. Note that most images are located in `doc/img`.

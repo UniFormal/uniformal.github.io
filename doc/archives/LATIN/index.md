@@ -59,7 +59,7 @@ The formalizations underlying the LATIN Atlas use the new [Twelf module system](
  * Mathematics: some case studies from mathematics leveraging modularity,
  * Logic translations: a growing number of logic translations including , e.g., the relativization translations from modal, description, and sorted first-order logics to unsorted first-order logics, the interpretation of type theory in set theory, the negative translation from classical to intuitionistic logic, and the translation from first to higher-order logic.
 
-When the LATIN project finished, the atlas was taken over by the [OAF](../oaf.html) project.
+When the LATIN project finished, the atlas was taken over by the [OAF](../oaf) project.
 That also maintains the *browsable* HTML+MathML version of the atlas.
 The web server uses a conversion of the Twelf sources into OMDoc/MMT and stores them in MathHub. Then the MMT web server retrieves the needed document fragments from MathHub and assembles the requested document on the fly. Then it uses notation definitions to render it into JOBAD-enabled XHTML+MathML. This already yields some useful non-trivial services such as folding and toggling the display of brackets, inferrable types, and implicit arguments.
 

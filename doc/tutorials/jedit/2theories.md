@@ -3,15 +3,15 @@ layout: doc
 title: 2 - A First Theory
 ---
 
-[< 1 - Creating Archives](1archives.html)
+[< 1 - Creating Archives](1archives)
 
-We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/jedit.html). If you haven't done so already, I recommend you read the sections on [delimiters](../../language/delimiters.html), [theories](../../language/modules.html#theories) and [constants](../../language/declarations.html#constants) now, so you know how to produce our following basic theory:
+We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/jedit). If you haven't done so already, I recommend you read the sections on [delimiters](../../language/delimiters), [theories](../../language/modules.html#theories) and [constants](../../language/declarations.html#constants) now, so you know how to produce our following basic theory:
 
 ![`theory Logic : ur:?LF = prop : type \US # o \RS	proof : o → type \US # ⊦ 1 prec -100 \RS \GS`](../../img/tut01/theory1.png)
 
 (if abbreviations are activated in jEdit, the `→` symbol can be produced with the abbreviation `jra` and the `⊦` symbol with `jvdash`)
 
-This code first introduces a new theory named `Logic` - delimited by ![`\RS`](../../img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../language/uris) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF.html).
+This code first introduces a new theory named `Logic` - delimited by ![`\RS`](../../img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../language/uris) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF).
 
 The full URI of our new theory is made up of its name (`Logic`) and the namespace declared in the `MANIFEST.MF` file, i.e. `http://kwarc.github.io/MMT?Logic`.
 
@@ -20,7 +20,7 @@ This theory contains two constants:
 * `prop` with type `type`. `type` is provided by LF and is a *universe*, which means every symbol with type `type` is *inhabitable* (i.e. may occur to the right side of a typing judgment). `prop` will be the type of our propositions. We give it an optional notation `o` for brevity.
 * `proof` with type `o → type` and notation `⊦ 1`. `→` is the simple function type constructor and again provided by LF. `o` is just a notation for `prop`, so `proof` is a function that maps propositions to types (more on that later). We give the notation a very low precedence.
 
-We can now parse the document and have MMT type check it. If parse-on-key is not activated (see [here](../../setup/jedit.html)), you can press the parse button (arrow symbol to the top left of the screenshot below) in SideKick, after which it will show the document tree:
+We can now parse the document and have MMT type check it. If parse-on-key is not activated (see [here](../../setup/jedit)), you can press the parse button (arrow symbol to the top left of the screenshot below) in SideKick, after which it will show the document tree:
 
 ![Sidekick](../../img/tut01/sidekick.png)
 
@@ -58,4 +58,4 @@ You can check the syntax trees for both variants in SideKick and verify, that th
 
 -----------------------------
 
-[> 3 - LF and Judgments-as-Types](3LF.html)
+[> 3 - LF and Judgments-as-Types](3LF)

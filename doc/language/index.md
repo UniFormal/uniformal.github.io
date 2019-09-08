@@ -7,7 +7,7 @@ This sections gives an overview of the **general language structure** of MMT.
 To be more concrete, it also explains one specific **concrete syntax**, which is the main syntax used to write MMT content natively.
 A description of MMT's **abstract syntax** and the corrseponding internal data structures can be found [here](../api/syntax)
 
-MMT is a language for formal mathematics that pays special attention to [*foundation-independence*](../philosophy/independence.html), scalability, and modularity.
+MMT is a language for formal mathematics that pays special attention to [*foundation-independence*](../philosophy/independence), scalability, and modularity.
 MMT follows the [OMDoc](http://www.omdoc.org/) philosophy and will be integrated into the upcoming OMDoc 2 format.
 The following describes the general principles of MMT.
 
@@ -24,27 +24,27 @@ The key features of the MMT language are
 MMT organizes knowledge along the following four levels.
 All 4 levels are interconnected through the use of identifiers: the [MMT URI](uris).
 
-* [**Documents**](namespaces.html): Documents are semantically transparent groupings of *modules*.
+* [**Documents**](namespaces): Documents are semantically transparent groupings of *modules*.
    In the simplest case, they serve as *namespaces* giving the modules declared in them globally unique MMT URIs.
     
-* [**Modules**](modules.html): Modules are the semantically relevant toplevel declarations.
+* [**Modules**](modules): Modules are the semantically relevant toplevel declarations.
   * [*Theories*](modules.html#theories) encapsulate mathematical contexts.
   * *Theory morphisms* translate between theories either by representation ([*views*](modules.html#views)) or by inheritance ([*structures*](declarations.html#structures)).
     
   The body of a module is a list of *symbol declarations*.
   The module system permits combining, translating, instantiating modules. The semantics of the module system is defined by *flattening*, i.e., computing the induced body.
   
-* [**Symbols**](declarations.html): Symbols are the smallest fragments of a document that have semantically relevant [identifiers](uris).
+* [**Symbols**](declarations): Symbols are the smallest fragments of a document that have semantically relevant [identifiers](uris).
   * [*Constants*](declarations.html#constants) represent named atomic mathematical objects such as function symbols, predicate symbols, sort/type symbols, axioms, theorems, judgments, inference rules.
   * [*Structures*](declarations.html#structures) are instantiations of other modules.
 
-* [**Objects**](objects.html): Objects differ from the other levels in that they do not have an MMT URI.
+* [**Objects**](objects): Objects differ from the other levels in that they do not have an MMT URI.
   They are mathematical expressions formed from
   * the *symbols* that are in scope (referenced via MMT URI)
   * application, binding, and similar operations
   * *contexts* that introduce bound variables and substitutions for them
   * the *variables* in some context (referenced by their name)
-  * [*literals*](literals.html) such as integers, floats, etc.
+  * [*literals*](literals) such as integers, floats, etc.
   MMT follows the [OpenMath](http://www.openmath.org) data model for objects.
   However, contrary to OpenMath, MMT uses formal theories and type systems that determine the well-typed objects.
 

@@ -16,13 +16,13 @@ This document contains a changelog of existing as well as upcoming releases.
 Released planned for aobut [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
 
 - new language features
-  - defined includes and realizations (akin to implementing interfaces), see the [documentation](../language/implicit.html)
+  - defined includes and realizations (akin to implementing interfaces), see the [documentation](../language/implicit)
   - `total` keyword for structures
   - interpretation instruction declarations in documents allow changing the processing; currently used for namespace/import declarations, `fixmeta` keyword, document-global rule declarations
   - translation of notations along structures (qualifying the first delimiter with the structure name)
   - structural feature for inductive types and functions
 - user interfaces
-  - more abbreviations for Unicode characters and LaTeX commands, including ASCII art for Unicode characters (see the [translation tables](https://github.com/UniFormal/MMT/tree/master/src/mmt-api/resources/unicode])
+  - more abbreviations for Unicode characters and LaTeX commands, including ASCII art for Unicode characters (see the [translation tables](https://github.com/UniFormal/MMT/tree/master/src/mmt-api/resources/unicode)
   - better display of infered types, implicit arguments, and normalized expressions; try hovering or the normalization action in jEdit
   - smarter name resolution to allow concrete syntax to refer to included constants
 - implementation internals

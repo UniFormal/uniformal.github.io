@@ -64,8 +64,8 @@ The most important build targets (which are available by default) include:
 
 ### Build Queue Interface
 
-See [Build Queue](buildqueue.html) for detailed information on multi-threaded building.
+See [Build Queue](buildqueue) for detailed information on multi-threaded building.
 
 ### Error Viewer Interface
 
-See [Error Viewer](errorviewer.html) for detailed information on seeing the results of building many files.
+See [Error Viewer](errorviewer) for detailed information on seeing the results of building many files.

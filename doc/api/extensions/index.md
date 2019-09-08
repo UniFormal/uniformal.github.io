@@ -5,15 +5,15 @@ title: Extensions
 
 
 The MMT API provides a number of extension interfaces that permit injecting code for customizing the behavior of MMT algorithms.
-All extensions are persistent and have full access to the MMT [controller](../controller.html).
-All extensions inherit from [`info.kwarc.mmt.api.frontend.Extension`](apidoc://info.kwarc.mmt.api.frontend.Extension) and can be studied by browsing the known abstract subclasses in the [API documentation](https://uniformal.github.io/apidoc/index.html).
+All extensions are persistent and have full access to the MMT [controller](../controller).
+All extensions inherit from [`info.kwarc.mmt.api.frontend.Extension`](apidoc://info.kwarc.mmt.api.frontend.Extension) and can be studied by browsing the known abstract subclasses in the [API documentation](https://uniformal.github.io/apidoc/index).
 
 The API also includes numerous concrete extensions.
 Some of these are loaded by default, some are loaded on demand, some can be added manually at run time.
 
 ### Loading Extensions
 
-Users load extensions with a [shell command](../../applications/shell.html).
+Users load extensions with a [shell command](../../applications/shell).
 Programmers load them using the appropriate method of the [`frontend.ExtensionManager`](apidoc://info.kwarc.mmt.api.frontend.ExtensionManager), which maintains all loaded extensions.
 
 ### Writing Extensions
@@ -46,13 +46,13 @@ Therefore, this page only gives an overview of their functionality:
   
   Further steps in this pipeline that are designed but not maturely realized yet include theorem proving, code generation, and execution and compilation of programs.
   
-  Each of these steps is actually split into two interfaces: one for the structural levels and one for objects (see [central concepts](../../language/index.html) for the difference).
+  Each of these steps is actually split into two interfaces: one for the structural levels and one for objects (see [central concepts](../../language/index) for the difference).
   That allows combining, e.g., MMT's default object parser with a new structure parser.
 
 * Functionality-driven extensions 
 
   * [`frontend.ChangeListener`s](apidoc://info.kwarc.mmt.api.frontend.ChangeListener) add general purpose change-listening functionality. The methods of these extensions are called when MMT content is added, updated, etc.
-  * [`web.ServerExtension`s](apidoc://info.kwarc.mmt.api.web.ServerExtension) allow using MMT as a very convenient web framework by adding interface functins to the [HTTP server](../../applications/server.html). Each extension has a `key` and serves requests to the URL `/:key`.
+  * [`web.ServerExtension`s](apidoc://info.kwarc.mmt.api.web.ServerExtension) allow using MMT as a very convenient web framework by adding interface functins to the [HTTP server](../../applications/server). Each extension has a `key` and serves requests to the URL `/:key`.
 
 * Various extensions for fine-grained customization:
   
@@ -60,4 +60,4 @@ Therefore, this page only gives an overview of their functionality:
   
   * [`parser.ParserExtension`](apidoc://info.kwarc.mmt.api.parser.ParserExtension) adds new keywords to MMT's [native text syntax](../../language/). The MMT parser will relegate processing of declarations to the appropriate extension based on the keyword.
   
-  * [`ontology.QueryExtension`](apidoc://info.kwarc.mmt.api.ontology.QueryExtension) adds a new atomic function to the MMT [query language](../queries.html).
+  * [`ontology.QueryExtension`](apidoc://info.kwarc.mmt.api.ontology.QueryExtension) adds a new atomic function to the MMT [query language](../queries).

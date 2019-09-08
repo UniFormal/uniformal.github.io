@@ -4,11 +4,11 @@ title: Modules
 ---
 
 
-Modules occur in [documents](namespaces.html) level, contain [declarations](declarations.html) and have an associated [MMT URI](../api/uris.html) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters.html) with the symbol ![`\GS`](../img/GS.png)
+Modules occur in [documents](namespaces) level, contain [declarations](declarations) and have an associated [MMT URI](../api/uris) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters) with the symbol ![`\GS`](../img/GS.png)
 
 ### Theories
 
-Theories are simply named groups of [declarations](declarations.html). Examples for theories are first-order or higher-order theories, logics, type theories, logical frameworks. Their conrete syntax is
+Theories are simply named groups of [declarations](declarations). Examples for theories are first-order or higher-order theories, logics, type theories, logical frameworks. Their conrete syntax is
 
 ![`theory <name> : <metatheory> = <body> \GS`](../img/theory.png)
 
@@ -24,7 +24,7 @@ in which case the visible context of both the inner theory as well as `<laterbod
 
 ### Views
 
-Given two theories `A` and `B`, a **view** from `A` to `B` maps all [declarations](declarations.html) in `A` to expressions over symbols in `B`, while preserving *typing judgments*. i.e. if `|- a : tpA` in `A` and `v:A->B` is a view, then `|- v(a) : v(tpA)`. Hence, views are *truth preserving*. `A` is the *domain* of `v` and `B` is the *codomain*.
+Given two theories `A` and `B`, a **view** from `A` to `B` maps all [declarations](declarations) in `A` to expressions over symbols in `B`, while preserving *typing judgments*. i.e. if `|- a : tpA` in `A` and `v:A->B` is a view, then `|- v(a) : v(tpA)`. Hence, views are *truth preserving*. `A` is the *domain* of `v` and `B` is the *codomain*.
 
 Their conrete syntax is
 
@@ -34,7 +34,7 @@ where `<assignments>` is a list of assignment declarations. Their syntax looks l
 
 ![`<name> = <term> \RS`](../img/assignment.png)
 
-In assignments, `<name>` has to be a symbol declared in (the dependency closure of) `<domain>`, whereas `<term>` has to be a well-formed [term](objects.html) over symbols in `<codomain>` preserving typing judgments.
+In assignments, `<name>` has to be a symbol declared in (the dependency closure of) `<domain>`, whereas `<term>` has to be a well-formed [term](objects) over symbols in `<codomain>` preserving typing judgments.
 
 ### Morphisms
 

@@ -5,7 +5,7 @@ title: Processors
 
 
 MMT uses several abstractions for processing content.
-Implementations can be provided as [extensions](index.html) and are chosen based on appropriate identifiers (e.g., the format to which a parser is applicable).
+Implementations can be provided as [extensions](index) and are chosen based on appropriate identifiers (e.g., the format to which a parser is applicable).
 
 Each abstraction comes with at least one main implementation, which is parametrized by a set of *rules*.
 This allows a second (simpler but less flexible) way to customize MMT by supplying a different set of rules.

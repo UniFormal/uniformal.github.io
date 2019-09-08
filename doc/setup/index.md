@@ -16,7 +16,7 @@ If you just want to sample MMT, you should definitely do it with an IDE.
 
 #### 1. IntelliJ IDEA (recommended)
 
-Install IntelliJ IDEA (both the community and Ultimate versions work) and then refer to [the IntelliJ IDEA MMT plugin page](https://uniformal.github.io/doc/applications/intellij.html) for installation of the plugin.
+Install IntelliJ IDEA (both the community and Ultimate versions work) and then refer to [the IntelliJ IDEA MMT plugin page](https://uniformal.github.io/doc/applications/intellij) for installation of the plugin.
 
 #### 2. jEdit
 
@@ -60,7 +60,7 @@ Alternatively, if you do not have ssh keys set up, use
 git clone https://github.com/UniFormal/MMT.git`
 ```
 
-A detailed explanation of the contents of the repository is available [here](repo.html).
+A detailed explanation of the contents of the repository is available [here](repo).
 
 MMT is currently built for `Scala 2.12.3` (incuded in the repository) and building is done with sbt (the Scala build tool).
 If you do not have sbt, you can get it [here](http://www.scala-sbt.org/).
@@ -71,7 +71,7 @@ To build, execute
 cd MMT/src
 sbt mmt/deploy
 ```
- (Detailed instructions for building can be found [here](https://uniformal.github.io/doc/setup/sbt.html), including a possible error you may encounter and its solution).
+ (Detailed instructions for building can be found [here](https://uniformal.github.io/doc/setup/sbt), including a possible error you may encounter and its solution).
 
 This creates many files, in particular the file `mmt.jar` in the folder `../deploy/`.
 
@@ -97,7 +97,7 @@ This triggers the setup dialog which does the following:
 2. checks out some example content repositories into that directory (This requires git and internet access.),
 3. determines the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
 
-Further instructions for setting up jEdit are available [here](jedit.html).
+Further instructions for setting up jEdit are available [here](jedit).
 
 ### 6) Run MMT
 
@@ -109,7 +109,7 @@ The canonical way for this is to run `java -jar mmt.jar`.
 (This responds with a simple setup dialog if MMT not installed, and drops to a shell otherwise.)
 But depending on your OS and configuration, double-clicking or executing `mmt.jar` may also work.
 
-Additional instructions for running MMT are available [here](running.html).
+Additional instructions for running MMT are available [here](running).
 
 ### Later: Update MMT
 

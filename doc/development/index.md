@@ -32,7 +32,7 @@ MMT-based applications can be written in two ways:
   MMT is written and Scala, and working with Scala is recommended. Alternatively, Java or any JVM-compatible language can be used.
   This allows:
   
-  * instantiating the abstract interfaces designed for [extending MMT](../api/extensions/index.html),
+  * instantiating the abstract interfaces designed for [extending MMT](../api/extensions/index),
   * or even replacing any of MMT's core components with your own variant.
                                         
 * Use any other programming language and communicate with MMT via the HTTP API.

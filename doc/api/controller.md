@@ -12,7 +12,7 @@ These components include the following:
 * The [`frontend.ExtensionManager`](apidoc://info.kwarc.mmt.api.frontend.ExtensionManager) maintains all registered [extensions](extensions/).
 * The [`parser.Parser`](apidoc://info.kwarc.mmt.api.parser.Parser) reads data structures in native [MMT text syntax](../language/).
 * The [`checking.MMTStructureChecker`](apidoc://info.kwarc.mmt.api.checking.MMTStructureChecker) validates MMT data structures.
-* The [`ontology.Evaluator`](apidoc://info.kwarc.mmt.api.ontology.Evaluator) evaluates queries of the [MMT query language](queries.html).
+* The [`ontology.Evaluator`](apidoc://info.kwarc.mmt.api.ontology.Evaluator) evaluates queries of the [MMT query language](queries).
 * The [simplifier (`uom.UOM`)](apidoc://info.kwarc.mmt.api.uom.UOM) is a rewriting-like engine for MMT expressions that performs simplification and computation.
 
 No static part of the MMT code maintains state: All stateful objects are maintained by the Controller or by one of the components maintained by the Controller.

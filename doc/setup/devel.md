@@ -28,4 +28,4 @@ The `svn:auto-props` svn property of the toplevel folder ensures that new files 
 ### Running tests
 
 To make sure that MMT works properly, several unit and integration tests exist. 
-See [the page on testing](../development/testing.html) for more details. 
+See [the page on testing](../development/testing) for more details. 

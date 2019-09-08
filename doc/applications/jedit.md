@@ -5,7 +5,7 @@ title: The jEdit IDE
 
 The jEdit IDE allows to enter and edit MMT content manually.
 
-Installation instructions can be found [here](../setup/jedit.html)
+Installation instructions can be found [here](../setup/jedit)
 
 ### Functionality
 
@@ -114,7 +114,7 @@ The plugin provides a Hyperlink source (called "mmt"). This displays the MMT URI
 Jumping only works if the destination is known to MMT. This is the case if the file has been build by MMT earlier or is currently open in jEdit.
 
 **Console:**
-The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell.html) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
+The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
 
 ![`MMT console`](../img/screenshots/console.png)
 

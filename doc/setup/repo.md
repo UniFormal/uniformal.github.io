@@ -30,10 +30,10 @@ The projects that comprise MMT are
     * `tptp`: importer for TPTP
     * `mathscheme`: importer for MathScheme
 * `X-mmt`: MMT acting as plugin or service to other applications (depends on at least `mmt-api`), specifically `X` can be
-    * `jEdit`: MMT editing support in [jEdit](../jedit.html) (depends additionally on `mmt-lf`)
+    * `jEdit`: MMT editing support in [jEdit](../jedit) (depends additionally on `mmt-lf`)
     * `hets`: MMT logic compilation for Hets
 * `lfcatalog`: a non-MMT-related project for the Twelf catalog, which is used by Twelf (depends on tiscaf)
-* `tiscaf`: a copy of the [HTTP server](../../applications/server.html) tiscaf, which MMT uses, with a couple of fixes and improvements
+* `tiscaf`: a copy of the [HTTP server](../../applications/server) tiscaf, which MMT uses, with a couple of fixes and improvements
 
 All projects are written in Scala and depend on the scala library. The appropriate library is provided as well. Later versions of Scala may or may not work.
 

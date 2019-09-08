@@ -3,7 +3,7 @@ branches:
     - master
 
 language: python
-python: 3.8-dev
+python: 3.7
 cache:
   pip: true
   bundler: true
@@ -11,7 +11,7 @@ cache:
 dist: xenial
 
 before_install:
-  - pip3 install --user Pygments
+  - pip3 install Pygments
   - bundler install
 
 script:

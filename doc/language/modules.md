@@ -4,13 +4,13 @@ title: Modules
 ---
 
 
-Modules occur in [documents](namespaces.html) level, contain [declarations](declarations.html) and have an associated [MMT URI](../api/uris.html) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters.html) with the symbol ![`\GS`](doc/img/GS.png)
+Modules occur in [documents](namespaces.html) level, contain [declarations](declarations.html) and have an associated [MMT URI](../api/uris.html) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters.html) with the symbol ![`\GS`](../img/img/GS.png)
 
 ### Theories
 
 Theories are simply named groups of [declarations](declarations.html). Examples for theories are first-order or higher-order theories, logics, type theories, logical frameworks. Their conrete syntax is
 
-![`theory <name> : <metatheory> = <body> \GS`](doc/img/theory.png)
+![`theory <name> : <metatheory> = <body> \GS`](../img/img/theory.png)
 
 where `<body>` is a sequence of declarations. The context available to any specific declaration is everything provided by previous declarations, specifically [theory inclusions](declarations.html#structures) and everything provided by the meta theory.
 
@@ -18,7 +18,7 @@ The **meta theory** statement is optional and behaves like a [theory inclusion](
 
 Theories can be *nested*, like this:
 
-![`theory <outer> : <metatheory1> =	<previousbody> theory <inner> : <metatheory2> =	<innerbody>	\GS	<laterbody> \GS`](doc/img/nestedtheory.png)
+![`theory <outer> : <metatheory1> =	<previousbody> theory <inner> : <metatheory2> =	<innerbody>	\GS	<laterbody> \GS`](../img/img/nestedtheory.png)
 
 in which case the visible context of both the inner theory as well as `<laterbody>` is `<previousbody>`, i.e. the inner theory can see all previous declarations of the outer theory, but at no point can the outer theory see inside the inner theory (unless explicitely [included](declarations.html#structures)).
 
@@ -28,11 +28,11 @@ Given two theories `A` and `B`, a **view** from `A` to `B` maps all [declaration
 
 Their conrete syntax is
 
-![`view <name> : <domain> -> <codomain> = <assignments> \GS`](doc/img/view.png)
+![`view <name> : <domain> -> <codomain> = <assignments> \GS`](../img/img/view.png)
 
 where `<assignments>` is a list of assignment declarations. Their syntax looks like this:
 
-![`<name> = <term> \RS`](doc/img/assignment.png)
+![`<name> = <term> \RS`](../img/img/assignment.png)
 
 In assignments, `<name>` has to be a symbol declared in (the dependency closure of) `<domain>`, whereas `<term>` has to be a well-formed [term](objects.html) over symbols in `<codomain>` preserving typing judgments.
 

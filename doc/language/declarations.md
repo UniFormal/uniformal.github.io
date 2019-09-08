@@ -4,7 +4,7 @@ title: Symbol Declarations
 ---
 
 
-Symbol declarations occur in [modules](modules.html) and are [delimited](delimiters.html) by the symbol ![`\RS`](doc/img/RS.png). The most important symbols are **constants** and **theory inclusions** (which are special cases of **structures**).
+Symbol declarations occur in [modules](modules.html) and are [delimited](delimiters.html) by the symbol ![`\RS`](../img/RS.png). The most important symbols are **constants** and **theory inclusions** (which are special cases of **structures**).
 
 ### Constants
 Constants are symbols that have a name and several optional *components*, namely 
@@ -17,9 +17,9 @@ Constants are symbols that have a name and several optional *components*, namely
 
 Examples for constants include mathematical constants, functions, axioms, theorems and inference rules. Their concrete syntax is
 
-![`<name> @ <alias> \US : <type> \US = <definition> \US # <notation> \US role <role> \RS`](doc/img/constant.png)
+![`<name> @ <alias> \US : <type> \US = <definition> \US # <notation> \US role <role> \RS`](../img/constant.png)
 
-The order of the object-level components is arbitrary. They are seperated by the object-[delimiter](delimiters.html) ![`\US`](doc/img/US.png), the constant declaration itself is delimited by ![`\RS`](doc/img/RS.png). Aliases are simply *alternative names* that can be used to refer to the constant and are useful e.g. in structures (see below).
+The order of the object-level components is arbitrary. They are seperated by the object-[delimiter](delimiters.html) ![`\US`](../img/US.png), the constant declaration itself is delimited by ![`\RS`](../img/RS.png). Aliases are simply *alternative names* that can be used to refer to the constant and are useful e.g. in structures (see below).
 
 * If a constant has a declared type `t`, then the term `t` has to be *inhabitable* (see *???*).
 * If a constant has a definition but no declared type, its type is inferred from the definition.
@@ -65,7 +65,7 @@ Structures may additionally modify the imported theory, most importantly by inst
 
 The syntax for a **theory inclusion**  is
 
-![`include <domain> \RS`](doc/img/include.png)
+![`include <domain> \RS`](../img/include.png)
 
 The include-relation between theories generates a partial order.
 In particular, includes are composed transitively, and including the same theory twice is redundant.
@@ -74,12 +74,12 @@ In particular, includes are composed transitively, and including the same theory
 
 The syntax for structures is
 
-![`structure <name> : <domain> = <declarations> \GS`](doc/img/structure.png)
+![`structure <name> : <domain> = <declarations> \GS`](../img/structure.png)
 
 , where `<declarations>` is a sequence of declarations.
 
-* Even though structures are declarations, they have a [module](modules.html) body and are thus delimited by the module [delimiter](delimiters.html) ![`\GS`](doc/img/GS.png) instead of the declaration delimiter ![`\RS`](doc/img/RS.png).
-* Simple includes are still delimited with ![`\RS`](MMT/doc/RS.png).
+* Even though structures are declarations, they have a [module](modules.html) body and are thus delimited by the module [delimiter](delimiters.html) ![`\GS`](../img/GS.png) instead of the declaration delimiter ![`\RS`](../img/RS.png).
+* Simple includes are still delimited with ![`\RS`](../img/RS.png).
 * The name of each declaration in a structure has to correspond to the name of a declaration in the `<domain>`. 
 * Components (aliases, types, definitions etc.) explicitely given in a structure *override* the corresponding component of the declaration in the `<domain>`, all other components are inherited from the latter. In particular, structures can introduce definitions for (not necessarily) previously undefined constants, in which case the (new) definition has to have the (induced/old) type of the constant. It is recommended to *never override the type* of a symbol in a structure.
 * The full [URI](../api/uris.html) of an induced declaration `<declname>` in a structure `<struct>` in a module `<mod>` is `<mod> ? <struct> / <declname>`. It is this declaration, that is visible from the outside and can be used in subsequent (to the structure) declarations. In contrast, the URI `<mod> / <struct> ? <declname>` refers to the plain declaration as declared *directly in the structure*, i.e. without inheritance. The latter should never be used outside of the [API](../api/) and is invisible to declarations outside of the structure.
@@ -93,7 +93,7 @@ Implementation note: Because includes and structures are often treated exactly t
 
 Let us assume, we have a theory `Monoid` with a constant `G` for the domain of a monoid, `op` for the monoid operation, `unit` for the unit of the monoid and the usual axioms. The latter might be included in (and extended by) a theory `AbelianGroup` adding the additional axioms. then we can use structures to form a theory `Ring`, using the theory `Monoid` for multiplication and `AbelianGroup` for addition. If we use includes, like this
 
-![`theory Rings = include ?Monoid \RS include ?AbelianGroup \RS \GS`](doc/img/ringwrong.png)
+![`theory Rings = include ?Monoid \RS include ?AbelianGroup \RS \GS`](../img/ringwrong.png)
 
 the (transitively twice) included instances of `Monoid` will be identified, defeating the purpose. As mentioned above, named structures prevent that, and allow us to additionally
 
@@ -103,7 +103,7 @@ the (transitively twice) included instances of `Monoid` will be identified, defe
 
 Thus, the correct theory `Ring` could look like this:
 
-![`theory Rings = R : type \RS // domain of the ring \RS structure addition : ?AbelianGroup = G = R \RS op @ plus \US # 1 + 2 prec 10 \RS unit @ zero \RS \GS structure multiplication: ?Monoid = G = R \RS op @ times \US # 1 \cdot 2 prec 10 \RS unit @ one \RS \GS \GS`](doc/img/ringright.png)
+![`theory Rings = R : type \RS // domain of the ring \RS structure addition : ?AbelianGroup = G = R \RS op @ plus \US # 1 + 2 prec 10 \RS unit @ zero \RS \GS structure multiplication: ?Monoid = G = R \RS op @ times \US # 1 \cdot 2 prec 10 \RS unit @ one \RS \GS \GS`](../img/ringright.png)
 
 All the monoid/group axioms are imported via the structures and are thus available for the respective new symbols. If `Monoid` and `AbelianGroup` have the same meta theory (e.g. `first_order_logic`), then all symbols imported via that (e.g. quantifiers, logical connectives etc.) are identified across the two structures.
 

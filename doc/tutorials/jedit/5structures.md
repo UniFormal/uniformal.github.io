@@ -23,7 +23,7 @@ Note:
 
 Now, for our new theory. Using a structure which we call `syn` (for *syntax*), we can create a new theory `PLIntNatDed` (for *Int*uitionistic *P*ropositional *L*ogic *Nat*ural *Ded*uction) and give the new definitions:
 
-![`theory PLIntNatDed : ur:?LF = include ?Logic \RS	structure syn : ?PLSyntax =	prop = prop \RS	False = ¬ ⊤ \RS	equiv = [A,B] (A ⇒ B) ∧ (B ⇒ A) \RS \GS`](doc/img/tut01/theory3.png)
+![`theory PLIntNatDed : ur:?LF = include ?Logic \RS	structure syn : ?PLSyntax =	prop = prop \RS	False = ¬ ⊤ \RS	equiv = [A,B] (A ⇒ B) ∧ (B ⇒ A) \RS \GS`](../../img/tut01/theory3.png)
 
 Notice, that:
 
@@ -32,15 +32,15 @@ Notice, that:
 
 Since the structure imports all the operators, we can again define a testing constant in our new theory like before:
 
-![`test = A ∧ B ⇒ ¬ C ∨ A ∧ B \RS`](doc/img/tut01/testconstant.png)
+![`test = A ∧ B ⇒ ¬ C ∨ A ∧ B \RS`](../../img/tut01/testconstant.png)
 
 and it type checks as before. However, if we try to use the symbol names instead:
 
-![`test = imp (and A B) (or (not C) (and A B)) \RS`](doc/img/tut01/testconstant2.png)
+![`test = imp (and A B) (or (not C) (and A B)) \RS`](../../img/tut01/testconstant2.png)
 
 we get an error. That's because structures change the names of the objects - what used to be `imp` (and was declared in `PLSyntax`) is now `syn/imp` (and is declared in `PLIntNatDed`). If we adapt the constant accordingly, it type checks again:
 
-![`test = syn/imp (syn/and A B) (syn/or (syn/not C) (syn/and A B)) \RS`](doc/img/tut01/testconstant3.png)
+![`test = syn/imp (syn/and A B) (syn/or (syn/not C) (syn/and A B)) \RS`](../../img/tut01/testconstant3.png)
 
 -------------------------------
 We are now ready to formalize the [natural deduction rules](4natded.html#the-proof-rules). For that we need dependent functions, which in LF are denoted by curly braces enclosing the bound variables - so the inference rule
@@ -55,7 +55,7 @@ is ultimately written `{A,B} ⊦ A → ⊦ B → ⊦ A ∧ B`.
 
 This leads us to these constants:
 
-![`trueI : ⊦ ⊤ \US # ⊤I	\RS falseE : {A} ⊦ ⊥  → ⊦ A \US # ⊥E 2 1 \RS notI : {A} (⊦ A → ⊦ ⊥) → ⊦ ¬A	\US # ¬I 2 \RS notE : {A} ⊦ A → ⊦ ¬A 	→ ⊦ ⊥ \US # ¬E 2 3 \RS andI : {A,B} ⊦ A → ⊦ B → ⊦ A ∧ B \US # ∧I 3 4	\RS andEl : {A,B}		⊦ A ∧ B					→ ⊦ A			\US # ∧El 3	\RS andEr	: {A,B}		⊦ A ∧ B					→ ⊦ B			\US # ∧Er 3	\RS impI : {A,B}		(⊦ A → ⊦ B)			→ ⊦ A ⇒ B	\US # ⇒I 3 \RS impE : {A,B}		⊦ A ⇒ B → ⊦ A		→ ⊦ B			\US # ⇒E 3 4 \RS orIl : {A, B}		⊦ A							→ ⊦ A ∨ B	\US # ∨Il 3 2	\RS orIr : {A, B} ⊦ B → ⊦ A ∨ B \US # ∨Ir 1 3	\RS orE : {A,B,C} (⊦ A → ⊦ C) → (⊦ B → ⊦ C)  → ⊦ A ∨ B → ⊦ C \US # ∨-E 4 5 6	\RS`](doc/img/tut01/theory4.png)
+![`trueI : ⊦ ⊤ \US # ⊤I	\RS falseE : {A} ⊦ ⊥  → ⊦ A \US # ⊥E 2 1 \RS notI : {A} (⊦ A → ⊦ ⊥) → ⊦ ¬A	\US # ¬I 2 \RS notE : {A} ⊦ A → ⊦ ¬A 	→ ⊦ ⊥ \US # ¬E 2 3 \RS andI : {A,B} ⊦ A → ⊦ B → ⊦ A ∧ B \US # ∧I 3 4	\RS andEl : {A,B}		⊦ A ∧ B					→ ⊦ A			\US # ∧El 3	\RS andEr	: {A,B}		⊦ A ∧ B					→ ⊦ B			\US # ∧Er 3	\RS impI : {A,B}		(⊦ A → ⊦ B)			→ ⊦ A ⇒ B	\US # ⇒I 3 \RS impE : {A,B}		⊦ A ⇒ B → ⊦ A		→ ⊦ B			\US # ⇒E 3 4 \RS orIl : {A, B}		⊦ A							→ ⊦ A ∨ B	\US # ∨Il 3 2	\RS orIr : {A, B} ⊦ B → ⊦ A ∨ B \US # ∨Ir 1 3	\RS orE : {A,B,C} (⊦ A → ⊦ C) → (⊦ B → ⊦ C)  → ⊦ A ∨ B → ⊦ C \US # ∨-E 4 5 6	\RS`](../../img/tut01/theory4.png)
 
 Note:
 
@@ -67,7 +67,7 @@ Note:
 Finally, we can extend this theory to classical logic. Just for fun, we will use another structure for that, since that allows us to now define the other logical connectives as well: In classical logic, `A∨B = ¬(¬A ∧ ¬B)` and `A ⇒ B = ¬(A ∧ ¬B)`.
 So first, we declare a structure from `PLSyntax` to add all the definitions, then we need another structure for `PLIntNatDed` in which we *define* the structure `PLIntNatDed?syn` as this *new* structure `PLNatDed?syn`. The we can add tertium non datur:
 
-![` theory PLNatDed : ur:?LF = 	include ?Logic \RS structure syn : ?PLSyntax = prop 	= prop 	\RS proof	= proof	\RS False 	= ¬ ⊤ 		\RS equiv 	= [A,B] (A ⇒ B) ∧ (B ⇒ A) 	\RS imp   	= [A,B] ¬(A ∧ ¬B) 				\RS or			= [A,B] ¬ (¬A ∧ ¬B)				\RS \GS structure int : ?PLIntNatDed = structure syn = ?PLNatDed?syn \RS \GS tnd : {A} ⊦ A ∨ ¬A \RS \GS`](doc/img/tut01/theory5.png)
+![` theory PLNatDed : ur:?LF = 	include ?Logic \RS structure syn : ?PLSyntax = prop 	= prop 	\RS proof	= proof	\RS False 	= ¬ ⊤ 		\RS equiv 	= [A,B] (A ⇒ B) ∧ (B ⇒ A) 	\RS imp   	= [A,B] ¬(A ∧ ¬B) 				\RS or			= [A,B] ¬ (¬A ∧ ¬B)				\RS \GS structure int : ?PLIntNatDed = structure syn = ?PLNatDed?syn \RS \GS tnd : {A} ⊦ A ∨ ¬A \RS \GS`](../../img/tut01/theory5.png)
 
 Note:
 

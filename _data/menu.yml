@@ -2,7 +2,17 @@
 ### It is used to automatically generate the menu html file. 
 
 ### First-level submenus are always shown, other sub-level are hidden. 
-### 
+###
+
+### WARNING: Use absolute urls '/blah/blub'.
+###          In _includes/menuitem_single.html and _includes/menuitem_sub.html
+###          the 'url' field of every item defined below will be put through
+###          Jekyll's absolute_url filter. It prepends the site's url and the
+###          site's baseurl.
+###
+###          On url vs baseurl:
+###            <https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/>
+###          (It's confusing at first sight!)
 
 - title: 'Overview'
   url: '/doc/'

@@ -14,7 +14,7 @@ This repository ([UniFormal/uniformal.github.io](https://github.com/uniformal/un
 
 	If you want to test changes locally, you can also build and serve the documentation as follows on your local machine:
 	
-	1. Install Python, Ruby
+	1. Install Python and Ruby
 	2. Install Pygments (a syntax highligher): `python -m pip install Pygments`
 	2. `git clone https://github.com/UniFormal/uniformal.github.io.git`
 	3. `bundler install`
@@ -61,4 +61,47 @@ public class ThisIsJavaCode {
 Additional details (footnotes, popups, etc.) that should not be visible initially are type set as HTML with css class `detail`
 <span class="detail">
   For example, as `<span class="detail">extra text</span>`.
-</span>. 
+</span>.
+
+### How to add links or images in this documentation
+
+#### Option 1: Stay relative
+
+Say you are editing `doc/language/implicit.md` and want to add a link to `doc/api/queries.md` (or rather: to the generated HTML page Jekyll generates for it!). Then simply do:
+
+```markdown
+[my link text](../api/queries)
+
+<!-- Discouraged: optionally with .html suffix, but clutters URIs! -->
+[my link text](../api/queries.html)
+```
+
+Same for images. Note that most images are located in `doc/img`.
+
+```markdown
+![my image alt text](../img/blah.png)
+```
+
+#### Option 2: Become absolute
+
+Use Jekyll's templating engine Liquid to render absolute URIs:
+
+```markdown
+[my link text]({{ "/doc/api/queries" | absolute_url }})
+
+<!-- Discouraged: optionally with .html suffix, but clutters URIs! -->
+[my link text]({{ "/doc/api/queries.html" | absolute_url }}
+```
+
+**Always specify the path starting with `/doc/...`!**
+
+Same for images:
+
+```markdown
+![my image alt text]({{ "/doc/img/blah.png" | absolute_url }})
+```
+
+### More info on Jekyll links
+
+Carefully read <https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/>.
+

@@ -1,1 +1,10 @@
+# Jekyll's url and baseurl are a bit confusing at first
+# Read https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
+
+# Only the domain (if you use `jekyll serve`, this will be replaced by 127.0.0.1 or
+# something similar on-the-fly!)
+url: https://comfreek.github.io
+# The folder after the domain (will still be used locally with `jekyll serve`)
+baseurl: /uniformal.github.io
+
 highlighter: pygments

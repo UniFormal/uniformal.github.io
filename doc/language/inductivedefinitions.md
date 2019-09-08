@@ -11,12 +11,12 @@ In order to define a function by induction on an inductive type <indTp> a well-t
 
 The syntax for an inductive definition looks as follows:
 
-`inductive_definition` `<name>`(`<parameter list>`): `<indTp>`(`<values of parameters of indTp>`) ![`\US`](doc/img/US.png) `=`<br> 
-`<tpl>`: `<tp>` ![`\US`](doc/img/US.png) = `<Tp>` `![`\RS`](doc/img/RS.png)`<br>
-`<con>`: `<args> ⟶ <tp>` ![`\US`](doc/img/US.png) = `<def>`  `![`\RS`](doc/img/RS.png)`<br>
-`<out>`: `<args2> ⟶ <tp2>` ![`\US`](doc/img/US.png) = `<def2>` `![`\RS`](doc/img/RS.png)`<br>
+`inductive_definition` `<name>`(`<parameter list>`): `<indTp>`(`<values of parameters of indTp>`) ![`\US`](../img/US.png) `=`<br> 
+`<tpl>`: `<tp>` ![`\US`](../img/US.png) = `<Tp>` `![`\RS`](../img/RS.png)`<br>
+`<con>`: `<args> ⟶ <tp>` ![`\US`](../img/US.png) = `<def>`  `![`\RS`](../img/RS.png)`<br>
+`<out>`: `<args2> ⟶ <tp2>` ![`\US`](../img/US.png) = `<def2>` `![`\RS`](../img/RS.png)`<br>
 ...<br>
-![`\GS`](doc/img/GS.png)
+![`\GS`](../img/GS.png)
 
 Here `<indTp>` is a reference to an inductive type initialised to its parameter list. This reference list must provide a value for each parameter of the inductive type `<indTp>`.
 

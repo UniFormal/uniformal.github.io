@@ -9,7 +9,7 @@ We have to distinguish several kinds of overloading. Only some of them are suppo
 
 **Semantic Overloading** 
 
-Here the same [identifier](../api/uris) is used for unrelated constants.
+Here the same [identifier](uris) is used for unrelated constants.
 These usually have different arities or types so that uses of the shared identifiers can be disambiguated.
 This is very common in programming languages.
 

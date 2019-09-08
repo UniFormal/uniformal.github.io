@@ -13,7 +13,7 @@ Each *SERVICE* is defined by a [Server extension](../api/extensions).
 #### Services
 Some services are available by default, which can be browsed in the [API documentation](apidoc://info.kwarc.mmt.api.web.ServerExtension).
 
-* `mmt`: retrieves the knowledge item whose [MMT URI](../api/uris) is QUERY. The URI may be followed with `present STYLE` to choose a presentation style. The default is OMDoc XML.
+* `mmt`: retrieves the knowledge item whose [MMT URI](../language/uris) is QUERY. The URI may be followed with `present STYLE` to choose a presentation style. The default is OMDoc XML.
 * `query`: interprets the BODY as a [QMT query](../api/queries) and returns the results.
 * `svg`: serves the theory graph as an SVG element for the MMT document whose URI is `QUERY`.
 * `admin`: interprets the query as an [MMT shell command](shell) and executes it

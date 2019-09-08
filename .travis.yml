@@ -25,7 +25,7 @@ script:
   - bundle exec jekyll build
 
   # Check for broken links and HTML
-  - bundle exec htmlproofer --assume-extension ./_site
+  - bundle exec htmlproofer --assume-extension ./_site --url-ignore "/localhost:8080/"
 
 deploy:
   provider: pages

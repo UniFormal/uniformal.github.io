@@ -9,7 +9,7 @@ MMT goes out of its way to be be **generic** and **reusable**. It does not commi
 ### Application Independence
 
 MMT is an API and as such not committed to particular applications.
-The MMT system includes several [MMT-based applications](../applications/) that yield, e.g., [build tools](../archives/building) for [MMT archives](../archives), a [jEdit-based text editor](../../setup/jedit), or a [web server](../applications/server) for MMT content.
+The MMT system includes several [MMT-based applications](../applications/) that yield, e.g., [build tools](../archives/building) for [MMT archives](../archives), a [jEdit-based text editor](../applications/jedit), or a [web server](../applications/server) for MMT content.
 
 ### Logic Independence
 MMT is logic-independent, i.e., it is not commited to a particular logic.

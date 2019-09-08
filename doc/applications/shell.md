@@ -55,7 +55,7 @@ See [log](../api/log) for the logging model.
 * `do STRING [FOLDER]`: runs the previously registered macro (FOLDER can be used to disambiguate between multiple macros of the same name defined in different folders)
 
 #### Working with MMT content
-MMT reads content automatically by searching for the needed [MMT URI](../api/uris) on the math path (see below).
+MMT reads content automatically by searching for the needed [MMT URI](../language/uris) on the math path (see below).
 Therefore, there are only a few commands for directly accessing content.
 
 * `read FILE`: reads a file into memory. Usually this is not necessary because resources are read automatically on demand.
@@ -78,7 +78,7 @@ Therefore, there are only a few commands for directly accessing content.
 * `clear`: removes all content from memory.
 
 #### The Math Path
-The math path maintains a catalog that maps [MMT URIs](../api/uris) to physical locations.
+The math path maintains a catalog that maps [MMT URIs](../language/uris) to physical locations.
 Several commands exist to add entries to the math path.
 
 * `mathpath archive FILE`: adds the location of an MMT archive.

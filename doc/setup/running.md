@@ -40,7 +40,7 @@ An example startup is provided in the file `deploy/startup.msl.example`.
 ### Customizing MMT
 
 Because MMT is [language and application-independent](../philosophy/independence), running MMT by itself does not do anything - MMT must be customized by defining a language and building an application on top of the MMT tool.
-The MMT system suite includes [various language definitions](../applications/oaf) and [applications](../applications/) to use.
+The MMT system suite includes [various language definitions](../archives/oaf) and [applications](../applications) to use.
 See the respective pages for instructions on loading individual languages and running individual applications.
 
 ### Other Ways to Run MMT during Development

@@ -4,7 +4,7 @@ title: Modules
 ---
 
 
-Modules occur in [documents](namespaces) level, contain [declarations](declarations) and have an associated [MMT URI](../api/uris) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters) with the symbol ![`\GS`](../img/GS.png)
+Modules occur in [documents](namespaces) level, contain [declarations](declarations) and have an associated [MMT URI](../language/uris) of the form `<NAMESPACE>?<NAME>`, with the namespace of the current document. Modules are [delimited](delimiters) with the symbol ![`\GS`](../img/GS.png)
 
 ### Theories
 

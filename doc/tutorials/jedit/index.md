@@ -3,7 +3,7 @@ layout: doc
 title: Writing MMT documents with jEdit
 ---
 
-In this tutorial, we will write a couple of MMT theories using the [MMT language](../../language/); specifically, we will use [jEdit](../../applications/jedit) to specify the syntax and proof theory of first-order logic, a simple type theory and views between them using the logical framework LF. This entails creating and [building](../../applications/building.html) [archives](../../archives) and browsing them using the MMT [web page](../../applications/server).
+In this tutorial, we will write a couple of MMT theories using the [MMT language](../../language/); specifically, we will use [jEdit](../../applications/jedit) to specify the syntax and proof theory of first-order logic, a simple type theory and views between them using the logical framework LF. This entails creating and [building](../../archives/building) [archives](../../archives) and browsing them using the MMT [web page](../../applications/server).
 
 ### Preliminaries
 

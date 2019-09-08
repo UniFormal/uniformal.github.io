@@ -74,5 +74,5 @@ To store the results persistently, you need to build the files.
 This can be done by
 
 * the button in jEdit
-* running the shell-based [build tool](../applications/building)
+* running the shell-based [build tool](../archives/building)
 * running the build tool from within jEdit using the MMT console that.

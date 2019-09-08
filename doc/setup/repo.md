@@ -24,16 +24,16 @@ The projects that comprise MMT are
 
 * `mmt-api`: the [main project](../api/) (depends on `tiscaf`)
 * `mmt-X`: plugins for MMT (depends at least on `mmt-api`), specifically `X` can be:
-    * `lf`: [**LF**](http://en.wikipedia.org/wiki/Logical_Framework#LF) type checking and importer for [Twelf](http://twelf.org/wiki/Main_Page) (depends additionally on `lfcatalog` if the Twelf importer is used)
+    * `lf`: [**LF**](https://en.wikipedia.org/wiki/Logical_framework#LF) type checking and importer for [Twelf](http://twelf.org/wiki/Main_Page) (depends additionally on `lfcatalog` if the Twelf importer is used)
     * `mizar`: importer for Mizar
     * `owl`: importer for OWL
     * `tptp`: importer for TPTP
     * `mathscheme`: importer for MathScheme
 * `X-mmt`: MMT acting as plugin or service to other applications (depends on at least `mmt-api`), specifically `X` can be
-    * `jEdit`: MMT editing support in [jEdit](../jedit) (depends additionally on `mmt-lf`)
+    * `jEdit`: MMT editing support in [jEdit](../applications/jedit) (depends additionally on `mmt-lf`)
     * `hets`: MMT logic compilation for Hets
 * `lfcatalog`: a non-MMT-related project for the Twelf catalog, which is used by Twelf (depends on tiscaf)
-* `tiscaf`: a copy of the [HTTP server](../../applications/server) tiscaf, which MMT uses, with a couple of fixes and improvements
+* `tiscaf`: a copy of the [HTTP server](../applications/server) tiscaf, which MMT uses, with a couple of fixes and improvements
 
 All projects are written in Scala and depend on the scala library. The appropriate library is provided as well. Later versions of Scala may or may not work.
 

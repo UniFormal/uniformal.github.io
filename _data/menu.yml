@@ -1,4 +1,4 @@
-### This yaml file contains the menu structure for the MMT documentation. 
+### This yaml file contains the menu structure for the MMT Documentation. 
 ### It is used to automatically generate the menu html file. 
 
 ### First-level submenus are always shown, other sub-level are hidden. 
@@ -37,7 +37,7 @@
       url: '/doc/tutorials/applications/getting-started'
     - title: 'Application Development with MMT'
       url: '/doc/tutorials/applications/application-development'
-    - title: 'Writing MMT documents with jEdit'
+    - title: 'Writing MMT Documents with jEdit'
       url: '/doc/tutorials/jedit/'
       items:
         - title: '1 - Creating Archives'
@@ -56,8 +56,8 @@
   items:
     - title: 'Introductory Articles'
       url: '/doc/philosophy/intros.html'
-    - title: 'The OMDoc Format'
-      url: '/doc/philosophy/omdoc.html' 
+    - title: 'The OM/doc Format'
+      url: '/doc/philosophy/om/doc.html' 
     - title: 'Foundation-Independence'
       url: '/doc/philosophy/independence.html'
     - title: 'Publications on MMT'
@@ -163,7 +163,7 @@
       url: '/doc/development/releases.html'
     - title: 'Testing'
       url: '/doc/development/testing.html'
-    - title: 'Improving this documentation'
+    - title: 'Improving this Documentation'
       url: '/doc/development/documentation.html'
 
 - title: 'Community & Communication'

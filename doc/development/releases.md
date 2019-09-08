@@ -11,6 +11,51 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases. 
 
+### Release 18
+
+Released planned for aobut [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
+
+- new language features
+  - defined includes and realizations (akin to implementing interfaces), see the [documentation](../language/implicit.html)
+  - `total` keyword for structures
+  - interpretation instruction declarations in documents allow changing the processing; currently used for namespace/import declarations, `fixmeta` keyword, document-global rule declarations
+  - translation of notations along structures (qualifying the first delimiter with the structure name)
+  - structural feature for inductive types and functions
+- user interfaces
+  - more abbreviations for Unicode characters and LaTeX commands, including ASCII art for Unicode characters (see the [translation tables](https://github.com/UniFormal/MMT/tree/master/src/mmt-api/resources/unicode])
+  - better display of infered types, implicit arguments, and normalized expressions; try hovering or the normalization action in jEdit
+  - smarter name resolution to allow concrete syntax to refer to included constants
+- implementation internals
+  - completely rewritten handling of implicit morphisms to be more scalable for large highly-interrelated libraries (ideally not user-visible)
+  - rewritten totality checking of views, total structures, realizations
+- peripheral components and system integration
+  - updates to Isabelle importer, now part of official Isabelle release, see Wenzel's [blogpost]()
+  - new exporter to ELPI that translates logic definitions into basic automated theorem provers for them, see the [code](https://github.com/UniFormal/MMT/tree/master/src/mmt-lf/src/info/kwarc/mmt/lf/elpi) and the example exports of the [LATIN2](https://gl.mathhub.info/MMT/LATIN2/) project
+  - new project mmt-glf on merging GF and LF
+- to co-released content
+  - new reference project: [LATIN2](https://gl.mathhub.info/MMT/LATIN2/) is the most modern form the MMT logic library defined in (extensions of) LF
+  - notations for proof rules that mimic declarative proof languages
+  - new formalizations of various state-of-the-art logics including CTT_QE, MAM, Sedel
+- basics of an LSP Language Server
+- some improvements for MitM
+- Coq import reimplemented
+
+### Release 17
+
+Released on [22nd May 2019](https://github.com/UniFormal/MMT/releases/tag/v17.0.0).
+
+- Overhaul of `mmt-stex` machinery
+  - Interface is stable
+  - Bug fixes & performance improvements
+- Minor REPL Server Improvements
+- Improvements to GAP support
+- mbgen improvements
+  - added basic support for datasets that build on other datasets
+  - metadata support for sql
+- Improvements to Isabelle
+- Jupyter Server Bugfixes
+ 
+
 ### Release 16
 
 Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.0.0). 

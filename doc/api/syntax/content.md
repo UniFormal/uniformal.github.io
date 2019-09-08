@@ -2,7 +2,7 @@
 layout: doc
 title: Content Elements
 ---
-![data structures](/doc/img/ContentElement.jpg)
+![data structures](doc/img/ContentElement.jpg)
 **[`api.ContentElement`](apidoc://info.kwarc.mmt.api.ContentElement)** can be roughly separated into two categories - **declarations** (constants and structures - includes are a special case of structures) and **modules** (theories and views). Both declarations can be **links** between two theories (structures and views) and can be a **ContainerElement** containing declarations (declared theories, structures and views). It provides the `foreachDeclaration` method that takes a function argument and applies it to all content elements recursively contained within it (including itself). The `path` method returns a `ContentPath`.
 
 ### General

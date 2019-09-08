@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.com/UniFormal/uniformal.github.io.svg?branch=master)](https://travis-ci.com/UniFormal/uniformal.github.io) | Deployed docs: <https://uniformal.github.io/>
+
+![Travis (.com)](https://img.shields.io/travis/com/UniFormal/uniformal.github.io)
+
 This repository contains the MMT homepage and documentation.
 
 It is served by GitHub at <https://uniformal.github.io/>.

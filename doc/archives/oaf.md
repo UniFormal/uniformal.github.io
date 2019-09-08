@@ -20,4 +20,4 @@ TPTP/Distribution	| the TPTP problem library	| MMT/LATIN
 HOLLight/basic	| the standard library of HOL Light	| MMT/LATIN
 
 
-These archives can be installed and managed using [lmh](../applications/lmh) functionality provided by MMT. 
+These archives can be installed and managed using [lmh](Mathhub/lmh) functionality provided by MMT. 

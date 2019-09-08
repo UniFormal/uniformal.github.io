@@ -126,4 +126,4 @@ The implementation is not presented as a minimal example. Instead, we provide li
 
  1. The keyword `rule` is added by a ParserExtension that is part of the core MMT code and that is loaded by default.
  It is defined in the file [src/mmt-api/src/main/info/kwarc/mmt/api/symbols/RealizedConstant.scala](`https://github.com/UniFormal/MMT/blob/master/src/mmt-api/src/main/info/kwarc/mmt/api/symbols/RealizedConstant.scala`).
- 1. The `role Simplify` is picked up by the ChangeListener defined in the file `[https://github.com/UniFormal/MMT/blob/master/src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala](src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala)`. It inspects the type of each new constant with the appropriate role, generates a rule, and adds it to the theory.
+ 1. The `role Simplify` is picked up by the ChangeListener defined in the file [`src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator`](https://github.com/UniFormal/MMT/blob/master/src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala). It inspects the type of each new constant with the appropriate role, generates a rule, and adds it to the theory.

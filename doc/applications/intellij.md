@@ -10,7 +10,11 @@ title: The IntelliJ IDE
 
 In IntelliJ go to *File* -> *Settings* -> *Plugins* and search in *IntelliJ's marketplace* for "mmt".
 
+<!-- Dennis doesn't provide zipped distributions anymore.
+
 Alternatively, you can install the plugin by extracting [the latest version in UniFormal/IntelliJ-MMT](https://github.com/UniFormal/IntelliJ-MMT/tree/master/build/distributions) to `<IntelliJ IDEA settings directory>/config/plugins`. The settings directory depends on your operating system and can be found in [IntelliJ's article on it](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs).
+
+-->
 
 ### IDE Font setup
 

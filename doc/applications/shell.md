@@ -90,11 +90,11 @@ The path is searched recursively and registers all found archive folders and mar
 #### Archives and Building
 
 * `archive ID relational`: loads the relational knowledge into memory.
-* `build ID TARGET`: runs a build target. See the documentation of the [build tool](building) for details on running build commands on archives.
+* `build ID TARGET`: runs a build target. See the documentation of the [build tool](../archives/building) for details on running build commands on archives.
 
 #### Remote Archives
 
-* `oaf root FOLDER URI`: sets a local folder as the root for git-clones of archives in the [OAF](oaf).
+* `oaf root FOLDER URI`: sets a local folder as the root for git-clones of archives in the [OAF](../archives/oaf).
 * `oaf clone GROUP/REPOS`: git-clones the archive `URI/GROUP/REPOS` into `FOLDER/GROUP/REPOS` and recursively clones its dependencies.
 * `oaf pull`: git-pulls (git pull origin master) all repositories in `FOLDER`.
 * `oaf pushes`: git-pushes all repositories in `FOLDER`.

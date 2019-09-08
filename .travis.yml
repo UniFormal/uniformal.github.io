@@ -12,6 +12,9 @@ dist: xenial
 
 before_install:
   - pip3 install Pygments
+
+  # Fix for https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+  - gem update --system
   - bundler install
 
 script:

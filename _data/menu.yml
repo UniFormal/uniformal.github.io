@@ -56,8 +56,8 @@
   items:
     - title: 'Introductory Articles'
       url: '/doc/philosophy/intros.html'
-    - title: 'The OM/doc Format'
-      url: '/doc/philosophy/om/doc.html' 
+    - title: 'The OMDoc Format'
+      url: '/doc/philosophy/omdoc.html' 
     - title: 'Foundation-Independence'
       url: '/doc/philosophy/independence.html'
     - title: 'Publications on MMT'

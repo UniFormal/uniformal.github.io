@@ -1,6 +1,7 @@
 branches:
   only:
     - master
+    - htmlchecker
 
 language: python
 python: 3.7
@@ -21,7 +22,10 @@ before_install:
 
 script:
   # Build the page to ./_site/
-  - jekyll build
+  - bundle exec jekyll build
+
+  # Check for broken links and HTML
+  - bundle exec htmlproofer --assume-extension ./_site
 
 deploy:
   provider: pages

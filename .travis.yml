@@ -1,0 +1,28 @@
+branches:
+  only:
+    - master
+
+language: generic
+cache:
+  pip: true
+  bundler: true
+
+dist: xenial
+
+before_install:
+  - python -m pip install Pygments
+  - bundler install
+
+script:
+  # Build the page to ./_site/
+  - jekyll build
+
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  github-token: $GITHUB_PAGES_DEPLOYMENT_TOKEN
+  keep-history: false
+  on:
+    branch: master
+  target-branch: gh-pages

@@ -33,7 +33,7 @@ Throughout the MMT code, the classes [`utils.File`](apidoc://info.kwarc.mmt.api.
 [`utils.File`](apidoc://info.kwarc.mmt.api.utils.File) defines useful methods for reading and writing text files.
 
 #### MMT URIs
-`/` and `?` can be used to form [MMT URIs](uris.html) in the intuitive way:
+`/` and `?` can be used to form [MMT URIs](../language/uris) in the intuitive way:
 
 * `DPath / LocalName : DPath`
 * `DPath ? LocalName : MPath`

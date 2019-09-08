@@ -3,7 +3,7 @@ layout: doc
 title: The Open Archive of Formalizations (OAF)
 ---
 The OAF is a repository backend for mathematical content hosted at [`gl.mathhub.info`](http://gl.mathhub.info).
-It is the main place to develop and publish [MMT archives](archives.html).
+It is the main place to develop and publish [MMT archives](.).
 
 ### Archives
 In particular, the OAF contains the following MMT archives:
@@ -20,4 +20,4 @@ TPTP/Distribution	| the TPTP problem library	| MMT/LATIN
 HOLLight/basic	| the standard library of HOL Light	| MMT/LATIN
 
 
-These archives can be installed and managed using [lmh](doc/applications/lmh/) functionality provided by MMT. 
+These archives can be installed and managed using [lmh](../applications/lmh) functionality provided by MMT. 

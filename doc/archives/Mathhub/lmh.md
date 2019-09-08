@@ -11,7 +11,7 @@ portal for OMDoc/MMT content.
 ### Configuring local folders
 Before using any lmh functionality, a local folder needs to be configured to store archives in.
 
-This is configured in the [mmtrc](doc/setup/running) file automatically during setup,
+This is configured in the [mmtrc](../../setup/running) file automatically during setup,
 however it can also be done manually on the MMT shell by typing `lmh root <path>`.
 
 Furthermore, MMT archives can be cloned using ssh or https.

@@ -33,7 +33,7 @@ If you lack access rights, contact us.
 
 To add a page, simply add the necessary folders under the doc folder. You can 
 use the existing files as a template if needed. Then add the page to the menu
-in [\_includes/menu.html](https://github.com/uniformal/uniformal.github.io/edit/master/_includes/menu.yml). 
+in [\_includes/menu.html](https://github.com/UniFormal/uniformal.github.io/edit/master/_data/menu.yml). 
 
 ### Formatting Conventions for the Wiki
 

@@ -5,7 +5,7 @@ title: Application Development with MMT
 
 In this tutorial, we show how to build a few minimal applications on top of the MMT library.
 We will not build the applications step by step. But they are chosen to be easy to understand, reproduce, and play with.
-They cover various but not all of the [extension interfaces](../api/extensions/) that MMT provides to application developers.
+They cover various but not all of the [extension interfaces](../../api/extensions) that MMT provides to application developers.
 
 The following assumes that
 
@@ -64,7 +64,7 @@ This mini-application shows how to use MMT as an editor for OpenMath content dic
 It uses
 
 * the MMT build system,
-* the [Exporter extension](../api/extensions/) for defining new build targets,
+* the [Exporter extension](../../api/extensions) for defining new build targets,
 * the meta-data annotations to MMT content,
 * the extensible MMT parser.
 

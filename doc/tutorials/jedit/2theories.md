@@ -11,7 +11,7 @@ We can now open the `fol.mmt` file in `source` with [jEdit](../../applications/j
 
 (if abbreviations are activated in jEdit, the `→` symbol can be produced with the abbreviation `jra` and the `⊦` symbol with `jvdash`)
 
-This code first introduces a new theory named `Logic` - delimited by ![`\RS`](../../img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../uris.html) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF.html).
+This code first introduces a new theory named `Logic` - delimited by ![`\RS`](../../img/GS.png) - with meta theory `ur:?LF`. The abbrivation `ur` expands to the [URI](../../language/uris) `http://cds.omdoc.org/urtheories/` - the namespace of the urtheories archive, which contains the theory `LF`. The fully qualified URI is thus `http://cds.omdoc.org/urtheories?LF` (which we could have written instead). We will go into the details of LF [later](3LF.html).
 
 The full URI of our new theory is made up of its name (`Logic`) and the namespace declared in the `MANIFEST.MF` file, i.e. `http://kwarc.github.io/MMT?Logic`.
 

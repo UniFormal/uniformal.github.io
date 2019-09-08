@@ -23,13 +23,13 @@ The algorithms for parsing, type inference, and validity checking for queries ar
 ### The MMT Ontology (T-Box)
 The MMT ontology is a fragment of the query language.
 
-* The QueryBaseType [`ontology.PathType`](apidoc://info.kwarc.mmt.api.ontology.PathType) is the type of [MMT URIs](uris.html).
+* The QueryBaseType [`ontology.PathType`](apidoc://info.kwarc.mmt.api.ontology.PathType) is the type of [MMT URIs](../language/uris).
 * **Concepts**, i.e., unary predicates on this type, are the subclasses of [`ontology.Unary`](apidoc://info.kwarc.mmt.api.ontology.Unary).
 * **Relations**, i.e., binary relations between MMT URIs, are the subclasses of [`ontology.Binary`](apidoc://info.kwarc.mmt.api.ontology.Binary).
 
 ### Maintenance of the Relational Knowledge (A-Box)
 
-On disk, the dimension `relational` of an [MMT archive](../applications/archives.html) maintains the relational knowledge, i.e., the set of known URIs and the instances of the unary and binary predicates.
+On disk, the dimension `relational` of an [MMT archive](../archives) maintains the relational knowledge, i.e., the set of known URIs and the instances of the unary and binary predicates.
 In memory, this is done by the class [`ontology.RelStore`](apidoc://info.kwarc.mmt.api.ontology.RelStore). Refer to [this list of query examples](query-examples.md) for basic usage.
 
 The relational dimension is written automatically when an import build target is used.

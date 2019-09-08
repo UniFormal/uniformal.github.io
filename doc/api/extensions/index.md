@@ -30,7 +30,7 @@ They are documented in the respective API documentation pages, which are linked 
 
 Therefore, this page only gives an overview of their functionality:
 
-* [`archives.BuildTarget`](apidoc://info.kwarc.mmt.api.archives.BuildTarget) allow building MMT archives. The MMT [build manager](../../applications/building.html) is generic and can be used for any build processes.
+* [`archives.BuildTarget`](apidoc://info.kwarc.mmt.api.archives.BuildTarget) allow building MMT archives. The MMT [build manager](../../archives/building) is generic and can be used for any build processes.
   2 special cases are most important:
   
   * [`archives.Importer`s](apidoc://info.kwarc.mmt.api.archives.BuildTarget) convert external formats into MMT's data structures.

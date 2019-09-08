@@ -22,7 +22,7 @@ The key features of the MMT language are
 ### MMT's 4 Levels of Knowledge
 
 MMT organizes knowledge along the following four levels.
-All 4 levels are interconnected through the use of identifiers: the [MMT URI](../api/uris.html).
+All 4 levels are interconnected through the use of identifiers: the [MMT URI](uris).
 
 * [**Documents**](namespaces.html): Documents are semantically transparent groupings of *modules*.
    In the simplest case, they serve as *namespaces* giving the modules declared in them globally unique MMT URIs.
@@ -34,7 +34,7 @@ All 4 levels are interconnected through the use of identifiers: the [MMT URI](..
   The body of a module is a list of *symbol declarations*.
   The module system permits combining, translating, instantiating modules. The semantics of the module system is defined by *flattening*, i.e., computing the induced body.
   
-* [**Symbols**](declarations.html): Symbols are the smallest fragments of a document that have semantically relevant [identifiers](../api/uris.html).
+* [**Symbols**](declarations.html): Symbols are the smallest fragments of a document that have semantically relevant [identifiers](uris).
   * [*Constants*](declarations.html#constants) represent named atomic mathematical objects such as function symbols, predicate symbols, sort/type symbols, axioms, theorems, judgments, inference rules.
   * [*Structures*](declarations.html#structures) are instantiations of other modules.
 

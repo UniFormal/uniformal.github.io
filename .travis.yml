@@ -10,7 +10,7 @@ cache:
 dist: xenial
 
 before_install:
-  - python -m pip install Pygments
+  - python3 -m pip install --user Pygments
   - bundler install
 
 script:

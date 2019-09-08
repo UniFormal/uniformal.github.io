@@ -13,10 +13,16 @@
     <meta name="author" content="">
     <!--
       Do not use base tag: <base href="{{ "/" | relative_url }}" />
-      Since otherwise we could not keep links in the documentation relative anymore - without a hassle at least.
+      Since otherwise we could not keep (image) links in the documentation relative anymore - without
+      a hassle at least.
       We would always have to prepend doc/ or something.
 
-      Hence, use e.g. `{{ "lib/css/bootstrap.min.css" | relative_url }}` to refer to assets in this file only.
+      Hence, use e.g. `{{ "/lib/css/bootstrap.min.css" | absolute_url }}` to refer to assets in this file only.
+
+      Only downside: the links will include the official gh-pages domain (e.g. uniformal.github.io), so html-proofer
+      -- which we run as part of the Travis build -- will be tricked to look for the actually old files, which are not
+      yet deployed there. Hence, if you add a new CSS file and reference it here using the technique above, the Travis
+      build will unfortunately fail. Just ignore this and merge nonetheless into master.
     -->
     <link rel="icon" href="{{ "/favicon.ico" | absolute_url }}">
 

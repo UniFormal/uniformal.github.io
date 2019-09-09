@@ -5,7 +5,7 @@ title: Application Development with MMT
 
 In this tutorial, we show how to build a few minimal applications on top of the MMT library.
 We will not build the applications step by step. But they are chosen to be easy to understand, reproduce, and play with.
-They cover various but not all of the [extension interfaces](../api/extensions/) that MMT provides to application developers.
+They cover various but not all of the [extension interfaces](../../api/extensions) that MMT provides to application developers.
 
 The following assumes that
 
@@ -64,7 +64,7 @@ This mini-application shows how to use MMT as an editor for OpenMath content dic
 It uses
 
 * the MMT build system,
-* the [Exporter extension](../api/extensions/) for defining new build targets,
+* the [Exporter extension](../../api/extensions) for defining new build targets,
 * the meta-data annotations to MMT content,
 * the extensible MMT parser.
 
@@ -126,4 +126,4 @@ The implementation is not presented as a minimal example. Instead, we provide li
 
  1. The keyword `rule` is added by a ParserExtension that is part of the core MMT code and that is loaded by default.
  It is defined in the file [src/mmt-api/src/main/info/kwarc/mmt/api/symbols/RealizedConstant.scala](`https://github.com/UniFormal/MMT/blob/master/src/mmt-api/src/main/info/kwarc/mmt/api/symbols/RealizedConstant.scala`).
- 1. The `role Simplify` is picked up by the ChangeListener defined in the file `[https://github.com/UniFormal/MMT/blob/master/src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala](src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala)`. It inspects the type of each new constant with the appropriate role, generates a rule, and adds it to the theory.
+ 1. The `role Simplify` is picked up by the ChangeListener defined in the file [`src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator`](https://github.com/UniFormal/MMT/blob/master/src/mmt-lf/src/info/kwarc/mmt/lf/SimplificationRuleGenerator.scala). It inspects the type of each new constant with the appropriate role, generates a rule, and adds it to the theory.

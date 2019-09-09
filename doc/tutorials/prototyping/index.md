@@ -69,7 +69,7 @@ Here
 
 * The `namespace` declaration defines a unique namespace (a URI) for our example.<span class="detail">The URI does not have to be a URL, i.e., it does not have to point to a physical location. It only acts as a unique identifier.</span> 
 * The `theory` introduces an MMT theory called `FOL` with meta-theory `http://cds.omdoc.org/urtheories?LF`.<span class="detail">Alternatively, we can write `ur:?LF` because the namespace prefix definition `import ur http://cds.omdoc.org/urtheories [GS]` is implicitly present.</span>
-* `[GS]` refers to ASCII 29, the toplevel [delimiter](../../language/delimiters.html) used by MMT.
+* `[GS]` refers to ASCII 29, the toplevel [delimiter](../../language/delimiters) used by MMT.
   In jEdit, it can be inserted via the symbol button for it or by typing `jGS `.
 
 

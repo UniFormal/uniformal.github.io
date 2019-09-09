@@ -5,7 +5,7 @@ title: The jEdit IDE
 
 The jEdit IDE allows to enter and edit MMT content manually.
 
-Installation instructions can be found [here](../setup/jedit.html)
+Installation instructions can be found [here](../setup/jedit)
 
 ### Functionality
 
@@ -18,25 +18,25 @@ Unless otherwise mentioned, functionality that requires explicit human interacti
 Most commands are internally realized as jEdit actions, and these actions can be called in a variety of user-customizable ways.
 See `Global Options - Shortcuts` for the list of actions (or https://github.com/UniFormal/MMT/blob/master/src/jEdit-mmt/src/resources/actions.xml if you want to see the internal names, which can be entered, e.g., in the jEdit Action bar).
 
-**Syntax Highlighting**
+#### Syntax Highlighting
 
 The mode `mmt` is added for .mmt files, which provides syntax highlighting.
 Other mode-specific options including the appearance of the syntax highlighting can be configured via the generic jEdit options dialog.
 Most importantly, the mode assigns the token types OPERATOR and KEYWORDn. Additionally, the token types LITERAL1 to LITERAL4 are assigned to brackets at different levels.
 The token type COMMENT4 is reseved by MMT. It is assigned to all hidden, i.e., invisible, parts. Changes to its text style are ignored and overwritten.
 
-**Parsing and Type Checking**
+#### Parsing and Type Checking
 
 MMT files are automatically processed using the MMT parser and type-checker.
 This is called by Sidekick (see below), and the Sidekick options for the MMT mode allow configuring when type-checking occurs.
 
 If this gets stuck, MMT can be safely interrupted by pressing MMT's stop button.
 
-**Computation**
+#### Computation
 
 The normalize command fully computes the selected expression and shows the result.
 
-**Auto-Completion and Hole-Terms**
+#### Auto-Completion and Hole-Terms
 
 Auto-completion is provided and can be configured via the Sidekick plugin. By default it is triggered by CTRL-Space.
 
@@ -56,13 +56,13 @@ If successful, the term is inserted into the internal syntax (as shown by Sideki
 If the prove fails but the expected type of the subterm is found, a hole-term is introduced.
 In the latter case, the command introduce-hole can be used to replace _ with the hole-term in the source (e.g., in order to use auto-completion).
 
-**Building**
+#### Building
 
 The checking of MMT files happens entirely in memory.
 The build buttons can be used to store the OMDoc of the current file in the file system.
 Building from within jEdit is equivalent to building via the MMT shell.
 
-**Abbreviations**
+#### Abbreviations
 
 The file `abbrevs` (in jEdit's config folder) contains a number of useful abbreviations to produce Unicode characters using Latex-like commands.
 For the most common Unicode characters, the abbreviation `jCOMMAND` produces the same character as `\COMMAND` in LaTeX.
@@ -88,7 +88,7 @@ Every *user* can configure the details can be configured in jEdit's `Extras > Gl
 Every *developer* can configure the abbreviations that are available to every user (specifically: every user who runs the MMT setup or who reruns the jedit setup routine) by editing the file `src/jEdit-mmt/src/resources/plugin/abbrevs`.
 Users are welcome to submit pull requests to define further abbreviations.
 
-**Interpreter**
+#### Interpreter
 
 An interpreter is also provided. The input is by default type-checked, and written into the scratchpad by assigning the expression to a constant. The command `!help` displays the help.
 To set the name of the scratch buffer, the command `!setname (name)` is used, and for setting the theory name inside the scratch buffer, the command `!theory (name)` is used.
@@ -102,23 +102,23 @@ The MMT plugin integrates with jEdit core components and a number of other plugi
 
 **Sidekick:** The plugin provides a Sidekick parser (called "mmt"). Thus, the dockable window of the sidekick plugin provides an outline view and autocompletion for MMT files, both of which are synchronized with the current caret position. Parsing errors appear in the dockable window of the ErrorList plugin.
 
-![`Sidekick example`](/doc/img/screenshots/sidekick.png)
+![`Sidekick example`](../img/screenshots/sidekick.png)
 
 **ErrorList:**
 The plugin provides an ErrorList error source (called "mmt"), which maintains compilation errors. These errors appear in the dockable window of the ErrorList plugin.
 
-![`Error list`](/doc/img/screenshots/errorlist.png)
+![`Error list`](../img/screenshots/errorlist.png)
 
 **Hyperlinks:**
 The plugin provides a Hyperlink source (called "mmt"). This displays the MMT URI of the identifier under the cursor as a tooltip and permits jumping to its declaration using Control-Click.
 Jumping only works if the destination is known to MMT. This is the case if the file has been build by MMT earlier or is currently open in jEdit.
 
 **Console:**
-The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell.html) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
+The plugin provides a Console (named "mmt") for the Console plugin. This permits direct access to the [MMT shell](shell) in the dockable Console window. It also provides a interpreter for writing MMT declarations into a scratchpad.
 
-![`MMT console`](/doc/img/screenshots/console.png)
+![`MMT console`](../img/screenshots/console.png)
 
-![`MMT interpreter`](/doc/img/screenshots/interpreter.png)
+![`MMT interpreter`](../img/screenshots/interpreter.png)
 
 **Context Menu:**
 The plugin provides a user-extensible mode-specific context menu that is initialized with a common commands in the MMT mode.

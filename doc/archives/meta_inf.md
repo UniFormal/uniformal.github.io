@@ -15,9 +15,9 @@ The following keys are predefined by MMT:
 Key(s) | Meaning
 ------ | ------
 id |	unique identifier of the archive, used to refer to the archive in shell commands
-content-base |	the default namespace in place when entering a source file; this only affects the [MMT URIs](../api/uris.html) of the modules in these source files
+content-base |	the default namespace in place when entering a source file; this only affects the [MMT URIs](../language/uris) of the modules in these source files
 narration-base	| the URI prefix prepended to the file paths inside the archives to form document URIs
-source, content, narration, relational |	custom folder names for specific dimensions (see the [build tool](building.html) for details)
+source, content, narration, relational |	custom folder names for specific dimensions (see the [build tool](building) for details)
 ns	| the default namespace of the archive used for all files that do not declare a namespace
 ns-PREFIX	| a namespace binding for PREFIX that is in effect for all files in the archives (unless a file redefines the prefix)
 foundation | the (assumed to be common) **meta theory** for all modules in the archive.

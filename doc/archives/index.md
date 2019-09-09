@@ -12,13 +12,13 @@ MMT-archives are directory trees in which all human-written files should be cont
 
 Folder  |	Content
 ------ | -------
-[source](source.html) |	the primary content of the archive in some format that MMT understands natively.
-[content](content.html)	| index of all modules (created by MMT when building the archive).
-[narration](narration.html)	| index of all documents (created by MMT when building the archive).
-[relational](narration.html) |	the relational index with respect to the MMT ontology (created by MMT when building the archive).
-[export](export.html) |	location for the results of exporters that produce auxiliary data from MMT content (created by MMT when running an exporter).
-[errors](errors.html) | holds error and log messages from running build targets (created by MMT when running any build targets).
-[META_INF](meta_inf.html) | holds the MANIFEST.MF file identifying the directory tree as an archive to MMT.
+[source](source) |	the primary content of the archive in some format that MMT understands natively.
+[content](content)	| index of all modules (created by MMT when building the archive).
+[narration](narration)	| index of all documents (created by MMT when building the archive).
+[relational](narration) |	the relational index with respect to the MMT ontology (created by MMT when building the archive).
+[export](export) |	location for the results of exporters that produce auxiliary data from MMT content (created by MMT when running an exporter).
+[errors](errors) | holds error and log messages from running build targets (created by MMT when running any build targets).
+[META_INF](meta_inf) | holds the MANIFEST.MF file identifying the directory tree as an archive to MMT.
 
 In addition there are the following optional folders:
 
@@ -30,13 +30,13 @@ bin	| Compilation target of the scala folder.
 ### Writing and Building Archives
 
 Archives can be written in any syntax that MMT can understand natively or for which an importer is registered.
-The MMT [IDE](../../doc/setup/jedit.html) based on jEdit can be used well to write archives in MMT's native text syntax. Alternatively, an [MMT-plugin for
-Intellij](../../doc/applications/intellij.html) is also available .
-The MMT [build tool](building.html) can be used to build MMT archives. This is necessary to make the content available to other MMT applications.
+The MMT [IDE](../../doc/setup/jedit) based on jEdit can be used well to write archives in MMT's native text syntax. Alternatively, an [MMT-plugin for
+Intellij](../../doc/applications/intellij) is also available .
+The MMT [build tool](building) can be used to build MMT archives. This is necessary to make the content available to other MMT applications.
 
 ### Examples of MMT-Archives
 
-A number of MMT archives are described in the [OAF](oaf.html) section.
+A number of MMT archives are described in the [OAF](oaf) section.
 
 
 ### Installing and Publishing Archives

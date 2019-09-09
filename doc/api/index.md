@@ -4,10 +4,10 @@ title: The MMT API
 ---
 
 The **MMT API** is the core of MMT. It provides Scala-based reference API for the MMT data structures with various frontend, backends, and MMT-based algorithms.
-The generated API documentation is available [here](https://uniformal.github.io/apidoc/index.html).
+The generated API documentation is available [here](https://uniformal.github.io/apidoc/index).
 The main package is documented at [`info.kwarc.mmt.api.package`](apidoc://info.kwarc.mmt.api.package). The base name of all packages in the API is `info.kwarc.mmt.api`. Good starting points for browsing the API are the following classes
 
-* [`frontend.Controller`](apidoc://info.kwarc.mmt.api.frontend.Controller) is the MMT kernel explained in detail [here](controller.html).
+* [`frontend.Controller`](apidoc://info.kwarc.mmt.api.frontend.Controller) is the MMT kernel explained in detail [here](controller).
 * [`Path`](apidoc://info.kwarc.mmt.api.Path) is the base class of [MMT URIs](../language/uris).
 * [`documents.Document`](apidoc://info.kwarc.mmt.api.documents.Document), [`modules.Module`](apidoc://info.kwarc.mmt.api.modules.Module), [`symbols.Symbol`](apidoc://info.kwarc.mmt.api.symbols.Symbol), and [`objects.Obj`](apidoc://info.kwarc.mmt.api.objects.Obj) are the base classes of the 4 levels of knowledge items of MMT's [abstract syntax](syntax/) described in more detail [here](syntax/).
 
@@ -33,7 +33,7 @@ Throughout the MMT code, the classes [`utils.File`](apidoc://info.kwarc.mmt.api.
 [`utils.File`](apidoc://info.kwarc.mmt.api.utils.File) defines useful methods for reading and writing text files.
 
 #### MMT URIs
-`/` and `?` can be used to form [MMT URIs](uris.html) in the intuitive way:
+`/` and `?` can be used to form [MMT URIs](../language/uris) in the intuitive way:
 
 * `DPath / LocalName : DPath`
 * `DPath ? LocalName : MPath`

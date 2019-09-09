@@ -3,9 +3,9 @@ layout: doc
 title: Building Documents
 ---
 
-MMT can be used as a build tool using a special [shell command](shell.html).
+MMT can be used as a build tool using a special [shell command](../applications/shell).
 
-`build ARCHIVE TARGET [P/A/T/H]` runs the build target `TARGET` on the [archive](archives.html) with id `ARCHIVE`. Optionally, the operation can be restricted to the subfolder `P/A/T/H`.
+`build ARCHIVE TARGET [P/A/T/H]` runs the build target `TARGET` on the [archive](.) with id `ARCHIVE`. Optionally, the operation can be restricted to the subfolder `P/A/T/H`.
 
 ### Defining Build Targets
 
@@ -64,8 +64,8 @@ The most important build targets (which are available by default) include:
 
 ### Build Queue Interface
 
-See [Build Queue](buildqueue.html) for detailed information on multi-threaded building.
+See [Build Queue](buildqueue) for detailed information on multi-threaded building.
 
 ### Error Viewer Interface
 
-See [Error Viewer](errorviewer.html) for detailed information on seeing the results of building many files.
+See [Error Viewer](errorviewer) for detailed information on seeing the results of building many files.

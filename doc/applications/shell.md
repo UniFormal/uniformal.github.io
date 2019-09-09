@@ -3,7 +3,7 @@ layout: doc
 title: The MMT Shell
 ---
 
-The MMT shell is invoked by [running](../setup/running.html) mmt.
+The MMT shell is invoked by [running](../setup/running) mmt.
 
 ### Shell Commands
 The language of shell commands is implemented by the [`info.kwarc.mmt.api.frontend.Action`](apidoc://info.kwarc.mmt.api.frontend.Action) class.
@@ -39,7 +39,7 @@ Some common argument types are:
   * MMT interpolations is active: for example, the string `mmt"TERM"` parses `TERM` as an MMT term and returns the resulting object.
 
 #### Logging
-See [log](../api/log.html) for the logging model.
+See [log](../api/log) for the logging model.
 
 * `log console`: adds standard output as a logging receiver.
 * `log file FILE`: adds the file FILE as a logging receiver.
@@ -55,11 +55,11 @@ See [log](../api/log.html) for the logging model.
 * `do STRING [FOLDER]`: runs the previously registered macro (FOLDER can be used to disambiguate between multiple macros of the same name defined in different folders)
 
 #### Working with MMT content
-MMT reads content automatically by searching for the needed [MMT URI](../api/uris.html) on the math path (see below).
+MMT reads content automatically by searching for the needed [MMT URI](../language/uris) on the math path (see below).
 Therefore, there are only a few commands for directly accessing content.
 
 * `read FILE`: reads a file into memory. Usually this is not necessary because resources are read automatically on demand.
-* `get U [CONTENT] [PRESENT] OUTPUT`: retrieves the resource with MMT URI `U` and applies various operations to it. This command is largely superseded by the [HTTP interface](server.html) but occasionally useful to run on the shell.
+* `get U [CONTENT] [PRESENT] OUTPUT`: retrieves the resource with MMT URI `U` and applies various operations to it. This command is largely superseded by the [HTTP interface](server) but occasionally useful to run on the shell.
   * `CONTENT` can be
     * omitted: simply retrieves `U`
     * `closure`: computes the dependency closure of U and retrieves all elements in it
@@ -74,11 +74,11 @@ Therefore, there are only a few commands for directly accessing content.
     * `window STRING`: output to a separate window with id `STRING`.
         If the id has not been used before, a new window is created; size and position of the created windows can be controlled by other shell commands
     * `respond`: no output (useful for programmers who wish to access the result programmatically)
-* `navigate U`: does nothing itself but sends the navigation event to all registered change listener [extensions](../api/extensions/), which include the [GUI](gui.html) (if started).
+* `navigate U`: does nothing itself but sends the navigation event to all registered change listener [extensions](../api/extensions/), which include the [GUI](gui) (if started).
 * `clear`: removes all content from memory.
 
 #### The Math Path
-The math path maintains a catalog that maps [MMT URIs](../api/uris.html) to physical locations.
+The math path maintains a catalog that maps [MMT URIs](../language/uris) to physical locations.
 Several commands exist to add entries to the math path.
 
 * `mathpath archive FILE`: adds the location of an MMT archive.
@@ -90,11 +90,11 @@ The path is searched recursively and registers all found archive folders and mar
 #### Archives and Building
 
 * `archive ID relational`: loads the relational knowledge into memory.
-* `build ID TARGET`: runs a build target. See the documentation of the [build tool](building.html) for details on running build commands on archives.
+* `build ID TARGET`: runs a build target. See the documentation of the [build tool](../archives/building) for details on running build commands on archives.
 
 #### Remote Archives
 
-* `oaf root FOLDER URI`: sets a local folder as the root for git-clones of archives in the [OAF](oaf.html).
+* `oaf root FOLDER URI`: sets a local folder as the root for git-clones of archives in the [OAF](../archives/oaf).
 * `oaf clone GROUP/REPOS`: git-clones the archive `URI/GROUP/REPOS` into `FOLDER/GROUP/REPOS` and recursively clones its dependencies.
 * `oaf pull`: git-pulls (git pull origin master) all repositories in `FOLDER`.
 * `oaf pushes`: git-pushes all repositories in `FOLDER`.
@@ -107,9 +107,9 @@ The path is searched recursively and registers all found archive folders and mar
 See [`web.RemoteActionServer`](apidoc://info.kwarc.mmt.api.web.RemoteActionServer) for details.
 
 #### Applications
-Note that [GUI](gui.html) and [HTTP server](server.html) run in separate threads. MMT will not terminate if these threads are still active.
+Note that [GUI](gui) and [HTTP server](server) run in separate threads. MMT will not terminate if these threads are still active.
 
-* `server on PORT`: starts the [HTTP server](server.html) at the port `PORT`.
+* `server on PORT`: starts the [HTTP server](server) at the port `PORT`.
 * `server off`: stops the HTTP server.
-* `gui on`: starts the [MMT GUI](gui.html).
+* `gui on`: starts the [MMT GUI](gui).
 * `gui off`: stops the MMT GUI. 

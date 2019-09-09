@@ -78,7 +78,7 @@ Recommended optional steps:
 
 Note that most archives on https://gl.mathhub.info/MMT have their build output committed. During the build of an archive, the so-called relational information is created, which is needed for querying all theories, for instance.\\
 
-TODO: Add note on how to re-build an archive using the API. It's possible to do so using [the command line of MMT](https://uniformal.github.io/doc/setup/running.html).
+TODO: Add note on how to re-build an archive using the API. It's possible to do so using [the command line of MMT](https://uniformal.github.io/doc/setup/running).
 
 #### II.3 Commit to version control
 

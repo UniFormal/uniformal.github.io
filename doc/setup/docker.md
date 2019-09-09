@@ -36,7 +36,7 @@ Furthermore, it can be changed manually as desired by the end user, by editing t
 ### Running custom commands
 
 By default, when the container is run with no arguments, it will simply start the MMT jar. 
-To override this behaviour, and e.g. start the [MMT Server](https://uniformal.github.io/doc/applications/server.html) on port 8080 use the following command: 
+To override this behaviour, and e.g. start the [MMT Server](https://uniformal.github.io/doc/applications/server) on port 8080 use the following command: 
 
 ```
     docker run --rm -v mmt:/content/ -p 8080:8080 -t -i kwarc/mmt -i "server on 8080 0.0.0.0"

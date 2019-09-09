@@ -2,7 +2,7 @@
 layout: doc
 title: 3 - LF and Judgments-as-Types
 ---
-[< 2 - A First Theory](2theories.html)
+[< 2 - A First Theory](2theories)
 
 
 LF is a logical framework based on the dependently typed lambda calculus with two universes, `type` and `kind`. If you know what this means, you can safely skip this section.
@@ -68,4 +68,4 @@ In the next section we will use dependend function types to implement the rules 
 
 -------------------------------
 
-[> 4 - Natural Deduction for Intuitionistic Propositional Logic](4natded.html)
+[> 4 - Natural Deduction for Intuitionistic Propositional Logic](4natded)

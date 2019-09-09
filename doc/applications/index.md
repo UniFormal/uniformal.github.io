@@ -3,19 +3,19 @@ layout: doc
 title: Features and Applications
 ---
 
-MMT is an API and thus [application-independent](../philosophy/independence.html).
+MMT is an API and thus [application-independent](../philosophy/independence).
 Individual applications are either part of the mmt-api project or implemented in separate projects.
 In particular, these include
 
-* a [shell](shell.html)
-* an [IDE](jedit.html) based on the jEdit text editor as well as a plugin for the (IntelliJ-IDE)[intellij.html]
-* a [build tool](building.html) for [MMT archives](archives.html)
-* a [statistics exporter](statistics.html) generating statistical data for [MMT archives](archives.html) 
-* a [graphical interface](gui.html)
-* an [HTTP interface](server.html)
-* a [web site](server.html) for browsing MMT content
+* a [shell](shell)
+* an [IDE](jedit) based on the jEdit text editor as well as a plugin for the (IntelliJ-IDE)[intellij]
+* a [build tool](../archives/building) for [MMT archives](../archives)
+* a [statistics exporter](statistics) generating statistical data for [MMT archives](../archives) 
+* a [graphical interface](gui)
+* an [HTTP interface](server)
+* a [web site](server) for browsing MMT content
 
-The [MMT API](../api/) Based on MMT provides a number of knowledge management services including
+The [MMT API](../api) based on MMT provides a number of knowledge management services including
 
 * notation-based presentation,
 * interactive web-browisng,

@@ -1,0 +1,38 @@
+branches:
+  only:
+    - master
+    - htmlchecker
+
+language: python
+python: 3.7
+cache:
+  pip: true
+  bundler: true
+
+dist: xenial
+
+before_install:
+  - pip3 install Pygments
+
+  # Fix for https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+  - gem update --system
+  - gem install bundler
+
+  - bundler install
+
+script:
+  # Build the page to ./_site/
+  - bundle exec jekyll build
+
+  # Check for broken links and HTML
+  - bundle exec htmlproofer --assume-extension ./_site --url-ignore "/localhost:8080/"
+
+deploy:
+  provider: pages
+  local-dir: _site
+  skip-cleanup: true
+  github-token: $GITHUB_PAGES_DEPLOYMENT_TOKEN
+  keep-history: false
+  on:
+    branch: master
+  target-branch: gh-pages

@@ -3,7 +3,7 @@ layout: doc
 title: Available Judgements and their Invariants
 ---
 
-This document gives an overview of the classes corrsponding to the judgements described [here](index.html), and the corresponding invariants to be maintained by corresponding rules.
+This document gives an overview of the classes corrsponding to the judgements described [here](index), and the corresponding invariants to be maintained by corresponding rules.
 
 The available rule classes are described [here](???). By *exhaustively applying rules* to a (pair of) term `t`, we mean: Iteratively simplify `t` until a rule of the required kind is applicable. If so, apply the rule to the simplified term. Notably, this entails fully simplifying a term if no rules are applicable, which can be computationally expensive. If no rules are applicable, the solver will continue any alternative strategy using the original, unsimplified term.
 

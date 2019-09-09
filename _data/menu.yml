@@ -1,8 +1,18 @@
-### This yaml file contains the menu structure for the MMT documentation. 
+### This yaml file contains the menu structure for the MMT Documentation. 
 ### It is used to automatically generate the menu html file. 
 
 ### First-level submenus are always shown, other sub-level are hidden. 
-### 
+###
+
+### WARNING: Use absolute urls '/blah/blub'.
+###          In _includes/menuitem_single.html and _includes/menuitem_sub.html
+###          the 'url' field of every item defined below will be put through
+###          Jekyll's absolute_url filter. It prepends the site's url and the
+###          site's baseurl.
+###
+###          On url vs baseurl:
+###            <https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/>
+###          (It's confusing at first sight!)
 
 - title: 'Overview'
   url: '/doc/'
@@ -37,7 +47,7 @@
       url: '/doc/tutorials/applications/getting-started'
     - title: 'Application Development with MMT'
       url: '/doc/tutorials/applications/application-development'
-    - title: 'Writing MMT documents with jEdit'
+    - title: 'Writing MMT Documents with jEdit'
       url: '/doc/tutorials/jedit/'
       items:
         - title: '1 - Creating Archives'
@@ -163,7 +173,7 @@
       url: '/doc/development/releases.html'
     - title: 'Testing'
       url: '/doc/development/testing.html'
-    - title: 'Improving this documentation'
+    - title: 'Improving this Documentation'
       url: '/doc/development/documentation.html'
 
 - title: 'Community & Communication'

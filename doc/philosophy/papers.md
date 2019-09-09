@@ -14,7 +14,7 @@ title: Publications
 ### Other papers
 
 This list is always outdated.
-Most relevant papers can be found in Florian Rabe's [publication list](https://kwarc.info/people/frabe/Research/pubscv.html).
+Most relevant papers can be found in Florian Rabe's [publication list](https://kwarc.info/people/frabe/Research/pubscv).
 
 There is also an [entry](http://swmath.org/software/7136) for MMT in the swMath catalog of mathematical software.
 

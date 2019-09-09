@@ -7,7 +7,7 @@ MMT provides a generic logging infrastructure that all MMT components use and th
 
 A **logging producer** is any object that inherits from [`frontend.Logger`](apidoc://info.kwarc.mmt.api.frontend.Logger).
 These instances must set the value `logPrefix` to a unique string.
-This string is used as the argument of the `log+` and `log-` [shell commands](../applications/shell.html) and occurs as a prefix in every log entry.
+This string is used as the argument of the `log+` and `log-` [shell commands](../applications/shell) and occurs as a prefix in every log entry.
 
 Predefined log prefixes are `user`, which mirrors user input on the shell, and `error` for error messages.
 These are the only prefixes for which logging is switched on by default.

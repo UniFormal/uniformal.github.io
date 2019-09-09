@@ -13,7 +13,7 @@
     {% if include.item.external %}
         href="{{ include.item.url }}" target="_blank"
     {% else %}
-        href="{{ site.baseurl }}{{ include.item.url }}"
+        href="{{ include.item.url | absolute_url }}"
     {% endif %}
 >
     {{ include.item.title }}

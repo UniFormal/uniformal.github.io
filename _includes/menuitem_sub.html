@@ -15,7 +15,7 @@
     {% assign active = false %}
 {% endif %}
 
-<a class="list-group-item list-group-item-action expandable {% if active %}active{% endif %}" {% if item.url %}href="{{item.url}}"{% endif %}>
+<a class="list-group-item list-group-item-action expandable {% if active %}active{% endif %}" {% if item.url %}href="{{item.url | absolute_url}}"{% endif %}>
     {{ item.title }}
 </a>
 

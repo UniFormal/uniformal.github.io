@@ -31,7 +31,7 @@ interoperability-inducing logic morphisms.
 
 ### Institutions, Members, and Funding
 
-LATIN is a joint research project between the [KWARC](http://kwarc.info/]) research group at Jacobs University Bremen and the research department [Safe and Secure Cognitive Systems](http://www.dfki.de/sks ) at the German Research Center for Artificial Intelligence Bremen (DFKI-Bremen). It is funded 2010-2011 by the [German Research Council (DFG)](http://www.dfg.de) under grant KO-2428/9-1.
+LATIN is a joint research project between the [KWARC](https://kwarc.info/) research group at Jacobs University Bremen and the research department [Safe and Secure Cognitive Systems](http://www.dfki.de/sks) at the German Research Center for Artificial Intelligence Bremen (DFKI-Bremen). It is funded 2010-2011 by the [German Research Council (DFG)](https://www.dfg.de) under grant KO-2428/9-1.
 
 Members of LATIN are [Michael Kohlhase](http://kwarc.info/kohlhase), [Till Mossakowski](http://www.informatik.uni-bremen.de/~till/), [Florian Rabe](http://kwarc.info/frabe/), [Mihai Codescu](http://www.dfki.de/web/forschung/sks/mitarbeiter/base_view?uid=mico01) and [Fulya Horozal](http://kwarc.info/fhorozal/).
 
@@ -59,11 +59,11 @@ The formalizations underlying the LATIN Atlas use the new [Twelf module system](
  * Mathematics: some case studies from mathematics leveraging modularity,
  * Logic translations: a growing number of logic translations including , e.g., the relativization translations from modal, description, and sorted first-order logics to unsorted first-order logics, the interpretation of type theory in set theory, the negative translation from classical to intuitionistic logic, and the translation from first to higher-order logic.
 
-When the LATIN project finished, the atlas was taken over by the [OAF](../oaf.html) project.
+When the LATIN project finished, the atlas was taken over by the [OAF](../oaf) project.
 That also maintains the *browsable* HTML+MathML version of the atlas.
 The web server uses a conversion of the Twelf sources into OMDoc/MMT and stores them in MathHub. Then the MMT web server retrieves the needed document fragments from MathHub and assembles the requested document on the fly. Then it uses notation definitions to render it into JOBAD-enabled XHTML+MathML. This already yields some useful non-trivial services such as folding and toggling the display of brackets, inferrable types, and implicit arguments.
 
-A SVG image of the current snapshot of the LATIN *graph* is available [here](latin-graph.html).
+A SVG image of the current snapshot of the LATIN *graph* is available [here](docs/latin-graph).
 
 ### Papers (including drafts and preprints)
 

@@ -3,7 +3,7 @@ layout: doc
 title: LaTeX Processing
 ---
 
-MMT can serve as a LaTeX interpreter that turns LaTeX into [MMT data structures for informal knowledge](../language/informal.html).
+MMT can serve as a LaTeX interpreter that turns LaTeX into [MMT data structures for informal knowledge](../language/informal).
 
 It consists if the following steps:
 
@@ -17,5 +17,5 @@ But it is already used heavily in Michael Kohlhase's KWARC group for producing l
 
 Only partial documentation exists at this point:
 
-* [Integration with sTeX](stex.html)
-* [Integration with LaTeXML](latexml.html)
+* [Integration with sTeX](stex)
+* [Integration with LaTeXML](latexml)

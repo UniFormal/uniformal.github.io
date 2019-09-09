@@ -2,7 +2,7 @@
 layout: doc
 title: Content Elements
 ---
-![data structures](/doc/img/ContentElement.jpg)
+![data structures](../../img/ContentElement.jpg)
 **[`api.ContentElement`](apidoc://info.kwarc.mmt.api.ContentElement)** can be roughly separated into two categories - **declarations** (constants and structures - includes are a special case of structures) and **modules** (theories and views). Both declarations can be **links** between two theories (structures and views) and can be a **ContainerElement** containing declarations (declared theories, structures and views). It provides the `foreachDeclaration` method that takes a function argument and applies it to all content elements recursively contained within it (including itself). The `path` method returns a `ContentPath`.
 
 ### General
@@ -37,7 +37,7 @@ All final extensions of `ModuleOrLink` can be *declared* or *defined*. Declared 
   The helper object [`symbols.Constant`](apidoc://info.kwarc.mmt.api.symbols.Constant$) has an apply method to conveniently create new instances of `FinalConstant`. It takes as arguments the containing home module (`Term`), the name of the constant (`LocalName`), and optionally aliases (`List[LocalName]`), type (`Option[Term]`), definition (`Option[Term]`), role (`Option[String]`) and notation (`NotationContainer`, by default a new empty one).
 * **[`symbols.Structure`](apidoc://info.kwarc.mmt.api.symbols.Structure)** combines `Link` with `Declaration`. It has a `boolean` value `isInclude` signifying whether the structure is a simple theory include.
  
-  The helper objects [`symbols.Structure`](apidoc://info.kwarc.mmt.api.symbols.Structure$) and [`symbols.SimpleStructure`](apidoc://info.kwarc.mmt.api.symbols.SimpleStructure$) add convenient apply/unapply methods, where `Simple` indicates the case where the domain is an `MPath` (as opposed to a complex [term](objects.html) representing a theory expression). The helper objects [`symbols.Include`](apidoc://info.kwarc.mmt.api.symbols.Include$) and [`symbols.PlainInclude`](apidoc://info.kwarc.mmt.api.symbols.PlainInclude$) offer apply/unapply methods for theory inclusions.
+  The helper objects [`symbols.Structure`](apidoc://info.kwarc.mmt.api.symbols.Structure$) and [`symbols.SimpleStructure`](apidoc://info.kwarc.mmt.api.symbols.SimpleStructure$) add convenient apply/unapply methods, where `Simple` indicates the case where the domain is an `MPath` (as opposed to a complex [term](objects) representing a theory expression). The helper objects [`symbols.Include`](apidoc://info.kwarc.mmt.api.symbols.Include$) and [`symbols.PlainInclude`](apidoc://info.kwarc.mmt.api.symbols.PlainInclude$) offer apply/unapply methods for theory inclusions.
 
 ### Derived Content Elements
 

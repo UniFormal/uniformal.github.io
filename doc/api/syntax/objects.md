@@ -2,7 +2,7 @@
 layout: doc
 title: MMT Objects
 ---
-![data structures](/doc/img/Term.jpg)
+![data structures](../../img/Term.jpg)
 [`objects.Obj`](apidoc://info.kwarc.mmt.api.objects.Obj) is the top level datastructure for all objects.
 These are terms, variable declarations and contexts.
 
@@ -14,7 +14,7 @@ These are terms, variable declarations and contexts.
 
     `OMV`s can be substituted by arbitrary terms in an object. For `v:OMV`, `t:Term` and `s:Obj`, the expression `v/t` yields a Substitution of `v` by `t`, which can be applied to `s` with the expression `s ^? (v/t)`. 
   
-  * **[`OMLITTrait`](apidoc://info.kwarc.mmt.api.objects.OMLITTrait)**: the trait being used by all [literals](../../language/literals.html). It has a `synType` method that returns its syntactic type. There are two variants of `OMLIT`, differing mostly in their `value` method:
+  * **[`OMLITTrait`](apidoc://info.kwarc.mmt.api.objects.OMLITTrait)**: the trait being used by all [literals](../../language/literals). It has a `synType` method that returns its syntactic type. There are two variants of `OMLIT`, differing mostly in their `value` method:
     * An [`OMLIT`](apidoc://info.kwarc.mmt.api.objects.OMLIT) has a known *[RealizedType]TODO* and its `value` method returns the corresponding type of its semantic type (declared as `Any`).
     * An [`UnkownOMLIT`](apidoc://info.kwarc.mmt.api.objects.UnknownOMLIT)** has no (yet) known semantic type - the latter is usually inferred during type checking, so this usually only occurs between parsing and checking. Its `value` method returns the unparsed string of the literal value.
 

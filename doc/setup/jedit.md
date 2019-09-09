@@ -6,7 +6,7 @@ title: Details on Setting up jEdit
 The jEdit plugin based on MMT yields an IDE for MMT content.
 
 This section is about the setup of the jEdit plugin.
-The functionality is described [here](../applications/jedit.html)
+The functionality is described [here](../applications/jedit)
 
 ### Installation
 
@@ -74,5 +74,5 @@ To store the results persistently, you need to build the files.
 This can be done by
 
 * the button in jEdit
-* running the shell-based [build tool](../applications/building.html)
+* running the shell-based [build tool](../archives/building)
 * running the build tool from within jEdit using the MMT console that.

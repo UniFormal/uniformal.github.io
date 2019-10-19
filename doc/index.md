@@ -36,7 +36,25 @@ The documentation contains:
 
 ### Acknowledgements
 
-The list of acknowledgements is in the [MMT source repository](https://github.com/UniFormal/MMT/).
+<table class="none">
+<tr>
+<td>
+  <img src="https://kwarc.info/public/dfg_logo.svg" width="128">
+</td>
+<td>
+  MMT was partially supported by the DFG project <a href="https://kwarc.info/projects/oaf/">OAF</a>
+  (grant agreements KO 2428/13-1 and RA 18723/1).
+</td>
+<td>
+  <img src="http://opendreamkit.org/public/logos/Flag_of_Europe.svg" width="128">
+</td>
+<td>
+  MMT was partially supported by the Horizon 2020 European Research Infrastructure project
+  <a href="https://opendreamkit.org/">OpenDreamKit</a>
+  (grant agreement <a href="https://opendreamkit.org/">#676541</a>).
+</td>
+</tr>
+</table>
 
 ### Disclaimer
 

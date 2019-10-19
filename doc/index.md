@@ -43,7 +43,7 @@ The documentation contains:
 </td>
 <td>
   MMT was partially supported by the DFG project <a href="https://kwarc.info/projects/oaf/">OAF</a>
-  (grant agreements KO 2428/13-1 and RA 18723/1).
+  (grant agreements KO 2428/13-1 and RA 18723/1-1).
 </td>
 </tr>
 <tr>

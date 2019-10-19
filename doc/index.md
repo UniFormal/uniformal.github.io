@@ -34,6 +34,10 @@ The documentation contains:
 * documentation for individual [applications](applications/) built on top of the MMT API
 * structure of the [development](development/) of MMT
 
+### Acknowledgements
+
+The list of acknowledgements is in the [MMT source repository](https://github.com/UniFormal/MMT/).
+
 ### Disclaimer
 
 MMT has been developed since 2005 and its theoretical foundation and practical implementation has become very mature.

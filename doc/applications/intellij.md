@@ -44,7 +44,8 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
   1. You clicked on a project not an archive. **Solution:** install the archives instead
   2. You do not have access rights to the desired archive. **Solution:** Not all archives are public, for example because they are experimental in nature. Contact the person responsible for the archive to ask them for access rights.
   3. You are on Windows and do not have the git bash console "sh" in your path. **Solution:** See the note above on how to fix this.
-
+  4. You have not set-up git to clone repositories with ssh. **Solution:** [Set up an ssh key and add it to your Github account.](https://help.github.com/en/enterprise/2.16/user/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+ 
 ### Notes on automatic type checking
 
 - By default, the Plugin does **not** type check the terms of an open *mmt*-file, since doing so is computationally expensive and inconvenvient for the user. Type checking can be easily activated and deactivated in the *Errors* panel of the MMT tool window (View -> Tool Windows -> MMT)

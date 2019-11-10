@@ -34,14 +34,14 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 
 ### Getting data to work with
 
-- In the project-view on the left, select the *MathHub* view to get an overview over all available MMT projects on 
-[MathHub](http://gl.mathhub.info). Projects usually contain archives with mmt-data which can be accessed through clicking on the arrow next to the project name to expand it. You can *git clone* archives by right-clicking an archive and choosing *Install archive*. 
+- In the project-view on the left, select the *MathHub* view to get an overview over all available MMT groups on 
+[MathHub](http://gl.mathhub.info). Groups usually contain archives with mmt-data which can be accessed through clicking on the arrow next to the project name to expand it. You can *git clone* archives by right-clicking an archive and choosing *Install archive*. 
 
 - Note: on Windows, `lmh` (a tool to pull archives from MathHub) uses  the command `sh --login -c git ...`. Thus, you need to have `sh` as well as `git` on your PATH. This is easiest accomplished by having installed Git the usual way and adding `C:\Program Files\Git\bin` -- which contains `sh` to your PATH.
 
 - You may encounter an error message stating "installation has failed, please make sure that git is installed and try again." There are several possible reasons for this (this list is probably non-exhaustive):
 
-  1. You clicked on a project not an archive. **Solution:** install the archives instead
+  1. You clicked on a group not an archive. **Solution:** Group installation is currenlty buggy. Install the archives individually instead.
   2. You do not have access rights to the desired archive. **Solution:** Not all archives are public, for example because they are experimental in nature. Contact the person responsible for the archive to ask them for access rights.
   3. You are on Windows and do not have the git bash console "sh" in your path. **Solution:** See the note above on how to fix this.
   4. You have not set-up git to clone repositories with ssh. **Solution:** [Set up an ssh key and add it to your Github account.](https://help.github.com/en/enterprise/2.16/user/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

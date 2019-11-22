@@ -86,6 +86,8 @@
       url: '/doc/language/declarations.html'
     - title: 'Terms'
       url: '/doc/language/objects.html'
+    - title: 'Includes and Implicit Morphisms'
+      url: '/doc/language/implicit.html'
     - title: 'Structural Delimiters'
       url: '/doc/language/delimiters.html'
     - title: 'Flexiformal Representations'

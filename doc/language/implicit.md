@@ -2,6 +2,9 @@
 layout: doc
 title: Includes and Implicit Morphisms
 ---
+https://uniformal.github.io/apidoc/info/kwarc/mmt/api/symbols/IncludeData.html
+
+This document describes inclusions and implicit morphisms from a high-level language perspective. You might also be interested in how MMT unifies inclusions in theories and views, whether defined or not, code-wise. For that have a look at [`IncludeData`](apidoc://info.kwarc.mmt.api.symbols.IncludeData) and its Scaladoc.
 
 # Includes
 

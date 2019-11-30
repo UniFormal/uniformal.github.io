@@ -5,40 +5,29 @@ title: Setting up MMT
 
 To obtain and set up MMT, perform the following steps:
 
-### 1) Install Java (if you haven't already)
+### 1. Install Java ≥ 8 (if you haven't already)
 
-MMT targets `Java 8` (both `OpenJDK` and `OracleJDK` are supported), and preliminary support for `Java 9` exists. `Java 11` works as well. `Java 7` is no longer officially supported. 
+Both OpenJDK and Oracle's JDK are supported and tested as high as version 11. Higher versions might work as well. Java 7 is not supported anymore.
 
-### 2) Install an MMT development IDE (jEdit or IntelliJ IDEA, if you haven't already)
+### 2. Install the MMT development IDE: Intellij IDEA + MMT plugin
 
-This step is optional but highly recommended if you want to write or view MMT files.
-If you just want to sample MMT, you should definitely do it with an IDE.
+This step is optional but highly recommended if you want to view or write MMT files yourself. If you just want to sample MMT, you should definitely do it with an IDE.
 
-#### 1. IntelliJ IDEA (recommended)
+Install [IntelliJ IDEA](https://www.jetbrains.com/idea/), either Community or Ultimate edition, with a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions) you will install later. Refer to [the IntelliJ IDEA MMT plugin page](https://uniformal.github.io/doc/applications/intellij) for installation of the plugin.
 
-Install IntelliJ IDEA (both the community and Ultimate versions work) and then refer to [the IntelliJ IDEA MMT plugin page](https://uniformal.github.io/doc/applications/intellij) for installation of the plugin.
+In case you are a student, note that you can freely get the Ultimate version by verification of your student status. Consult the JetBrains homepage for more details.
 
-#### 2. jEdit
-
-[jEdit](http://jedit.org/) is a Java-based text editor.
-MMT includes a jEdit plugin, which turns jEdit into an IDE for MMT.
-
-Concretely:
-
-* Download and install jEdit.
-* Run jEdit once and close it again.
-  (That allows MMT to automatically find the jEdit installation and configure it to work with MMT.)
-
-
-### 3) Install Git
+### 3. Install Git
 
 MMT uses git internally, so make sure it is installed.
 
-### 4) Install MMT
+### 4. Install MMT
+
+Until now you have installed the development environment interfacing with your future installation of MMT *itself*. However, you still need the actual MMT software.
 
 There are two options for this step:
 
-#### a) Casual Users: Download the Binary Distribution
+#### 4.a. Casual Users: Download the Binary Distribution
 
 The file `mmt.jar` provides a self-contained executable file.
 
@@ -46,7 +35,7 @@ The file `mmt.jar` provides a self-contained executable file.
 A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
 The latest one can be downloaded by clicking the top most item on the list. 
 
-#### b) Advanced Users: Clone the Source Distribution and Build MMT Yourself
+#### 4.b. Advanced Users: Clone the Source Distribution and Build MMT Yourself
 
 Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 
@@ -82,7 +71,7 @@ cd ../deploy/
 
 Besides `mmt.jar`, this directory contains executable scripts (for Windows and Unix) to for running MMT.
 
-### 5) Set Up MMT
+### 5. Set Up MMT
 
 If you only want to use MMT from within IntelliJ IDEA, you can skip this step.
 
@@ -99,7 +88,7 @@ This triggers the setup dialog which does the following:
 
 Further instructions for setting up jEdit are available [here](jedit).
 
-### 6) Run MMT
+### 6. Run MMT
 
 If you want to use MMT via an IDE, you do not have to run MMT itself.
 It will act as a plugin within jEdit or IntelliJ: just start jEdit and open `.mmt` files, or start a new *MathHub*-project within IntelliJ.

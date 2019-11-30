@@ -17,9 +17,11 @@ Install [IntelliJ IDEA](https://www.jetbrains.com/idea/), either Community or Ul
 
 In case you are a student, note that you can freely get the Ultimate version by verification of your student status. Consult the JetBrains homepage for more details.
 
+Alternatively, you can still use [jEdit](http://www.jedit.org/) as your development IDE. See [this article describing the setup of jEdit with MMT](jedit).
+
 ### 3. Install Git
 
-MMT uses git internally, so make sure it is installed.
+MMT uses [git](https://git-scm.com/) internally, so make sure it is installed.
 
 ### 4. Install MMT
 
@@ -29,15 +31,13 @@ There are two options for this step:
 
 #### 4.a. Casual Users: Download the Binary Distribution
 
-The file `mmt.jar` provides a self-contained executable file.
+Download [`mmt.jar` from UniFormal/MMT's release page](https://github.com/UniFormal/MMT/releases/latest). It provides a self-contained executable file.
 
 `mmt.jar` is released roughly every 2 months.
-A list of releases can be found on the [GitHub Releases page](https://github.com/UniFormal/MMT/releases/). 
-The latest one can be downloaded by clicking the top most item on the list. 
 
 #### 4.b. Advanced Users: Clone the Source Distribution and Build MMT Yourself
 
-Clone the [MMT repository](https://github.com/UniFormal/MMT) from GitHub:
+Clone the [UniFormal/MMT repository](https://github.com/UniFormal/MMT) from GitHub:
 
 ```
 git clone git@github.com:UniFormal/MMT.git

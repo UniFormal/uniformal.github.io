@@ -16,7 +16,7 @@ See the [IntelliJ-MMT Plugin Installation page](installation).
 
 ## Refactoring Tools
 
-See [refactoring tools page](refactoring).
+See [refactoring tools page](refactoring-tools).
 
 ## Usage of the Sidekick
 

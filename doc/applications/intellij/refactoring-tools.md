@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: IntelliJ-MMT: Refactoring Tools
+title: 'IntelliJ-MMT: Refactoring Tools'
 ---
 
 Currently, there is only one refactoring tool, namely the "Generalizer":

@@ -26,6 +26,6 @@ The sidekick appears as a panel on the left side of an IntelliJ MMT project:
 *After typechecking* the currently focussed MMT file, it shows all theories, views and their declarations. You can use this to
     
 - **bidirectionally inspect** MMT data structures to see how MMT sees your document. By **left-clicking** on a node in that tree you can go to the corresponding location in the source file. By activating the "Navigate" checkbox, you can move your cursor in the current MMT file to navigate to the corresponding node in the tree.
-- Starting with MMT plugin v.19+, **reconstruct MMT surface syntax** by **right-clicking**:
+- Starting with MMT plugin v.19+, **reconstruct MMT surface syntax** by **right-clicking**. This is mostly useful for theories, which were generated on-the-fly e.g. by means of diagram operators.
 
-    ![Screenshot of the MMT sidekick reconstructing MMT surface syntax](../../../img/intellij-mmt-sidekick-surface-syntax.png)
+    ![Screenshot of the MMT sidekick reconstructing MMT surface syntax](../../../img/intellij-mmt-sidekick-surface-syntax.png).

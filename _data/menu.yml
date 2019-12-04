@@ -154,7 +154,7 @@
       url: '/doc/applications/ides.html'
       items:
         - title: 'IntelliJ'
-          url: '/doc/applications/intellij.html' 
+          url: '/doc/applications/intelli/index.html'
         - title: 'jEdit'
           url: '/doc/applications/jedit.html' 
     - title: 'The MMT Shell'

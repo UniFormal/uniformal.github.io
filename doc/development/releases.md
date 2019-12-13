@@ -20,6 +20,8 @@ Released planned for about [13th December 2019](https://github.com/UniFormal/MMT
 - new diagram operator `PUSHOUT ?thy ALONG ?view` available from MMT/urtheories, implemented in core MMT.
 - GF importer merged into mmt-glf
 - various small improvements and fixes to GLF functionality
+- sTeX-OMDoc Importer partially redesigned and improved
+- Various bug fixes
 
 ### Release 18
 

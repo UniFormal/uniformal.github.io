@@ -17,8 +17,13 @@ Released planned for about [13th December 2019](https://github.com/UniFormal/MMT
 
 - [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
   - most importantly ability to reconstruct MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html).
-- new diagram operator `PUSHOUT ?thy ALONG ?view` available from MMT/urtheories, implemented in core MMT.
+- improvements for diagram operators
+  - fixes and extensions to anonymous theories, links, diagrams
+  - several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
+- first proper release of logic library MMT/LATIN2 (master branch builds relative to this release)
+- new release of Isabelle export (Isabelle/b1f3e86a4745 from https://isabelle.sketis.net/repos/isabelle, AFP/429a712d7c4d from https://isabelle.sketis.net/repos/afp-devel)
 
+  
 ### Release 18
 
 Released planned for about [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).

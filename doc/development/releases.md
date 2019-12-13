@@ -22,6 +22,9 @@ Released planned for about [13th December 2019](https://github.com/UniFormal/MMT
   - several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
 - first proper release of logic library MMT/LATIN2 (master branch builds relative to this release)
 - new release of Isabelle export (Isabelle/b1f3e86a4745 from https://isabelle.sketis.net/repos/isabelle, AFP/429a712d7c4d from https://isabelle.sketis.net/repos/afp-devel)
+- improvements to GF integration
+  - importer project mmt-gf merged into mmt-glf
+  - various small improvements and fixes to GLF functionality
 
   
 ### Release 18

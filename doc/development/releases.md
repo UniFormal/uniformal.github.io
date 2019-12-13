@@ -9,11 +9,19 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 ### Changelog
 
-This document contains a changelog of existing as well as upcoming releases. 
+This document contains a changelog of existing as well as upcoming releases.
+
+### Release 19
+
+Released planned for about [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
+
+- [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
+  - most importantly ability to reconstruct MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html).
+- new diagram operator `PUSHOUT ?thy ALONG ?view` available from MMT/urtheories, implemented in core MMT.
 
 ### Release 18
 
-Released planned for aobut [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
+Released planned for about [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
 
 - new language features
   - defined includes and realizations (akin to implementing interfaces), see the [documentation](../language/implicit)

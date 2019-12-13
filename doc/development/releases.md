@@ -16,9 +16,7 @@ This document contains a changelog of existing as well as upcoming releases.
 Released planned for about [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
 
 - language features
-  - improvements for diagram operators
-    - fixes and extensions to anonymous theories, links, diagrams
-    - several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
+  - improvements for diagram operators : fixes and extensions to anonymous theories, links, diagrams, as well as several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
 - user interfaces
   - [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
     reconstruction of MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html)

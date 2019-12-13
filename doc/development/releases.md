@@ -18,6 +18,8 @@ Released planned for about [13th December 2019](https://github.com/UniFormal/MMT
 - [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
   - most importantly ability to reconstruct MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html).
 - new diagram operator `PUSHOUT ?thy ALONG ?view` available from MMT/urtheories, implemented in core MMT.
+- GF importer merged into mmt-glf
+- various small improvements and fixes to GLF functionality
 
 ### Release 18
 

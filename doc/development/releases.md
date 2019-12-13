@@ -15,16 +15,18 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Released planned for about [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
 
-- [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
-  - most importantly ability to reconstruct MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html).
-- improvements for diagram operators
-  - fixes and extensions to anonymous theories, links, diagrams
-  - several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
-- first proper release of logic library MMT/LATIN2 (master branch builds relative to this release)
-- new release of Isabelle export (Isabelle/b1f3e86a4745 from https://isabelle.sketis.net/repos/isabelle, AFP/429a712d7c4d from https://isabelle.sketis.net/repos/afp-devel)
-- improvements to GF integration
-  - importer project mmt-gf merged into mmt-glf
-  - various small improvements and fixes to GLF functionality
+- language features
+  - improvements for diagram operators
+    - fixes and extensions to anonymous theories, links, diagrams
+    - several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
+- user interfaces
+  - [IntelliJ-MMT plugin v19](https://plugins.jetbrains.com/plugin/11450-mmt/)
+    reconstruction of MMT surface syntax for in-memory theories, e.g. theories created by diagram operators on-the-fly, [docs & screenshots here](https://uniformal.github.io//doc/applications/intellij/index.html)
+- external systems and libraries
+  - first proper release of logic library MMT/LATIN2 (master branch builds relative to this release)
+  - new release of Isabelle export (Isabelle/b1f3e86a4745 from https://isabelle.sketis.net/repos/isabelle, AFP/429a712d7c4d from https://isabelle.sketis.net/repos/afp-devel)
+  - GF: importer project mmt-gf merged into mmt-glf, various small improvements and fixes to GLF functionality
+  - sTeX-OMDoc importer partially redesigned and improved
 
   
 ### Release 18

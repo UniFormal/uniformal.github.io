@@ -60,7 +60,7 @@ view v : ?MyTheory -> ... =
 ❚
 ```
 
-See the corresponding section on [metadata for declarations](declarations.html#metadata) on how each meta line is structured.
+See the corresponding section on [metadata for declarations](declarations.html#metadata) on how each meta line is structured. Note that you can have multiple metadatums on the *same* theory with the *same* key. In the implementation the [metadatums form a list](apidoc://info.kwarc.mmt.api.metadata.MetaData), hence this is allowed.
 
 ### Morphisms
 

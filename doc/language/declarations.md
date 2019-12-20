@@ -76,6 +76,8 @@ Every metadatum declaration must
 
   Here, we keep it simple and just use a reference to yet another symbol as the term. If you use MMT/urtheories and import the strings theory thereof, you can also use strings, i.e. `meta ?myAnnotationKey "abc"`.
 
+Note that you can have multiple metadatums on the *same* theory with the *same* key. In the implementation the [metadatums form a list](apidoc://info.kwarc.mmt.api.metadata.MetaData), hence this is allowed.
+
 ### Imports/Inheritance between Theories
 
 Large MMT theories are usually built modularly from smaller ones.

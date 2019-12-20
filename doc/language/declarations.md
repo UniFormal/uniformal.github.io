@@ -17,7 +17,7 @@ Constants are symbols that have a name and several optional *components*, namely
 
 Examples for constants include mathematical constants, functions, axioms, theorems and inference rules. Their concrete syntax is
 
-![`<name> @ <alias> \US : <type> \US = <definition> \US # <notation> \US role <role> \RS`](../img/constant.png)
+![`<name> @ <alias> \US : <type> \US = <definition> \US # <notation> \US role <role> \US meta <key> <value> \RS`](../img/constant.png)
 
 The order of the object-level components is arbitrary. They are seperated by the object-[delimiter](delimiters) ![`\US`](../img/US.png), the constant declaration itself is delimited by ![`\RS`](../img/RS.png). Aliases are simply *alternative names* that can be used to refer to the constant and are useful e.g. in structures (see below).
 
@@ -51,6 +51,30 @@ Roles serve as metadata-like annotations to constants. In most situations they a
 * `role Eq` indicates that the constant represents an equality that can be used for rewriting.
 * `role Judgment` indicates that the constant is a *Curry-Howard*-style operator mapping propositions to types - as such, occurences of the symbol indicate theorems or axioms.
 * `role Simplify` requires the type of the constant to be of the form `⊦ f(g(a)) ≐ b`, where `⊦` has role `Judgment` and `≐` has role `Eq`. This induces a rewrite rule, that simplifies instances of the left side of the equation to the right side during type checking.
+
+### Metadata
+
+[Similar to how you can add meta data to modules](modules.html#metadata), you can also annotate every declaration with arbitrarily many metadatums:
+
+```
+myAnnotationKey   ❙
+myAnnotationKey2  ❙
+myAnnotationValue ❙
+myAnnotationValue2❙
+
+myConstant : someType ❘ meta ?myAnnotationKey  ?myAnnotationValue
+                      ❘ meta ?myAnnotationKey2 ?myAnnotationValue2❙
+```
+
+Every metadatum declaration must
+
+- first specify a metadatum key, which is a reference to a symbol
+
+  Here, we give references to `myAnnotationKey(2)`, which we assume to be declared in the same theory here. As a formalizer, you might want to put that annotation key in some ambient meta theory. 
+
+- and second give an arbitrary metadatum value as a term.
+
+  Here, we keep it simple and just use a reference to yet another symbol as the term. If you use MMT/urtheories and import the strings theory thereof, you can also use strings, i.e. `meta ?myAnnotationKey "abc"`.
 
 ### Imports/Inheritance between Theories
 

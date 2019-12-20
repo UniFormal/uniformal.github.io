@@ -36,6 +36,32 @@ where `<assignments>` is a list of assignment declarations. Their syntax looks l
 
 In assignments, `<name>` has to be a symbol declared in (the dependency closure of) `<domain>`, whereas `<term>` has to be a well-formed [term](objects) over symbols in `<codomain>` preserving typing judgments.
 
+### Metadata
+
+Modules can have arbitrary metadata, similar to how [declarations can have arbitrary metadata associated to them](declarations.html#metadata):
+
+```
+theory MyTheory =
+  myAnnotationKey   ❙
+  myAnnotationKey2  ❙
+  myAnnotationValue ❙
+  myAnnotationValue2❙
+
+  meta ?myAnnotationKey  ?myAnnotationValue ❙
+  meta ?myAnnotationKey2 ?myAnnotationValue2
+❚
+
+// Also possible in views: ❚
+view v : ?MyTheory -> ... =
+  // Do the symbols come from the domain theory? ❙
+  
+  meta ?myAnnotationKey  ?myAnnotationValue ❙
+  meta ?myAnnotationKey2 ?myAnnotationValue2
+❚
+```
+
+See the corresponding section on [metadata for declarations](declarations.html#metadata) on how each meta line is structured.
+
 ### Morphisms
 
 The semantics of the large scale structure of developments in MMT is computed in the category of theories and theory **morphisms**.

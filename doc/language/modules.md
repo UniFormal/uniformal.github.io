@@ -48,7 +48,7 @@ theory MyTheory =
   myAnnotationValue2❙
 
   meta ?myAnnotationKey  ?myAnnotationValue ❙
-  meta ?myAnnotationKey2 ?myAnnotationValue2
+  meta ?myAnnotationKey2 ?myAnnotationValue2❙
 ❚
 
 // Also possible in views: ❚
@@ -56,7 +56,7 @@ view v : ?MyTheory -> ... =
   // Do the symbols come from the domain theory? ❙
   
   meta ?myAnnotationKey  ?myAnnotationValue ❙
-  meta ?myAnnotationKey2 ?myAnnotationValue2
+  meta ?myAnnotationKey2 ?myAnnotationValue2❙
 ❚
 ```
 

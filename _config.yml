@@ -7,4 +7,6 @@ url: https://uniformal.github.io/
 # The folder after the domain (will still be used locally with `jekyll serve`)
 baseurl: ''
 
-highlighter: pygments
+# This highlighter is currently not supported
+#highlighter: pygments
+highlighter: rouge

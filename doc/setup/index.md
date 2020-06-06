@@ -5,11 +5,11 @@ title: Setting up MMT
 
 To obtain and set up MMT, perform the following steps:
 
-### 1. Install Java ≥ 8 (if you haven't already)
+### 1. Install Java ≥ 14 (if you haven't already)
 
-Both OpenJDK and Oracle's JDK are supported and tested as high as version 11. Higher versions might work as well. Java 7 is not supported anymore.
+Both OpenJDK and Oracle's JDK are supported. Be sure that Java ≥ 14 is in fact the one on your PATH: run `java --version` in your shell to find out.
 
-### 2. Install the MMT development IDE: Intellij IDEA + MMT plugin
+### 2. Install the MMT development IDE: IntelliJ IDEA + MMT plugin
 
 This step is optional but highly recommended if you want to view or write MMT files yourself. If you just want to sample MMT, you should definitely do it with an IDE.
 
@@ -49,10 +49,10 @@ Alternatively, if you do not have ssh keys set up, use
 git clone https://github.com/UniFormal/MMT.git`
 ```
 
-A detailed explanation of the contents of the repository is available [here](repo).
+A detailed explanation of the contents of the repository is available [here](repo). The development happens on the `devel` branch, hence you most likely want to `git checkout devel`, too.
 
-MMT is currently built for `Scala 2.12.3` (incuded in the repository) and building is done with sbt (the Scala build tool).
-If you do not have sbt, you can get it [here](http://www.scala-sbt.org/).
+MMT is currently built for `Scala 2.12.9` (incuded in the repository) and building is done with sbt (the Scala build tool).
+If you do not have sbt, get the latest version at <https://www.scala-sbt.org/>.
 
 To build, execute
 

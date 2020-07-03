@@ -20,5 +20,5 @@ narration-base	| the URI prefix prepended to the file paths inside the archives 
 source, content, narration, relational |	custom folder names for specific dimensions (see the [build tool](building) for details)
 ns	| the default namespace of the archive used for all files that do not declare a namespace
 ns-PREFIX	| a namespace binding for PREFIX that is in effect for all files in the archives (unless a file redefines the prefix)
-dependencies | comma-seperated dependencies for the archive in question. <span class="detail">Every archive implicitly has an additional dependency on the 'meta-inf' archive of its' group even if it is not listed. </span>
+dependencies | comma-seperated dependencies for the archive in question. <span class="detail">Every archive implicitly has an additional dependency on the 'meta-inf' archive of its group even if it is not listed. For example on MathHub (to which the concepts also apply to), the archive [MitM/Foundation](https://gl.mathhub.info/MitM/Foundation) has the implicit dependency [MitM/meta-inf](https://gl.mathhub.info/MitM/meta-inf).</span>
 foundation | the (assumed to be common) **meta theory** for all modules in the archive.

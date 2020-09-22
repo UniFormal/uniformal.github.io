@@ -18,6 +18,8 @@ Release planned for 22nd September 2020
 - add a standalone `localpaths` build target.
 - fix spurious sms dependency cycles
 - misc. bugfixes and improvements in the build system.
+- much work on the ELPI generation code
+- various improvements for GLF/GLIF (integer support, elpi generation, ...)
 
 ### Release 19
 

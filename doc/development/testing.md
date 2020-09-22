@@ -62,6 +62,7 @@ TEST_USE_DEVEL=1 java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
 TEST_USE_DEVEL=0 java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
 ```
 
-#### Travis
+#### GitHub Actions
 
-Travis CI automatically runs both unit and integration tests after every commit. 
+[![Devel Branch CI Status](https://github.com/Uniformal/MMT/workflows/CI/badge.svg?branch=devel)](https://github.com/UniFormal/MMT/actions?query=workflow%3ACI) automatically runs both unit and integration tests after every commit. 
+It also automatically uploads an `mmt.jar` for every commit, which is kept for up to six months. 

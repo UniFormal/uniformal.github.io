@@ -34,7 +34,7 @@ Released on [23rd September 2020](https://github.com/UniFormal/MMT/releases/tag/
 
 ### Release 19
 
-Released on [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
+Released on [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/19.0.0).
 
 - language features
   - improvements for diagram operators : fixes and extensions to anonymous theories, links, diagrams, as well as several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)

@@ -33,7 +33,7 @@ interoperability-inducing logic morphisms.
 
 LATIN is a joint research project between the [KWARC](https://kwarc.info/) research group at Jacobs University Bremen and the research department [Safe and Secure Cognitive Systems](http://www.dfki.de/sks) at the German Research Center for Artificial Intelligence Bremen (DFKI-Bremen). It is funded 2010-2011 by the [German Research Council (DFG)](https://www.dfg.de) under grant KO-2428/9-1.
 
-Members of LATIN are [Michael Kohlhase](http://kwarc.info/kohlhase), [Till Mossakowski](http://www.informatik.uni-bremen.de/~till/), [Florian Rabe](http://kwarc.info/frabe/), [Mihai Codescu](http://www.dfki.de/web/forschung/sks/mitarbeiter/base_view?uid=mico01) and [Fulya Horozal](http://kwarc.info/fhorozal/).
+Members of LATIN are [Michael Kohlhase](http://kwarc.info/kohlhase), [Till Mossakowski](https://web.archive.org/web/20140301075753/http://www.informatik.uni-bremen.de/~till/), [Florian Rabe](http://kwarc.info/frabe/), [Mihai Codescu](https://web.archive.org/web/20090908201455/http://www.dfki.de/web/forschung/sks/mitarbeiter/base_view?uid=mico01) and [Fulya Horozal](http://kwarc.info/fhorozal/).
 
 At Jacobs University, also involved are [Christoph Lange](http://kwarc.info/clange/) and [Vyacheslav Zholudev](http://kwarc.info/vzholudev/). Students involved in LATIN are Kristina Sojakova, Stefania Dumbrava, Catalin David, Alin Iacob, Mihnea Iancu, Iulia Ignatov, Corneliu-Claudiu Prodescu, Jonathan von Schroeder and Martha Rohte.
 
@@ -42,10 +42,10 @@ At Jacobs University, also involved are [Christoph Lange](http://kwarc.info/clan
 The following systems and technologies are employed, designed, and/or developed within LATIN:
 
  * the [HETS](http://www.informatik.uni-bremen.de/agbkb/forschung/formal_methods/CoFI/hets/index_e.htm) system (Heterogeneous Tool Set): a logical framework based on model theory and institutions that uses logic translations to mediate between languages and systems (developed at DFKI Bremen),
- * the [Twelf](http://twelf.plparty.org/wiki/Main_Page) system: a logical framework based on proof theory and dependent type theory (developed at Carnegie Mellon University), which we equipped with an MMT-based module system,
+ * the [Twelf](https://web.archive.org/web/20121113211239/http://twelf.org/wiki/Main_Page) system: a logical framework based on proof theory and dependent type theory (developed at Carnegie Mellon University), which we equipped with an MMT-based module system,
  * the [OMDoc](https://omdoc.org) format: an XML-based document format for mathematical content developed at Jacobs University (developed at Jacobs University),
  * the [MMT](https://uniformal.github.io) language and system: a fragment of OMDoc designed as a scalable, foundation-independent module system for mathematical theories (developed at Jacobs University),
- * the [JOBAD](https://jomdoc.omdoc.org/wiki/JOBAD) framework: a !JavaScript library for interactive mathematical documents (developed at Jacobs University).
+ * the [JOBAD](https://web.archive.org/web/20121113221117/http://jomdoc.omdoc.org/wiki/JOBAD) framework: a !JavaScript library for interactive mathematical documents (developed at Jacobs University).
 
 ### LATIN Atlas
 
@@ -109,7 +109,7 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](doc
 
  * F. Rabe, [Representing Isabelle in LF](http://kwarc.info/frabe/Research/rabe_isalf_10.pdf), LFMTP 2010.
 
- * F. Horozal and F. Rabe, [Representing Model Theory in a Type-Theoretical Logical Framework](http://kwarc.info/frabe/Research/HR_folsound_10), Special issue on "Logical and Semantic Frameworks with Applications 8+9", Journal of Theoretical Computer Science, 2011.
+ * F. Horozal and F. Rabe, [Representing Model Theory in a Type-Theoretical Logical Framework](http://kwarc.info/frabe/Research/HR_folsound_10.pdf), Special issue on "Logical and Semantic Frameworks with Applications 8+9", Journal of Theoretical Computer Science, 2011.
 
  * F. Rabe and M. Iancu, [A Formalized Set-Theoretical Semantics of Isabelle/HOL](http://kwarc.info/frabe/Research/RI_isabelle_10.pdf)
 

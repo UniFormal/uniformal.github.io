@@ -44,4 +44,4 @@ Ultimately, MMT is a comprehensive research project about how to organize knowle
 Therefore, it is never complete and can always be improved and extended.
 
 MMT is open to the community, and access to the GitHub repository is given generously.
-Interested developers are advised and encouraged to contact the core [contributors](contributors) directly in the [gitter chatroom](https://gitter.im/UniFormal/MMT).
+Interested developers are advised and encouraged to contact the core contributors directly in the [gitter chatroom](https://gitter.im/UniFormal/MMT).

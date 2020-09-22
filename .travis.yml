@@ -25,7 +25,7 @@ script:
   - bundle exec jekyll build
 
   # Check for broken links and HTML
-  - bundle exec htmlproofer --assume-extension ./_site --url-ignore "/localhost:8080/"
+  - bundle exec htmlproofer --assume-extension ./_site --url-ignore "/localhost:8080/" --url-ignore "/mmt.mathhub.info/"
 
 deploy:
   provider: pages

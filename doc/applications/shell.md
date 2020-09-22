@@ -12,7 +12,7 @@ Each subclass comes with scaladoc and can be best understood by browsing the kno
 The up-to-date context-free grammar for shell commands is part of the constructor parser in the companion object `Action` and can be best understood by reading the source code.
 
 ### ANSI Formatting in the MMT Shell
-Some shell output uses [ANSI escapes](https://en.wikipedia.org/wiki/ANSI_escape_code) for highlighting. To display the formating, you can use [ansicon](https://github.com/adoxa/ansicon) for the windows console or [ansi console](http://mihai-nita.net/2013/06/03/eclipse-plugin-ansi-in-console/) for the eclipse console. (Both are optional and very easy to install and use.) Unix shells should understand it natively.
+Some shell output uses [ANSI escapes](https://en.wikipedia.org/wiki/ANSI_escape_code) for highlighting. To display the formating, you can use [ansicon](https://github.com/adoxa/ansicon) for the windows console or [ansi console](https://web.archive.org/web/20200816075948/http://mihai-nita.net/2013/06/03/eclipse-plugin-ansi-in-console/) for the eclipse console. (Both are optional and very easy to install and use.) Unix shells should understand it natively.
 
 ### MMT Scripts
 An MMT script is a text file containing one shell command per line. (Empty lines are allowed, lines starting with // are ignored.)

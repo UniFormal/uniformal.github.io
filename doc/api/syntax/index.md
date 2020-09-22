@@ -13,14 +13,14 @@ The (simplified) abstract syntax of MMT is:
 *Document Level* | | |
 . | `Doc` | `:= (Thy | Mor)*` | [Documents](narrative)
 *Module Level* | | |
-. | `Thy` | `:= c [:o] = {Dec*}` | [Theories](structural.html#theories)
-. | `Mor` | `:= c : o -> o = {Ass*}` | [Views](structural.html#views)
+. | `Thy` | `:= c [:o] = {Dec*}` | [Theories](../../language/modules.html#theories)
+. | `Mor` | `:= c : o -> o = {Ass*}` | [Views](../../language/modules.html#views)
 *Symbol Level* | | |
-. | `Dec` | `:= c [:o] [=o] [#N]` | [Declarations](structural)
-. | `Ass` | `:= c = o` | Symbol [Assignments](structural.html#constants)
+. | `Dec` | `:= c [:o] [=o] [#N]` | [Declarations]((../../language/declarations.html)
+. | `Ass` | `:= c = o` | Symbol [Assignments]((../../language/declarations.html#constants)
 *Object Level* | | |
 . | `o`   | `:= c | x | c( (x[: o])* ; o* ) | c(STRING)` | [Objects/Terms](objects)
-. | `N`   |   | [Notations](declarations.html#constants)
+. | `N`   |   | [Notations](../../language/declarations.html#constants)
 . | `c`   |   | [URI](uris)
 . | `x`   |   | [Variable](objects)
 

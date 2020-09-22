@@ -15,6 +15,10 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Release planned for 22nd September 2020
 
+- add a standalone `localpaths` build target.
+- fix spurious sms dependency cycles
+- misc. bugfixes and improvements in the build system.
+
 ### Release 19
 
 Released on [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).

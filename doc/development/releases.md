@@ -17,8 +17,9 @@ Release planned for 22nd September 2020
 
 - Overall
    - misc. bugfixes and improvements in the build system.
-   - add a standalone `localpaths` build target.
+   - sbt version increased to 1.3.13
 - sTeX:
+   - add a standalone `localpaths` build target.
    - fix spurious sms dependency cycles
 - [FrameIT](https://kwarc.info/systems/frameit/)
    - almost complete refactoring to make the FrameIT MMT server less dependent on user formalizations

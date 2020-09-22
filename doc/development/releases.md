@@ -11,9 +11,13 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases.
 
+### Release 20
+
+Release planned for 22nd September 2020
+
 ### Release 19
 
-Released planned for about [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
+Released on [13th December 2019](https://github.com/UniFormal/MMT/releases/tag/v19.0.0).
 
 - language features
   - improvements for diagram operators : fixes and extensions to anonymous theories, links, diagrams, as well as several new operators including `PUSHOUT ?thy ALONG ?view` (MMT/urtheories) and logic-specific operators (MMT/LATIN2)
@@ -29,7 +33,7 @@ Released planned for about [13th December 2019](https://github.com/UniFormal/MMT
   
 ### Release 18
 
-Released planned for about [2nd September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
+Released on [4th September 2019](https://github.com/UniFormal/MMT/releases/tag/v18.0.0).
 
 - new language features
   - defined includes and realizations (akin to implementing interfaces), see the [documentation](../language/implicit)

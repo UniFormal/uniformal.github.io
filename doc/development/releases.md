@@ -15,12 +15,18 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Release planned for 22nd September 2020
 
-- add a standalone `localpaths` build target.
-- fix spurious sms dependency cycles
-- misc. bugfixes and improvements in the build system.
-- much work on the ELPI generation code
-- move from Travis CI to GitHub Actions
-- various improvements for GLF/GLIF (integer support, elpi generation, ...)
+- Overall
+   - misc. bugfixes and improvements in the build system.
+   - add a standalone `localpaths` build target.
+- sTeX:
+   - fix spurious sms dependency cycles
+- [FrameIT](https://kwarc.info/systems/frameit/)
+   - almost complete refactoring to make the FrameIT MMT server less dependent on user formalizations
+- GLF/GLIF
+   - much work on the ELPI generation code
+   - various improvements for GLF/GLIF (integer support, elpi generation, ...)
+- repo chores
+   - move from Travis CI to GitHub Actions
 
 ### Release 19
 

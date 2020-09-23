@@ -13,7 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 20
 
-Release planned for 22nd September 2020
+Released on [23rd September 2020](https://github.com/UniFormal/MMT/releases/tag/v20.0.0)
 
 - administrative
    - sbt version increased to 1.3.13

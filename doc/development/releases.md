@@ -15,19 +15,22 @@ This document contains a changelog of existing as well as upcoming releases.
 
 Release planned for 22nd September 2020
 
-- Overall
-   - misc. bugfixes and improvements in the build system.
+- administrative
    - sbt version increased to 1.3.13
-- sTeX:
-   - add a standalone `localpaths` build target.
-   - fix spurious sms dependency cycles
-- [FrameIT](https://kwarc.info/systems/frameit/)
+   - move from Travis CI to GitHub Actions
+- core language and API features
+  - many improvements for diagram operators
+  - parser now supports block notations, within which names are preserved
+  - overhaul of parsing
+  - misc. bugfixes and improvements in the build system
+- integration with sTeX
+  - add a standalone `localpaths` build target.
+  - fix spurious sms dependency cycles
+- use of MMT in [FrameIT](https://kwarc.info/systems/frameit/)
    - almost complete refactoring to make the FrameIT MMT server less dependent on user formalizations
-- GLF/GLIF
+- use of MMT in GLF/GLIF
    - much work on the ELPI generation code
    - various improvements for GLF/GLIF (integer support, elpi generation, ...)
-- repo chores
-   - move from Travis CI to GitHub Actions
 
 ### Release 19
 

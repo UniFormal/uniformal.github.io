@@ -30,9 +30,14 @@ The order of the object-level components is arbitrary. They are seperated by the
 
 A notation is an arbitrary sequence of *tokens*, optionally followed by `prec <precedence>`. 
 
-* Tokens are either strings (representing the notation used in place of the constant name), integers representing argument positions of the constant or special tokens of the form  `%<argument><argument>`.
+* Tokens are either strings (representing the notation used in place of the constant name), integers (from 0 to 9) representing argument positions of the constant or special tokens of the form  `%<argument><argument>`.
 * `<precedence>` is an arbitrary integer signifying the precedence (i.e. binding strength) of the notation.
-* Of the special tokens there are presently two varieties: `%I<integer>` replaces an argument position `integer` and indicates that it is implicit; `%R<string>` replaces any string-token and indicates that the corresponding notation is right-associative.
+* Of the special tokens there are presently the following varieties: 
+
+  * `%I<integer>` replaces an argument position `integer` and indicates that it is implicit; 
+  * `%R<string>` replaces any string-token and indicates that the corresponding notation is right-associative (by default connectives are left associative).
+  * `%D<string>` escapes reserved symbols. E.g to obtain the notation `%` one uses the token `%D%`^ (Note that `%R\<argument\>` also escapes `argument`). 
+ * There is also experimental support for flexary notation, for details see [Issue #516](https://github.com/UniFormal/MMT/issues/516).
 
 This allows for almost arbitrary notation definitions. 
 

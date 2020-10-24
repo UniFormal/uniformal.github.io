@@ -44,7 +44,7 @@ At first sight, that may look like a violation of the commutativity condition. B
 Defined includes are particularly relevant in structures and views l from T to U where T contains an undefined include from S.
 Instead of defining assignments individually for all declarations of S, l can simply include an existing morphism from S to U. This is done by declaring a defined include of S in l. 
 
-# Views an also be implicit
+# Views can also be implicit
 
 Thus, from the perspective of T, an implicit morphism m out of S and a defined includes of S with definiens m are equivalent. 
 However, implicit morphisms are even more powerful: we can add implicit morphisms into T even from the outside, i.e., when T has already been defined.
@@ -70,17 +70,87 @@ In that case, a better solution is for T to double as a view from S to itself.
 In that case, the body of T contains all the assignments that would otherwise be placed into the body of v.
 Inside T, they behave like normal (defined) constants.
 Additionally, we put the declaration *realize S* before those assignments.
-This can be seen as a postulated include: we promise that at the end of T, the identity map will be a well-formed morphism from S to T (which requires T to contain the same as a view out of S, namely a definition for every name in the interface of S).
+This can be seen as a postulated include: we promise that at the end of T, the identity map will be a well-formed morphism from S to T.
+This requires T to contain the same as a view out of S, namely a definition for every name in the interface of S. Thus, we can think of T itself as a morphism from S to T.
 
 In programming language terms, realizations can be seen as interface implementations.
 For example, MMT's includes and realizations roughly correspond to Java's *extends* and *implements* declarations and to ML's signature inclusions and signature type ascriptions.
 
-In most situations, realizations behave in the same way as includes.
-In particualr, realizations are also implicit morphisms.
+In most situations, realizations behave in the same way as plain includes.
+In particular, realizations are also implicit morphisms.
 However, while an include induces an implicit morphism immediately, a realization only does so at the end of the containing theory.
 
-Like includes, realizations can also be defined.
+Like plain includes, realizations can also be defined.
 Here, we promise a realization and provide its witness directly.
 That is essentially the same as declaring a defined include.
-Therefore, defined realizations usually make no sense in user syntax.
-(They may be generated, however, during flattening when multiple realizations are composed.)
+The only difference is that the definiens of a defined include must be well-typed at that point, whereas the definiens of a defined realization must be well-typed only at the end of the containing theory.
+Thus, the definiens of a defined realization in T may refer to some other realization of T.  
+Defined realizations usually make no sense in user syntax.
+But they are needed for includes to be closed under composition: if R is realized by S and S is realized by T, then flattening of T generates a defined realization of R, whose definiens is the composition of the two realizations.
+
+# Systematic Treatment of Includes
+
+## Classification
+
+We classifiy includes from S to T in two binary dimensions:
+* status
+  * axiomatic:
+    * makes S available to T by definition
+    * all primitives/axioms of S are thus in T
+    * akin to an extension of S by T in OOP
+  * assertive:
+    * states a theorem that S is available to T
+    * later declarations must provide the proof, by declaring defined constants
+    * akin to an implementation in OOP
+* definition
+  * primitive/undefined
+    * changes the containing theory by adding or requiring declarations
+    * akin to inheritance in OOP
+  * defined
+    * conservative, makes an existing morphism from S to T available anonymously
+    * akin to a delegation in OOP
+
+We use the following names for the 4 combinations:
+* primitive, axiomatic: include or (if necessary to disambiguate) plain include
+* primitive, assertive: realization
+* defined, axiomatic: defined include
+* defined, assertive: defined realization
+
+## Composition
+
+When flattening, MMT adds all includes to T that arise by composing includes.
+
+This is easiest to make precise by treating every include of S in T as a morphism:
+* plain include: the identity morphism of S
+* realization: T (as if T were a view from S to T)
+* defined include or realization: the definiens
+
+Now to compose two includes i from R to S and j from S to T, we compose the corresponding morphisms to m and simplify m.
+Then we undo the above correspondence, i.e., if m simplifies to:
+* an identity of R: a plain include
+* anything else: m is the definiens of
+  * a defined realization if j is a realization
+  * a defined include otherwise
+
+This yields the following table of 9 cases: 
+Because of the different kinds of includes, we have to disitinguish the following 9 cases: 
+
+|i: R to S |j: S to T| status ... | and definiens of composition: R to T | remark
+---------
+plain | plain  | ax. | prim. | transitive closure of plain includes
+plain | real.  | ass.| prim. | to realize S, T must also realize R
+plain | def. m'| ax. | m' restricted to R | m' already maps R as well, just needs to be restricted
+real. | plain  | ax. | S     | from the outside, S acts like a view R to S, so can be used as definiens
+real. | real.  | ass.| S;T   | see below
+real. | def. m'| ax. | S; m' |
+def. m | plain | ax. | m     | m is also morphism into T
+def. m | real. | ass.| m; T  | see below
+def. m | def. m'| ax.| m;m'  |
+
+In the two cases where T occurs in the definiens of the composition, the resulting declaration is a defined realization.
+This is necessary because the definiens is only total at the end of T.
+Thus, the generated declaration may be used in subsequent declarations only if it is defined for its arguments.
+
+In the table above, we do not have to consider the case where i or j is a defined realization because:
+* A defined realization in a finished theory acts in the same way as a defined include. So if i is defined, it does not matter if it is an include or a realization.
+* j is the include that we are flattening. There is no use for it to be a defined realization in practice. Defined realizations are only introduced during flattening. 

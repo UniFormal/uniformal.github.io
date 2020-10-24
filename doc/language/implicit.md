@@ -94,11 +94,11 @@ But they are needed for includes to be closed under composition: if R is realize
 
 We classifiy includes from S to T in two binary dimensions:
 * status
-  * axiomatic:
+  * axiomatic
     * makes S available to T by definition
     * all primitives/axioms of S are thus in T
     * akin to an extension of S by T in OOP
-  * assertive:
+  * assertive
     * states a theorem that S is available to T
     * later declarations must provide the proof, by declaring defined constants
     * akin to an implementation in OOP
@@ -118,22 +118,21 @@ We use the following names for the 4 combinations:
 
 ## Composition
 
-When flattening, MMT adds all includes to T that arise by composing includes.
+When flattening T, MMT adds all includes to T that arise by composing includes.
 
-This is easiest to make precise by treating every include of S in T as a morphism:
+This is easiest to make precise by working with the morphism expressions corresponding to each include declaration of S in T:
 * plain include: the identity morphism of S
-* realization: T (as if T were a view from S to T)
+* plain realization: T (used as if T were a view from S to T)
 * defined include or realization: the definiens
 
-Now to compose two includes i from R to S and j from S to T, we compose the corresponding morphisms to m and simplify m.
+Now to compose two includes i from R to S and j from S to T, we compose the corresponding morphism expressions, say resulting in m, and simplify m.
 Then we undo the above correspondence, i.e., if m simplifies to:
 * an identity of R: a plain include
 * anything else: m is the definiens of
-  * a defined realization if j is a realization
+  * a defined realization if m refers to a realization into T
   * a defined include otherwise
 
-This yields the following table of 9 cases: 
-Because of the different kinds of includes, we have to disitinguish the following 9 cases: 
+The following table shows the 9 possible cases: 
 
 |i: R to S |j: S to T| status ... | and definiens of composition: R to T | remark
 |-----|--------|-----|-------|----
@@ -148,12 +147,13 @@ def. m | real. | ass.| m; T  | see below
 def. m | def. m'| ax.| m;m'  |
 
 Note that the composition is defined if i or j is or if i is a realization (which can be treated as if defined from outside S).
-
 And the composition is a realization iff j is.
-In particular, in the two cases where T occurs in the definiens of the composition, the resulting declaration is a defined realization.
-This is necessary because the definiens is only total at the end of T.
-Thus, the generated declaration may be used in subsequent declarations only if it is defined for its arguments.
 
-We do not have to consider the cases where i or j is a defined realization because:
+In particular, in the two cases where T occurs in the definiens of the composition, the resulting declaration is a defined realization.
+This is necessary because the definiens refers to T, i.e., another realization into T, and therefore is only total at the end of T.
+Thus, the generated declaration may be applied to an expression from R in subsequent declarations only if it is already defined for its argument at that point.
+This is critical to avoid unintended cyclic reasoning, where a realization of S immediately generates a defined realization of R and then later declarations use that access to R in order to define S.
+
+But we do not have to consider the cases where i or j is a defined realization because:
 * A defined realization in a finished theory acts in the same way as a defined include. So if i is defined, it does not matter if it is axiomatic or assertive.
 * j is the include that we are flattening. There is no use for j to be a defined realization in practice as defined realizations are only introduced during flattening. 

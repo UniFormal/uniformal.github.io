@@ -147,10 +147,13 @@ def. m | plain | ax. | m     | m is also morphism into T
 def. m | real. | ass.| m; T  | see below
 def. m | def. m'| ax.| m;m'  |
 
-In the two cases where T occurs in the definiens of the composition, the resulting declaration is a defined realization.
+Note that the composition is defined if i or j is or if i is a realization (which can be treated as if defined from outside S).
+
+And the composition is a realization iff j is.
+In particular, in the two cases where T occurs in the definiens of the composition, the resulting declaration is a defined realization.
 This is necessary because the definiens is only total at the end of T.
 Thus, the generated declaration may be used in subsequent declarations only if it is defined for its arguments.
 
-In the table above, we do not have to consider the case where i or j is a defined realization because:
-* A defined realization in a finished theory acts in the same way as a defined include. So if i is defined, it does not matter if it is an include or a realization.
-* j is the include that we are flattening. There is no use for it to be a defined realization in practice. Defined realizations are only introduced during flattening. 
+We do not have to consider the cases where i or j is a defined realization because:
+* A defined realization in a finished theory acts in the same way as a defined include. So if i is defined, it does not matter if it is axiomatic or assertive.
+* j is the include that we are flattening. There is no use for j to be a defined realization in practice as defined realizations are only introduced during flattening. 

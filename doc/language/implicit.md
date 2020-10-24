@@ -156,4 +156,32 @@ This is critical to avoid unintended cyclic reasoning, where a realization of S 
 
 But we do not have to consider the cases where i or j is a defined realization because:
 * A defined realization in a finished theory acts in the same way as a defined include. So if i is defined, it does not matter if it is axiomatic or assertive.
-* j is the include that we are flattening. There is no use for j to be a defined realization in practice as defined realizations are only introduced during flattening. 
+* j is the include that we are flattening. There is no use for j to be a defined realization in practice as defined realizations are only introduced during flattening.
+
+## Conflicting Include Paths
+
+A theory T may include R in at most one way (primitive or defined, axiomatic or assertive).
+This is because the include makes all declarations of R available unqualified.
+So multiple different includes would be in conflict.
+
+If we only have plain includes, that is easy as it amounts to taking the transitive closure.
+But in the presence of realizations and defined includes, conflicts may arise when there is more than one include path from R to T
+This typically happens in diamond situations where R is included into S and S', which are then both included into T.
+
+During flattening, MMT computes all composed include paths and verifies that the corresponding morphisms are equal.
+If so, the latter include is dropped as being redundant.
+If not, an error is reported.
+
+Here the order of includes is the order in which they occur in T.
+MMT flattens every include i of S in T and by composing it with every include into S and inserts the generated includes after i.
+The order is relevant because the declarations included by i can already be used in the declarations between i and a later include with the same domain.
+
+There is one relaxation though.
+If the later include i2 of R is primitve, it can often be dropped even if an earlier include i1 of R has a different kind or a definition.
+This is justified because:
+* If i2 is a realization, the promise of i2 is trivial because it has already been fulfilled by i1.
+* If i2 is a plain include and i1 already provides a definition m, dropping i2 amounts to implicitly instantiating all R-constants in the domain of i2 via m.
+
+The only exception is when i1 is a realization and i2 is a plain include.
+This must be forbidden: The domain of i2 (which includes R) may already use R, and it would be a dependency cycle if T later used those to realize R.
+If the realization of R in T is already total at this point, one could drop i2. But that is not implemented; a simple workaround is to split T into two theories, one which contains i1 and realizes R, and one which contains i2. In that case, i1 appears as defined and i2 is dropped. 

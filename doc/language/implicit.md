@@ -136,7 +136,7 @@ This yields the following table of 9 cases:
 Because of the different kinds of includes, we have to disitinguish the following 9 cases: 
 
 |i: R to S |j: S to T| status ... | and definiens of composition: R to T | remark
----------
+|-----|--------|-----|-------|----
 plain | plain  | ax. | prim. | transitive closure of plain includes
 plain | real.  | ass.| prim. | to realize S, T must also realize R
 plain | def. m'| ax. | m' restricted to R | m' already maps R as well, just needs to be restricted

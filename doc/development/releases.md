@@ -100,10 +100,10 @@ Released on [23rd March 2019](https://github.com/UniFormal/MMT/releases/tag/v16.
 
 - New primitive concept of derived modules (in analogy to derived declarations)
 - New declaration objects for diagrams and diagram operators ([paper](https://kwarc.info/people/frabe/Research/RS_diagops_19.pdf))
-- New importer for Coq library, based Sacerdoti Coen's XML export [paper](https://kwarc.info/people/mkohlhase/submit/cicm19-coq.pdf)
+- New importer for Coq library, based Sacerdoti Coen's XML export [paper](http://www.cs.unibo.it/~sacerdot/cicm19/xmlexport.pdf)
 - Improvements to MMTTeX for putting MMT syntax into LaTeX files
 - First version of database generator for schemas written as MMT theories [MBGen](https://kwarc.info/people/mkohlhase/submit/cicm19-MDH.pdf)
-- First version of theory generalization (see [here](https://uniformal.github.io/doc/applications/intellij.html#using-the-generalizer))
+- First version of theory generalization (see [here](../../doc/applications/intellij/refactoring-tools.html#generalizer))
 - Improvements to the [Jupyter Kernel](https://github.com/UniFormal/mmt_jupyter_kernel)
 - Improvements for TGView, ported to TypeScript in [an external repository](https://github.com/Uniformal/TGView)
 - Much improved documentation of package objects in mmt-api (can serve as entry points for reading API doc)

@@ -66,7 +66,7 @@ See the corresponding section on [metadata for declarations](declarations.html#m
 
 The semantics of the large scale structure of developments in MMT is computed in the category of theories and theory **morphisms**.
 
-Atomic morphisms can be declared in two ways: via [views](modules.html#Views) and [structures](declarations.html#Structures).
+Atomic morphisms can be declared in two ways: via [views](modules.html#views) and [structures](declarations.html#structures).
 Complex morphisms can be built in particular using composition.
 
 #### Implicit Morphisms

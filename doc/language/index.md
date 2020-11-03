@@ -35,8 +35,8 @@ All 4 levels are interconnected through the use of identifiers: the [MMT URI](ur
   The module system permits combining, translating, instantiating modules. The semantics of the module system is defined by *flattening*, i.e., computing the induced body.
   
 * [**Symbols**](declarations): Symbols are the smallest fragments of a document that have semantically relevant [identifiers](uris).
-  * [*Constants*](declarations.html#Constants) represent named atomic mathematical objects such as function symbols, predicate symbols, sort/type symbols, axioms, theorems, judgments, inference rules.
-  * [*Structures*](declarations.html#Structures) are instantiations of other modules.
+  * [*Constants*](declarations.html#constants) represent named atomic mathematical objects such as function symbols, predicate symbols, sort/type symbols, axioms, theorems, judgments, inference rules.
+  * [*Structures*](declarations.html#structures) are instantiations of other modules.
 
 * [**Objects**](objects): Objects differ from the other levels in that they do not have an MMT URI.
   They are mathematical expressions formed from

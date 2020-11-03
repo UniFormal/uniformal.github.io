@@ -39,7 +39,7 @@ The documentation contains:
 <table class="none">
 <tr>
 <td>
-  <img src="https://kwarc.info/public/dfg_logo.svg" width="128">
+  <img src="https://kwarc.info/public/dfg_logo.svg" width="128" alt="Logo of DFG">
 </td>
 <td>
   MMT was partially supported by the DFG project <a href="https://kwarc.info/projects/oaf/">OAF</a>
@@ -48,7 +48,7 @@ The documentation contains:
 </tr>
 <tr>
 <td>
-  <img src="http://opendreamkit.org/public/logos/Flag_of_Europe.svg" width="128">
+  <img src="http://opendreamkit.org/public/logos/Flag_of_Europe.svg" width="128" alt="Flag of the European Union">
 </td>
 <td>
   MMT was partially supported by the Horizon 2020 European Research Infrastructure project
@@ -67,4 +67,4 @@ Therefore, this documentation is occasionally incomplete or outdated.
 We are committed to maintaining robust work flows for releasing, documenting, and bug-tracking to support large-scale applications.
 But that takes effort, and we prioritize according to the concrete research projects we are involved in.
 
-If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](https://kwarc.info/frabe/contact). 
+If you have any questions or feedback -- for example, if you want your particular use case to be better documented -- don't hesitate to contact me [directly](https://kwarc.info/people/frabe/contact.html). 

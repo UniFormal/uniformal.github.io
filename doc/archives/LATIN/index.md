@@ -115,6 +115,6 @@ A SVG image of the current snapshot of the LATIN *graph* is available [here](doc
 
  * F. Horozal and F. Rabe, [Representing Model Theory in a Type-Theoretical Logical Framework](http://kwarc.info/frabe/Research/HR_folsound_09.pdf), Fourth Workshop on Logical and Semantic Frameworks, with Applications, 2009.
 
- * F. Rabe and C. Schürmann, [A Practical Module System for LF](http://kwarc.info/frabe/Research/RS_lf_09.pdf) the Twelf instantiation of the MMT module system, LFMTP 2009.
+ * F. Rabe and C. Schürmann, [A Practical Module System for LF](http://kwarc.info/frabe/Research/RS_twelfmod_09.pdf) the Twelf instantiation of the MMT module system, LFMTP 2009.
 
  * S. Dumbrava, F. Horozal, and K. Sojakova, [A Case Study on Formalizing Algebra in a Module System](http://kwarc.info/frabe/Research/DHS_case-study_09.pdf), MLPA 2009. 

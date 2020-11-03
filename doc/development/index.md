@@ -23,7 +23,7 @@ The best to reach the main developers for support is via the [gitter chatroom](h
 
 ### Developing new applications on top of MMT
 
-The MMT code (written in Scala) is designed to be as [extensible](extend) and customizable as possible.
+The MMT code (written in Scala) is designed to be as [extensible](../api/extensions/index) and customizable as possible.
 Therefore, you can build your own applications on top of MMT (without recompiling MMT).
 
 MMT-based applications can be written in two ways:

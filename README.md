@@ -4,7 +4,7 @@
 
 This repository contains the homepage and documentation of the [MMT system](https://kwarc.info/systems/mmt/).
 
-It is built and served by GitHub pages (i.e. based on Jekyll) <https://uniformal.github.io/>.
+It is built and served by GitHub pages (i.e. based on Jekyll) <https://uniformal.github.io/>. Moreover, independently, some linting is performed via GitHub actions, which checks for dead links among other things.
 
 ## Issues
 

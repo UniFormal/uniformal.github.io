@@ -1,14 +1,14 @@
-[![Build Status](https://github.com/UniFormal/uniformal.github.io/workflows/Lint/badge.svg)](https://travis-ci.com/UniFormal/uniformal.github.io) | Deployed docs: <https://uniformal.github.io/>
+[![Build Status](https://github.com/UniFormal/uniformal.github.io/workflows/Lint/badge.svg)](https://travis-ci.com/UniFormal/uniformal.github.io)
 
-# UniFormal Documentation
+# UniFormal Documentation: <https://uniformal.github.io/>
 
-This repository contains the MMT homepage and documentation.
+This repository contains the homepage and documentation of the [MMT system](https://kwarc.info/systems/mmt/).
 
-It is built with Jekyll and served by GitHub at <https://uniformal.github.io/>.
+It is built and served by GitHub pages (i.e. based on Jekyll) <https://uniformal.github.io/>.
 
 ## Issues
 
-Please report any issues with the documentation in the [main MMT issue tracker](https://github.com/UniFormal/MMT/issues/new).
+Please report any issues with the documentation in the [main MMT issue tracker](https://github.com/UniFormal/MMT/issues/new) with the "documentation" label.
 
 ## How to contribute, build and format pages
 

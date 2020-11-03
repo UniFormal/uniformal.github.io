@@ -1,0 +1,22 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+            ruby-version: '2.6'
+      - name: Install Pygments
+        run: pip3 install Pygments
+      - name: Install gem packages
+        run: |
+            gem install bundler
+            bundler install
+      - name: Build Page
+        run: bundle exec jekyll build
+      - name: Run htmlproofer
+        run: bundle exec htmlproofer --assume-extension ./_site --url-ignore "/localhost:8080/,/mmt.mathhub.info/,/omdoc.org/"

@@ -18,6 +18,12 @@ Currently substantial contributions are being made by [Dennis Müller](https://g
 
 **Interactive sources of help:** (i.e. with humans answering)
 
+- The [MMT channel on KWARC' MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt). All questions related to MMT are welcome &mdash; from end user to API developer, from broad to very specific. With your GitHub account, you can coin with three clicks: first click on *GitLab* redirecting you to our internal GitLab instance <https://gl.kwarc.info>, there click on *GitHub*, and finally confirm this action in the appearing dialog.
+
+- [StackOverflow with mmt tag](https://stackoverflow.com/questions/tagged/mmt) (great for pin-pointed questions of general interest, e.g. recurring beginner questions)
+
+     In case you don't get an answer there, feel free to remind us by sending a link to the StackOverflow question on the MMT MatterMost channel above.
+
 - Mailing lists (great for longer "big picture" questions)
 
   -  [mmt-users@kwarc.info](http://lists.informatik.uni-erlangen.de/mailman/listinfo/mmt-users)
@@ -26,13 +32,8 @@ Currently substantial contributions are being made by [Dennis Müller](https://g
 
   - [mmt-dev@kwarc.info](http://lists.informatik.uni-erlangen.de/mailman/listinfo/mmt-dev)
 
-     Communication between developments. More traffic and more technical.
+     Communication between developments. More traffic and more technical.    
 
-- [StackOverflow with mmt tag](https://stackoverflow.com/questions/tagged/mmt) (great for pin-pointed questions of general interest, e.g. recurring beginner questions)
-
-     In case you don't get an answer there, feel free to remind us by sending a link to the StackOverflow question to one of the mailing lists above.
-     
-- The [KWARC MatterMost](https://mattermost.kwarc.info/). This open-source slack alternative is where a lot of internal discussion happens, but it also has a number of public channels (e.g. for MMT development, MMT formalisations, the IntelliJ Plugin, ...) that anyone can join and participate in.
 
 ## How to contribute code/feature requests/report bugs
 

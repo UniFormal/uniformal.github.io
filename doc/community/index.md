@@ -18,7 +18,7 @@ Currently substantial contributions are being made by [Dennis Müller](https://g
 
 **Interactive sources of help:** (i.e. with humans answering)
 
-- The [MMT channel on KWARC' MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt). All questions related to MMT are welcome &mdash; from end user to API developer, from broad to very specific. With your GitHub account, you can coin with three clicks: first click on *GitLab* redirecting you to our internal GitLab instance <https://gl.kwarc.info>, there click on *GitHub*, and finally confirm this action in the appearing dialog.
+- The [MMT channel on our MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt). All questions related to MMT are welcome &mdash; from end user to API developer, from broad to very specific. With your GitHub account, you can coin with three clicks: first click on *GitLab* redirecting you to our internal GitLab instance <https://gl.kwarc.info>, there click on *GitHub*, and finally confirm this action in the appearing dialog.
 
 - [StackOverflow with mmt tag](https://stackoverflow.com/questions/tagged/mmt) (great for pin-pointed questions of general interest, e.g. recurring beginner questions)
 

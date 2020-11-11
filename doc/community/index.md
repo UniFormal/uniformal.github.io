@@ -16,9 +16,11 @@ Currently substantial contributions are being made by [Dennis Müller](https://g
 - [*this* very documentation website](https://uniformal.github.io/)
 - [the wiki](https://github.com/UniFormal/uniformal.github.io/wiki) containing fixes for common error messages, some FAQs, and miscellaneous helpful blobs of information that are not quite relevant or polished enough for the above documentation website.
 
-**Interactive sources of help:** (i.e. with humans answering)
+**Interactive sources of help:** (with humans answering; from most active)
 
-- The [MMT channel on our MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt). All questions related to MMT are welcome &mdash; from end user to API developer, from broad to very specific. With your GitHub account, you can coin with three clicks: first click on *GitLab* redirecting you to our internal GitLab instance <https://gl.kwarc.info>, there click on *GitHub*, and finally confirm this action in the appearing dialog.
+- **recommended for newcomers:** The [MMT channel on our MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt). All questions related to MMT are welcome &mdash; from end users to API developers, from broad to very specific. With your GitHub account, you can easily join: at the previous link, first click on *GitLab* redirecting you to our internal GitLab instance <https://gl.kwarc.info>, there click on *GitHub*, and finally confirm this action in the appearing dialog.
+
+  Among others, we also have a dedicated channel for [Math Formalizations in MMT](https://mattermost.kwarc.info/kwarc/channels/math-formalization-in-mmt). Feel free to join such rooms at our MatterMost instance.
 
 - [StackOverflow with mmt tag](https://stackoverflow.com/questions/tagged/mmt) (great for pin-pointed questions of general interest, e.g. recurring beginner questions)
 

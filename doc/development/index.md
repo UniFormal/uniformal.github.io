@@ -16,10 +16,10 @@ Therefore, users can use MMT directly by defining their desired language in MMT:
 * MMT is an extensible language where operators, typing rules, etc. can be added declaratively,
 * MMT's rule-based algorithms can be customized by supplying new rules for, e.g., parsing, type-checking, etc.
 
-MMT includes several main [applications] that are ready-to-use.
-User-oriented documentation is growing, and good starting points are the [setup] instructions and the [tutorials].
+MMT includes several main [applications](../applications/index) that are ready-to-use.
+User-oriented documentation is growing, and good starting points are the [setup](../setup/index) instructions and the [tutorials](../tutorials/index).
 
-The best to reach the main developers for support is via the [gitter chatroom](https://gitter.im/UniFormal/MMT).
+There are multiple ways to [reach the main developers for support](../community/index). The best way is generally via the [MMT channel on our MatterMost instance](https://mattermost.kwarc.info/kwarc/channels/mmt).
 
 ### Developing new applications on top of MMT
 
@@ -44,4 +44,4 @@ Ultimately, MMT is a comprehensive research project about how to organize knowle
 Therefore, it is never complete and can always be improved and extended.
 
 MMT is open to the community, and access to the GitHub repository is given generously.
-Interested developers are advised and encouraged to contact the core contributors directly in the [gitter chatroom](https://gitter.im/UniFormal/MMT).
+Interested developers are advised and encouraged to contact the core contributors directly in the [MMT MatterMost channel](https://mattermost.kwarc.info/kwarc/channels/mmt).

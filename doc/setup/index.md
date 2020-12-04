@@ -46,7 +46,7 @@ Some users or applications require running MMT from CLI. If you only want to use
 
    This triggers the setup dialog which does the following:
 
-   1. asks for a directory into which *a* MMT user folder should be installed,
+   1. asks for a directory into which *an* MMT user folder should be installed,
    2. checks out some example content repositories into that directory (requires git and internet access),
    3. determines the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
 

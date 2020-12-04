@@ -31,6 +31,9 @@ If you want to formalize things in MMT's language ("MMT surface syntax") with pr
 3. [Install the MMT plugin](https://uniformal.github.io/doc/applications/intellij/)
 4. In IntelliJ you can now create (and open existing) "MathHub projects".
 
+   Every MathHub project stores the path to an `mmt.jar` in its project files.
+   Hence, if you are a developer and made changes to the MMT repository you cloned above, do not expect those changes to be reflected when working with the MMT plugin. You need to rebuild an `mmt.jar` first. Beware that you need to reopen IntelliJ for the file overwriting of `mmt.jar` to be possible and to take effect.
+
 Alternatively &mdash; not recommended to beginners, you can still use [jEdit](http://www.jedit.org/) as your development IDE. See [this article describing the setup of jEdit with MMT](jedit).
 
 ### Step 3: Running MMT from CLI

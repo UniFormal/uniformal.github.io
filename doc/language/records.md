@@ -15,12 +15,11 @@ The structural feature **record** for inductive types can be used to define reco
 
 The syntax for a derived declaration of the record feature looks as follows:
 
-<!--![-->`record <name>(<parameter list>) \US = 
-<out1>: <args1> &rightarrow <tp1> \RS
+`record <name>(<parameter list>)` ![`\US`](../img/US.png) = 
+<br>`<out1>: <args1> &rightarrow <tp1>` ![`\RS`](../img/RS.png)
 ...
-
-<outn>: <argsn> &rightarrow <tpn> \RS
-\GS`<!-- ](/doc/img/inductSyntax.png)-->
+<br>`<outn>: <argsn> &rightarrow <tpn>` ![`\RS`](../img/RS.png)
+![`\GS`](../img/GS.png)
 
 Here we have the outgoing declarations <out1>, ..., <outn> defining the names <out1>, ..., <outn> and types <tp1>, ..., <tpn> of the record fields. The types <tp1>, ..., <tpn> may depend on the parameters given in <parameter list> (similar to theory parameters). 
 
@@ -37,11 +36,10 @@ There is an additional convenience feature **record_term** to construct instance
 
 The syntax for a derived declaration of a record_term is as follows:
 
-<!--![-->`record <name>(<parameter list>): <recTp>(<parameters for recTp>) \US = 
-<out1> \US = <def1> \RS
+`record <name>(<parameter list>): <recTp>(<parameters for recTp>) ![`\US`](../img/US.png) = 
+<br>`<out1> \US = <def1>` ![`\RS`](../img/RS.png)
 ...
-
-<outn>\US = <defn> \RS
-\GS`<!-- ](/doc/img/inductSyntax.png)-->
+<br>`<outn>\US = <defn>` ![`\RS`](../img/RS.png)
+![`\GS`](../img/GS.png)
 
 Here we have the outgoing declarations <out1>, ..., <outn> defining the values <def1>, ..., <defn> of the record fields. These values, as well as the values in <parameters for recTp> may depend on the parameters given in <parameter list>. 

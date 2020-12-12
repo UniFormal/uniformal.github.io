@@ -37,9 +37,9 @@ There is an additional convenience feature **record_term** to construct instance
 The syntax for a derived declaration of a record_term is as follows:
 
 `record <name>(<parameter list>): <recTp>(<parameters for recTp>)` ![`\US`](../img/US.png) = 
-<br>`<out1> \US = <def1>` ![`\RS`](../img/RS.png)
+<br>`<out1>` ![`\US`](../img/US.png) = `<def1>` ![`\RS`](../img/RS.png)
 <br>...
-<br>`<outn>\US = <defn>` ![`\RS`](../img/RS.png)
+<br>`<outn>` ![`\US`](../img/US.png)  = `<defn>` ![`\RS`](../img/RS.png)
 <br>![`\GS`](../img/GS.png)
 
 Here we have the outgoing declarations <out1>, ..., <outn> defining the values <def1>, ..., <defn> of the record fields. These values, as well as the values in <parameters for recTp> may depend on the parameters given in <parameter list>. 

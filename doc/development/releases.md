@@ -11,6 +11,14 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases.
 
+### Upcoming Release 21
+
+Draft:
+
+- syntax presenter fixes + SytaxPresenterServer (by Navid; I have screenshots for the latter)
+- Diagram Operators: general framework + many operators implemented (mostly universal algebra) (by Navid)
+- FrameIT: some minor bug fixes to get our demo fully running + perf improvements (by Navid)
+
 ### Release 20
 
 Released on [23rd September 2020](https://github.com/UniFormal/MMT/releases/tag/v20.0.0)

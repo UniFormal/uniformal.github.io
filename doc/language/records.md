@@ -16,9 +16,9 @@ The structural feature **record** for inductive types can be used to define reco
 The syntax for a derived declaration of the record feature looks as follows:
 
 `record <name>(<parameter list>)` ![`\US`](../img/US.png) = 
-<br>`<out1>: <args1> &rightarrow <tp1>` ![`\RS`](../img/RS.png)
+<br>`<out1>: <args1> ⟶ <tp1>` ![`\RS`](../img/RS.png)
 <br>...
-<br>`<outn>: <argsn> &rightarrow <tpn>` ![`\RS`](../img/RS.png)
+<br>`<outn>: <argsn> ⟶ <tpn>` ![`\RS`](../img/RS.png)
 <br>![`\GS`](../img/GS.png)
 
 Here we have the outgoing declarations `<out1>`, ..., `<outn>` defining the names `<out1>`, ..., `<outn>` and types `<tp1>`, ..., `<tpn>` of the record fields. The types `<tp1>`, ..., `<tpn>` may depend on the parameters given in `<parameter list>` (similar to theory parameters). 

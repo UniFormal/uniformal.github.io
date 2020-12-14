@@ -16,6 +16,8 @@ This document contains a changelog of existing as well as upcoming releases.
 - Syntax Presenter: component in MMT reconstructing MMT surface syntax from in-memory content of MMT knowledge items
   - various fixes to now output well-indented and parsable MMT syntax
   - added SytaxPresenterServer (by Navid; I have screenshots for the latter)
+  
+  <a href="https://raw.githubusercontent.com/UniFormal/uniformal.github.io/821e6aba9b96fd0a368945a216e2cc448b72265a/img/syntaxpresenterserver.png"><img src="https://raw.githubusercontent.com/UniFormal/uniformal.github.io/821e6aba9b96fd0a368945a216e2cc448b72265a/img/syntaxpresenterserver.png" width="400" alt="Screenshot of the MMT Syntax Presenter Server displaying highlighted MMT surface syntax at localhost:8080/:syntax?element=<mmt path>" /></a>
 - Diagram Operators: operators acting on diagrams of MMT theories and views as input
   - based on accepted paper [Structure-Preserving Diagram Operators](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf) by Navid Roux and Florian Rabe
   - implemented universal algebra operators: among others, the added operators `Hom`, `Sub`, `Quot` take SFOL-theories (e.g. `Magma`, `Monoid`, `Group`, ...) and output the theories of homomorphisms (of magmas, monoids, groups, ...), substructures, and quotients, respectively.

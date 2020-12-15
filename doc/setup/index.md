@@ -17,7 +17,7 @@ title: Setting up MMT
 2. Install [git](https://git-scm.com/) (check `git --help` works)
 3. Install [sbt](https://www.scala-sbt.org/)
 4. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/) (if you want to later use the MMT plugin, get a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions); tldr: a non-beta version)
-5. `git clone --branch devel https://github.com/UniFormal/MMT.git`
+5. `git clone https://github.com/UniFormal/MMT.git`, then `cd MMT`, `git fetch --all`, `git checkout devel`
 6. Import a new IntelliJ project from `mmt/src` (choose "SBT").
 
 In case you want to compile MMT to a self-contained single binary `mmt.jar`, refer to [building `mmt.jar` with SBT here](https://uniformal.github.io/doc/setup/sbt).

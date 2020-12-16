@@ -19,7 +19,9 @@ This document contains a changelog of existing as well as upcoming releases.
 - [Diagram Operators](../language/diagrams): operators acting on diagrams of MMT theories and views, and outputting new diagrams
   - based on accepted paper [Structure-Preserving Diagram Operators](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf) by Navid Roux and Florian Rabe
   - implemented general framework
-  - implemented operators: `Hom`, `Sub`, and `Cong` from universal algebra, which take diagrams of SFOL-theories as input (e.g. the algebraic hierarchy consisting of `Magma`, `Monoid`, `Group`, ...) and output the diagram enriched with theories for homomorphisms, substructures, and congruences, respectively, for *all* input theories, respectively ([see output diagram here](../language/diagrams))
+  - implemented operators:
+     - universal algebra: `Hom`, `Sub`, and `Cong` from universal algebra, which take diagrams of SFOL-theories as input (e.g. the algebraic hierarchy consisting of `Magma`, `Monoid`, `Group`, ...) and output the diagram enriched with theories for homomorphisms, substructures, and congruences, respectively, for *all* input theories, respectively ([see output diagram here](../language/diagrams))
+     - an operator to perform theory intersections along (partial) views for refactoring purposes: [see here](../language/diagrams).
 - [FrameIT Project](https://uframeit.github.io/)
   - big performance improvements of the FrameIT MMT Server
   - several minor bug fixeserf improvements

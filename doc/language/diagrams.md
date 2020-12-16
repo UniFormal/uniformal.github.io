@@ -19,3 +19,110 @@ Similar automatic derivations are possible for the theories of substructures and
 The following diagram pictures all theories *and* views that can be generated from a single SFOL theory `X` by means of the diagram operators implemented so far (2020-12-16):
 
 <img alt="Universal algebra diagram operators Hom, Sub, Cong, and connectors" src="../../img/diagops-universal-algebra.png" width="500rem" />
+
+## Refactoring via Diagram Operators
+
+### Theory Intersections
+
+Imagine MMT theories `Nat` and `Strings` for natural numbers and strings. Do they share redundant parts?
+In some sense, they do since natural numbers form a monoid (wrt. multiplication) and strings do, too (wrt. concatenation).
+Suppose we realized that both theories share a redundant part by having found a *partial* view `Nat -> Strings`.
+With that, we can reorganize the original theories by means of performing a *theory intersection* (see [paper](https://cicm-conference.org/2015/fm4m/FMM_2015_paper_2.pdf), [MSc. thesis](https://gl.kwarc.info/supervision/MSc-archive/-/blob/master/2020/Banken_Michael.pdf).
+
+The ability to compute theory intersections is exposed as diagram operators, too.
+
+**Example input:**
+
+```
+theory Nat =
+  N: type ❙
+  zero: N ❙
+  succ: N ⟶ N ❙
+  plus: N ⟶ N ⟶ N ❙
+  mult: N ⟶ N ⟶ N ❙
+❚
+
+theory Strings =
+  str: type ❙
+  empty: str ❙
+  concat: str ⟶ str ⟶ str ❙
+  eol_string: str ❙
+❚
+
+view PosPlusToStrings : ?Nat -> ?Strings =
+  N = str ❙
+  zero = empty ❙
+  plus = concat ❙
+❚
+```
+
+**Diagram operator invocation:** `diagram IntersecterTestDiagram : ur:?RefactoringOperators := BINARY_INTERSECT ?PosPlusToStrings ❚`
+
+**Output**:
+
+```
+theory NatR : ur:?LF  = 
+	include ☞ur:/modexp-test?NatIntersectsStrings ❙
+	succ	
+		: N⟶N
+	❙
+	mult	
+		: N⟶N⟶N
+	❙
+❚
+
+theory NatIntersectsStrings : ur:?LF  = 
+	N	
+		: type
+	❙
+	zero	
+		: N
+	❙
+	plus	
+		: N⟶N⟶N
+	❙
+❚
+
+theory StringsIntersectsNat : ur:?LF  = 
+	str	
+		: type
+	❙
+	empty	
+		: str
+	❙
+	concat	
+		: str⟶str⟶str
+	❙
+❚
+
+theory StringsR : ur:?LF  = 
+	include ☞ur:/modexp-test?StringsIntersectsNat ❙
+	eol_string	
+		: str
+	❙
+❚
+
+view NatIntersectsStringstoStringsIntersectsNat : ur:/modexp-test?NatIntersectsStrings  -> ur:/modexp-test?StringsIntersectsNat  = 
+	N	
+		= str
+	❙
+	zero	
+		= empty
+	❙
+	plus	
+		= concat
+	❙
+❚
+
+view StringsIntersectsNattoNatIntersectsStrings : ur:/modexp-test?StringsIntersectsNat  -> ur:/modexp-test?NatIntersectsStrings  = 
+	str	
+		= N
+	❙
+	empty	
+		= zero
+	❙
+	concat	
+		= plus
+	❙
+❚
+```

@@ -16,10 +16,10 @@ This document contains a changelog of existing as well as upcoming releases.
 - Syntax Presenter: component in MMT reconstructing MMT surface syntax from in-memory content of MMT knowledge items
   - various fixes to now output well-indented and parsable MMT syntax
   - added SytaxPresenterServer (see the [`:syntax` server extension](../applications/server) for screenshots and usage)
-- Diagram Operators: operators acting on diagrams of MMT theories and views as input
+- [Diagram Operators](../language/diagrams): operators acting on diagrams of MMT theories and views, and outputting new diagrams
   - based on accepted paper [Structure-Preserving Diagram Operators](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf) by Navid Roux and Florian Rabe
-  - implemented universal algebra operators: among others, the added operators `Hom`, `Sub`, `Quot` take SFOL-theories (e.g. `Magma`, `Monoid`, `Group`, ...) and output the theories of homomorphisms (of magmas, monoids, groups, ...), substructures, and quotients, respectively.
-  - underlying the operators above is a now added general framework that makes it easy to implement operators acting declaration-by-declaration on theories and views.
+  - implemented general framework
+  - implemented operators: `Hom`, `Sub`, and `Cong` from universal algebra, which take diagrams of SFOL-theories as input (e.g. the algebraic hierarchy consisting of `Magma`, `Monoid`, `Group`, ...) and output the diagram enriched with theories for homomorphisms, substructures, and congruences, respectively, for *all* input theories, respectively ([see output diagram here](../language/diagrams))
 - [FrameIT Project](https://uframeit.github.io/)
   - big performance improvements of the FrameIT MMT Server
   - several minor bug fixeserf improvements

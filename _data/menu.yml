@@ -82,6 +82,8 @@
       url: '/doc/language/namespaces.html'
     - title: 'Modules'
       url: '/doc/language/modules.html'
+    - title: 'Diagrams'
+      url: '/doc/language/diagrams.html'
     - title: 'Symbol Declarations'
       url: '/doc/language/declarations.html'
     - title: 'Terms'

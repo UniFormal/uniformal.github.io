@@ -20,7 +20,7 @@ Some services are available by default, which can be browsed in the [API documen
 * `syntax`: takes an MMT URI and presents its reconstructed MMT surface syntax with highlighting:
    
    <a href="../../img/syntaxpresenterserver.png">
-      <img alt="Screenshot of the MMT Syntax Presenter Server displaying highlighted MMT surface syntax at localhost:8080/:syntax?element=<mmt path>" src="../../img/syntaxpresenterserver.png" />
+      <img alt="Screenshot of the MMT Syntax Presenter Server displaying highlighted MMT surface syntax at localhost:8080/:syntax?element=<mmt path>" src="../../img/syntaxpresenterserver.png" width="450" />
    </a>
    
    The general syntax is `http://localhost:PORT/:syntax?element=<mmt uri>[&plain]`.

@@ -13,4 +13,4 @@ there is a canonical way to construct the theories of homomorphisms.
 This redundancy is significant in practice, too: if you were to formalize the algebraic theories and their homomorphisms manually,
 *every* change in the former would necessitate a change in the latter.
 
-![Universal algebra diagram operators Hom, Sub, Cong, and connectors](../img/diagops-universal-algebra.png)
+<img alt="Universal algebra diagram operators Hom, Sub, Cong, and connectors" src="../../img/diagops-universal-algebra.png" width="500rem" />

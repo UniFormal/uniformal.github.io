@@ -18,7 +18,10 @@ Some services are available by default, which can be browsed in the [API documen
 * `svg`: serves the theory graph as an SVG element for the MMT document whose URI is `QUERY`.
 * `admin`: interprets the query as an [MMT shell command](shell) and executes it
 * `syntax`: takes an MMT URI and presents its reconstructed MMT surface syntax with highlighting:
-   <a href="https://raw.githubusercontent.com/UniFormal/uniformal.github.io/821e6aba9b96fd0a368945a216e2cc448b72265a/img/syntaxpresenterserver.png"><img src="https://raw.githubusercontent.com/UniFormal/uniformal.github.io/821e6aba9b96fd0a368945a216e2cc448b72265a/img/syntaxpresenterserver.png" width="400" alt="Screenshot of the MMT Syntax Presenter Server displaying highlighted MMT surface syntax at localhost:8080/:syntax?element=<mmt path>" /></a>
+   
+   <a href="../../img/syntaxpresenterserver.png">
+      <img alt="Screenshot of the MMT Syntax Presenter Server displaying highlighted MMT surface syntax at localhost:8080/:syntax?element=<mmt path>" src="../../img/syntaxpresenterserver.png" />
+   </a>
    
    The general syntax is `http://localhost:PORT/:syntax?element=<mmt uri>[&plain]`.
    Syntax highlighting embeds the highlighter from the [MMT Online Tools](https://github.com/ComFreek/mmteditor) and hence requires an Internet connection (but does *not* send your data to the Internet).

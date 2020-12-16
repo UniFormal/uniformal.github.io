@@ -4,7 +4,20 @@ title: Diagrams & Diagram Operators
 ---
 
 In larger formalizations, parts of theory graphs are often redundant and have been created in a *systematic* way from other parts of the theory graph.
-As of December 2020, MMT has preliminary support for diagram operators, which are Scala functions accessible from MMT surface syntax allowing to create whole diagrams from input diagrams.
+As of December 2020, MMT has preliminary support for diagram operators following a preceding [paper on structure-preserving diagram operators](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf).
+Operators in MMT are Scala classes that can be bound to MMT symbols and hence accessed from MMT surface syntax.
+
+## Usage
+
+todo: elaborate more
+
+```mmt
+theory TestDiagram =
+  include ur:?DiagramOperators ❙
+  diag = RAWDIAG ?A ?B ?C ?v ❙
+❚
+diagram diagramName : ?metaTheory := DIAGOP ?TestDiagram?diag ❚
+```
 
 ## Caste Study: Universal Algebra
 
@@ -27,7 +40,7 @@ The following diagram pictures all theories *and* views that can be generated fr
 Imagine MMT theories `Nat` and `Strings` for natural numbers and strings. Do they share redundant parts?
 In some sense, they do since natural numbers form a monoid (wrt. multiplication) and strings do, too (wrt. concatenation).
 Suppose we realized that both theories share a redundant part by having found a *partial* view `Nat -> Strings`.
-With that, we can reorganize the original theories by means of performing a *theory intersection* (see [paper](https://cicm-conference.org/2015/fm4m/FMM_2015_paper_2.pdf), [MSc. thesis](https://gl.kwarc.info/supervision/MSc-archive/-/blob/master/2020/Banken_Michael.pdf).
+With that, we can reorganize the original theories by means of performing a *theory intersection* (see [paper](https://cicm-conference.org/2015/fm4m/FMM_2015_paper_2.pdf), [MSc. thesis](https://gl.kwarc.info/supervision/MSc-archive/-/blob/master/2020/Banken_Michael.pdf)).
 
 The ability to compute theory intersections is exposed as diagram operators, too.
 

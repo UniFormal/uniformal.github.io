@@ -3,8 +3,13 @@ layout: doc
 title: Diagrams & Diagram Operators
 ---
 
-In larger formalizations, parts of theory graphs are often redundant and have been created in a *systematic* way from other parts of the theory graph.
-As of December 2020, MMT has preliminary support for diagram operators following a preceding [paper on structure-preserving diagram operators](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf).
+Large archives of formalizations in MMT span big theory graphs comprised of many theories and views.
+Often, certain subgraphs form a semantically coherent entity, a *diagram*.
+
+Diagram operators are meta-programming facilities which accept diagrams of formalization as input and output new diagrams. As such, they help making large archives of formalization less redundant and more concise.
+
+As of December 2020, MMT has preliminary support for diagram operators following an accepted [paper on *Structure-Preserving Diagram Operators*](https://kwarc.info/people/frabe/Research/RR_diagops_20.pdf).
+
 Operators in MMT are Scala classes that can be bound to MMT symbols and hence accessed from MMT surface syntax.
 
 ## Usage
@@ -21,7 +26,7 @@ diagram diagramName : ?metaTheory := DIAGOP ?TestDiagram?diag ❚
 
 ## Caste Study: Universal Algebra
 
-Consider formalizing the algebraic hierarchy with theories for magmas, monoids, groups, and more.
+Consider formalizing the [algebraic hierarchy](https://en.wikipedia.org/wiki/Outline_of_algebraic_structures) with theories for magmas, monoids, groups, and more.
 Creating the theories for homomorphisms of magmas, monoids, and groups, respectively would not only be cumbersome to do manually, but
 also redundant, as according to [universal algebra](https://en.wikipedia.org/wiki/Universal_algebra), there is a systematic way
 to derive the theories of homomorphisms given the underlying algebraic theories.

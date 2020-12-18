@@ -48,7 +48,7 @@ The documentation contains:
 </tr>
 <tr>
 <td>
-  <img src="http://opendreamkit.org/public/logos/Flag_of_Europe.svg" width="128" alt="Flag of the European Union">
+  <img src="https://opendreamkit.org/public/logos/Flag_of_Europe.svg" width="128" alt="Flag of the European Union">
 </td>
 <td>
   MMT was partially supported by the Horizon 2020 European Research Infrastructure project

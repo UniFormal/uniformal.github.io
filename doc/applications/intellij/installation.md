@@ -20,8 +20,10 @@ Since MMT files make heavy use of Unicode math charcters, be sure to have a font
 
 
 1. Download and install GNU Unifont: http://unifoundry.com/unifont/index.html
-2. In IntelliJ IDEA go to *File* -> *Settings* -> *Editor* -> *Font* and choose "Unifont" as the fallback font.
-3. For developers: if you print MMT surface syntax to the console (e.g. using the MMTSyntaxPresenter class), you might want to use the same font in the console: under *File* -> *Settings* -> *Editor* -> *Color Scheme* -> *Console Font* choose "Unifont" as the "Font" (not fallback font in this case!)
+
+   You might need a restart of IntelliJ IDEA after installing the font.
+2. In IntelliJ IDEA go to `File -> Settings -> Editor -> Font`, untick `Show only monospaced fonts` and and choose `Unifont` as the fallback font.
+3. For developers: if you print MMT surface syntax to the console (e.g. using the MMTSyntaxPresenter class), you might want to use the same font in the console: under `File -> Settings -> Editor -> Color Scheme -> Console Font`, choose `Unifont` as the `Font` (not fallback font in this case!)
 
 ## Usage
 

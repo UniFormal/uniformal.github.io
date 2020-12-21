@@ -13,6 +13,7 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Upcoming Release 21
 
+- Scala version increased to 2.13.4
 - Syntax Presenter: component in MMT reconstructing MMT surface syntax from in-memory content of MMT knowledge items
   - various fixes to now output well-indented and parsable MMT syntax
   - added SytaxPresenterServer (see the [`:syntax` server extension](../applications/server) for screenshots and usage)

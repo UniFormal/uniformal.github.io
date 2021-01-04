@@ -3,6 +3,14 @@ layout: doc
 title: Setting up MMT
 ---
 
+<!-- 
+  READ THIS: Keep this setting up guide short. Especially the list of things to install should just be lists, no useful-but-not-critically-required information.
+             Put such information under the header "NOTES".
+
+  Rationale: New end users should be able to quickly glance at which software they would need to install; they should *not* see installation instructions riddled
+             with wall of texts.
+-->
+
 ### Step 1: Get MMT
 
 #### Option 1a: Download binary release

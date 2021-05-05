@@ -15,8 +15,9 @@ This document contains a changelog of existing as well as upcoming releases.
 
 - Bugfix in ELPI generator, lowercase variable names now produce proper uppercase Prolog variables
 - minor improvements to the MathHub plugin
- - performance and stability improvements for larger archives
- - improved display of STeX Glossary Entries
+  - performance and stability improvements for larger archives
+  - improved display of STeX Glossary Entries
+- FrameIT: fix of a longstanding bug that previously put a limit on how much players (e.g., of the Unity frontend) can interact with FrameIT
 
 ### Release 21
 

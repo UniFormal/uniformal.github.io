@@ -18,6 +18,8 @@ This document contains a changelog of existing as well as upcoming releases.
   - performance and stability improvements for larger archives
   - improved display of STeX Glossary Entries
 - FrameIT: fix of a longstanding bug that previously put a limit on how much players (e.g., of the Unity frontend) can interact with FrameIT
+- Minor improvements with respect to equality of literals in the Simplifier
+- First step towards a redesign of the sTeX ecosystem
 
 ### Release 21
 

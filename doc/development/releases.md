@@ -11,7 +11,16 @@ To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Unif
 
 This document contains a changelog of existing as well as upcoming releases.
 
-### Upcoming Release 21
+### Upcoming Release 22
+
+- Bugfix in ELPI generator, lowercase variable names now produce proper uppercase Prolog variables
+- minor improvements to the MathHub plugin
+ - performance and stability improvements for larger archives
+ - improved display of STeX Glossary Entries
+
+### Release 21
+
+Released on [22nd December 2020](https://github.com/UniFormal/MMT/releases/tag/21.0.0)
 
 - Scala version increased to 2.13.4
 - Syntax Presenter: component in MMT reconstructing MMT surface syntax from in-memory content of MMT knowledge items
@@ -26,9 +35,6 @@ This document contains a changelog of existing as well as upcoming releases.
 - [FrameIT Project](https://uframeit.github.io/)
   - big performance improvements of the FrameIT MMT Server
   - several minor bug fixeserf improvements
-- minor improvements to the MathHub plugin
- - performance and stability improvements for larger archives
- - improved display of STeX Glossary Entries
 
 ### Release 20
 

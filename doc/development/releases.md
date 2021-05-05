@@ -26,6 +26,9 @@ This document contains a changelog of existing as well as upcoming releases.
 - [FrameIT Project](https://uframeit.github.io/)
   - big performance improvements of the FrameIT MMT Server
   - several minor bug fixeserf improvements
+- minor improvements to the MathHub plugin
+ - performance and stability improvements for larger archives
+ - improved display of STeX Glossary Entries
 
 ### Release 20
 

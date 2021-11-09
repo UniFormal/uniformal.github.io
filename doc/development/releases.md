@@ -23,6 +23,7 @@ This document contains a changelog of existing as well as upcoming releases.
 - Reimplemented the Mizar importer based on Mizar's new XML files
   - improved maintainability
   - translating some previously untranslated content, like registrations and (partially) proofs
+- Extended the LaTeX symbol list for editor autocomplete by Fraktur and Hebrew alphabets and some symbols.
 
 ### Release 21
 

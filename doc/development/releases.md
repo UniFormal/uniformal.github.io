@@ -3,28 +3,35 @@ layout: doc
 title: Releases & Changelog
 ---
 
-Since Fall 2017, a new binary version of MMT is released roughly every six weeks. 
-See the [development roadmap on GitHub](https://github.com/UniFormal/MMT/milestones) for scheduled improvements.
-To keep up-to-date, you can [subscribe to the Atom Feed](https://github.com/Uniformal/MMT/releases.atom). 
-
 ### Changelog
 
 This document contains a changelog of existing as well as upcoming releases.
 
-### Upcoming Release 22
+### Release 22 [Upcoming]
 
-- Bugfix in ELPI generator, lowercase variable names now produce proper uppercase Prolog variables
-- minor improvements to the MathHub plugin
-  - performance and stability improvements for larger archives
-  - improved display of STeX Glossary Entries
-- FrameIT: fix of a longstanding bug that previously put a limit on how much players (e.g., of the Unity frontend) can interact with FrameIT
-- Diagram operators: major API clean up, lots of new documentation
-- Minor improvements with respect to equality of literals in the Simplifier
-- First step towards a redesign of the sTeX ecosystem
-- Reimplemented the Mizar importer based on Mizar's new XML files
-  - improved maintainability
-  - translating some previously untranslated content, like registrations and (partially) proofs
-- Extended the LaTeX symbol list for editor autocomplete by Fraktur and Hebrew alphabets and some symbols.
+- Administrative
+  - MMT now co-released with LATIN logic library maintained at https://gl.mathhub.info/MMT/LATIN2
+    - master branch of UniFormal/MMT can be used to build master branch of MMT/LATIN2
+    - together with MMT/urtheories, this forms MMT's stanard library
+  - clean up of committed IntelliJ project files (no more *.iml files, some useful machine-independent files in .idea committed)
+  - deleted a few long-deprecated sub-projects
+- Core language
+  - diagram operators: major API clean up, lots of new documentation (see Navid Roux's upcoming MSc thesis)
+  - simplifier: minor improvements with respect to equality of literals
+  - extended the LaTeX symbol list for editor autocomplete by Fraktur and Hebrew alphabets and various math symbols
+- Plugins and other non-core components
+  - sTeX: first step towards a redesign of the sTeX ecosystem
+  - Mizar: full reimplementation of the importer
+    - CICM 2021 best system paper award, see https://kwarc.info/people/frabe/Research/RKR_mizar_21.pdf
+    - compatible withMizar's new XML files
+    - improved maintainability
+    - translating some previously untranslated content, like registrations and (partially) proofs
+  - ELPI: bugfixes in generator, lowercase variable names now produce proper uppercase Prolog variables
+  - MathHub: minor improvements
+    - performance and stability improvements for larger archives
+    - improved display of STeX Glossary Entries
+  - FrameIT
+    - fix of a longstanding bug that previously put a limit on how much players (e.g., of the Unity frontend) can interact with FrameIT
 
 ### Release 21
 

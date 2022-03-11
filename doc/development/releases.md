@@ -18,6 +18,7 @@ This document contains a changelog of existing as well as upcoming releases.
 - Core language
   - diagram operators: major API clean up, lots of new documentation (see Navid Roux's upcoming MSc thesis)
   - simplifier: minor improvements with respect to equality of literals
+  - type checker: generic support for proof gaps to be solved by external provers (see Luca Wolff's upcoming BSc thesis, which builds such a prover)
   - extended the LaTeX symbol list for editor autocomplete by Fraktur and Hebrew alphabets and various math symbols
 - Plugins and other non-core components
   - sTeX: first step towards a redesign of the sTeX ecosystem

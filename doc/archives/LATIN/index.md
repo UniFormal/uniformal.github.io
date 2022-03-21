@@ -35,6 +35,6 @@ The original [LATIN project](latin1) ran from 2009-2012.
 
 ## Current Incarnation
 
-The MMT Archive [LATIN2](latin2) is a from-scratch revision of the original logic atlas.
+The MMT Archive [LATIN2](LATIN2) is a from-scratch revision of the original logic atlas.
 
 

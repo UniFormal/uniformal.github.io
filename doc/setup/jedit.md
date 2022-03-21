@@ -24,7 +24,7 @@ Use the following instructions:
 5. When running jEdit, if jEdit does not activate the MMT plugin automatically, activate it in the plugin manager dialog.
 6. You can now use jEdit to open `.mmt`, e.g., the ons in the `MathHub/MMT/examples/source` folder produced during MMT setup.
 
-### Dependencies of the MMT Plugin
+### Dependencies
 
 The MMT plugin depends on the following other jEdit plugins
   * ErrorList
@@ -32,18 +32,22 @@ The MMT plugin depends on the following other jEdit plugins
   * SideKick
   * Hyperlinks
 
-During setup, MMT will try to automatically download and configure these so that normally no further steps are needed.
+During installation, MMT will try to automatically download and configure these so that normally no further steps are needed.
 However, if something goes wrong, you can also install these plugins manually: click on the ```Plugins``` menu, then ```Plugin Manager```, then click on the ```Install``` tab, check the plugins you want to install and click ```Install```.  
 
-<!--
 ### Updating
 
-To update the plugin, just replace the changed jar(s) in jEdit's settings folder (`~/.jedit/jars` on linux, `<USER>AppData\Roaming\jEdit` on windows) and restart jEdit or reload the changed jars via jEdit's plugin manager dialog.
+From the perspective of jEdit, the plugin consists of two parts:
+* the `mmt.jar` file in jEdit's settings folder (`~/.jedit/jars` on linux, `<USER>AppData\Roaming\jEdit` on windows)
+* a few confguration options that are set during installation 
 
-The MMT code also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder. (Calling `mmt :jeditsetup" will additionally copy/uninstall configuration files.)
---->
+Most of the time only the jar file has changed in MMT. In that case, it is enough to replace the jar and restart jEdit (or unload and reload the MMT plugin via jEdit's plugin manager dialog).
+To simplify this, the sbt file for MMT also provides the build target `sbt jedit/install` to replace the old jars in the jEdit settings folder.
 
-### Options of the MMT Plugin
+If more than the jar has changed or if a reinstall is desired, run `mmt :jeditsetup`.
+This will redo the installation procedure and overwrite all changes made by the original installation.
+
+### Configuration Options
 
 Configuration the MMT plugin is optional. But some steps may be useful.
 

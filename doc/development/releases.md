@@ -12,15 +12,27 @@ This document contains a changelog of existing as well as upcoming releases.
 - Administrative
   - MMT now co-released with LATIN logic library maintained at https://gl.mathhub.info/MMT/LATIN2
     - master branch of UniFormal/MMT can be used to build master branch of MMT/LATIN2
-    - together with MMT/urtheories, this forms MMT's stanard library
+    - together with MMT/urtheories, this forms MMT's standard library
+  - Complete redesign of CI on github: CI now clones and builds MMT/urtheories, MMT/examples, and MMT/LATIN2
   - clean up of committed IntelliJ project files (no more *.iml files, some useful machine-independent files in .idea committed)
   - deleted a few long-deprecated sub-projects
+  - deleted lots of deprecated or obsolete code in mmt.api
+- Core system
+  - new :file command for running a build file and reporting errors as an exit code
+  - :setup command now clones and builds the 3 core archives (see CI)
+  - major improvements to error handling and processing
+  - solver: type checking of function applications now checks return type to make better use of expected type
+  - simplifier: properly handles equality of literals
+  - many bugfixes, minor improvements regarding all components involved in building, most importantly type-checking
 - Core language
-  - diagram operators: major API clean up, lots of new documentation (see Navid Roux's upcoming MSc thesis)
-  - simplifier: minor improvements with respect to equality of literals
+  - experimental support for diagram operators: major API clean up, lots of new documentation (see Navid Roux's upcoming MSc thesis)
   - type checker: generic support for proof gaps to be solved by external provers (see Luca Wolff's upcoming BSc thesis, which builds such a prover)
   - extended the LaTeX symbol list for editor autocomplete by Fraktur and Hebrew alphabets and various math symbols
+  - new excusable errors representing gaps in developments (non-total views, unresolved _s, etc.), which are reported as errors but can be ignored for testing
 - Plugins and other non-core components
+  - jEdit:
+    - support upgraded for jEdit 5.6 and latest versions of all plugins (except ErrorList where 2.4.0 causes an issue)
+    - improved syntax highlighting: colors of symbols now set by plugin instead of jEdit mode
   - sTeX: first step towards a redesign of the sTeX ecosystem
   - Mizar: full reimplementation of the importer
     - CICM 2021 best system paper award, see https://kwarc.info/people/frabe/Research/RKR_mizar_21.pdf

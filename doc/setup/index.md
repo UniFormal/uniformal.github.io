@@ -3,67 +3,52 @@ layout: doc
 title: Setting up MMT
 ---
 
-<!-- 
-  READ THIS: Keep this setting up guide short. Especially the list of things to install should just be lists, no useful-but-not-critically-required information.
-             Put such information under the header "NOTES".
+### Requirements
 
-  Rationale: New end users should be able to quickly glance at which software they would need to install; they should *not* see installation instructions riddled
-             with wall of texts.
--->
+The following outside tools are typically used with MMT:
 
-### Step 1: Get MMT
+* To run MMT, you must install Java.
+* To interact with MMT content, you should install git.
+MMT itself does not need git, but all formalizations made with MMT are stored in git repositories.
+* To have an IDE for writing MMT content, you should install [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [jEdit](http://jedit.org/).
+* To build MMT from sources, you need [sbt](https://www.scala-sbt.org/) or an IDE that includes it.
+* If you also plan to develop MMT itself, you should install a Scala IDE such as IntelliJ with the [Scala plugin](https://plugins.jetbrains.com/plugin/1347-scala).
 
-#### Option 1a: Download binary release
+### Step 1: Get the MMT jar file
 
-1. Install Java ≥ 14 (check via `java --version`)
-2. Install [git](https://git-scm.com/) (check `git --help` works)
-3. Download [the latest `mmt.jar` from UniFormal/MMT's release page](https://github.com/UniFormal/MMT/releases/latest)
+#### Option 1a: Download a binary release
 
-#### Option 1b: build yourself + dev environment for developing MMT itself
+Download [the latest `mmt.jar` from UniFormal/MMT's release page](https://github.com/UniFormal/MMT/releases/latest)
 
-1. Install Java ≥ 14 (check via `java --version`)
-2. Install [git](https://git-scm.com/) (check `git --help` works)
-3. Install [sbt](https://www.scala-sbt.org/)
-4. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/) (if you want to later use the MMT plugin, get a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions); tldr: a non-beta version)
-5. Within IntelliJ IDEA, install the [Scala plugin](https://plugins.jetbrains.com/plugin/1347-scala).
-6. `git clone https://github.com/UniFormal/MMT.git`, then `cd MMT`, `git fetch --all`, `git checkout devel`
-7. Import a new IntelliJ project from `mmt/src` (choose "SBT").
+#### Option 1b: Build from sources
 
-In case you want to compile MMT to a self-contained single binary `mmt.jar`, refer to [building `mmt.jar` with SBT here](https://uniformal.github.io/doc/setup/sbt).
+Use `git clone https://github.com/UniFormal/MMT.git`.
 
-### Step 2: Setup environment for formalizing in MMT
+If recommended/instructed switch the `devel` branch to get the latest updates or create your own branch off `devel`.
 
-If you want to formalize things in MMT's language ("MMT surface syntax") with pretty syntax highlighting, follow these steps:
+Build MMT via `cd MMT; sbt mmt/deploy`.
 
-1. Get MMT in some way as explained above
-2. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/) with a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions) (tldr: a non-beta version)
-3. [Install the MMT plugin](https://uniformal.github.io/doc/applications/intellij/)
-4. In IntelliJ you can now create (and open existing) "MathHub projects".
+### Step 2: Setup MMT
 
-   Every MathHub project stores the path to an `mmt.jar` in its project files.
-   Hence, if you are a developer and made changes to the MMT repository you cloned above, do not expect those changes to be reflected when working with the MMT plugin. You need to rebuild an `mmt.jar` first. Beware that you need to reopen IntelliJ for the file overwriting of `mmt.jar` to be possible and to take effect.
+Excecute the MMT jar file via `java -jar mmt.jar`.
 
-Alternatively &mdash; not recommended to beginners, you can still use [jEdit](http://www.jedit.org/) as your development IDE. See [this article describing the setup of jEdit with MMT](jedit).
-
-### Step 3: Running MMT from CLI
-
-Some users or applications require running MMT from CLI. If you only want to use MMT from within IntelliJ IDEA, you can skip this step.
-
-1. Get MMT in some way as explained above
-2. Open a shell and `cd` to the location of your `mmt.jar`
-3. `java -jar mmt.jar`
-
-   This triggers the setup dialog which does the following:
-
-   1. asks for a directory into which *an* MMT user folder should be installed,
-   2. checks out some example content repositories into that directory (requires git and internet access),
-   3. determines the location of your jEdit settings directory and - if it exists - adds the MMT plugin to jEdit.
-
+This triggers the setup dialog which does the following:
+1. asks for a directory into which MMT content should be installed,
+1. checks out some example content repositories into that directory (requires git and internet access),
+1. runs MMT to build those repositories,
+1. if you have installed jEdit before, configures it for use with MMT.
    Further instructions for setting up jEdit are available [here](jedit).
 
+You can rerun this setup dialog (e.g., after updating MMT) by running `java -jar mmt.jar :setup`
+To install/update only the jEdit integration, use `java -jar mmt.jar :jeditsetup install`.
 
-   You may want to rerun this setup when having updated `mmt.jar`: `java -jar mmt.jar :setup`
-   However, rerunning the full setup is usually not necessary. To update your jEdit instance, execute `java -jar mmt.jar :jeditsetup install`.
+If you want to use IntelliJ instead of jEdit, additionally do the following:
+1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/) with a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions) (tldr: a non-beta version)
+2. [Install the MMT plugin](https://uniformal.github.io/doc/applications/intellij/)
+You can now use IntelliJ to create (and open existing) "MathHub projects".
+Every MathHub project stores the path to an `mmt.jar` in its project files.
+Hence, if you are a developer and made changes to the MMT repository you cloned above, do not expect those changes to be reflected when working with the MMT plugin. You need to rebuild an `mmt.jar` first. Beware that you need to reopen IntelliJ for the file overwriting of `mmt.jar` to be possible and to take effect.
+
 
 ### NOTES
 

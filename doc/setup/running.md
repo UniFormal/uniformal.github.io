@@ -1,7 +1,12 @@
 ---
 layout: doc
-title: Details on Running MMT
+title: Running MMT without a GUI
 ---
+
+New users usually use MMT via one of the [IDEs](../applications/ides.html), which use MMT as a backend.
+
+Alternatively, advanced users can run MMT directly.
+This is described below.
 
 After [setting up](./) MMT, the jars in the `deploy` folder can be run normally via Java.
 The canonical way to do that is to run

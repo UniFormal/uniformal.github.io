@@ -27,41 +27,17 @@ Hence only a couple of these exist.
 
 #### Integration Tests
 
-Several large MMT Integration tests exist. 
-When run, these:
+GitHub Actions run tests on every pushed commit. 
+These tests:
 
-- setup a new MMT environment from scratch (i.e. creating a new configuration file, installing `MMT/urtheories` etc)
-- install additional archives required for testing (and use the devel version if needed)
-- make sure that content within an archive builds and typechecks properly
+- Clone MMT
+- Build the mmt.jar
+- Run Setup
+- Clone a set of core archives and report build status
 
-Integration tests are implemented as a subclass of the `MMTIntegrationTest` class. 
-At the time of writing, the following Integration Tests exist:
-
-- `info.kwarc.mmt.api.test.APITest`
-- `info.kwarc.mmt.lf.LFTest`
-- `info.kwarc.mmt.odk.ODKTest`
-- `info.kwarc.mmt.odk.MitMTest`
-
-To run an integration test, simply run the appropriate class. 
-From command line this can be done with e.g.:
-
-```
-java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
-```
-
-The tests will exit with a return code of `0` iff they are successfull and no errors occur. 
-
-Furthermore the tests will try to automatically determine if they are being run from the `devel` or `master` branch. 
-If this is not possible (for example when just running from a downloaded jar), then this can be specified manually:
-
-```bash
-# use the devel version of archives
-TEST_USE_DEVEL=1 java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
-
-# use the default (master) version of archives
-TEST_USE_DEVEL=0 java -cp deploy/mmt.jar info.kwarc.mmt.api.test.APITest
-```
-
+For every instance of the tests, GitHub actions also makes the .jar available as a downloadable asset. 
+These jars are kept around for 30 days. 
+To keep a jar available permanently, releases are used. 
 #### GitHub Actions
 
 [![Devel Branch CI Status](https://github.com/Uniformal/MMT/workflows/CI/badge.svg?branch=devel)](https://github.com/UniFormal/MMT/actions?query=workflow%3ACI) automatically runs both unit and integration tests after every commit. 

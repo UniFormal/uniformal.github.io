@@ -7,7 +7,11 @@ title: Releases & Changelog
 
 This document contains a changelog of existing as well as upcoming releases.
 
-### Release 22 [Upcoming]
+### Release 23 [Upcoming]
+
+### Release 22
+
+Released on [4th May 2022](https://github.com/UniFormal/MMT/releases/tag/v22.0.0)
 
 - Administrative
   - MMT now co-released with LATIN logic library maintained at https://gl.mathhub.info/MMT/LATIN2

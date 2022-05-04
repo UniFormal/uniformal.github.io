@@ -26,7 +26,7 @@ Use `git clone https://github.com/UniFormal/MMT.git`.
 
 If recommended/instructed switch to the `devel` branch to get the latest updates or create your own branch off `devel`.
 
-Build MMT via `cd MMT; sbt mmt/deploy` or by triggering an MMT build from within the Scala IDE of your choice.
+Build MMT via `cd MMT/src; sbt mmt/deploy` or by triggering an MMT build from within the Scala IDE of your choice.
 
 ### Step 2: Setup MMT
 

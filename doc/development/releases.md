@@ -33,7 +33,11 @@ This document contains a changelog of existing as well as upcoming releases.
   - jEdit:
     - support upgraded for jEdit 5.6 and latest versions of all plugins (except ErrorList where 2.4.0 causes an issue)
     - improved syntax highlighting: colors of symbols now set by plugin instead of jEdit mode
-  - sTeX: first step towards a redesign of the sTeX ecosystem
+  - sTeX: 
+    - complete reimplementation to accomodate sTeX 3.x
+    - sTeX -> xhtml and xhtml -> omdoc importers
+    - dedicated sTeX browser and viewer for the generated xhtml
+    - First steps towards guided tours
   - Mizar: full reimplementation of the importer
     - CICM 2021 best system paper award, see https://kwarc.info/people/frabe/Research/RKR_mizar_21.pdf
     - compatible withMizar's new XML files

@@ -38,6 +38,7 @@ This document contains a changelog of existing as well as upcoming releases.
     - sTeX -> xhtml and xhtml -> omdoc importers
     - dedicated sTeX browser and viewer for the generated xhtml
     - First steps towards guided tours
+    - LSP Server for sTeX
   - Mizar: full reimplementation of the importer
     - CICM 2021 best system paper award, see https://kwarc.info/people/frabe/Research/RKR_mizar_21.pdf
     - compatible withMizar's new XML files

@@ -3,7 +3,7 @@ layout: doc
 title: License
 ---
 
-The MMT license is based on the [BSD 3-clause license](https://en.wikipedia.org/wiki/BSD_licenses) with one major change: It forbids modifications.
+The [MMT license](https://github.com/UniFormal/MMT/blob/master/COPYING.txt) is based on the [BSD 3-clause license](https://en.wikipedia.org/wiki/BSD_licenses) with one major change: It forbids modifications.
 While it is of course allowed to modify working copies and push the changes, it is not allowed to distribute any other version than the master branch of MMT.
 
 The motivation for that restriction is twofold

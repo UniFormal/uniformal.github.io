@@ -8,7 +8,7 @@ While it is of course allowed to modify working copies and push the changes, it 
 
 The motivation for that restriction is twofold
 
-* Attempts to modify MMT are almost misguided (see below).
+* Attempts to modify MMT are almost always misguided (see below).
   The license helps to nudge people in the right direction.
 * Everybody who benefits from MMT should also make their changes accessible to the community.
   However, the GNU model of requiring modifications to be open source again is not enough here: Acquiring the sources of a modification is a negligible amount of the work - essentially all the work lies in merging multiple modifications.

@@ -9,6 +9,8 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 23 [Upcoming]
 
+- preparation for a future upgrade to Scala 3
+
 ### Release 22
 
 Released on [4th May 2022](https://github.com/UniFormal/MMT/releases/tag/v22.0.0)

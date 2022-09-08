@@ -9,7 +9,22 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 23 [Upcoming]
 
-- preparation for a future upgrade to Scala 3
+- Administrative
+  - preparation for a future upgrade to Scala 3
+  - fixed many deprecation warnings
+- Core system
+  - new support for imperative computation akin to type-checking
+  - experimental support for interactive theorem proving via Sven Wille's MSc thesis
+  - extended support for theorem proving via Leo by Colin Rothgang's MSc work building on Luca Wolff's BSc work
+- Other components
+  - sTeX: major extensions
+  - Isabelle: upgrade to Isabelle2021-1 
+- LATIN2 library (separate repository, co-released)
+  - various extensions and improvements
+  - monads and collection data types by Moritz Blöcher's BSc thesis
+  - new dependently-typed higher-order logic as developed by Colin Rothgang's MSc thesis
+  - new support for programming language features by Alexander Mattick's MSc project
+  - case study on realms, in particular topology by Franziska Weber's BSc side project
 
 ### Release 22
 

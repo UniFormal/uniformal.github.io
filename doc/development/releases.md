@@ -16,6 +16,11 @@ This document contains a changelog of existing as well as upcoming releases.
   - new support for imperative computation akin to type-checking
   - experimental support for interactive theorem proving via Sven Wille's MSc thesis
   - extended support for theorem proving via Leo by Colin Rothgang's MSc work building on Luca Wolff's BSc work
+- sTeX
+  - major extensions
+  - integrated improved document viewer (see [here](https://github.com/slatex/sTeX-React))
+  - improved sandboxing for [RusTeX](https://github.com/slatex/RusTeX)
+  - improvements for LSP and the [IDE](https://github.com/slatex/sTeX-IDE)
 - Other components
   - sTeX: major extensions
   - Isabelle: upgrade to Isabelle2021-1 

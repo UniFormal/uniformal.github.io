@@ -21,8 +21,8 @@ This document contains a changelog of existing as well as upcoming releases.
   - integrated improved document viewer (see [here](https://github.com/slatex/sTeX-React))
   - improved sandboxing for [RusTeX](https://github.com/slatex/RusTeX)
   - improvements for LSP and the [IDE](https://github.com/slatex/sTeX-IDE)
+  - co-release with the IDE and sTeX version 3.2 on [CTAN](https://ctan.org/pkg/stex)
 - Other components
-  - sTeX: major extensions
   - Isabelle: upgrade to Isabelle2021-1 
 - LATIN2 library (separate repository, co-released)
   - various extensions and improvements

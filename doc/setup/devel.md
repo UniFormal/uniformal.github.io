@@ -3,14 +3,17 @@ layout: doc
 title: Developing MMT
 ---
 
-For developing and building MMT, it is recommened to use IntelliJ or Eclipse. 
+For developing and building MMT, it is recommened to use IntelliJ IDEA or Eclipse.
 Furthermore, a working installation of `sbt` is required. 
 
-### Using IntelliJ
+### Using IntelliJ IDEA
 
-For interactive development [IntelliJ (community edition)](https://www.jetbrains.com/idea/) with an installed Scala plugin allows to create a new SBT-based project from the src project location that contains the `build.sbt` file. 
-The sbt importer of IntelliJ should work out of the box.
-IntelliJ settings are not supposed to be comitted. Any changes should be made within build.sbt and IntelliJ SBT projects be refreshed.
+1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/): the community edition suffices, but as a student you may be eligible for the ultimate edition for free.
+2. Install the Scala plugin within IntelliJ IDEA.
+3. Open IntelliJ IDEA and click "open project" (*not* "create new"). Simply select `<mmt repository>\src` in the folder selection dialog.
+   The sbt importer of IntelliJ should work out of the box.
+
+   IntelliJ IDEA project or module settings are not supposed to be comitted. Any changes should be made within build.sbt such that upon reimporting by the sbt importer (provided by the Scala plugin), the desired changes are induced in the project and module settings.
 
 ### Using Eclipse
 

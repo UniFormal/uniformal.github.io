@@ -9,6 +9,14 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 24 [Upcoming]
 
+- sTeX
+  - complete redesign
+  - automatically keeps [RusTeX](https://github.com/slatex/RusTeX) up to date
+  - improvements for LSP and the [IDE](https://github.com/slatex/sTeX-IDE)
+  - redesigned presentation of sTeX-originated OMDoc, integrated as OMDoc tab in the preview window of the IDE
+  - improved error viewer in the IDE
+  - co-release with the IDE and sTeX version 3.3 on [CTAN](https://ctan.org/pkg/stex)
+
 ### Release 23
 
 Released on [15th September 2022](https://github.com/UniFormal/MMT/releases/tag/v23.0.0)

@@ -9,6 +9,12 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 24 [Upcoming]
 
+- Core
+  - added support for structures defined by morphisms
+  - various bug fixes regarding morphisms
+  - further maturation of computation algorithm
+- jEdit
+  - one-step only normalization function
 - sTeX
   - complete redesign
   - automatically keeps [RusTeX](https://github.com/slatex/RusTeX) up to date
@@ -16,6 +22,9 @@ This document contains a changelog of existing as well as upcoming releases.
   - redesigned presentation of sTeX-originated OMDoc, integrated as OMDoc tab in the preview window of the IDE
   - improved error viewer in the IDE
   - co-release with the IDE and sTeX version 3.3 on [CTAN](https://ctan.org/pkg/stex)
+- other components
+  - new Lean importer
+  
 
 ### Release 23
 

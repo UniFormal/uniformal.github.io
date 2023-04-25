@@ -7,7 +7,14 @@ title: Releases & Changelog
 
 This document contains a changelog of existing as well as upcoming releases.
 
-### Release 24 [Upcoming]
+### Release 25 [Upcoming]
+
+- Aldor
+- MMT Extension for VSCode
+- sTeX
+  - Integrated (upcoming) release for [RusTeX](https://github.com/slatex/RusTeX) with significantly improved optics and CSS styling
+
+### Release 24
 
 - Core
   - added support for structures defined by morphisms

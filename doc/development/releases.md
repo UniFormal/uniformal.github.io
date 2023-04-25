@@ -9,10 +9,16 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ### Release 25 [Upcoming]
 
-- Aldor
-- MMT Extension for VSCode
+- Core
+  - command 'archive new FOLDER' creates a new archive
+  - '.' in build commands refers to current archive
+  - better messages in setup dialog to help avoid common problems
+  - removed certain URLDecoder uses that were not supported by all JDKs
 - sTeX
   - Integrated (upcoming) release for [RusTeX](https://github.com/slatex/RusTeX) with significantly improved optics and CSS styling
+- other components
+  - new MMT extension for VSCode
+  - new Aldor importer in collaboration with Stephen Watt
 
 ### Release 24
 

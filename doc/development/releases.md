@@ -15,9 +15,9 @@ This document contains a changelog of existing as well as upcoming releases.
   - better messages in setup dialog to help avoid common problems
   - removed certain URLDecoder uses that were not supported by all JDKs
 - sTeX
-  - Integrated (upcoming) release for [RusTeX](https://github.com/slatex/RusTeX) with significantly improved optics and CSS styling
+  - integrated (upcoming) release for [RusTeX](https://github.com/slatex/RusTeX) with significantly improved optics and CSS styling
 - other components
-  - new MMT extension for VSCode
+  - [new MMT extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=kwarc.mmt): allows syntax highlighting, typechecking, and building MMT formalizations within Visual Studio Code
   - new Aldor importer in collaboration with Stephen Watt
 
 ### Release 24

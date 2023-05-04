@@ -7,11 +7,15 @@ title: Releases & Changelog
 
 This document contains a changelog of existing as well as upcoming releases.
 
-### Release 25 [Upcoming]
+## Release 26 [Upcoming]
+
+### Release 25
+
+Released on [4th May 2023](https://github.com/UniFormal/MMT/releases/tag/v25.0.0)
 
 - Core
-  - command 'archive new FOLDER' creates a new archive
-  - '.' in build commands refers to current archive
+  - command `archive new FOLDER` creates a new archive
+  - `.` in build commands refers to current archive
   - better messages in setup dialog to help avoid common problems
   - removed certain URLDecoder uses that were not supported by all JDKs
 - sTeX

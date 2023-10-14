@@ -9,6 +9,11 @@ This document contains a changelog of existing as well as upcoming releases.
 
 ## Release 26 [Upcoming]
 
+- Core
+  - new relational database using [rdf4j](https://rdf4j.org/) based on the [Upper Library Ontology](https://kwarc.info/kohlhase/papers/cicm19-ulo.pdf)
+- sTeX
+  - various quality of life improvements, compatibility with sTeX 3.4
+
 ### Release 25
 
 Released on [4th May 2023](https://github.com/UniFormal/MMT/releases/tag/v25.0.0)

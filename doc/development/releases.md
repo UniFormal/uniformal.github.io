@@ -15,6 +15,7 @@ This document contains a changelog of existing as well as upcoming releases.
   - various quality of life improvements, compatibility with sTeX 3.4
 - MathWebSearch: updated MMT's MWS API to new implementation
 - improvements to VS code plugin
+- libraries: ATP support via TPTP in LATIN, in particular for DHOL
 
 ### Release 25
 

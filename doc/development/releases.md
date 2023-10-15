@@ -13,6 +13,8 @@ This document contains a changelog of existing as well as upcoming releases.
   - new relational database using [rdf4j](https://rdf4j.org/) based on the [Upper Library Ontology](https://kwarc.info/kohlhase/papers/cicm19-ulo.pdf)
 - sTeX
   - various quality of life improvements, compatibility with sTeX 3.4
+- MathWebSearch: updated MMT's MWS API to new implementation
+- improvements to VS code plugin
 
 ### Release 25
 

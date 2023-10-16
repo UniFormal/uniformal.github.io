@@ -7,7 +7,11 @@ title: Releases & Changelog
 
 This document contains a changelog of existing as well as upcoming releases.
 
-## Release 26 [Upcoming]
+## Release 27 [Upcoming]
+
+## Release 26
+
+Released on [16th October 2023](https://github.com/UniFormal/MMT/releases/tag/v26.0.0)
 
 - Core
   - new relational database using [rdf4j](https://rdf4j.org/) based on the [Upper Library Ontology](https://kwarc.info/kohlhase/papers/cicm19-ulo.pdf)

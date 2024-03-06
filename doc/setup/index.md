@@ -12,7 +12,7 @@ The following outside tools are typically used with MMT:
 (MMT itself does not need git, but all formalizations made with MMT are stored in git repositories.)
 * To have an IDE for writing MMT content, you **should** install [jEdit](http://jedit.org/).
 * To build MMT from sources, you **need** [sbt](https://www.scala-sbt.org/), which you can install by itself or obtain as a part of a Scala IDE (see next item).
-* If you also plan to develop MMT, you **should** install a Scala IDE such as IntelliJ with the [Scala plugin](https://plugins.jetbrains.com/plugin/1347-scala).
+* If you also plan to develop MMT, you **should** install a Scala IDE such as IntelliJ with the [Scala plugin](https://plugins.jetbrains.com/plugin/1347-scala). Note that MMT uses the latest Scala 2.x, not Scala 3.
 
 ### Step 1: Get the MMT jar file
 
@@ -36,18 +36,8 @@ This triggers the setup dialog which does the following:
 1. asks for a directory into which MMT content should be installed,
 1. checks out some example content repositories into that directory (requires git and internet access),
 1. runs MMT to build those repositories,
-1. if you have installed jEdit before, configures it for use as an MMT IDE.
+1. if you have installed jEdit before, configure it for use as an MMT IDE.
    (Further instructions for setting up jEdit are available [here](jedit).)
-
-
-
-If you want to use IntelliJ instead of jEdit as an MMT IDE, additionally do the following:
-1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/) with a [version compatible with the MMT plugin](https://plugins.jetbrains.com/plugin/11450-mmt/versions) (tldr: a non-beta version)
-2. [Install the MMT plugin](https://uniformal.github.io/doc/applications/intellij/)
-You can now use IntelliJ to create (and open existing) "MathHub projects".
-Every MathHub project stores the path to an `mmt.jar` in its project files.
-Hence, if you are a developer and made changes to the MMT repository you cloned above, do not expect those changes to be reflected when working with the MMT plugin. You need to rebuild an `mmt.jar` first. Beware that you need to reopen IntelliJ for the file overwriting of `mmt.jar` to be possible and to take effect.
-
 
 ### NOTES
 

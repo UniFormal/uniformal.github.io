@@ -10,7 +10,7 @@ The following outside tools are typically used with MMT:
 * To run MMT, you **must** install Java.
 * To interact with existing MMT content, you **should** install git.
 (MMT itself does not need git, but all formalizations made with MMT are stored in git repositories.)
-* To have an IDE for writing MMT content, you **should** install [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [jEdit](http://jedit.org/).
+* To have an IDE for writing MMT content, you **should** install [jEdit](http://jedit.org/).
 * To build MMT from sources, you **need** [sbt](https://www.scala-sbt.org/), which you can install by itself or obtain as a part of a Scala IDE (see next item).
 * If you also plan to develop MMT, you **should** install a Scala IDE such as IntelliJ with the [Scala plugin](https://plugins.jetbrains.com/plugin/1347-scala).
 
